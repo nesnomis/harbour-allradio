@@ -36,7 +36,7 @@ DockedPanel {
                 width: panel.width / 2
 
                 RemorsePopup {id: remorse}
-                onClicked: remorse.execute("Opening webpage", function() {Qt.openUrlExternally(website)}, 3000)
+                onClicked: remorse.execute(qsTr("Opening webpage"), function() {Qt.openUrlExternally(website)}, 3000)
             }
 
             IconButton {

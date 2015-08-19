@@ -13,7 +13,7 @@ Page {
 
             PageHeader {
                 id: header
-                title: "Help"
+                title: qsTr("Help")
             }
             TextArea {
                 id: text
@@ -29,7 +29,7 @@ Page {
                 readOnly: true
                 font.pixelSize: Theme.fontSizeMedium
                 horizontalAlignment: textAlignment
-                text: "
+                text: qsTr("
 Choose country by clicking the flag/name, then click the channel you want to listen to.
 
 When playing you will see the name and country-flag of the current playing radio station at the bottom of the screen.
@@ -38,7 +38,7 @@ You can also see current station and country playing as wel as pause/play from t
 
 You can press and hold on a channel to add to favourites. If you are in favourites you can press and hold a channel to remove it from favourites.
 
-Use the sleeptimer to set a number of minutes until the AllRadio shuts down the currently playing stream."
+Use the sleeptimer to set a number of minutes until the AllRadio shuts down the currently playing stream.")
             }
     }
 }

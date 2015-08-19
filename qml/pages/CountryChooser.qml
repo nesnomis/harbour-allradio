@@ -348,7 +348,7 @@ Page {
             width: parent.width
             height: parent.width / 2.3
             onClicked: {
-                ctitle = "Favourites"
+                ctitle = qsTr("Favourites")
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
                                              {model: dbModel} )
             }
@@ -367,7 +367,7 @@ Page {
 
                 Label {
                     anchors { left: parent.left; leftMargin: 40; bottom: favIcon.bottom }
-                    text: "Favorites"
+                    text: qsTr("Favorites")
                     color: highlighted ? Theme.highlightColor : Theme.primaryColor
                     font.pixelSize: Theme.fontSizeHuge
 
@@ -425,7 +425,7 @@ Page {
             width: parent.width
             height: parent.width / 2.3
             onClicked: {
-                ctitle = "Favourites"
+                ctitle = qsTr("Favourites")
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
                                              {model: dbModel} )
             }
@@ -448,7 +448,7 @@ Page {
 
                 Label {
                     anchors { left: parent.left; leftMargin: 40; bottom: favIcon.bottom }
-                    text: "Favorites"
+                    text: qsTr("Favorites")
                     color: highlighted ? Theme.highlightColor : Theme.primaryColor
                     font.pixelSize: Theme.fontSizeHuge
 

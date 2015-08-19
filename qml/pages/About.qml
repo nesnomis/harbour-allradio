@@ -12,7 +12,7 @@ Page {
         VerticalScrollDecorator {}
             PageHeader {
                 id: header
-                title: "About AllRadio"
+                title: qsTr("About AllRadio")
             }
 
             TextArea {
@@ -29,7 +29,7 @@ Page {
                 readOnly: true
                 font.pixelSize: Theme.fontSizeMedium
                 horizontalAlignment: textAlignment
-                text: "
+                text: qsTr("
 AllRadio is a radio player for online streaming radio.
 
 Sourcecode is available on github <https://github.com/nesnomis/harbour-allradio>.
@@ -39,7 +39,7 @@ AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick
 The radiostations are coming from: <http://www.listenlive.eu>.
 
 AllRadio copyright 2015 - Niels Simonsen <nesnomis@gmail.com>."
-
+)
             }
     }
 }

@@ -61,7 +61,7 @@ Page {
                     rpsource = source
                     rpsection = section
 
-                    if (ctitle == "Favourites") {
+                    if (ctitle == qsTr("Favourites")) {
                         rpicon = icon
                         favo = true
                     } else {
@@ -76,7 +76,7 @@ Page {
                     radioStation = title
                     playStream()
                     website = (Qt.resolvedUrl(site))
-                    if (ctitle == "Favourites") {
+                    if (ctitle == qsTr("Favourites")) {
                         picon = icon
                     } else picon = cicon;
                 }
@@ -90,7 +90,7 @@ Page {
                 MenuItem {
                     id:mlisten
                     visible: true
-                    text: "Listen"
+                    text: qsTr("Listen")
                     onClicked: {
                         ps(rpsource)
                         radioStation = rptitle
@@ -102,15 +102,15 @@ Page {
                 MenuItem {
                     id:madd
                     visible: !favo
-                    text: "Add to favorites"
+                    text: qsTr("Add to favorites")
                     onClicked: addDb(rpsource,rptitle,rpsite,rpsection,rpicon);
                     }
                 MenuItem {
                     id:mdelete
                     visible: favo
-                    text: "Delete favourite"
+                    text: qsTr("Delete favourite")
                     RemorsePopup {id: remorse}
-                    onClicked: remorse.execute("Deleting channel", function() {delDb(rpsource)}, 5000);
+                    onClicked: remorse.execute(qsTr("Deleting channel"), function() {delDb(rpsource)}, 5000);
             }
             }
         }

@@ -14,7 +14,7 @@ Page {
             bottom: parent.bottom
         }
         VerticalScrollDecorator {}
-            PageHeader { title: ((sleepTime > 0) ? ("Remaning time: "  + (sleepTime) + " minutes") : "choose time: " + minutes.value )}
+            PageHeader { title: ((sleepTime > 0) ? (qsTr("Remaning time: ")  + (sleepTime) + qsTr(" minutes")) : qsTr("choose time: ") + minutes.value )}
 
             ValuePicker {
                 id: minutes
@@ -39,11 +39,11 @@ Page {
                 spacing: Theme.paddingLarge
 
                 Button {
-                        text: ((sleepTime > 0) ? ("Change") : ("Start"))
+                        text: ((sleepTime > 0) ? (qsTr("Change")) : (qsTr("Start")))
                         onPressed: sleepTime = minutes.value
                     }
                 Button {
-                        text: "Stop"
+                        text: qsTr("Stop")
                         onPressed: sleepTime = 0;
                     }
             }

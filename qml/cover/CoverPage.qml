@@ -22,7 +22,7 @@ CoverBackground {
 
     TextArea {
         y: parent.height * 0.5
-        text: (sleepTime > 0) ? ("Closing in " + (sleepTime) + " minutes.") : radioStation
+        text: (sleepTime > 0) ? (qsTr("Closing in ") + (sleepTime) + qsTr(" minutes.")) : radioStation
         width: parent.width
         readOnly: true
         horizontalAlignment: textAlignment
