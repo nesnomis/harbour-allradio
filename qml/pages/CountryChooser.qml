@@ -348,7 +348,7 @@ Page {
             width: parent.width
             height: parent.width / 2.3
             onClicked: {
-                ctitle = qsTr("Favourites")
+                ctitle = qsTr("Favorites")
                 favorites = true
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
                                              {model: dbModel} )
@@ -427,7 +427,7 @@ Page {
             width: parent.width
             height: parent.width / 2.3
             onClicked: {
-                ctitle = qsTr("Favourites")
+                ctitle = qsTr("Favorites")
                 favorites = true
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
                                              {model: dbModel} )

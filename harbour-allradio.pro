@@ -106,7 +106,10 @@ OTHER_FILES += qml/harbour-allradio.qml \
     qml/stations/Albania.qml \
     qml/pages/SleepTimerPage.qml \
     qml/pages/PlayerPanel.qml \
-    qml/pages/ValuePicker.qml
+    qml/pages/ValuePicker.qml \
+    translations/harbour-allradio-da.ts \
+    translations/harbour-allradio-en.ts \
+    translations/harbour-allradio-sv.ts
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -116,5 +119,7 @@ CONFIG += sailfishapp_i18n
 # planning to localize your app, remember to comment out the
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
-TRANSLATIONS += translations/harbour-allradio-de.ts
+#TRANSLATIONS += translations/harbour-allradio-en.ts
+TRANSLATIONS += translations/harbour-allradio-da.ts
+TRANSLATIONS += translations/harbour-allradio-sv.ts
 
