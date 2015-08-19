@@ -4,10 +4,12 @@
 <context>
     <name>About</name>
     <message>
+        <location filename="../qml/pages/About.qml" line="15"/>
         <source>About AllRadio</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/About.qml" line="32"/>
         <source>
 AllRadio is a radio player for online streaming radio.
 
@@ -24,33 +26,33 @@ AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</source>
 <context>
     <name>CountryChooser</name>
     <message>
+        <location filename="../qml/pages/CountryChooser.qml" line="341"/>
         <source>Show as list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Show as grid</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Favourites</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
+        <location filename="../qml/pages/CountryChooser.qml" line="351"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="371"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="430"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="454"/>
         <source>Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryChooser.qml" line="421"/>
+        <source>Show as grid</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CoverPage</name>
     <message>
-        <source>My Cover</source>
-        <translation type="vanished">Mein Cover</translation>
-    </message>
-    <message>
+        <location filename="../qml/cover/CoverPage.qml" line="25"/>
         <source>Closing in </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/cover/CoverPage.qml" line="25"/>
         <source> minutes.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -58,32 +60,20 @@ AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</source>
 <context>
     <name>Debug</name>
     <message>
+        <location filename="../qml/pages/Debug.qml" line="31"/>
         <source>Clear debug log</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>FirstPage</name>
-    <message>
-        <source>Show Page 2</source>
-        <translation type="vanished">Zur Seite 2</translation>
-    </message>
-    <message>
-        <source>UI Template</source>
-        <translation type="vanished">UI-Vorlage</translation>
-    </message>
-    <message>
-        <source>Hello Sailors</source>
-        <translation type="vanished">Hallo Matrosen</translation>
-    </message>
-</context>
-<context>
     <name>Help</name>
     <message>
+        <location filename="../qml/pages/Help.qml" line="16"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/Help.qml" line="32"/>
         <source>
 Choose country by clicking the flag/name, then click the channel you want to listen to.
 
@@ -100,6 +90,7 @@ Use the sleeptimer to set a number of minutes until the AllRadio shuts down the 
 <context>
     <name>PlayerPanel</name>
     <message>
+        <location filename="../qml/pages/PlayerPanel.qml" line="39"/>
         <source>Opening webpage</source>
         <translation type="unfinished"></translation>
     </message>
@@ -107,14 +98,17 @@ Use the sleeptimer to set a number of minutes until the AllRadio shuts down the 
 <context>
     <name>PullMenu</name>
     <message>
+        <location filename="../qml/pages/PullMenu.qml" line="14"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/PullMenu.qml" line="18"/>
         <source>About AllRadio</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/PullMenu.qml" line="22"/>
         <source>Sleeptimer</source>
         <translation type="unfinished"></translation>
     </message>
@@ -122,18 +116,22 @@ Use the sleeptimer to set a number of minutes until the AllRadio shuts down the 
 <context>
     <name>RadioPlayer</name>
     <message>
+        <location filename="../qml/pages/RadioPlayer.qml" line="93"/>
         <source>Listen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/RadioPlayer.qml" line="105"/>
         <source>Add to favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/RadioPlayer.qml" line="111"/>
         <source>Delete favourite</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/RadioPlayer.qml" line="113"/>
         <source>Deleting channel</source>
         <translation type="unfinished"></translation>
     </message>
@@ -141,44 +139,40 @@ Use the sleeptimer to set a number of minutes until the AllRadio shuts down the 
 <context>
     <name>RadioWeb</name>
     <message>
+        <location filename="../qml/pages/RadioWeb.qml" line="14"/>
         <source>Open in external browser</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>SecondPage</name>
-    <message>
-        <source>Nested Page</source>
-        <translation type="vanished">Unterseite</translation>
-    </message>
-    <message>
-        <source>Item</source>
-        <translation type="vanished">Element</translation>
-    </message>
-</context>
-<context>
     <name>SleepTimerPage</name>
     <message>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
         <source>Remaning time: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
         <source> minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
         <source>choose time: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="42"/>
         <source>Change</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="42"/>
         <source>Start</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="46"/>
         <source>Stop</source>
         <translation type="unfinished"></translation>
     </message>
