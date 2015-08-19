@@ -32,7 +32,7 @@ Page {
                 text: "
 AllRadio is a radio player for online streaming radio.
 
-Sourcecode will be available on github (soon).
+Sourcecode is available on github <https://github.com/nesnomis/harbour-allradio>.
 
 AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick for Nokia N9.
 
