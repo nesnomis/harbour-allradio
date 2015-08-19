@@ -61,7 +61,7 @@ Page {
                     rpsource = source
                     rpsection = section
 
-                    if (ctitle == qsTr("Favourites")) {
+                    if (favorites) {
                         rpicon = icon
                         favo = true
                     } else {
@@ -76,7 +76,7 @@ Page {
                     radioStation = title
                     playStream()
                     website = (Qt.resolvedUrl(site))
-                    if (ctitle == qsTr("Favourites")) {
+                    if (favorites) {
                         picon = icon
                     } else picon = cicon;
                 }

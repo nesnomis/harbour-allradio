@@ -28,6 +28,7 @@ property int playerError: -1
 property int playerState: -1
 property int playerStatus: -1
 property int userPlay: 0 // 0 Stopped, 1 Paused, 2 Playing
+property bool favorites: false
 
 Debug {
     id: debugPage

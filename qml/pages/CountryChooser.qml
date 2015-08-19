@@ -349,6 +349,7 @@ Page {
             height: parent.width / 2.3
             onClicked: {
                 ctitle = qsTr("Favourites")
+                favorites = true
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
                                              {model: dbModel} )
             }
@@ -397,6 +398,7 @@ Page {
                     }
 
                     onClicked: {
+                        favorites = false
                         chooseCountry(icon,country)
                     }
                 }
@@ -426,6 +428,7 @@ Page {
             height: parent.width / 2.3
             onClicked: {
                 ctitle = qsTr("Favourites")
+                favorites = true
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
                                              {model: dbModel} )
             }
@@ -486,6 +489,7 @@ Page {
             }
 
                     onClicked: {
+                        favorites = false
                         chooseCountry(icon,country)
                     }
                 }
