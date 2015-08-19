@@ -148,9 +148,9 @@ Item {
 
         function propertyForRadius(radius) {
             // Return the property associated with clicking at radius distance from the center
-            if (radius < 132) {
-                return 1 // Hours
-            } else if (radius < 204) {
+            //if (radius < 132) {
+              //  return 1 // Hours
+            if (radius < 204) {
                 return 2 // Minutes
             }
             return 0
@@ -158,32 +158,7 @@ Item {
 
         function updateForAngle(angle) {
             // Update the selected property for the specified angular position
-            if (changingProperty == 1) { // Hours
-                // Map angular position to 0-11
-                var h = remapAngle(angle, 12)
-                var delta = (h - hourIndicator.value) % 12
-
-                // It is not possible to make jumps of more than 6 hours - reverse the direction
-                if (delta > 6) {
-                    delta -= 12
-                } else if (delta < -6) {
-                    delta += 12
-                }
-                if (isMoving && isLagging) {
-                    if (Math.abs(delta) < 0.5) {
-                        isLagging = false
-                    }
-                }
-
-                var target = (hourIndicator.value + delta)
-                hourIndicator.value += delta
-
-                if (target < 0) {
-                    var multiple = Math.ceil(target / 24)
-                    target += ((-multiple + 1) * 24)
-                }
-                //timePicker.hour = (target % 24)
-            } else { // Minutes
+                 // Minutes
                 // Map angular position to 0-59
                 var m = remapAngle(angle, max)
 
@@ -207,7 +182,6 @@ Item {
                 valueIndicator.value += delta
 
                 valuePicker.value = m
-            }
         }
 
         onPressed: {
