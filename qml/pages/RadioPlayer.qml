@@ -1,89 +1,24 @@
-import QtQuick 2.1
+import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Page {
     id: radioPage
     allowedOrientations: Orientation.All
+    property Item contextMenu
     property alias model: listView.model
+    property bool favo: false
+    property string rptitle: ""
+    property string rpsite: ""
+    property string rpsource: ""
+    property string rpsection: ""
+    property string rpicon: ""
 
-    function open() {
-        remorse.execute("Opening webpage", function() {Qt.openUrlExternally(website)}, 3000)
-                 }
-
-    RemorsePopup {}
     ControlPanel { id:playerPanel }
 
-    Timer {
-        id: sleepTimer
-        interval: 60000
-        repeat: false
-        onTriggered: (sleepTime == 0) ? stopStream() : sleepTime = (sleepTime - 1)
-        running: sleepTime >= 0
-    }
-
-
-    Component {
-        id: sleepTimerPage
-        Page {
-
-            allowedOrientations: Orientation.All
-
-            SilicaFlickable {
-                anchors.fill: parent
-                contentHeight: column.height + Theme.paddingLarge
-
-                VerticalScrollDecorator {}
-
-                Column {
-                    id: column
-                    spacing: Theme.paddingLarge
-                    width: parent.width
-                    anchors.horizontalCenter: parent.Center
-                    PageHeader { title: "Sleeptimer Status" }
-                    Label {
-                        text: ((sleepTime > 0) ? ("Remaning time: "  + sleepTime + ". change time") : "choose time")
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        color: Theme.highlightColor
-                        font.family: Theme.fontFamilyHeading
-                    }
-                    Slider {
-                        id: timerSlider
-                        value: 60
-                        minimumValue: 1
-                        maximumValue: 120
-                        stepSize: 1
-                        width: parent.width
-                        handleVisible: true
-                        valueText: value //(value >= 0) ? value : "0"
-                        label: "minutes"
-                    }
-
-                    Row {
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        spacing: Theme.paddingLarge
-
-                        Button {
-                                anchors.horizontalCenter: parent
-                                text: "Start"
-                                onPressed: sleepTime = timerSlider.value
-                            }
-                        Button {
-                                anchors.horizontalCenter: parent
-                                text: "Stop"
-                                onPressed: sleepTime = -1
-                            }
-                    }
-
-                }
-            }
-        }
-
-    }
-
     SilicaListView {
-        VerticalScrollDecorator {}
         id: listView
         clip: true
+        VerticalScrollDecorator {}
 
         anchors {
             top: parent.top
@@ -95,36 +30,88 @@ Page {
 
         model: fiModel
 
-        PullDownMenu {
-            MenuItem {
-                text: qsTr("Sleeptimer") //Sleep timer
-                onClicked: pageStack.push(sleepTimerPage)
-            }
-
-        }
-
         header: PageHeader { title: ctitle } //Radio stations
 
-        section {
-            property: 'section'
-            delegate: SectionHeader {
-                text: section
-            }
-        }
+        PullMenu {}
 
-        delegate: BackgroundItem {
-            width: listView.width
-            Label {
-                id: firstName
-                text: title
-                color: highlighted ? Theme.highlightColor : Theme.primaryColor
-                anchors.verticalCenter: parent.verticalCenter
-                x: Theme.paddingLarge
+        delegate: Item {
+            id: myListItem
+            property bool menuOpen: contextMenu != null && contextMenu.parent === myListItem
+
+            width: ListView.view.width
+            height: menuOpen ? contextMenu.height + contentItem.height : contentItem.height
+
+            BackgroundItem {
+                id: contentItem
+                width: parent.width
+
+                Label {
+                    id: firstName
+                    text: title
+                    anchors.verticalCenter: parent.verticalCenter
+                    font.pixelSize: Theme.fontSizeLarge
+                    x: Theme.paddingLarge
+                }
+                onPressAndHold: {
+                    if (!contextMenu)
+                        contextMenu = contextMenuComponent.createObject(listView)
+
+                    rptitle = title
+                    rpsite = site
+                    rpsource = source
+                    rpsection = section
+
+                    if (ctitle == "Favourites") {
+                        rpicon = icon
+                        favo = true
+                    } else {
+                        rpicon = cicon
+                        favo = false
+                    }
+
+                    contextMenu.show(myListItem)
+                }
+                onClicked: {
+                    ps(source)
+                    radioStation = title
+                    playStream()
+                    website = (Qt.resolvedUrl(site))
+                    if (ctitle == "Favourites") {
+                        picon = icon
+                    } else picon = cicon;
+                }
             }
-            onClicked: {musicSource = (Qt.resolvedUrl(source))
-                radioStation = title
-                playStream()
-                website = (Qt.resolvedUrl(site))
+
+        }
+        Component {
+            id: contextMenuComponent
+
+            ContextMenu {
+                MenuItem {
+                    id:mlisten
+                    visible: true
+                    text: "Listen"
+                    onClicked: {
+                        ps(rpsource)
+                        radioStation = rptitle
+                        picon = rpicon
+                        website = (Qt.resolvedUrl(rpsite))
+                        playStream()
+                    }
+                }
+                MenuItem {
+                    id:madd
+                    visible: !favo
+                    text: "Add to favorites"
+                    onClicked: addDb(rpsource,rptitle,rpsite,rpsection,rpicon);
+                    }
+                MenuItem {
+                    id:mdelete
+                    visible: favo
+                    text: "Delete favourite"
+                    RemorsePopup {id: remorse}
+                    onClicked: remorse.execute("Deleting channel", function() {delDb(rpsource)}, 5000);
+            }
             }
         }
     }

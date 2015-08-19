@@ -467,7 +467,7 @@ ListModel {
 		source: "http://www.california101radio.com/california101.pls"
 		title: "California 101"
 		site: "http://www.california101radio.com/"
-		section: ""West Coast" rock"
+        section: "West Coast rock"
 	}
 	ListElement {
 		source: "http://live.radio-campus.org:8000/toulouse.m3u"

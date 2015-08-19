@@ -6,11 +6,10 @@ PullDownMenu {
         text: qsTr("Drop Database")
         onClicked: dropDb()
     }*/
-
-    MenuItem {
+    /*MenuItem {
         text: qsTr("DebugPage")
         onClicked: pageStack.push("Debug.qml")
-    }
+    }*/
     MenuItem {
         text: qsTr("Help")
         onClicked: pageStack.push(Qt.resolvedUrl("Help.qml"))
@@ -21,6 +20,6 @@ PullDownMenu {
     }
     MenuItem {
         text: qsTr("Sleeptimer")
-        onClicked: pageStack.push(sleepTimerPage)
+        onClicked: pageStack.push(Qt.resolvedUrl("SleepTimerPage.qml"))
     }
 }

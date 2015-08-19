@@ -1,38 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.1">
 <context>
-    <name>CoverPage</name>
+    <name>CountryChooser</name>
     <message>
-        <source>My Cover</source>
+        <source>Show as list</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show as grid</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>FirstPage</name>
+    <name>Debug</name>
     <message>
-        <source>Show Page 2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>UI Template</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Hello Sailors</source>
+        <source>Clear debug log</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>SecondPage</name>
+    <name>PullMenu</name>
     <message>
-        <source>Nested Page</source>
+        <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Item</source>
+        <source>About AllRadio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sleeptimer</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>RadioWeb</name>
+    <message>
+        <source>Open in external browser</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
-
