@@ -109,7 +109,58 @@ OTHER_FILES += qml/harbour-allradio.qml \
     translations/harbour-allradio-da.ts \
     translations/harbour-allradio-en.ts \
     translations/harbour-allradio-sv.ts \
-    qml/harbour-allradio.png
+    qml/harbour-allradio.png \
+    qml/stations/Vatican.png \
+    qml/stations/Ukraine.png \
+    qml/stations/UK.png \
+    qml/stations/Turkey.png \
+    qml/stations/Switzerland.png \
+    qml/stations/Sweden.png \
+    qml/stations/Spain.png \
+    qml/stations/Slovenia.png \
+    qml/stations/Slovakia.png \
+    qml/stations/Serbia.png \
+    qml/stations/Russia.png \
+    qml/stations/Romania.png \
+    qml/stations/Portugal.png \
+    qml/stations/Poland.png \
+    qml/stations/Norway.png \
+    qml/stations/Netherlands.png \
+    qml/stations/Montenegro.png \
+    qml/stations/Monaco.png \
+    qml/stations/Moldova.png \
+    qml/stations/Malta.png \
+    qml/stations/Macedonia.png \
+    qml/stations/Luxembourg.png \
+    qml/stations/Lithuania.png \
+    qml/stations/Liechtenstein.png \
+    qml/stations/Latvia.png \
+    qml/stations/Italy.png \
+    qml/stations/Ireland.png \
+    qml/stations/Iceland.png \
+    qml/stations/Hungary.png \
+    qml/stations/harbour-allradio.png \
+    qml/stations/Greece.png \
+    qml/stations/Gibraltar.png \
+    qml/stations/Germany.png \
+    qml/stations/Georgia.png \
+    qml/stations/France.png \
+    qml/stations/Finland.png \
+    qml/stations/Faroe.png \
+    qml/stations/Estonia.png \
+    qml/stations/Denmark.png \
+    qml/stations/Czechrepublic.png \
+    qml/stations/Cyprus.png \
+    qml/stations/Croatia.png \
+    qml/stations/Bulgaria.png \
+    qml/stations/Bosnia.png \
+    qml/stations/Belgium.png \
+    qml/stations/Belarus.png \
+    qml/stations/Azerbaijan.png \
+    qml/stations/Austria.png \
+    qml/stations/Armenia.png \
+    qml/stations/Andorra.png \
+    qml/stations/Albania.png
 
 # to disable building translations every time, comment out the
 # following CONFIG line
