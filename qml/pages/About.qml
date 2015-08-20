@@ -29,17 +29,16 @@ Page {
                 readOnly: true
                 font.pixelSize: Theme.fontSizeMedium
                 horizontalAlignment: textAlignment
-                text: qsTr("
-AllRadio is a radio player for online streaming radio.
+                text: "
+" + qsTr("AllRadio is a radio player for online streaming radio.") + "
 
-Sourcecode is available on github <https://github.com/nesnomis/harbour-allradio>.
+" + qsTr("Sourcecode is available on github") + "<https://github.com/nesnomis/harbour-allradio>.
 
-AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick for Nokia N9.
+" + qsTr("AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick for Nokia N9.
 
-The radiostations are coming from: <http://www.listenlive.eu>.
+The radiostations are coming from:") + " <http://www.listenlive.eu>.
 
-AllRadio copyright 2015 - Niels Simonsen <nesnomis@gmail.com>."
-)
+AllRadio v.1.0-1 copyleft/right - 2015 - Niels Simonsen <nesnomis@gmail.com>."
             }
     }
 }

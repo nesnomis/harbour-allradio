@@ -9,7 +9,46 @@
         <translation>Om AllRadio</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="32"/>
+        <location filename="../qml/pages/About.qml" line="33"/>
+        <source>AllRadio is a radio player for online streaming radio.</source>
+        <translation>AllRadio er en radio-afspiller til online streaming radio.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="35"/>
+        <source>Sourcecode is available on github</source>
+        <translation>Kildekoden findes på github</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="37"/>
+        <source>AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick for Nokia N9.
+
+The radiostations are coming from:</source>
+        <translation>AllRadio er inspireret af gode programmer som uradio, nettiradio og mit eget drQuick til Nokia N9.
+
+Radiostationerne kommer fra:</translation>
+    </message>
+    <message>
+        <source>
+AllRadio is a radio player for online streaming radio.
+
+Sourcecode is available on github &lt;https://github.com/nesnomis/harbour-allradio&gt;.
+
+AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick for Nokia N9.
+
+The radiostations are coming from: &lt;http://www.listenlive.eu&gt;.
+
+AllRadio v.1.0-1 copyleft/right - 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</source>
+        <translation type="vanished">AllRadio er en radio-afspiller til online streaming radio.
+
+Kildekoden findes på github &lt;https://github.com/nesnomis/harbour-allradio&gt;.
+
+AllRadio er inspireret af gode programmer som uradio, nettiradio og mit eget drQuick til Nokia N9.
+
+Radiostationerne kommer fra: &lt;http://www.listenlive.eu&gt;.
+
+AllRadio copyleft/right - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translation>
+    </message>
+    <message>
         <source>
 AllRadio is a radio player for online streaming radio.
 
@@ -20,7 +59,7 @@ AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick
 The radiostations are coming from: &lt;http://www.listenlive.eu&gt;.
 
 AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</source>
-        <translation>AllRadio er en radio-afspiller til online streaming radio.
+        <translation type="vanished">AllRadio er en radio-afspiller til online streaming radio.
 
 Kildekoden findes på github &lt;https://github.com/nesnomis/harbour-allradio&gt;.
 
@@ -35,20 +74,20 @@ AllRadio copyright - Niels Simonsen &lt;nesnomis@gmail.com&gt;.
 <context>
     <name>CountryChooser</name>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="341"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="349"/>
         <source>Show as list</source>
         <translation>Vis som liste</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="351"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="371"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="430"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="454"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="359"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="379"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="438"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="462"/>
         <source>Favorites</source>
         <translation>Favoritter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="421"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="429"/>
         <source>Show as grid</source>
         <translation>Vis som ikoner</translation>
     </message>
@@ -166,17 +205,17 @@ Brug indslumringstimer til at indstille tid i minutter inden AllRadio slukker fo
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
         <source>Remaning time: </source>
-        <translation>Resterende tid:</translation>
+        <translation>Resterende tid: </translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
         <source> minutes</source>
-        <translation>minutter</translation>
+        <translation> minutter</translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
         <source>choose time: </source>
-        <translation>Vælg tid:</translation>
+        <translation>Vælg tid: </translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="42"/>

@@ -9,7 +9,46 @@
         <translation>Om AllRadio</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="32"/>
+        <location filename="../qml/pages/About.qml" line="33"/>
+        <source>AllRadio is a radio player for online streaming radio.</source>
+        <translation>AllRadio är en radiospelare som spelar strömmande radio via nätet.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="35"/>
+        <source>Sourcecode is available on github</source>
+        <translation>Kälkoden finns tillgängligt på</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="37"/>
+        <source>AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick for Nokia N9.
+
+The radiostations are coming from:</source>
+        <translation>AllRadio är inspirerad av bra program som uradio, nettiradio och mitt eget program, drQuick för Nokia N9.
+
+Radiostationerna har hämtats från: </translation>
+    </message>
+    <message>
+        <source>
+AllRadio is a radio player for online streaming radio.
+
+Sourcecode is available on github &lt;https://github.com/nesnomis/harbour-allradio&gt;.
+
+AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick for Nokia N9.
+
+The radiostations are coming from: &lt;http://www.listenlive.eu&gt;.
+
+AllRadio v.1.0-1 copyleft/right - 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</source>
+        <translation type="vanished">AllRadio är en radiospelare som spelar strömmande radio via nätet.
+
+Kälkoden finns tillgängligt på github: &lt;https://github.com/nesnomis/harbour-allradio&gt;.
+
+AllRadio är inspirerad av bra program som uradio, nettiradio och mitt eget program, drQuick för Nokia N9.
+
+Radiostationerna har hämtats från: &lt;http://www.listenlive.eu&gt;.
+
+AllRadio copyleft/right 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translation>
+    </message>
+    <message>
         <source>
 AllRadio is a radio player for online streaming radio.
 
@@ -20,7 +59,7 @@ AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick
 The radiostations are coming from: &lt;http://www.listenlive.eu&gt;.
 
 AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</source>
-        <translation>AllRadio är en radiospelare som spelar strömmande radio via nätet.
+        <translation type="vanished">AllRadio är en radiospelare som spelar strömmande radio via nätet.
 
 Kälkoden finns tillgängligt på github: &lt;https://github.com/nesnomis/harbour-allradio&gt;.
 
@@ -34,20 +73,20 @@ AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translatio
 <context>
     <name>CountryChooser</name>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="341"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="349"/>
         <source>Show as list</source>
         <translation>Visa som lista</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="351"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="371"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="430"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="454"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="359"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="379"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="438"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="462"/>
         <source>Favorites</source>
         <translation>Favoriter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="421"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="429"/>
         <source>Show as grid</source>
         <translation>Visa som ikoner</translation>
     </message>
@@ -172,12 +211,12 @@ Använd insomningstimern till att ställa in ett antal minuter AllRadio skall sp
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
         <source> minutes</source>
-        <translation>Minuter</translation>
+        <translation> minuter</translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
         <source>choose time: </source>
-        <translation>välj tid:</translation>
+        <translation>välj tid: </translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="42"/>
