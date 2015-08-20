@@ -105,14 +105,6 @@ AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translatio
     </message>
 </context>
 <context>
-    <name>Debug</name>
-    <message>
-        <location filename="../qml/pages/Debug.qml" line="31"/>
-        <source>Clear debug log</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>Help</name>
     <message>
         <location filename="../qml/pages/Help.qml" line="16"/>
@@ -155,17 +147,17 @@ Använd insomningstimern till att ställa in ett antal minuter AllRadio skall sp
 <context>
     <name>PullMenu</name>
     <message>
-        <location filename="../qml/pages/PullMenu.qml" line="14"/>
+        <location filename="../qml/pages/PullMenu.qml" line="10"/>
         <source>Help</source>
         <translation>Hjälp</translation>
     </message>
     <message>
-        <location filename="../qml/pages/PullMenu.qml" line="18"/>
+        <location filename="../qml/pages/PullMenu.qml" line="14"/>
         <source>About AllRadio</source>
         <translation>Om AllRadio</translation>
     </message>
     <message>
-        <location filename="../qml/pages/PullMenu.qml" line="22"/>
+        <location filename="../qml/pages/PullMenu.qml" line="18"/>
         <source>Sleeptimer</source>
         <translation>Insomningstimer</translation>
     </message>

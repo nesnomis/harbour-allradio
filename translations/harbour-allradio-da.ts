@@ -106,14 +106,6 @@ AllRadio copyright - Niels Simonsen &lt;nesnomis@gmail.com&gt;.
     </message>
 </context>
 <context>
-    <name>Debug</name>
-    <message>
-        <location filename="../qml/pages/Debug.qml" line="31"/>
-        <source>Clear debug log</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>Help</name>
     <message>
         <location filename="../qml/pages/Help.qml" line="16"/>
@@ -154,17 +146,17 @@ Brug indslumringstimer til at indstille tid i minutter inden AllRadio slukker fo
 <context>
     <name>PullMenu</name>
     <message>
-        <location filename="../qml/pages/PullMenu.qml" line="14"/>
+        <location filename="../qml/pages/PullMenu.qml" line="10"/>
         <source>Help</source>
         <translation>Hjælp</translation>
     </message>
     <message>
-        <location filename="../qml/pages/PullMenu.qml" line="18"/>
+        <location filename="../qml/pages/PullMenu.qml" line="14"/>
         <source>About AllRadio</source>
         <translation>Om AllRadio</translation>
     </message>
     <message>
-        <location filename="../qml/pages/PullMenu.qml" line="22"/>
+        <location filename="../qml/pages/PullMenu.qml" line="18"/>
         <source>Sleeptimer</source>
         <translation>Indslumringstimer</translation>
     </message>
