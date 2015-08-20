@@ -43,7 +43,6 @@ OTHER_FILES += qml/harbour-allradio.qml \
     qml/js/stream.js \
     qml/stations/StationsListSP.qml \
     qml/stations/StationsListRU.qml \
-    qml/pages/Debug.qml \
     qml/pages/PullMenu.qml \
     qml/stations/StationsLisBS.qml \
     qml/stations/StationsLisAZ.qml \
@@ -109,7 +108,8 @@ OTHER_FILES += qml/harbour-allradio.qml \
     qml/pages/ValuePicker.qml \
     translations/harbour-allradio-da.ts \
     translations/harbour-allradio-en.ts \
-    translations/harbour-allradio-sv.ts
+    translations/harbour-allradio-sv.ts \
+    qml/harbour-allradio.png
 
 # to disable building translations every time, comment out the
 # following CONFIG line
