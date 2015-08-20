@@ -346,12 +346,12 @@ AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translatio
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="25"/>
         <source>Closing in </source>
-        <translation>Stänger om</translation>
+        <translation>Stänger om </translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="25"/>
         <source> minutes.</source>
-        <translation>minuter.</translation>
+        <translation> minuter.</translation>
     </message>
 </context>
 <context>

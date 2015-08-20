@@ -347,12 +347,12 @@ AllRadio copyright - Niels Simonsen &lt;nesnomis@gmail.com&gt;.
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="25"/>
         <source>Closing in </source>
-        <translation>Slukker om</translation>
+        <translation>Slukker om </translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="25"/>
         <source> minutes.</source>
-        <translation>minutter.</translation>
+        <translation> minutter.</translation>
     </message>
 </context>
 <context>
