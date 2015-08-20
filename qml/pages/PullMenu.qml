@@ -6,10 +6,6 @@ PullDownMenu {
         text: qsTr("Drop Database")
         onClicked: dropDb()
     }*/
-    /*MenuItem {
-        text: qsTr("DebugPage")
-        onClicked: pageStack.push("Debug.qml")
-    }*/
     MenuItem {
         text: qsTr("Help")
         onClicked: pageStack.push(Qt.resolvedUrl("Help.qml"))

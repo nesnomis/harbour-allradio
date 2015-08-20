@@ -13,7 +13,7 @@ Page {
     property string rpsection: ""
     property string rpicon: ""
 
-    ControlPanel { id:playerPanel }
+    PlayerPanel { id:playerPanel }
 
     SilicaListView {
         id: listView

@@ -330,7 +330,7 @@ Page {
     }
     /* --------------- END of Country edit --------------- */
 
-    ControlPanel { id:playerPanel }
+    PlayerPanel { id:playerPanel }
 
     SilicaGridView {
         id: grid
