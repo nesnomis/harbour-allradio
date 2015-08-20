@@ -42,7 +42,7 @@ DockedPanel {
             IconButton {
                 id: pause
                 icon.source: "image://theme/icon-l-pause"
-                onClicked: stopStream()//{pauseStream()}
+                onClicked: stopStream()
                 enabled: playMusic.playing
             }
         }

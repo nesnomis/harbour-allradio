@@ -48,12 +48,6 @@ Item {
     property int max
     property int min
 
-    //property int hourMode: DateTime.DefaultHours
-
-    //property date time: new Date(0,0,0, hour, minute)
-    //property string minutesText: _formatTime()
-
-    // the original dimensions = 408x408
     property real _scaleRatio: valueCircle.width / 408
 
     width: valueCircle.width
@@ -148,8 +142,6 @@ Item {
 
         function propertyForRadius(radius) {
             // Return the property associated with clicking at radius distance from the center
-            //if (radius < 132) {
-              //  return 1 // Hours
             if (radius < 204) {
                 return 2 // Minutes
             }

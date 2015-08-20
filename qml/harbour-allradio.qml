@@ -78,7 +78,6 @@ Audio {
         property bool playing: false
 
         onStopped:{
-            //console.log(mp3)
             if (playerState == 1 && userPlay != 0 && (playerStatus == 6 || playerStatus == 7)) playStream()
             if (userPlay == 2 && userPlay != 0 && (playerStatus == 4 || playerStatus == 6)) playStream()
         }

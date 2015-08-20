@@ -60,14 +60,6 @@ Page {
     property variant ukraine: Ukraine {}
     property variant vatican: Vatican {}
 
-    // Cant use qsTr in a ListElement, so maybe use javascript instead?
-    // ListElement should be like this:
-    /*ListElement {
-        country: "Albania"
-        coid: "_albania
-        icon: "../stations/Albania.png"
-    }*/
-
     ListModel {
         id: galleryModel
 
@@ -424,8 +416,6 @@ Page {
 
     SilicaListView {
         id: list
-        //cellWidth: width / 2
-        //cellHeight: width / 2
         visible: !grid.visible
         anchors.fill: parent
 
@@ -449,49 +439,37 @@ Page {
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
                                              {model: dbModel} )
             }
-            //Row {
-                //spacing: Theme.paddingLarge
-                //width: parent.width * 0.83
-                //anchors.horizontalCenter: parent.horizontalCenter
-
-                Image {
-                    id: favIcon
-                    anchors { right: parent.right; rightMargin: 40; verticalCenter: parent.verticalCenter }
-                    source: "../harbour-allradio.png"
-                    x: 70
-                    y: 70
-                    width: listfavHeader.width / 3.7
-                    height: listfavHeader.width / 3.7
-                    opacity: 0.6
-                    fillMode: Image.PreserveAspectFit
-                }
-
-                Label {
-                    anchors { left: parent.left; leftMargin: 40; bottom: favIcon.bottom }
-                    text: qsTr("Favorites")
-                    color: highlighted ? Theme.highlightColor : Theme.primaryColor
-                    font.pixelSize: Theme.fontSizeHuge
-
-                }
-            //}
+            Image {
+                id: favIcon
+                anchors { right: parent.right; rightMargin: 40; verticalCenter: parent.verticalCenter }
+                source: "../harbour-allradio.png"
+                x: 70
+                y: 70
+                width: listfavHeader.width / 3.7
+                height: listfavHeader.width / 3.7
+                opacity: 0.6
+                fillMode: Image.PreserveAspectFit
             }
+
+            Label {
+                anchors { left: parent.left; leftMargin: 40; bottom: favIcon.bottom }
+                text: qsTr("Favorites")
+                color: highlighted ? Theme.highlightColor : Theme.primaryColor
+                font.pixelSize: Theme.fontSizeHuge
+
+            }
+        }
 
         delegate: BackgroundItem {
             width: (parent.width)
             anchors { horizontalCenter: parent.horizontalCenter}
 
-            //width: parent.width
             Image {
                 id: myListIcon
                 y: 20; //anchors.horizontalCenter: parent.horizontalCenter
                 anchors { right: parent.right; rightMargin: 40; verticalCenter: parent.verticalCenter }
                 source: icon
                 height: listText.height
-
-
-                //horizontalAlignment: right
-                //width: 60
-                //height: parent.width / 1.5
                 opacity: 0.6
                 fillMode: Image.PreserveAspectFit
             }
@@ -505,11 +483,11 @@ Page {
 
             }
 
-                    onClicked: {
-                        favorites = false
-                        chooseCountry(icon,coid,list.model.countryname(index))
-                    }
-                }
+            onClicked: {
+                favorites = false
+                chooseCountry(icon,coid,list.model.countryname(index))
+            }
+        }
         ScrollDecorator {}
     }
 }
