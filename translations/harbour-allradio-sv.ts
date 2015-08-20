@@ -206,7 +206,7 @@ Använd insomningstimern till att ställa in ett antal minuter AllRadio skall sp
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
         <source>Remaning time: </source>
-        <translation>Tid kvar:</translation>
+        <translation>Tid kvar: </translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
