@@ -72,261 +72,270 @@ Page {
         id: galleryModel
 
         ListElement {
-            country: "Albania"
-            icon: "../stations/Albania.png"
-        }
+            coid: "_albania"
+            icon: "../stations/Albania.png"}
         ListElement {
-            country: "Andorra"
-            icon: "../stations/Andorra.png"
-        }
+            coid: "_andorra"
+            icon: "../stations/Andorra.png"}
         ListElement {
-            country: "Armenia"
-            icon: "../stations/Armenia.png"
-        }
+            coid: "_armenia"
+            icon: "../stations/Armenia.png"}
         ListElement {
-            country: "Austria"
-            icon: "../stations/Austria.png"
-        }
+            coid: "_austria"
+            icon: "../stations/Austria.png"}
         ListElement {
-            country: "Azerbaijan"
-            icon: "../stations/Azerbaijan.png"
-        }
+            coid: "_azerbaijan"
+            icon: "../stations/Azerbaijan.png"}
         ListElement {
-            country: "Belarus"
-            icon: "../stations/Belarus.png"
-        }
+            coid: "_belarus"
+            icon: "../stations/Belarus.png"}
         ListElement {
-            country: "Belgium"
-            icon: "../stations/Belgium.png"
-        }
+            coid: "_belgium"
+            icon: "../stations/Belgium.png"}
         ListElement {
-            country: "Bosnia"
-            icon: "../stations/Bosnia.png"
-        }
+            coid: "_bosnia"
+            icon: "../stations/Bosnia.png"}
         ListElement {
-            country: "Bulgaria"
-            icon: "../stations/Bulgaria.png"
-        }
+            coid: "_bulgaria"
+            icon: "../stations/Bulgaria.png"}
         ListElement {
-            country: "Croatia"
-            icon: "../stations/Croatia.png"
-        }
+            coid: "_croatia"
+            icon: "../stations/Croatia.png"}
         ListElement {
-            country: "Cyprus"
-            icon: "../stations/Cyprus.png"
-        }
+            coid: "_cyprus"
+            icon: "../stations/Cyprus.png"}
         ListElement {
-            country: "Czech-republic"
-            icon: "../stations/Czechrepublic.png"
-        }
+            coid: "_czechrepublic"
+            icon: "../stations/Czechrepublic.png"}
         ListElement {
-            country: "Denmark"
-            icon: "../stations/Denmark.png"
-        }
+            coid: "_denmark"
+            icon: "../stations/Denmark.png"}
         ListElement {
-            country: "Estonia"
-            icon: "../stations/Estonia.png"
-        }
+            coid: "_estonia"
+            icon: "../stations/Estonia.png"}
         ListElement {
-            country: "Faroe"
-            icon: "../stations/Faroe.png"
-        }
+            coid: "_faroe"
+            icon: "../stations/Faroe.png"}
         ListElement {
-            country: "Finland"
-            icon: "../stations/Finland.png"
-        }
+            coid: "_finland"
+            icon: "../stations/Finland.png"}
         ListElement {
-            country: "France"
-            icon: "../stations/France.png"
-        }
+            coid: "_france"
+            icon: "../stations/France.png"}
         ListElement {
-            country: "Georgia"
-            icon: "../stations/Georgia.png"
-        }
+            coid: "_georgia"
+            icon: "../stations/Georgia.png"}
         ListElement {
-            country: "Germany"
-            icon: "../stations/Germany.png"
-        }
+            coid: "_germany"
+            icon: "../stations/Germany.png"}
         ListElement {
-            country: "Gibraltar"
-            icon: "../stations/Gibraltar.png"
-        }
+            coid: "_gibraltar"
+            icon: "../stations/Gibraltar.png"}
         ListElement {
-            country: "Greece"
-            icon: "../stations/Greece.png"
-        }
+            coid: "_greece"
+            icon: "../stations/Greece.png"}
         ListElement {
-            country: "Hungary"
-            icon: "../stations/Hungary.png"
-        }
+            coid: "_hungary"
+            icon: "../stations/Hungary.png"}
         ListElement {
-            country: "Iceland"
-            icon: "../stations/Iceland.png"
-        }
+            coid: "_iceland"
+            icon: "../stations/Iceland.png"}
         ListElement {
-            country: "Ireland"
-            icon: "../stations/Ireland.png"
-        }
+            coid: "_ireland"
+            icon: "../stations/Ireland.png"}
         ListElement {
-            country: "Italy"
-            icon: "../stations/Italy.png"
-        }
+            coid: "_italy"
+            icon: "../stations/Italy.png"}
         ListElement {
-            country: "Latvia"
-            icon: "../stations/Latvia.png"
-        }
+            coid: "_latvia"
+            icon: "../stations/Latvia.png"}
         ListElement {
-            country: "Liechtenstein"
-            icon: "../stations/Liechtenstein.png"
-        }
+            coid: "_liechtenstein"
+            icon: "../stations/Liechtenstein.png"}
         ListElement {
-            country: "Lithuania"
-            icon: "../stations/Lithuania.png"
-        }
+            coid: "_lithuania"
+            icon: "../stations/Lithuania.png"}
         ListElement {
-            country: "Luxembourg"
-            icon: "../stations/Luxembourg.png"
-        }
+            coid: "_luxembourg"
+            icon: "../stations/Luxembourg.png"}
         ListElement {
-            country: "Macedonia"
-            icon: "../stations/Macedonia.png"
-        }
+            coid: "_macedonia"
+            icon: "../stations/Macedonia.png"}
         ListElement {
-            country: "Malta"
-            icon: "../stations/Malta.png"
-        }
+            coid: "_malta"
+            icon: "../stations/Malta.png"}
         ListElement {
-            country: "Moldova"
-            icon: "../stations/Moldova.png"
-        }
+            coid: "_moldova"
+            icon: "../stations/Moldova.png"}
         ListElement {
-            country: "Monaco"
-            icon: "../stations/Monaco.png"
-        }
+            coid: "_monaco"
+            icon: "../stations/Monaco.png"}
         ListElement {
-            country: "Montenegro"
-            icon: "../stations/Montenegro.png"
-        }
+            coid: "_montenegro"
+            icon: "../stations/Montenegro.png"}
         ListElement {
-            country: "Netherlands"
-            icon: "../stations/Netherlands.png"
-        }
+            coid: "_netherlands"
+            icon: "../stations/Netherlands.png"}
         ListElement {
-            country: "Norway"
-            icon: "../stations/Norway.png"
-        }
+            coid: "_norway"
+            icon: "../stations/Norway.png"}
         ListElement {
-            country: "Poland"
-            icon: "../stations/Poland.png"
-        }
+            coid: "_poland"
+            icon: "../stations/Poland.png"}
         ListElement {
-            country: "Portugal"
-            icon: "../stations/Portugal.png"
-        }
+            coid: "_portugal"
+            icon: "../stations/Portugal.png"}
         ListElement {
-            country: "Romania"
-            icon: "../stations/Romania.png"
-        }
+            coid: "_romania"
+            icon: "../stations/Romania.png"}
         ListElement {
-            country: "Russia"
-            icon: "../stations/Russia.png"
-        }
+            coid: "_russia"
+            icon: "../stations/Russia.png"}
         ListElement {
-            country: "Serbia"
-            icon: "../stations/Serbia.png"
-        }
+            coid: "_serbia"
+            icon: "../stations/Serbia.png"}
         ListElement {
-            country: "Slovakia"
-            icon: "../stations/Slovakia.png"
-        }
+            coid: "_slovakia"
+            icon: "../stations/Slovakia.png"}
         ListElement {
-            country: "Slovenia"
-            icon: "../stations/Slovenia.png"
-        }
+            coid: "_slovenia"
+            icon: "../stations/Slovenia.png"}
         ListElement {
-            country: "Spain"
-            icon: "../stations/Spain.png"
-        }
+            coid: "_spain"
+            icon: "../stations/Spain.png"}
         ListElement {
-            country: "Sweden"
-            icon: "../stations/Sweden.png"
-        }
+            coid: "_sweden"
+            icon: "../stations/Sweden.png"}
         ListElement {
-            country: "Switzerland"
-            icon: "../stations/Switzerland.png"
-        }
+            coid: "_switzerland"
+            icon: "../stations/Switzerland.png"}
         ListElement {
-            country: "Turkey"
-            icon: "../stations/Turkey.png"
-        }
+            coid: "_turkey"
+            icon: "../stations/Turkey.png"}
         ListElement {
-            country: "UK"
-            icon: "../stations/UK.png"
-        }
+            coid: "_uk"
+            icon: "../stations/UK.png"}
         ListElement {
-            country: "Ukraine"
-            icon: "../stations/Ukraine.png"
-        }
+            coid: "_ukraine"
+            icon: "../stations/Ukraine.png"}
         ListElement {
-            country: "Vatican"
-            icon: "../stations/Vatican.png"
+            coid: "_vatican"
+            icon: "../stations/Vatican.png"}
+        // Workaround to be able to use qsTr for translating the country names (qsTr doesn't work in ListModel/ListElement ... :( ..)
+        function countryname(index) {
+            if (countryname["text"] === undefined) {
+                countryname.text = [
+                    qsTr("Albania"),
+                    qsTr("Andorra"),
+                    qsTr("Armenia"),
+                    qsTr("Austria"),
+                    qsTr("Azerbaijan"),
+                    qsTr("Belarus"),
+                    qsTr("Belgium"),
+                    qsTr("Bosnia"),
+                    qsTr("Bulgaria"),
+                    qsTr("Croatia"),
+                    qsTr("Cyprus"),
+                    qsTr("Czechrepublic"),
+                    qsTr("Denmark"),
+                    qsTr("Estonia"),
+                    qsTr("Faroe"),
+                    qsTr("Finland"),
+                    qsTr("France"),
+                    qsTr("Georgia"),
+                    qsTr("Germany"),
+                    qsTr("Gibraltar"),
+                    qsTr("Greece"),
+                    qsTr("Hungary"),
+                    qsTr("Iceland"),
+                    qsTr("Ireland"),
+                    qsTr("Italy"),
+                    qsTr("Latvia"),
+                    qsTr("Liechtenstein"),
+                    qsTr("Lithuania"),
+                    qsTr("Luxembourg"),
+                    qsTr("Macedonia"),
+                    qsTr("Malta"),
+                    qsTr("Moldova"),
+                    qsTr("Monaco"),
+                    qsTr("Montenegro"),
+                    qsTr("Netherlands"),
+                    qsTr("Norway"),
+                    qsTr("Poland"),
+                    qsTr("Portugal"),
+                    qsTr("Romania"),
+                    qsTr("Russia"),
+                    qsTr("Serbia"),
+                    qsTr("Slovakia"),
+                    qsTr("Slovenia"),
+                    qsTr("Spain"),
+                    qsTr("Sweden"),
+                    qsTr("Switzerland"),
+                    qsTr("Turkey"),
+                    qsTr("UK"),
+                    qsTr("Ukraine"),
+                    qsTr("Vatican")
+                ]
+                }
+            return countryname.text[index]
         }
-    }
 
-    function chooseCountry(icon,country) {
+    } /// view.model.country(view.currentIndex)
+
+    function chooseCountry(icon,coid,country) {
         ctitle = country
         cicon = icon
 
-        if (country == "Albania" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: albania})
-        if (country == "Andorra" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: andorra})
-        if (country == "Armenia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: armenia})
-        if (country == "Austria" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: austria})
-        if (country == "Azerbaijan" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: azerbaijan})
-        if (country == "Belarus" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: belarus})
-        if (country == "Belgium" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: belgium})
-        if (country == "Bosnia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: bosnia})
-        if (country == "Bulgaria" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: bulgaria})
-        if (country == "Croatia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: croatia})
-        if (country == "Cyprus" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: cyprus})
-        if (country == "Czech-republic" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: czechrepublic})
-        if (country == "Denmark" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: denmark})
-        if (country == "Estonia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: estonia})
-        if (country == "Faroe" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: faroe})
-        if (country == "Finland" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: finland})
-        if (country == "France" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: france})
-        if (country == "Georgia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: georgia})
-        if (country == "Germany" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: germany})
-        if (country == "Gibraltar" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: gibraltar})
-        if (country == "Greece" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: greece})
-        if (country == "Hungary" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: hungary})
-        if (country == "Iceland" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: iceland})
-        if (country == "Ireland" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: ireland})
-        if (country == "Italy" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: italy})
-        if (country == "Latvia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: latvia})
-        if (country == "Liechtenstein" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: liechtenstein})
-        if (country == "Lithuania" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: lithuania})
-        if (country == "Luxembourg" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: luxembourg})
-        if (country == "Macedonia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: macedonia})
-        if (country == "Malta" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: malta})
-        if (country == "Moldova" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: moldova})
-        if (country == "Monaco" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: monaco})
-        if (country == "Montenegro" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: montenegro})
-        if (country == "Netherlands" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: netherlands})
-        if (country == "Norway" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: norway})
-        if (country == "Poland" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: poland})
-        if (country == "Portugal" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: portugal})
-        if (country == "Romania" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: romania})
-        if (country == "Russia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: russia})
-        if (country == "Serbia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: serbia})
-        if (country == "Slovakia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: slovakia})
-        if (country == "Slovenia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: slovenia})
-        if (country == "Spain" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: spain})
-        if (country == "Sweden" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: sweden})
-        if (country == "Switzerland" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: switzerland})
-        if (country == "Turkey" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: turkey})
-        if (country == "UK" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: uk})
-        if (country == "Ukraine" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: ukraine})
-        if (country == "Vatican" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: vatican})
+        if (coid == "_albania" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: albania})
+        if (coid == "_andorra" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: andorra})
+        if (coid == "_armenia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: armenia})
+        if (coid == "_austria" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: austria})
+        if (coid == "_azerbaijan" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: azerbaijan})
+        if (coid == "_belarus" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: belarus})
+        if (coid == "_belgium" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: belgium})
+        if (coid == "_bosnia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: bosnia})
+        if (coid == "_bulgaria" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: bulgaria})
+        if (coid == "_croatia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: croatia})
+        if (coid == "_cyprus" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: cyprus})
+        if (coid == "_czechrepublic" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: czechrepublic})
+        if (coid == "_denmark" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: denmark})
+        if (coid == "_estonia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: estonia})
+        if (coid == "_faroe" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: faroe})
+        if (coid == "_finland" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: finland})
+        if (coid == "_france" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: france})
+        if (coid == "_georgia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: georgia})
+        if (coid == "_germany" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: germany})
+        if (coid == "_gibraltar" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: gibraltar})
+        if (coid == "_greece" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: greece})
+        if (coid == "_hungary" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: hungary})
+        if (coid == "_iceland" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: iceland})
+        if (coid == "_ireland" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: ireland})
+        if (coid == "_italy" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: italy})
+        if (coid == "_latvia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: latvia})
+        if (coid == "_liechtenstein" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: liechtenstein})
+        if (coid == "_lithuania" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: lithuania})
+        if (coid == "_luxembourg" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: luxembourg})
+        if (coid == "_lacedonia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: macedonia})
+        if (coid == "_lalta" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: malta})
+        if (coid == "_loldova" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: moldova})
+        if (coid == "_lonaco" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: monaco})
+        if (coid == "_lontenegro" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: montenegro})
+        if (coid == "_netherlands" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: netherlands})
+        if (coid == "_norway" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: norway})
+        if (coid == "_poland" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: poland})
+        if (coid == "_portugal" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: portugal})
+        if (coid == "_romania" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: romania})
+        if (coid == "_russia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: russia})
+        if (coid == "_serbia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: serbia})
+        if (coid == "_slovakia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: slovakia})
+        if (coid == "_slovenia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: slovenia})
+        if (coid == "_spain" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: spain})
+        if (coid == "_sweden" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: sweden})
+        if (coid == "_switzerland" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: switzerland})
+        if (coid == "_turkey" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: turkey})
+        if (coid == "_uk" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: uk})
+        if (coid == "_ukraine" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: ukraine})
+        if (coid == "_vatican" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: vatican})
     }
     /* --------------- END of Country edit --------------- */
 
@@ -399,7 +408,7 @@ Page {
 
                     Text {
                         anchors { top: myIcon.bottom; horizontalCenter: parent.horizontalCenter }
-                        text: country
+                        text: grid.model.countryname(index)
                         color: highlighted ? Theme.highlightColor : Theme.primaryColor
                         font.pixelSize: Theme.fontSizeLarge
 
@@ -407,7 +416,7 @@ Page {
 
                     onClicked: {
                         favorites = false
-                        chooseCountry(icon,country)
+                        chooseCountry(icon,coid,grid.model.countryname(index))
                     }
                 }
         ScrollDecorator {}
@@ -490,7 +499,7 @@ Page {
             Text {
                 id: listText
                 anchors { left: parent.left; leftMargin: 40; verticalCenter: parent.verticalCenter }
-                text: country
+                text: list.model.countryname(index)
                 color: highlighted ? Theme.highlightColor : Theme.primaryColor
                 font.pixelSize: Theme.fontSizeLarge
 
@@ -498,7 +507,7 @@ Page {
 
                     onClicked: {
                         favorites = false
-                        chooseCountry(icon,country)
+                        chooseCountry(icon,coid,list.model.countryname(index))
                     }
                 }
         ScrollDecorator {}
