@@ -30,9 +30,9 @@ property int playerStatus: -1
 property int userPlay: 0 // 0 Stopped, 1 Paused, 2 Playing
 property bool favorites: false
 
-Debug {
-    id: debugPage
-}
+//Debug {
+//    id: debugPage
+//}
 
 function pauseStream() {userPlay = 1; playMusic.pause(); playMusic.playing = false;}
 function playStream() {userPlay=2; playMusic.play(); playMusic.playing = true;playerError = 0/*;deBug = ""*/;}

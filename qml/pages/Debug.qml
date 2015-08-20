@@ -12,7 +12,7 @@ Page {
         deBug = blah + "\n" + message
     }
 
-    ControlPanel { id:playerPanel }
+    //ControlPanel { id:playerPanel }
 
     SilicaFlickable {
         id: flick

@@ -60,6 +60,14 @@ Page {
     property variant ukraine: Ukraine {}
     property variant vatican: Vatican {}
 
+    // Cant use qsTr in a ListElement, so maybe use javascript instead?
+    // ListElement should be like this:
+    /*ListElement {
+        country: "Albania"
+        coid: "_albania
+        icon: "../stations/Albania.png"
+    }*/
+
     ListModel {
         id: galleryModel
 
