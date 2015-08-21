@@ -36,7 +36,7 @@ Page {
                 retning = contentY
             }
             onVerticalVelocityChanged: {
-                if (showPlayer && contentY > retning+20) showPlayer = false; else if (!showPlayer && contentY < retning-20) showPlayer = true;
+                if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10) showPlayer = true;
             }
 
         PullMenu {}

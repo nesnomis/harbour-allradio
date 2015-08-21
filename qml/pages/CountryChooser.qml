@@ -340,7 +340,7 @@ Page {
 
     SilicaGridView {
         id: grid
-        visible: true
+        visible: false
         anchors.fill: parent
         anchors.bottomMargin: playerPanel.visibleSize
         clip: true
@@ -362,7 +362,7 @@ Page {
                 retning = contentY
         }
         onVerticalVelocityChanged: {
-            if (showPlayer && contentY > retning+20) showPlayer = false; else if (!showPlayer && contentY < retning-20) showPlayer = true;
+            if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10) showPlayer = true;
 
         }
         onMovementEnded: {
@@ -458,7 +458,7 @@ Page {
                 retning = contentY
         }
         onVerticalVelocityChanged: {
-                if (showPlayer && contentY > retning+20) showPlayer = false; else if (!showPlayer && contentY < retning-20) showPlayer = true;
+                if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10) showPlayer = true;
         }
         onMovementEnded: {
                 //console.log("verticalVolocity: "+verticalVelocity+" - contentY: "+contentY)
@@ -534,6 +534,9 @@ Page {
         }
         ScrollDecorator {}
     }
-    PlayerPanel { id:playerPanel }
+    PlayerPanel {
+        id:playerPanel
+
+    }
 
 }
