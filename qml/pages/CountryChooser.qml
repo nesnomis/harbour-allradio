@@ -34,6 +34,7 @@ Page {
     property variant iceland: Iceland {}
     property variant ireland: Ireland {}
     property variant italy: Italy {}
+    property variant kosovo: Kosovo {}
     property variant latvia: Latvia {}
     property variant liechtenstein: Liechtenstein {}
     property variant lithuania: Lithuania {}
@@ -139,6 +140,9 @@ Page {
             coid: "_italy"
             icon: "../stations/Italy.png"}
         ListElement {
+            coid: "_kosovo"
+            icon: "../stations/Kosovo.png"}
+        ListElement {
             coid: "_latvia"
             icon: "../stations/Latvia.png"}
         ListElement {
@@ -242,6 +246,7 @@ Page {
                     qsTr("Iceland"),
                     qsTr("Ireland"),
                     qsTr("Italy"),
+                    qsTr("Kosovo"),
                     qsTr("Latvia"),
                     qsTr("Liechtenstein"),
                     qsTr("Lithuania"),
@@ -303,6 +308,7 @@ Page {
         if (coid == "_iceland" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: iceland})
         if (coid == "_ireland" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: ireland})
         if (coid == "_italy" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: italy})
+        if (coid == "_kosovo" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: kosovo})
         if (coid == "_latvia" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: latvia})
         if (coid == "_liechtenstein" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: liechtenstein})
         if (coid == "_lithuania" ) window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),{model: lithuania})
@@ -338,6 +344,9 @@ Page {
         anchors.fill: parent
         anchors.bottomMargin: playerPanel.visibleSize
         clip: true
+
+        //cacheBuffer: 100
+
 
         cellWidth: width / 2
         cellHeight: width / 2
@@ -405,11 +414,11 @@ Page {
             }
 
         delegate: BackgroundItem {
-                    width: (parent.width / 2); height: (parent.width / 2)
+                    width: (parent.width / 2.1); height: (parent.width / 2.1)
 
                     Image {
                         id: myIcon
-                        y: 20; anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.horizontalCenter: parent.horizontalCenter
                         source: icon
                         width: parent.width / 1.5
                         height: parent.width / 1.5
