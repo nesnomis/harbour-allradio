@@ -414,7 +414,7 @@ Page {
             }
 
         delegate: BackgroundItem {
-                    width: (parent.width / 2.1); height: (parent.width / 2.1)
+                    width: (parent.width / 2); height: (parent.width / 2)
 
                     Image {
                         id: myIcon
