@@ -331,17 +331,36 @@ Page {
     }
     /* --------------- END of Country edit --------------- */
 
-    PlayerPanel { id:playerPanel }
 
     SilicaGridView {
         id: grid
         visible: true
-        cellWidth: width / 2
-        cellHeight: width / 2
         anchors.fill: parent
-
         anchors.bottomMargin: playerPanel.visibleSize
         clip: true
+
+        cellWidth: width / 2
+        cellHeight: width / 2
+
+        ScrollDecorator {}
+
+        property int retning: 0
+
+        onContentYChanged: {
+            if (!showPlayer && contentY == -235) showPlayer = true
+        }
+        onMovementStarted: {
+                retning = contentY
+        }
+        onVerticalVelocityChanged: {
+            if (showPlayer && contentY > retning+20) showPlayer = false; else if (!showPlayer && contentY < retning-20) showPlayer = true;
+
+        }
+        onMovementEnded: {
+                //console.log("verticalVolocity: "+verticalVelocity+" - contentY: "+contentY)
+        }
+
+        // ------------------------------------
 
         model: galleryModel
 
@@ -411,16 +430,32 @@ Page {
                         chooseCountry(icon,coid,grid.model.countryname(index))
                     }
                 }
-        ScrollDecorator {}
     }
 
     SilicaListView {
         id: list
         visible: !grid.visible
         anchors.fill: parent
-
         anchors.bottomMargin: playerPanel.visibleSize
+
         clip: true
+
+        property int retning: 0
+
+        onContentYChanged: {
+            if (!showPlayer && contentY == -235) showPlayer = true
+        }
+        onMovementStarted: {
+                retning = contentY
+        }
+        onVerticalVelocityChanged: {
+                if (showPlayer && contentY > retning+20) showPlayer = false; else if (!showPlayer && contentY < retning-20) showPlayer = true;
+        }
+        onMovementEnded: {
+                //console.log("verticalVolocity: "+verticalVelocity+" - contentY: "+contentY)
+        }
+
+        // ------------------------------------
 
         model: galleryModel
 
@@ -490,4 +525,6 @@ Page {
         }
         ScrollDecorator {}
     }
+    PlayerPanel { id:playerPanel }
+
 }

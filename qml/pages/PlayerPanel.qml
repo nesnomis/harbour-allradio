@@ -6,7 +6,9 @@ DockedPanel {
     width: parent.width
     height: Theme.itemSizeExtraLarge + Theme.paddingLarge
     dock: Dock.Bottom
-    open: playMusic.playing
+    //open: playMusic.playing
+    open: showPlayer
+    //opacity: 1
 
     BusyIndicator {
         anchors.centerIn: parent
@@ -41,9 +43,8 @@ DockedPanel {
 
             IconButton {
                 id: pause
-                icon.source: "image://theme/icon-l-pause"
-                onClicked: stopStream()
-                enabled: playMusic.playing
+                icon.source: playMusic.playing ? "image://theme/icon-l-pause" : "image://theme/icon-l-play"
+                onClicked: playMusic.playing ? pauseStream() : playStream()
             }
         }
     }

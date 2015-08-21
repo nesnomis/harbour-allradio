@@ -18,19 +18,26 @@ Page {
     SilicaListView {
         id: listView
         clip: true
-        VerticalScrollDecorator {}
 
-        anchors {
-            top: parent.top
-            left: parent.left
-            right: parent.right
-            bottom: parent.bottom
-            bottomMargin: playerPanel.visibleSize
-        }
+        anchors.fill: parent
+        anchors.bottomMargin: playerPanel.visibleSize
 
         model: fiModel
 
         header: PageHeader { title: ctitle } //Radio stations
+
+        VerticalScrollDecorator {}
+
+        property int retning: 0
+        onContentYChanged: {
+            if (!showPlayer && contentY == -110) showPlayer = true
+            }
+            onMovementStarted: {
+                retning = contentY
+            }
+            onVerticalVelocityChanged: {
+                if (showPlayer && contentY > retning+20) showPlayer = false; else if (!showPlayer && contentY < retning-20) showPlayer = true;
+            }
 
         PullMenu {}
 
@@ -40,6 +47,8 @@ Page {
 
             width: ListView.view.width
             height: menuOpen ? contextMenu.height + contentItem.height : contentItem.height
+
+
 
             BackgroundItem {
                 id: contentItem
