@@ -32,7 +32,7 @@ property bool showPlayer: true;
 
 function pauseStream() {userPlay = 1; playMusic.pause(); playMusic.playing = false;}
 function playStream() {userPlay=2; playMusic.play(); playMusic.playing = true;playerError = 0;if (!showPlayer) showPlayer = true}
-function stopStream() {userPlay=0; playMusic.stop(); playMusic.playing = false; sleepTime = 0;radioStation="AllRadio";}
+function stopStream() {userPlay=0; playMusic.stop(); playMusic.playing = false; sleepTime = 0;}
 
 function ps(source) {
     mp3 = ""
