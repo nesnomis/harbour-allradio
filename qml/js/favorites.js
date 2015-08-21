@@ -10,7 +10,6 @@ function initialize() {
     db.transaction(
         function(tx) {
             tx.executeSql('CREATE TABLE IF NOT EXISTS channels(source TEXT UNIQUE, title TEXT, site TEXT, section TEXT, icon TEXT)');
-            console.log(tx)
       });
 
 }

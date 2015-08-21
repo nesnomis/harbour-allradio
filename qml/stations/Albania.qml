@@ -72,5 +72,5 @@ ListModel {
 		title: "Radio Emigranti"
 		site: "http://www.radioemigranti.com/"
 		section: "Albanian music"
-	}
+    }
 }
