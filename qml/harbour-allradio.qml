@@ -68,7 +68,7 @@ Timer {
     id: sleepTimer
     interval: 60000
     repeat: false
-    onTriggered: {(sleepTime == 1) ? stopStream() : sleepTime = (sleepTime - 1); console.log("sleepTimer running")}
+    onTriggered: {(sleepTime == 1) ? stopStream() : sleepTime = (sleepTime - 1);}
     running: sleepTime > 0
 }
 
