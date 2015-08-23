@@ -160,7 +160,9 @@ OTHER_FILES += qml/harbour-allradio.qml \
     qml/stations/Austria.png \
     qml/stations/Armenia.png \
     qml/stations/Andorra.png \
-    qml/stations/Albania.png
+    qml/stations/Albania.png \
+    qml/stations/Kosovo.qml \
+    qml/stations/Kosovo.png
 
 # to disable building translations every time, comment out the
 # following CONFIG line
