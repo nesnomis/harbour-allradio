@@ -24,6 +24,7 @@ CoverBackground {
         y: parent.height * 0.5
         text: (sleepTime > 0) ? (qsTr("Closing in ") + (sleepTime) + qsTr(" minutes.")) : radioStation
         width: parent.width
+        color: Theme.highlightColor
         readOnly: true
         horizontalAlignment: textAlignment
     }

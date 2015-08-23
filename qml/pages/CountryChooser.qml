@@ -338,12 +338,14 @@ Page {
     /* --------------- END of Country edit --------------- */
 
 
+
     SilicaGridView {
         id: grid
-        visible: false
+        visible: true
         anchors.fill: parent
-        anchors.bottomMargin: playerPanel.visibleSize
-        clip: true
+        quickScroll: false
+        //anchors.bottomMargin: playerPanel.visibleSize
+        //clip: true
 
         //cacheBuffer: 100
 
@@ -351,7 +353,6 @@ Page {
         cellWidth: width / 2
         cellHeight: width / 2
 
-        ScrollDecorator {}
 
         property int retning: 0
 
@@ -439,13 +440,14 @@ Page {
                         chooseCountry(icon,coid,grid.model.countryname(index))
                     }
                 }
+        ScrollDecorator {}
     }
 
     SilicaListView {
         id: list
         visible: !grid.visible
         anchors.fill: parent
-        anchors.bottomMargin: playerPanel.visibleSize
+        quickScroll: false
 
         clip: true
 
@@ -538,5 +540,4 @@ Page {
         id:playerPanel
 
     }
-
 }

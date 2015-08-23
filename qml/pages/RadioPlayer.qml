@@ -13,14 +13,11 @@ Page {
     property string rpsection: ""
     property string rpicon: ""
 
-    PlayerPanel { id:playerPanel }
-
     SilicaListView {
         id: listView
-        clip: true
 
+        quickScroll: false
         anchors.fill: parent
-        anchors.bottomMargin: playerPanel.visibleSize
 
         model: fiModel
 
@@ -124,6 +121,7 @@ Page {
             }
         }
     }
+    PlayerPanel { id:playerPanel }
 }
 
 
