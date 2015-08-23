@@ -284,20 +284,20 @@ The radiostations are coming from:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="378"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="379"/>
         <source>Show as list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="388"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="408"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="481"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="500"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="389"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="409"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="483"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="502"/>
         <source>Favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="472"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="474"/>
         <source>Show as grid</source>
         <translation type="unfinished"></translation>
     </message>
@@ -340,7 +340,7 @@ Use the sleeptimer to set a number of minutes until the AllRadio shuts down the 
 <context>
     <name>PlayerPanel</name>
     <message>
-        <location filename="../qml/pages/PlayerPanel.qml" line="41"/>
+        <location filename="../qml/pages/PlayerPanel.qml" line="31"/>
         <source>Opening webpage</source>
         <translation type="unfinished"></translation>
     </message>
@@ -366,22 +366,22 @@ Use the sleeptimer to set a number of minutes until the AllRadio shuts down the 
 <context>
     <name>RadioPlayer</name>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="102"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="99"/>
         <source>Listen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="114"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="111"/>
         <source>Add to favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="120"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="117"/>
         <source>Delete favourite</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="122"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="119"/>
         <source>Deleting channel</source>
         <translation type="unfinished"></translation>
     </message>
