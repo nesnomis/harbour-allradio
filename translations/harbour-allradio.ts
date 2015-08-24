@@ -4,25 +4,23 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="15"/>
+        <location filename="../qml/pages/About.qml" line="18"/>
         <source>About AllRadio</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="33"/>
-        <source>AllRadio is a radio player for online streaming radio.</source>
+        <location filename="../qml/pages/About.qml" line="44"/>
+        <source>Opening webpage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="35"/>
-        <source>Sourcecode is available on github</source>
+        <location filename="../qml/pages/About.qml" line="55"/>
+        <source>Sourcecode is available on</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="37"/>
-        <source>AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick for Nokia N9.
-
-The radiostations are coming from:</source>
+        <location filename="../qml/pages/About.qml" line="56"/>
+        <source>The radiostations are from</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

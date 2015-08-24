@@ -4,26 +4,38 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="15"/>
+        <location filename="../qml/pages/About.qml" line="18"/>
         <source>About AllRadio</source>
         <translation>Om AllRadio</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="33"/>
+        <location filename="../qml/pages/About.qml" line="44"/>
+        <source>Opening webpage</source>
+        <translation>Öppnar websida</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="56"/>
+        <source>The radiostations are from</source>
+        <translation>Radio kanalerna kommer från</translation>
+    </message>
+    <message>
         <source>AllRadio is a radio player for online streaming radio.</source>
-        <translation>AllRadio är en radiospelare som spelar strömmande radio via nätet.</translation>
+        <translation type="vanished">AllRadio är en radiospelare som spelar strömmande radio via nätet.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="35"/>
+        <location filename="../qml/pages/About.qml" line="55"/>
+        <source>Sourcecode is available on</source>
+        <translation>Källkoden finns på</translation>
+    </message>
+    <message>
         <source>Sourcecode is available on github</source>
-        <translation>Kälkoden finns tillgängligt på</translation>
+        <translation type="vanished">Kälkoden finns tillgängligt på</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="37"/>
         <source>AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick for Nokia N9.
 
 The radiostations are coming from:</source>
-        <translation>AllRadio är inspirerad av bra program som uradio, nettiradio och mitt eget program, drQuick för Nokia N9.
+        <translation type="vanished">AllRadio är inspirerad av bra program som uradio, nettiradio och mitt eget program, drQuick för Nokia N9.
 
 Radiostationerna har hämtats från: </translation>
     </message>

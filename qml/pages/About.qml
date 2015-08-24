@@ -5,6 +5,9 @@ Page {
     id: page
     property var textAlignment: TextInput.AlignLeft
     allowedOrientations: Orientation.All
+
+    RemorsePopup {id: remorse}
+
     SilicaFlickable {
         anchors.fill: parent
         contentHeight: header.height + text.height + Theme.paddingLarge
@@ -15,10 +18,20 @@ Page {
                 title: qsTr("About AllRadio")
             }
 
-            TextArea {
+            Image {
+               id: logo
+               source: "../harbour-allradio.png"
+               anchors.top: header.bottom
+               anchors.topMargin: 40
+               anchors.horizontalCenter: parent.horizontalCenter
+               opacity: 0.6
+               fillMode: Image.PreserveAspectFit
+             }
+
+            Text {
                 id: text
                 anchors {
-                    top: header.bottom
+                    top: logo.bottom
                     left: parent.left
                     right: parent.right
                     leftMargin: 20
@@ -26,19 +39,23 @@ Page {
                 }
                 width: parent.width
                 wrapMode: Text.WordWrap
-                readOnly: true
+                color: Theme.primaryColor
+                linkColor: Theme.highlightColor
+                onLinkActivated: remorse.execute(qsTr("Opening webpage"), function() {Qt.openUrlExternally(link)}, 3000)
+                textFormat: Text.StyledText
+                //readOnly: true
                 font.pixelSize: Theme.fontSizeMedium
-                horizontalAlignment: textAlignment
-                text: "
-" + qsTr("AllRadio is a radio player for online streaming radio.") + "
+                horizontalAlignment: Text.AlignHCenter
+                text: "<h2>AllRadio v1.2.2</h2>
+                       <p>Copyright/left 2015 - Niels Simonsen <nesnomis@gmail.com>.</p>
+                        <p><a href='http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt'>License GPL v2.0</a></p><br><p>"
 
-" + qsTr("Sourcecode is available on github") + "<https://github.com/nesnomis/harbour-allradio>.
 
-" + qsTr("AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick for Nokia N9.
 
-The radiostations are coming from:") + " <http://www.listenlive.eu>.
+                      + qsTr("Sourcecode is available on") + ": <a href='https://github.com/nesnomis/harbour-allradio'>github</a>.</p><br><p>"
+                     + qsTr("The radiostations are from") + ": <a href='http://www.listenlive.eu'>listenlive.eu</a>.</p><br><p>
 
-AllRadio v.1.0-1 copyleft/right - 2015 - Niels Simonsen <nesnomis@gmail.com>."
+                        "
             }
     }
 }

@@ -4,26 +4,38 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="15"/>
+        <location filename="../qml/pages/About.qml" line="18"/>
         <source>About AllRadio</source>
         <translation>Om AllRadio</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="33"/>
+        <location filename="../qml/pages/About.qml" line="44"/>
+        <source>Opening webpage</source>
+        <translation>Åbner webside</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="56"/>
+        <source>The radiostations are from</source>
+        <translation>Kanalerne kommer fra</translation>
+    </message>
+    <message>
         <source>AllRadio is a radio player for online streaming radio.</source>
-        <translation>AllRadio er en radio-afspiller til online streaming radio.</translation>
+        <translation type="vanished">AllRadio er en radio-afspiller til online streaming radio.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="35"/>
+        <location filename="../qml/pages/About.qml" line="55"/>
+        <source>Sourcecode is available on</source>
+        <translation>Kildekoden findes på</translation>
+    </message>
+    <message>
         <source>Sourcecode is available on github</source>
-        <translation>Kildekoden findes på github</translation>
+        <translation type="vanished">Kildekoden findes på github</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="37"/>
         <source>AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick for Nokia N9.
 
 The radiostations are coming from:</source>
-        <translation>AllRadio er inspireret af gode programmer som uradio, nettiradio og mit eget drQuick til Nokia N9.
+        <translation type="vanished">AllRadio er inspireret af gode programmer som uradio, nettiradio og mit eget drQuick til Nokia N9.
 
 Radiostationerne kommer fra:</translation>
     </message>
