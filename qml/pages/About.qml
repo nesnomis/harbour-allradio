@@ -10,7 +10,7 @@ Page {
 
     SilicaFlickable {
         anchors.fill: parent
-        contentHeight: header.height + text.height + Theme.paddingLarge
+        contentHeight: header.height + text.height + logo.height + Theme.paddingLarge
         contentWidth: parent.width
         VerticalScrollDecorator {}
             PageHeader {
