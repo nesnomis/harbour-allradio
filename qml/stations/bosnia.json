@@ -1,0 +1,23 @@
+{"bosnia":{"channel":[
+{"source": "http://195.222.33.217:8070/listen.pls","title": "BM Radio","site": "http://www.bmradio.net/","section": "Local music/information","location": "Zenica"},
+{"source": "http://176.9.110.46:9111/listen.pls","title": "Bobar Radio","site": "http://www.radiobobar.com/","section": "Music/information","location": "Bijeljina"},
+{"source": "http://176.9.110.46:8534/listen.pls","title": "Hit Radio","site": "http://www.rtvhit.com/","section": "Pop/Rock/Folk","location": "Brčko"},
+{"source": "http://mobile.ba:16500/listen.pls","title": "Nes Radio","site": "http://www.nesradio.com/","section": "Music/Information","location": "Banja Luka"},
+{"source": "http://mobile.ba:17000/listen.pls","title": "Nes Castra","site": "http://nescastra.com/","section": "Alternative/Urban culture","location": "Banja Luka"},
+{"source": "http://178.20.17.241:8000/listen.pls?sid=1","title": "Novi Radio","site": "http://www.noviradiobihac.com/","section": "Local service","location": "Biha&#263;"},
+{"source": "http://streaming.radioba.ba:10002/radio_Ba.m3u","title": "Radio BA","site": "http://www.radioba.ba/","section": "Bosnian Music","location": "Sarajevo"},
+{"source": "http://stream.rtvbn.com:8522/listen.pls","title": "Radio BN","site": "http://www.rtvbn.com/","section": "Folk music","location": "Bijeljina"},
+{"source": "http://91.191.0.45:8000/listen.pls","title": "Radio Brcko Distrikt","site": "http://www.radio-brcko.co.ba/","section": "Information/music","location": "Brcko"},
+{"source": "http://178.209.2.100:7010/listen.pls","title": "Radio Busova&#269;a","site": "http://www.radio-busovaca.com/","section": "Pop/Rock/Folk","location": "Busova&#269;a"},
+{"source": "http://185.50.56.3:8200/listen.pls","title": "Radio Feral","site": "http://www.radio-feral.ba/","section": "Local service","location": "Kalesija"},
+{"source": "http://adriastream.net/cast/tunein.php/radiokakanj/playlist.pls","title": "Radio Kakanj","site": "http://www.radiokakanj.co.ba/","section": "Local service","location": "Kakanj"},
+{"source": "http://195.222.33.217:8026/listen.pls","title": "Radio M","site": "http://www.radiom.net/","section": "Pop/rock","location": "Sarajevo"},
+{"source": "http://cloudrad.io/radiomariabosnia/listen.pls","title": "Radio Marija","site": "http://www.radiomarija.ba/","section": "Catholic","location": "Sarajevo"},
+{"source": "http://85.25.135.86:23565/listen.pls","title": "Radiopostaja Mir Međugorje","site": "http://radio-medjugorje.com/","section": "Christian","location": "Međugorje"},
+{"source": "http://malla.softnet.si:8000/listen.pls","title": "Radio Sarajevo","site": "http://www.radiosarajevo.ba/","section": "Music/information","location": "Sarajevo"},
+{"source": "http://www.bigradiobl.com/live/big1/listen1.pls","title": "Big Radio 1","site": "http://www.bigradiobl.com/","section": "Pop/rock","location": "Banja Luka"},
+{"source": "http://www.bigradiobl.com/live/big2/listen2.pls","title": "Big Radio 2","site": "http://www.bigradiobl.com/","section": "News/music","location": "Banja Luka"},
+{"source": "http://www.bigradiobl.com/live/big3/listen3.pls","title": "Big Radio 3","site": "http://www.bigradiobl.com/","section": "Top 40","location": "Banja Luka"},
+{"source": "http://195.222.57.33:8090/listen.pls","title": "Radio Stari Grad","site": "http://www.rsg.ba/","section": "Full service","location": "Sarajevo"},
+{"source": "http://188.40.62.20:8018/listen.pls","title": "Radio Vogošca","site": "http://www.rtvvogosca.ba/","section": "Local service","location": "Vogošca"}
+]}}

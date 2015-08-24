@@ -162,7 +162,68 @@ OTHER_FILES += qml/harbour-allradio.qml \
     qml/stations/Andorra.png \
     qml/stations/Albania.png \
     qml/stations/Kosovo.qml \
-    qml/stations/Kosovo.png
+    qml/stations/Kosovo.png \
+    qml/JSONListModel/jsonpath.js \
+    qml/JSONListModel/jsonData.json \
+    qml/JSONListModel/JSONListModel.qml \
+    qml/JSONListModel/example.qml \
+    qml/JSONListModel/JSONListModel.qmlproject \
+    qml/JSONListModel/jsonData.txt \
+    qml/JSONListModel/README \
+    qml/JSONListModel/LICENSE \
+    qml/js/jsonpath.js \
+    qml/stations/vatican.json \
+    qml/stations/ukraine.json \
+    qml/stations/uk.json \
+    qml/stations/turkey.json \
+    qml/stations/switzerland.json \
+    qml/stations/sweden.json \
+    qml/stations/spain.json \
+    qml/stations/slovenia.json \
+    qml/stations/slovakia.json \
+    qml/stations/serbia.json \
+    qml/stations/russia.json \
+    qml/stations/romania.json \
+    qml/stations/portugal.json \
+    qml/stations/poland.json \
+    qml/stations/norway.json \
+    qml/stations/netherlands.json \
+    qml/stations/montenegro.json \
+    qml/stations/monaco.json \
+    qml/stations/moldova.json \
+    qml/stations/malta.json \
+    qml/stations/macedonia.json \
+    qml/stations/luxembourg.json \
+    qml/stations/lithuania.json \
+    qml/stations/liechtenstein.json \
+    qml/stations/latvia.json \
+    qml/stations/kosovo.json \
+    qml/stations/italy.json \
+    qml/stations/ireland.json \
+    qml/stations/iceland.json \
+    qml/stations/hungary.json \
+    qml/stations/greece.json \
+    qml/stations/gibraltar.json \
+    qml/stations/germany.json \
+    qml/stations/georgia.json \
+    qml/stations/finland.json \
+    qml/stations/faroe.json \
+    qml/stations/estonia.json \
+    qml/stations/denmark.json \
+    qml/stations/czech-republic.json \
+    qml/stations/cyprus.json \
+    qml/stations/croatia.json \
+    qml/stations/bulgaria.json \
+    qml/stations/bosnia.json \
+    qml/stations/belgium.json \
+    qml/stations/belarus.json \
+    qml/stations/azerbaijan.json \
+    qml/stations/austria.json \
+    qml/stations/armenia.json \
+    qml/stations/andorra.json \
+    qml/stations/albania.json \
+    qml/pages/CountryModel.qml \
+    qml/stations/france.json
 
 # to disable building translations every time, comment out the
 # following CONFIG line

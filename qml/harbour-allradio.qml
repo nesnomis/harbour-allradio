@@ -22,6 +22,7 @@ property string radioStation: "AllRadio"
 property string musicSource: ""
 property string website: ""
 property string ms: ""
+property string country
 property int sleepTime: 0
 property int playerError: -1
 property int playerState: -1
@@ -29,6 +30,7 @@ property int playerStatus: -1
 property int userPlay: 0 // 0 Stopped, 1 Paused, 2 Playing
 property bool favorites: false
 property bool showPlayer: true;
+property bool searchShow: false;
 
 function pauseStream() {userPlay = 1; playMusic.pause(); playMusic.playing = false;}
 function playStream() {userPlay=2; playMusic.play(); playMusic.playing = true;playerError = 0;if (!showPlayer) showPlayer = true}
@@ -58,6 +60,10 @@ function delDb(source) {
 Component.onCompleted: {
     Db.initialize()
     Db.load(favChannels)
+}
+
+CountryModel {
+    id: countryModel
 }
 
 ListModel{
