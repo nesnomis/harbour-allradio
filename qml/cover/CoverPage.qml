@@ -2,7 +2,6 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 CoverBackground {
-    property var textAlignment: TextInput.AlignHCenter
 
     BusyIndicator {
         anchors.centerIn: parent
@@ -26,7 +25,7 @@ CoverBackground {
         width: parent.width
         color: Theme.highlightColor
         readOnly: true
-        horizontalAlignment: textAlignment
+        horizontalAlignment: TextInput.AlignHCenter
     }
 
     CoverActionList {

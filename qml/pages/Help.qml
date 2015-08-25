@@ -4,7 +4,6 @@ import Sailfish.Silica 1.0
 
 Page {
     id: page
-    property var textAlignment: TextInput.AlignLeft
     allowedOrientations: Orientation.All
     SilicaFlickable {
         anchors.fill: parent
@@ -28,7 +27,7 @@ Page {
                 wrapMode: Text.WordWrap
                 readOnly: true
                 font.pixelSize: Theme.fontSizeMedium
-                horizontalAlignment: textAlignment
+                horizontalAlignment: TextInput.AlignLeft
                 text: qsTr("
 Choose country by clicking the flag/name, then click the channel you want to listen to.
 

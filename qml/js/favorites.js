@@ -1,3 +1,5 @@
+// Database should be updated to contain location and section.
+
 var db = undefined;
 function settings_db_open() {
     if (db == undefined)

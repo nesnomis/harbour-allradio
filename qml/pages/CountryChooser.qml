@@ -47,6 +47,9 @@ Page {
             onClicked: {
                 ctitle = qsTr("Favorites")
                 favorites = true
+                filter = ""
+                key = "title"
+                showSearch = false
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
                                              {model: dbModel} )
             }
@@ -97,6 +100,9 @@ Page {
                         favorites = false
                         ctitle = list.model.countryname(index)
                         country = coid
+                        filter = ""
+                        key = "title"
+                        showSearch = false
                         window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
                     }
                 }
@@ -140,6 +146,9 @@ Page {
             onClicked: {
                 ctitle = qsTr("Favorites")
                 favorites = true
+                filter = ""
+                key = "title"
+                showSearch = false
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
                                              {model: dbModel} )
             }
@@ -191,6 +200,9 @@ Page {
                 favorites = false
                 ctitle = list.model.countryname(index)
                 country = coid
+                filter = ""
+                key = "title"
+                showSearch = false
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
             }
         }

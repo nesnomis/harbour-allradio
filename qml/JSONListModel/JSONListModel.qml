@@ -30,6 +30,8 @@ Item {
 
     onJsonChanged: updateJSONModel()
     onQueryChanged: updateJSONModel()
+    onFilterbyChanged: updateJSONModel()
+    onFilterkeyChanged: updateJSONModel()
 
     function updateJSONModel() {
         jsonModel.clear();

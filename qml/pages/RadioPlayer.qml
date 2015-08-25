@@ -35,6 +35,7 @@ Page {
 
         quickScroll: false
         anchors.fill: parent
+        anchors.topMargin: searchPanel.visibleSize
         clip: true
 
         JSONListModel {
@@ -42,8 +43,8 @@ Page {
             source: "../stations/"+country+".json"  //country + ".json"
             query: "$."+country+".channel[*]" //"$."+ country + ".channel[*]"
             sortby: "title"
-            filterby: ""
-            filterkey: "title"
+            filterby: filter
+            filterkey: key
 
         }
         model: jsonModel1.model
@@ -54,28 +55,31 @@ Page {
 
         property int retning: 0
         onContentYChanged: {
-            if (!showPlayer && contentY == -110) showPlayer = true
+            if (!showPlayer && contentY == -110 && !showSearch) showPlayer = true
             }
             onMovementStarted: {
                 retning = contentY
             }
             onVerticalVelocityChanged: {
-                if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10) showPlayer = true;
+                if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10 && !showSearch) showPlayer = true;
             }
             onMovementEnded: {
                     //console.log("verticalVolocity: "+verticalVelocity+" - contentY: "+contentY)
             }
 
-        PullMenu {}
+            PullMenu {
+                MenuItem {
+                    text: qsTr("Search")
+                    onClicked: if (!showSearch) {showPlayer = false; showSearch = true;} else showSearch = false;
+                }
+            }
 
-        delegate: Item {
+            delegate: Item {
             id: myListItem
             property bool menuOpen: contextMenu != null && contextMenu.parent === myListItem
 
             width: ListView.view.width
             height: menuOpen ? contextMenu.height + contentItem.height : contentItem.height
-
-
 
             BackgroundItem {
                 id: contentItem
@@ -99,6 +103,7 @@ Page {
                     rpicon = country
 
                     contextMenu.show(myListItem)
+
                 }
                 onClicked: {
                     ps(model.source)
@@ -107,11 +112,12 @@ Page {
                     website = (Qt.resolvedUrl(model.site))
                     if (favorites == true && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
                     else picon = "../stations/"+country+".png";
+                    if (showSearch) showSearch = false;
                 }
             }
-
         }
-        Component {
+
+            Component {
             id: contextMenuComponent
 
             ContextMenu {
@@ -143,6 +149,7 @@ Page {
             }
         }
     }
+    SearchPanel { id:searchPanel }
     PlayerPanel { id:playerPanel }
 }
 

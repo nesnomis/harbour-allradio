@@ -226,7 +226,8 @@ OTHER_FILES += qml/harbour-allradio.qml \
     qml/stations/andorra.json \
     qml/stations/albania.json \
     qml/pages/CountryModel.qml \
-    qml/stations/france.json
+    qml/stations/france.json \
+    qml/pages/SearchPanel.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
