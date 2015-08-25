@@ -1,4 +1,4 @@
-{"albania":{"channel":[
+{"channel":[
 {"source": "http://167.114.131.90:5054/listen.pls","title": "Radio Tirana 1","site": "http://www.rtsh.al/","section": "News/Talk/Features","location": "Tirana"},
 {"source": "http://167.114.131.90:5056/listen.pls","title": "Radio Tirana 2","site": "http://www.rtsh.al/","section": "Music","location": "Tirana"},
 {"source": "http://167.114.131.90:5066/listen.pls","title": "Radio Tirana 3","site": "http://www.rtsh.al/","section": "Foreign service","location": "Tirana"},
@@ -11,4 +11,4 @@
 {"source": "http://tar.stream.dev.al:9080/listen.pls","title": "Top Gold","site": "http://www.topgold.al/","section": "Oldies","location": "Tirana"},
 {"source": "http://eu3.fastcast4u.com:5334/listen.pls","title": "VIP FM","site": "http://wwv.vipfm.info/","section": "Top 40","location": "Fier"},
 {"source": "http://www.radioemigranti.com:8000/radio.m3u","title": "Radio Emigranti","site": "http://www.radioemigranti.com/","section": "Albanian music","location": "Internet only"}
-]}}
+]}
