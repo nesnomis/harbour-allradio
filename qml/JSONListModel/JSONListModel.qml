@@ -11,6 +11,7 @@ Item {
     property string source: ""
     property string json: ""
     property string query: ""
+    property string sortby: ""
 
     property ListModel model : ListModel { id: jsonModel }
     property alias count: jsonModel.count
@@ -35,6 +36,7 @@ Item {
             return;
 
         var objectArray = parseJSONString(json, query);
+        if (sortby !== "") objectArray = sortByKey(objectArray, sortby);
         for ( var key in objectArray ) {
             var jo = objectArray[key];
             jsonModel.append( jo );
@@ -47,5 +49,12 @@ Item {
             objectArray = JSONPath.jsonPath(objectArray, jsonPathQuery);
 
         return objectArray;
+    }
+
+    function sortByKey(array, key) {
+        return array.sort(function(a, b) {
+            var x = a[key]; var y = b[key];
+            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        });
     }
 }

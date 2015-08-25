@@ -40,8 +40,9 @@ Page {
         JSONListModel {
             id: jsonModel1
             source: "../stations/"+country+".json"  //country + ".json"
-
             query: "$."+country+".channel[*]" //"$."+ country + ".channel[*]"
+            sortby: "title"
+
         }
         model: jsonModel1.model
 
