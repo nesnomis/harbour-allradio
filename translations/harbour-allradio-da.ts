@@ -638,22 +638,22 @@ Brug indslumringstimer til at indstille tid i minutter inden AllRadio slukker fo
 <context>
     <name>RadioPlayer</name>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="118"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="119"/>
         <source>Listen</source>
         <translation>Afspil</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="130"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="131"/>
         <source>Add to favorites</source>
         <translation>Lægg til favoritter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="136"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="137"/>
         <source>Delete favourite</source>
         <translation>Fjern fra favoritter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="138"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="139"/>
         <source>Deleting channel</source>
         <translation>Fjerner kanal</translation>
     </message>

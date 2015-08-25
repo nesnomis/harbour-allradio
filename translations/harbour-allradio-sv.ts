@@ -639,22 +639,22 @@ Använd insomningstimern till att ställa in ett antal minuter AllRadio skall sp
 <context>
     <name>RadioPlayer</name>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="118"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="119"/>
         <source>Listen</source>
         <translation>Lyssna</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="130"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="131"/>
         <source>Add to favorites</source>
         <translation>Lägg till i favoriter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="136"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="137"/>
         <source>Delete favourite</source>
         <translation>Ta bort favorit</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="138"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="139"/>
         <source>Deleting channel</source>
         <translation>Tar bort kanal</translation>
     </message>
