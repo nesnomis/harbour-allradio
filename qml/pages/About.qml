@@ -46,7 +46,7 @@ Page {
                 //readOnly: true
                 font.pixelSize: Theme.fontSizeMedium
                 horizontalAlignment: Text.AlignHCenter
-                text: "<h2>AllRadio v1.2.2</h2>
+                text: "<h2>AllRadio v"+Qt.application.version+"</h2>
                        <p>Copyright/left 2015 - Niels Simonsen <nesnomis@gmail.com>.</p>
                         <p><a href='http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt'>License GPL v2.0</a></p><br><p>"
 

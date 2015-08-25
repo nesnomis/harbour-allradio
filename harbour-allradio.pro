@@ -14,6 +14,9 @@ TARGET = harbour-allradio
 
 CONFIG += sailfishapp
 
+# App version
+DEFINES += APP_VERSION=\"\\\"$${VERSION}\\\"\"
+
 SOURCES += src/harbour-allradio.cpp
 
 OTHER_FILES += qml/harbour-allradio.qml \

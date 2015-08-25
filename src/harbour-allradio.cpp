@@ -32,6 +32,7 @@
 #include <QtQuick>
 #endif
 
+#include <QGuiApplication>
 #include <sailfishapp.h>
 
 int main(int argc, char *argv[])
@@ -44,6 +45,9 @@ int main(int argc, char *argv[])
     //   - SailfishApp::pathTo(QString) to get a QUrl to a resource file
     //
     // To display the view, call "show()" (will show fullscreen on device).
+
+    QScopedPointer<QGuiApplication> app(SailfishApp::application(argc,argv));
+    app->setApplicationVersion(QString(APP_VERSION));
 
     return SailfishApp::main(argc, argv);
 }
