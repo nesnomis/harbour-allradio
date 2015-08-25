@@ -42,6 +42,8 @@ Page {
             source: "../stations/"+country+".json"  //country + ".json"
             query: "$."+country+".channel[*]" //"$."+ country + ".channel[*]"
             sortby: "title"
+            filterby: ""
+            filterkey: "title"
 
         }
         model: jsonModel1.model

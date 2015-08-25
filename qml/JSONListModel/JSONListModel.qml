@@ -12,6 +12,8 @@ Item {
     property string json: ""
     property string query: ""
     property string sortby: ""
+    property string filterby: ""
+    property string filterkey: ""
 
     property ListModel model : ListModel { id: jsonModel }
     property alias count: jsonModel.count
@@ -36,7 +38,10 @@ Item {
             return;
 
         var objectArray = parseJSONString(json, query);
+
         if (sortby !== "") objectArray = sortByKey(objectArray, sortby);
+        if (filterby !== "" && filterkey !=="") objectArray = filterValuePart(objectArray, filterby, filterkey);
+
         for ( var key in objectArray ) {
             var jo = objectArray[key];
             jsonModel.append( jo );
@@ -49,6 +54,14 @@ Item {
             objectArray = JSONPath.jsonPath(objectArray, jsonPathQuery);
 
         return objectArray;
+    }
+
+    function filterValuePart(array, part, key) {
+        part = part.toLowerCase();
+        return array.filter(function(a) {
+            var x = a[key];
+            return x.toLowerCase().indexOf(part) !== -1;
+        });
     }
 
     function sortByKey(array, key) {
