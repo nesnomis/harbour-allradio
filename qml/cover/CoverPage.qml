@@ -2,23 +2,9 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 CoverBackground {
-    anchors.fill: parent
-
-    Image {
-       source: picon
-       anchors.horizontalCenter: parent.horizontalCenter
-       opacity: 0.5
-       width: parent.width / 1.5
-       height: parent.height / 1.5
-       fillMode: Image.PreserveAspectFit
-     }
-
-    Label {
-        y: parent.height * 0.5
-        text: (sleepTime > 0) ? (qsTr("Closing in ") + (sleepTime) + qsTr(" minutes.")) : radioStation
-        width: parent.width
-        color: Theme.highlightColor
-        horizontalAlignment: TextInput.AlignHCenter
+    CoverPlaceholder {
+        text: radioStation
+        icon.source: picon
     }
 
     CoverActionList {

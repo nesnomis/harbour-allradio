@@ -35,12 +35,12 @@
         <location filename="../qml/pages/CountryChooser.qml" line="42"/>
         <location filename="../qml/pages/CountryChooser.qml" line="65"/>
         <location filename="../qml/pages/CountryChooser.qml" line="142"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="164"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="163"/>
         <source>Favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="206"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="205"/>
         <source>Show as grid</source>
         <translation type="unfinished"></translation>
     </message>
@@ -304,37 +304,61 @@
     </message>
 </context>
 <context>
-    <name>CoverPage</name>
-    <message>
-        <location filename="../qml/cover/CoverPage.qml" line="18"/>
-        <source>Closing in </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/cover/CoverPage.qml" line="18"/>
-        <source> minutes.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>Help</name>
     <message>
-        <location filename="../qml/pages/Help.qml" line="14"/>
+        <location filename="../qml/pages/Help.qml" line="15"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="30"/>
-        <source>
-Choose country by clicking the flag/name, then click the channel you want to listen to.
-
-When playing you will see the name and country-flag of the current playing radio station at the bottom of the screen.
-
-You can also see current station and country playing as wel as pause/play from the cover action.
-
-You can press and hold on a channel to add to favourites. If you are in favourites you can press and hold a channel to remove it from favourites.
-
-Use the sleeptimer to set a number of minutes until the AllRadio shuts down the currently playing stream.</source>
+        <location filename="../qml/pages/Help.qml" line="33"/>
+        <source>Opening webpage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="37"/>
+        <source>Basics</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="38"/>
+        <source>Choose country by clicking the flag/name, then click the channel you want to listen to</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="40"/>
+        <source>When playing you will see the name and country-flag of the current playing radio station at the bottom of the screen.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="41"/>
+        <source>You can change the country selection between list and icons by flicking down and select &apos;show as list&apos; alt. &apos;show as grid&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="43"/>
+        <source>Searching</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="45"/>
+        <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to
+                search/filter the selection based on channel name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="48"/>
+        <source>Sleeptimer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="50"/>
+        <source>Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="51"/>
+        <source>This help is a draft! It may be updated?! :-)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -367,22 +391,22 @@ Use the sleeptimer to set a number of minutes until the AllRadio shuts down the 
 <context>
     <name>RadioPlayer</name>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="166"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="168"/>
         <source>Listen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="177"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="179"/>
         <source>Add to favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="183"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="185"/>
         <source>Delete favourite</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="185"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="187"/>
         <source>Deleting channel</source>
         <translation type="unfinished"></translation>
     </message>

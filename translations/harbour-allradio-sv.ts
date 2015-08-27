@@ -297,12 +297,12 @@ AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translatio
         <location filename="../qml/pages/CountryChooser.qml" line="42"/>
         <location filename="../qml/pages/CountryChooser.qml" line="65"/>
         <location filename="../qml/pages/CountryChooser.qml" line="142"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="164"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="163"/>
         <source>Favorites</source>
         <translation>Favoriter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="206"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="205"/>
         <source>Show as grid</source>
         <translation>Visa som ikoner</translation>
     </message>
@@ -568,25 +568,81 @@ AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translatio
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="18"/>
         <source>Closing in </source>
-        <translation>Stänger om </translation>
+        <translation type="vanished">Stänger om </translation>
     </message>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="18"/>
         <source> minutes.</source>
-        <translation> minuter.</translation>
+        <translation type="vanished"> minuter.</translation>
     </message>
 </context>
 <context>
     <name>Help</name>
     <message>
-        <location filename="../qml/pages/Help.qml" line="14"/>
+        <location filename="../qml/pages/Help.qml" line="15"/>
         <source>Help</source>
         <translation>Hjälp</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="30"/>
+        <location filename="../qml/pages/Help.qml" line="33"/>
+        <source>Opening webpage</source>
+        <translation type="unfinished">Öppnar websida</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="37"/>
+        <source>Basics</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="38"/>
+        <source>Choose country by clicking the flag/name, then click the channel you want to listen to</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="40"/>
+        <source>When playing you will see the name and country-flag of the current playing radio station at the bottom of the screen.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="41"/>
+        <source>You can change the country selection between list and icons by flicking down and select &apos;show as list&apos; alt. &apos;show as grid&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="43"/>
+        <source>Searching</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="45"/>
+        <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to
+                search/filter the selection based on channel name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="48"/>
+        <source>Sleeptimer</source>
+        <translation type="unfinished">Insomningstimer</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="50"/>
+        <source>Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="51"/>
+        <source>This help is a draft! It may be updated?! :-)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sourcecode is available on</source>
+        <translation type="obsolete">Källkoden finns på</translation>
+    </message>
+    <message>
+        <source>The radiostations are from</source>
+        <translation type="obsolete">Radio kanalerna kommer från</translation>
+    </message>
+    <message>
         <source>
 Choose country by clicking the flag/name, then click the channel you want to listen to.
 
@@ -597,7 +653,7 @@ You can also see current station and country playing as wel as pause/play from t
 You can press and hold on a channel to add to favourites. If you are in favourites you can press and hold a channel to remove it from favourites.
 
 Use the sleeptimer to set a number of minutes until the AllRadio shuts down the currently playing stream.</source>
-        <translation>Välj land genom att klicka på flaggan/namnet, välj sedan den kanalen du vill lyssna på.
+        <translation type="vanished">Välj land genom att klicka på flaggan/namnet, välj sedan den kanalen du vill lyssna på.
 
 När uppspelning pågår ser du namnet och flaggan på kanalen du lyssnar till längst ner på skärmen.
 
@@ -643,22 +699,22 @@ Använd insomningstimern till att ställa in ett antal minuter AllRadio skall sp
         <translation type="vanished">Sök</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="166"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="168"/>
         <source>Listen</source>
         <translation>Lyssna</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="177"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="179"/>
         <source>Add to favorites</source>
         <translation>Lägg till i favoriter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="183"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="185"/>
         <source>Delete favourite</source>
         <translation>Ta bort favorit</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="185"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="187"/>
         <source>Deleting channel</source>
         <translation>Tar bort kanal</translation>
     </message>

@@ -57,6 +57,9 @@ function stopStream() {
 
 function ps(source) {
     if (current !== source) {
+        playMusic.stop()
+        userPlay = 0
+        streaming = false
         current = source
         sloading = true;
         Stream.func(source);
@@ -124,7 +127,13 @@ Audio {
 
         onError: {
             if (error == 1) sloading = false; streaming = false; userPlay = 0; mp3 = "";stop(); radioStation = errorString
-            if (error == 3 && userPlay == 2) sloading = false; streaming = false; play()
+            if (error == 3 && userPlay == 2 && errorString !== "File Not Found") {
+                sloading = false;
+                streaming = false; play();}
+            else {
+                sloading = false; streaming = false; stop()
+                radioStation = errorString
+            }
             console.log("ERROR: "+error+" ("+errorString+")")
         }
 
