@@ -136,8 +136,10 @@ Page {
                     x: Theme.paddingLarge
                 }
                 onPressAndHold: {
-                    if (!contextMenu)
-                        contextMenu = contextMenuComponent.createObject(listView)
+                    if (!contextMenu){
+                        contextMenu = contextMenuComponent.createObject(listView);
+                        showPlayer = false
+                    }
 
                     rptitle = model.title
                     rpsite = model.site
