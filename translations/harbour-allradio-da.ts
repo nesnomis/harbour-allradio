@@ -587,53 +587,57 @@ AllRadio copyright - Niels Simonsen &lt;nesnomis@gmail.com&gt;.
     <message>
         <location filename="../qml/pages/Help.qml" line="33"/>
         <source>Opening webpage</source>
-        <translation type="unfinished">Åbner webside</translation>
+        <translation>Åbner webside</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="37"/>
         <source>Basics</source>
-        <translation type="unfinished"></translation>
+        <translation>Grundlæggende</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="38"/>
         <source>Choose country by clicking the flag/name, then click the channel you want to listen to</source>
-        <translation type="unfinished"></translation>
+        <translation>Vælg land ved at klikke på landets flag/navn, klik derefter på den kanal du vil lytte til</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="40"/>
         <source>When playing you will see the name and country-flag of the current playing radio station at the bottom of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Under afspilning ser du i bunden af skærmen flag og navn på den nuværende afspillende radiokanal.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="41"/>
         <source>You can change the country selection between list and icons by flicking down and select &apos;show as list&apos; alt. &apos;show as grid&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Du kan få vist lande som ikoner eller liste ved at svirpe ned og vælge enten &apos;vis som liste&apos; eller &apos;vis som ikoner&apos;</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="43"/>
         <source>Searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Søgning</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="45"/>
-        <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to
-                search/filter the selection based on channel name.</source>
-        <translation type="unfinished"></translation>
+        <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to search/filter the selection based on channel name</source>
+        <translation>Når du har valgt land og befinder dig på siden med kanaler, kan du klikke på forstørrelsesglasset opp i toppen af skærmen og søge/filtrere udvalget af stationer baseret på deres navn</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="48"/>
+        <location filename="../qml/pages/Help.qml" line="47"/>
         <source>Sleeptimer</source>
-        <translation type="unfinished">Indslumringstimer</translation>
+        <translation>Indslumringstimer</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="49"/>
+        <source>Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing</source>
+        <translation>Svirp ned og vælg indslumringstimer, sæt derefter tiden i minutter du vil at radionen skal afspille inden den stopper</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="49"/>
+        <source>More</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="50"/>
-        <source>Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Help.qml" line="51"/>
         <source>This help is a draft! It may be updated?! :-)</source>
-        <translation type="unfinished"></translation>
+        <translation>Denne hjælp er et udkast! Den kan blive ændret?! :-)</translation>
     </message>
     <message>
         <source>Sourcecode is available on</source>

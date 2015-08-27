@@ -586,53 +586,66 @@ AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translatio
     <message>
         <location filename="../qml/pages/Help.qml" line="33"/>
         <source>Opening webpage</source>
-        <translation type="unfinished">Öppnar websida</translation>
+        <translation>Öppnar websida</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="37"/>
         <source>Basics</source>
-        <translation type="unfinished"></translation>
+        <translation>Grunderna</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="38"/>
         <source>Choose country by clicking the flag/name, then click the channel you want to listen to</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj land genom att klicka på flaggan/namnet, klicka sedan på den kanalen du vill lyssna till</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="40"/>
         <source>When playing you will see the name and country-flag of the current playing radio station at the bottom of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Under uppspelning ser du kanalens namn och flagga i botten av skärmen.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="41"/>
         <source>You can change the country selection between list and icons by flicking down and select &apos;show as list&apos; alt. &apos;show as grid&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Du kan välja att se länderna som ikoner eller lista genom att &apos;flicka&apos; ner och välja &apos;visa som lista&apos; eller &apos;visa som ikoner&apos;</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="43"/>
         <source>Searching</source>
-        <translation type="unfinished"></translation>
+        <translation>Sökning</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="45"/>
-        <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to
-                search/filter the selection based on channel name.</source>
-        <translation type="unfinished"></translation>
+        <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to search/filter the selection based on channel name</source>
+        <translation>När du har valt land och har klickat in dig på kanalerna, kan du klicka på förstoringsglaset i toppen av skärmen för att söka/filtrera urvalet av stationer som visas, baserat på kanalernas namn</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="48"/>
+        <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to search/filter the selection based on channel name.</source>
+        <translation type="vanished">När du har klickat in på landets kanaler kan du klicka på förstoringsglaset i toppen av sidan för att söka/filtrera urvalet av radiostationerna baserat på deras namn.</translation>
+    </message>
+    <message>
+        <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to
+                search/filter the selection based on channel name.</source>
+        <translation type="vanished">När du har klickat på land och befinner dig på kanalsidan, kan du klicka på förstoringsglaset i toppen av lista för att söka/filtrera urvalet baserat på kanalernas namn.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="47"/>
         <source>Sleeptimer</source>
-        <translation type="unfinished">Insomningstimer</translation>
+        <translation>Insomningstimer</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="49"/>
+        <source>Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing</source>
+        <translation>&apos;Flick&apos; ner och välj insomningstimer, ställ sedan in tiden i minuter du vill ha innan radion avslutar uppspelningen</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="49"/>
+        <source>More</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="50"/>
-        <source>Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Help.qml" line="51"/>
         <source>This help is a draft! It may be updated?! :-)</source>
-        <translation type="unfinished"></translation>
+        <translation>Denna hjälpen är ett utkast! Den kan bli uppdaterad!? :-)</translation>
     </message>
     <message>
         <source>Sourcecode is available on</source>

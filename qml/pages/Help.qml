@@ -42,19 +42,15 @@ Page {
 
                 <h2>"+qsTr("Searching")+"</h2><p>"+
 
-                qsTr("When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to
-                search/filter the selection based on channel name.")+"</p>
+                qsTr("When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to search/filter the selection based on channel name")+".</p>
 
                 <h2>"+qsTr("Sleeptimer")+"</h2><p>"
 
-                +qsTr("Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing")+".</p><br><h2>More</h2><p>"+
+                +qsTr("Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing")+".</p><br><h2>"+qsTr("More")+"</h2><p>"+
                 qsTr("This help is a draft! It may be updated?! :-)")+"</p>"
 
 
 
             }
     }
-
-
-
 }

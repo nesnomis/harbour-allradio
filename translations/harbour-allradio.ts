@@ -342,22 +342,26 @@
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="45"/>
-        <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to
-                search/filter the selection based on channel name.</source>
+        <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to search/filter the selection based on channel name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="48"/>
+        <location filename="../qml/pages/Help.qml" line="47"/>
         <source>Sleeptimer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="50"/>
+        <location filename="../qml/pages/Help.qml" line="49"/>
         <source>Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="51"/>
+        <location filename="../qml/pages/Help.qml" line="49"/>
+        <source>More</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Help.qml" line="50"/>
         <source>This help is a draft! It may be updated?! :-)</source>
         <translation type="unfinished"></translation>
     </message>
