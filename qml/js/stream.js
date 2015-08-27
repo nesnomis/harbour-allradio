@@ -5,7 +5,7 @@ function func(source) {
     var m3u = source.search(".m3u");
 
  if (pls < 0 && m3u < 0) {
-        if (source != "") mp3 = source; else stopStream()
+        if (source != "") mp3 = source; else unknownError()
         return;
     }
 
@@ -17,7 +17,7 @@ function func(source) {
             for(var i = 0; i < split.length; i++){
                 if (split[i].search(/http/i) > -1 && split[i].search(/mp3/i)) {
                     var tmp = split[i].replace(/(\r\n|\n|\r)/gm," ");
-                    if (tmp !== "") mp3 = tmp; else stopStream()
+                    if (tmp !== "") mp3 = tmp; else unknownError()
                 }
             }
         }
@@ -28,14 +28,14 @@ function func(source) {
                 if (pos > -1) {
                     var tmp = split[i].split(/=/);
                     tmp = tmp[1].replace(/(\r\n|\n|\r)/gm," ");
-                    if (tmp !== "") mp3 = tmp; else stopStream()
+                    if (tmp !== "") mp3 = tmp; else unknownError()
                 }
             }
         } else {
             var tmp = split[i].replace(/(\r\n|\n|\r)/gm," ");
-            if (tmp !== "") mp3 = tmp; else stopStream()
+            if (tmp !== "") mp3 = tmp; else unknownError()
         }
-    } else {stopStream()}
+    } else {unknownError()}
     }
     var handleStateChange = function () {
        switch (xmlhttp.readyState) {
@@ -47,7 +47,7 @@ function func(source) {
           case 4 : //console.log("readyState: 4");// COMPLETED
           handleResponse(xmlhttp.status, xmlhttp.responseText);
           break;
-          default: stopStream();//console.log("Error!!!");
+          default: unknownError();//console.log("Error!!!");
 
        }
     }

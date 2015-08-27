@@ -35,7 +35,8 @@ Page {
 
         quickScroll: false
         anchors.fill: parent
-        anchors.topMargin: searchPanel.visibleSize
+        //anchors.topMargin: searchPanel.visibleSize
+        //anchors.bottomMargin: playerPanel.visibleSize
         clip: true
 
         JSONListModel {
@@ -46,32 +47,72 @@ Page {
             filterby: filter
             filterkey: key
 
+
         }
         model: jsonModel1.model
 
-        header: PageHeader { title: ctitle } //Radio stations
+        header: PageHeader {
+            id: pHeader
+            title: ctitle
+            height: 133
+
+            TextField {
+                id: searchField
+                anchors.fill: parent
+                anchors.bottom: parent.bottom
+                anchors.leftMargin: Theme.paddingMedium
+
+                textTopMargin: 30
+                textLeftMargin: 40
+                textRightMargin: Theme.itemSizeSmall + Theme.paddingMedium
+
+                font {
+                    pixelSize: Theme.fontSizeLarge
+                    family: Theme.fontFamilyHeading
+                }
+
+                inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
+                onTextChanged: if (text.length > 0) filter = text; else {filter = "";focus=false}
+                onClicked: {
+                    listView.currentIndex = -1;showPlayer = false;//pHeader.title = ""
+                }
+                focus: false
+                EnterKey.iconSource: "image://theme/icon-m-enter-close"
+                EnterKey.onClicked: focus = false
+
+                IconButton {
+                    x: searchField.textLeftMargin - width + 20
+
+                    width: icon.width
+                    height: parent.height
+                    icon.source: "image://theme/icon-m-search"
+                    highlighted: down || searchField._editor.activeFocus
+                    visible: (!searchField._editor.activeFocus && searchField.text == "")
+                    enabled: searchField.enabled
+
+                    onClicked: {
+                        searchField._editor.forceActiveFocus()
+                    }
+                }
+            }
+        }
+
 
         VerticalScrollDecorator {}
 
         property int retning: 0
         onContentYChanged: {
-            if (!showPlayer && contentY == -110 && !showSearch) showPlayer = true
+            if (!showPlayer && contentY == -110) showPlayer = true
             }
             onMovementStarted: {
                 retning = contentY
             }
             onVerticalVelocityChanged: {
-                if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10 && !showSearch) showPlayer = true;
+                if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10) showPlayer = true;
             }
             onMovementEnded: {
+                //if (!showPlayer && contentY == -110) showPlayer = true
                     //console.log("verticalVolocity: "+verticalVelocity+" - contentY: "+contentY)
-            }
-
-            PullMenu {
-                MenuItem {
-                    text: qsTr("Search")
-                    onClicked: if (!showSearch) {showPlayer = false; showSearch = true;} else showSearch = false;
-                }
             }
 
             delegate: Item {
@@ -108,11 +149,9 @@ Page {
                 onClicked: {
                     ps(model.source)
                     radioStation = model.title
-                    playStream()
                     website = (Qt.resolvedUrl(model.site))
                     if (favorites == true && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
                     else picon = "../stations/"+country+".png";
-                    if (showSearch) showSearch = false;
                 }
             }
         }
@@ -130,7 +169,6 @@ Page {
                         radioStation = rptitle
                         picon = "../stations/"+country+".png"
                         website = (Qt.resolvedUrl(rpsite))
-                        playStream()
                     }
                 }
                 MenuItem {
@@ -148,8 +186,8 @@ Page {
             }
             }
         }
+            PullMenu {}
     }
-    SearchPanel { id:searchPanel }
     PlayerPanel { id:playerPanel }
 }
 

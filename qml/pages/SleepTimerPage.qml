@@ -2,17 +2,10 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Page {
-    id: sleepTimerPage
     allowedOrientations: Orientation.All
 
     SilicaFlickable {
         anchors.fill: parent
-        anchors {
-            top: parent.top
-            left: parent.left
-            right: parent.right
-            bottom: parent.bottom
-        }
         VerticalScrollDecorator {}
             PageHeader { title: ((sleepTime > 0) ? (qsTr("Remaning time: ")  + (sleepTime) + qsTr(" minutes")) : qsTr("choose time: ") + minutes.value )}
 

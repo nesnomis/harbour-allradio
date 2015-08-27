@@ -19,28 +19,61 @@ property string picon: "../harbour-allradio.png"
 property string ficon: ""
 property string cicon: ""
 property string radioStation: "AllRadio"
-property string musicSource: ""
 property string website: ""
 property string ms: ""
-property string country
 property int sleepTime: 0
-property int playerError: -1
-property int playerState: -1
-property int playerStatus: -1
 property int userPlay: 0 // 0 Stopped, 1 Paused, 2 Playing
 property bool favorites: false
 property bool showPlayer: true;
-property bool showSearch: false;
+property string country
 property string filter: ""
 property string key: "title"
+property bool sloading: false
+property bool streaming: false
+property string current: ""
 
-function pauseStream() {userPlay = 1; playMusic.pause(); playMusic.playing = false;}
-function playStream() {userPlay=2; playMusic.play(); playMusic.playing = true;playerError = 0;if (!showPlayer) showPlayer = true}
-function stopStream() {userPlay=0; playMusic.stop(); playMusic.playing = false; sleepTime = 0;}
+function pauseStream() {
+    userPlay = 1;
+    playMusic.pause();
+    streaming = false
+    sloading = false
+}
+
+function playStream() {
+    userPlay=2;
+    playMusic.play();
+    streaming = true
+    if (!showPlayer)
+        showPlayer = true
+}
+
+function stopStream() {
+    picon = "../harbour-allradio.png"
+    radioStation = "AllRadio"
+    mp3 = "";
+    userPlay=0;
+    playMusic.stop();
+    sleepTime = 0;
+    streaming = false
+    sloading = false
+}
 
 function ps(source) {
-    mp3 = ""
-    Stream.func(source);
+    if (current !== source) {
+        current = source
+        sloading = true;
+        Stream.func(source);
+        playStream()
+    }
+}
+
+function unknownError() {
+    radioStation = "Uknown Error"
+    mp3 = "";
+    userPlay=0;
+    sleepTime = 0;
+    streaming = false
+    sloading = false
 }
 
 function dropDb() {
@@ -76,7 +109,9 @@ Timer {
     id: sleepTimer
     interval: 60000
     repeat: false
-    onTriggered: {(sleepTime == 1) ? stopStream() : sleepTime = (sleepTime - 1);}
+    onTriggered: {
+        (sleepTime == 1) ? stopStream() : sleepTime = (sleepTime - 1);
+    }
     running: sleepTime > 0
 }
 
@@ -84,50 +119,27 @@ Audio {
         id: playMusic
         source: mp3
         autoPlay: true
-        property bool playing: false
 
         onStopped:{
-            if (playerState == 1 && userPlay != 0 && (playerStatus == 6 || playerStatus == 7)) playStream()
-            if (userPlay == 2 && userPlay != 0 && (playerStatus == 4 || playerStatus == 6)) playStream()
+            //if (playerState == 1 && userPlay != 0 && (playerStatus == 6 || playerStatus == 7)) playStream()
+            //if (userPlay == 2 && userPlay != 0 && (playerStatus == 4 || playerStatus == 6)) playStream()
         }
 
         onError: {
-            switch (error) {
-                case 0: playerError = 0;break
-                case 1: playerError = 1;if (playerState == 0 && playerStatus == 2) stopStream();break //unable to stream
-                case 2: playerError = 2;break
-                case 3: playerError = 3;if (userPlay == 2 && (playerStatus !==4 || playerStatus !==6)) stopStream(); break  //different errors... not shure if ok to stop allways
-                case 4: playerError = 4;break
-                case 5: playerError = 5;break //no avilable service
-            }
-
+            if (error == 1) sloading = false; streaming = false; userPlay = 0; mp3 = "";stop(); radioStation = errorString
+            if (error == 3 && userPlay == 2) sloading = false; streaming = false; play()
+            console.log("ERROR: "+error+" ("+errorString+")")
         }
 
-        onPlaybackStateChanged: {
-            switch (playbackState) {
-                case 0: playerState = 0;  break
-                case 1: playerState = 1; break
-                case 2: playerState = 2; if (userPlay == 2) playStream() ;break
-                case 3: playerState = 3; if (userPlay == 2) playStream(); break
-                case 4: playerState = 4; break
-                case 5: playerState = 5; break
-            }
-        }
+//        onPlaybackStateChanged: {
+//        }
 
         onStatusChanged: {
-            switch (status) {
-                case 0: break
-                case 1: playerStatus = 1; break
-                case 2: playerStatus = 2; break
-                case 3: playerStatus = 3; break
-                case 4: playerStatus = 4; break
-                case 5: playerStatus = 5; break
-                case 6: playerStatus = 6; break
-                case 7: playerStatus = 7; break
-                case 8: playerStatus = 8; break
-                case 9: playerStatus = 9; break
-                case 10:playerStatus = 10; break
-            }
+            if (status == 2 || status==3  || status == 4) sloading = true;streaming = false
+            if (status == 3 && userPlay == 2) streaming = false
+            if (status == 6) sloading = false;streaming = true
+            console.log(radioStation+":")
+            console.log("STATE: "+playbackState + " STATUS: "+status+" sloading = "+sloading+" Streaming = "+streaming)
         }
 
         }

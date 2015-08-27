@@ -4,17 +4,17 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="17"/>
+        <location filename="../qml/pages/About.qml" line="16"/>
         <source>About AllRadio</source>
         <translation>Om AllRadio</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="43"/>
+        <location filename="../qml/pages/About.qml" line="42"/>
         <source>Opening webpage</source>
         <translation>Öppnar websida</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="51"/>
+        <location filename="../qml/pages/About.qml" line="50"/>
         <source>The radiostations are from</source>
         <translation>Radio kanalerna kommer från</translation>
     </message>
@@ -23,7 +23,7 @@
         <translation type="vanished">AllRadio är en radiospelare som spelar strömmande radio via nätet.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="50"/>
+        <location filename="../qml/pages/About.qml" line="49"/>
         <source>Sourcecode is available on</source>
         <translation>Källkoden finns på</translation>
     </message>
@@ -289,20 +289,20 @@ AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translatio
         <translation type="vanished">Vatikanen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="38"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="105"/>
         <source>Show as list</source>
         <translation>Visa som lista</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="48"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="71"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="147"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="169"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="42"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="65"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="142"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="164"/>
         <source>Favorites</source>
         <translation>Favoriter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="138"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="206"/>
         <source>Show as grid</source>
         <translation>Visa som ikoner</translation>
     </message>
@@ -568,12 +568,12 @@ AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translatio
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="24"/>
+        <location filename="../qml/cover/CoverPage.qml" line="18"/>
         <source>Closing in </source>
         <translation>Stänger om </translation>
     </message>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="24"/>
+        <location filename="../qml/cover/CoverPage.qml" line="18"/>
         <source> minutes.</source>
         <translation> minuter.</translation>
     </message>
@@ -581,12 +581,12 @@ AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translatio
 <context>
     <name>Help</name>
     <message>
-        <location filename="../qml/pages/Help.qml" line="15"/>
+        <location filename="../qml/pages/Help.qml" line="14"/>
         <source>Help</source>
         <translation>Hjälp</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="31"/>
+        <location filename="../qml/pages/Help.qml" line="30"/>
         <source>
 Choose country by clicking the flag/name, then click the channel you want to listen to.
 
@@ -613,7 +613,7 @@ Använd insomningstimern till att ställa in ett antal minuter AllRadio skall sp
 <context>
     <name>PlayerPanel</name>
     <message>
-        <location filename="../qml/pages/PlayerPanel.qml" line="31"/>
+        <location filename="../qml/pages/PlayerPanel.qml" line="29"/>
         <source>Opening webpage</source>
         <translation>Öppnar websida</translation>
     </message>
@@ -639,27 +639,26 @@ Använd insomningstimern till att ställa in ett antal minuter AllRadio skall sp
 <context>
     <name>RadioPlayer</name>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="72"/>
         <source>Search</source>
-        <translation>Sök</translation>
+        <translation type="vanished">Sök</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="127"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="166"/>
         <source>Listen</source>
         <translation>Lyssna</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="139"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="177"/>
         <source>Add to favorites</source>
         <translation>Lägg till i favoriter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="145"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="183"/>
         <source>Delete favourite</source>
         <translation>Ta bort favorit</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="147"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="185"/>
         <source>Deleting channel</source>
         <translation>Tar bort kanal</translation>
     </message>
@@ -675,55 +674,51 @@ Använd insomningstimern till att ställa in ett antal minuter AllRadio skall sp
 <context>
     <name>SearchPanel</name>
     <message>
-        <location filename="../qml/pages/SearchPanel.qml" line="13"/>
         <source>Search by</source>
-        <translation>Sök genom</translation>
+        <translation type="vanished">Sök genom</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SearchPanel.qml" line="16"/>
         <source>Name</source>
-        <translation>Namn</translation>
+        <translation type="vanished">Namn</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SearchPanel.qml" line="17"/>
         <source>Tag</source>
-        <translation>Tag</translation>
+        <translation type="vanished">Tag</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SearchPanel.qml" line="18"/>
         <source>Location</source>
-        <translation>Plats</translation>
+        <translation type="vanished">Plats</translation>
     </message>
 </context>
 <context>
     <name>SleepTimerPage</name>
     <message>
-        <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="10"/>
         <source>Remaning time: </source>
         <translation>Tid kvar: </translation>
     </message>
     <message>
-        <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="10"/>
         <source> minutes</source>
         <translation> minuter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="10"/>
         <source>choose time: </source>
         <translation>välj tid: </translation>
     </message>
     <message>
-        <location filename="../qml/pages/SleepTimerPage.qml" line="42"/>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="35"/>
         <source>Change</source>
         <translation>Ändra</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SleepTimerPage.qml" line="42"/>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="35"/>
         <source>Start</source>
         <translation>Starta</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SleepTimerPage.qml" line="46"/>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="39"/>
         <source>Stop</source>
         <translation>Stanna</translation>
     </message>

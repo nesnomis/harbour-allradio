@@ -2,7 +2,6 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Page {
-    id: page
     allowedOrientations: Orientation.All
 
     RemorsePopup {id: remorse}
@@ -48,9 +47,7 @@ Page {
                        <p>Copyright/left 2015 - Niels Simonsen</p>
                         <p><a href='http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt'>License GPL v2.0</a></p><br><p>"
                       + qsTr("Sourcecode is available on") + ": <a href='https://github.com/nesnomis/harbour-allradio'>github</a></p><br><p>"
-                     + qsTr("The radiostations are from") + ": <a href='http://www.listenlive.eu'>listenlive.eu</a></p><br><p>
-
-                        "
+                     + qsTr("The radiostations are from") + ": <a href='http://www.listenlive.eu'>listenlive.eu</a></p><br><p>"
             }
     }
 }

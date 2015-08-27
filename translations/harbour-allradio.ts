@@ -4,22 +4,22 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="17"/>
+        <location filename="../qml/pages/About.qml" line="16"/>
         <source>About AllRadio</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="43"/>
+        <location filename="../qml/pages/About.qml" line="42"/>
         <source>Opening webpage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="50"/>
+        <location filename="../qml/pages/About.qml" line="49"/>
         <source>Sourcecode is available on</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="51"/>
+        <location filename="../qml/pages/About.qml" line="50"/>
         <source>The radiostations are from</source>
         <translation type="unfinished"></translation>
     </message>
@@ -27,20 +27,20 @@
 <context>
     <name>CountryChooser</name>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="38"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="105"/>
         <source>Show as list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="48"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="71"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="147"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="169"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="42"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="65"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="142"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="164"/>
         <source>Favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="138"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="206"/>
         <source>Show as grid</source>
         <translation type="unfinished"></translation>
     </message>
@@ -306,12 +306,12 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="24"/>
+        <location filename="../qml/cover/CoverPage.qml" line="18"/>
         <source>Closing in </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="24"/>
+        <location filename="../qml/cover/CoverPage.qml" line="18"/>
         <source> minutes.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -319,12 +319,12 @@
 <context>
     <name>Help</name>
     <message>
-        <location filename="../qml/pages/Help.qml" line="15"/>
+        <location filename="../qml/pages/Help.qml" line="14"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="31"/>
+        <location filename="../qml/pages/Help.qml" line="30"/>
         <source>
 Choose country by clicking the flag/name, then click the channel you want to listen to.
 
@@ -341,7 +341,7 @@ Use the sleeptimer to set a number of minutes until the AllRadio shuts down the 
 <context>
     <name>PlayerPanel</name>
     <message>
-        <location filename="../qml/pages/PlayerPanel.qml" line="31"/>
+        <location filename="../qml/pages/PlayerPanel.qml" line="29"/>
         <source>Opening webpage</source>
         <translation type="unfinished"></translation>
     </message>
@@ -367,27 +367,22 @@ Use the sleeptimer to set a number of minutes until the AllRadio shuts down the 
 <context>
     <name>RadioPlayer</name>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="72"/>
-        <source>Search</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="127"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="166"/>
         <source>Listen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="139"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="177"/>
         <source>Add to favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="145"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="183"/>
         <source>Delete favourite</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="147"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="185"/>
         <source>Deleting channel</source>
         <translation type="unfinished"></translation>
     </message>
@@ -401,57 +396,34 @@ Use the sleeptimer to set a number of minutes until the AllRadio shuts down the 
     </message>
 </context>
 <context>
-    <name>SearchPanel</name>
-    <message>
-        <location filename="../qml/pages/SearchPanel.qml" line="13"/>
-        <source>Search by</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/SearchPanel.qml" line="16"/>
-        <source>Name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/SearchPanel.qml" line="17"/>
-        <source>Tag</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/SearchPanel.qml" line="18"/>
-        <source>Location</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>SleepTimerPage</name>
     <message>
-        <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="10"/>
         <source>Remaning time: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="10"/>
         <source> minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SleepTimerPage.qml" line="17"/>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="10"/>
         <source>choose time: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SleepTimerPage.qml" line="42"/>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="35"/>
         <source>Change</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SleepTimerPage.qml" line="42"/>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="35"/>
         <source>Start</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SleepTimerPage.qml" line="46"/>
+        <location filename="../qml/pages/SleepTimerPage.qml" line="39"/>
         <source>Stop</source>
         <translation type="unfinished"></translation>
     </message>

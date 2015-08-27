@@ -2,12 +2,10 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 DockedPanel {
-    id: panel
     width: parent.width
     height: Theme.itemSizeLarge + Theme.paddingLarge
     dock: Dock.Bottom
     open: showPlayer
-
 
     RemorsePopup {id: remorse}
 
@@ -20,7 +18,7 @@ DockedPanel {
     BusyIndicator {
         anchors.centerIn: parent
         size: BusyIndicatorSize.Large
-        running: playerStatus == 4
+        running: (sloading && Qt.application.active)
     }
             BackgroundItem {
                 height: parent.height
@@ -63,7 +61,7 @@ DockedPanel {
                 anchors.right: parent.right
                 anchors.rightMargin: 30
                 anchors.verticalCenter: parent.verticalCenter
-                icon.source: playMusic.playing ? "image://theme/icon-l-pause" : "image://theme/icon-l-play"
-                onClicked: playMusic.playing ? pauseStream() : playStream()
+                icon.source: streaming ? "image://theme/icon-l-pause" : "image://theme/icon-l-play"
+                onClicked: streaming ? pauseStream() : playStream()
             }
 }

@@ -10,6 +10,7 @@ Page {
         id: grid
         visible: true
         anchors.fill: parent
+        clip: true
         quickScroll: false
 
         cellWidth: width / 2
@@ -33,13 +34,6 @@ Page {
 
         model: countryModel
 
-        PullMenu {
-            MenuItem {
-                text: qsTr("Show as list")
-                onClicked: grid.visible = false
-            }
-        }
-
         header: BackgroundItem {
             id: favHeader
             width: parent.width
@@ -49,7 +43,7 @@ Page {
                 favorites = true
                 filter = ""
                 key = "title"
-                showSearch = false
+                //showSearch = false
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
                                              {model: dbModel} )
             }
@@ -102,10 +96,16 @@ Page {
                         country = coid
                         filter = ""
                         key = "title"
-                        showSearch = false
+                        //showSearch = false
                         window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
                     }
                 }
+        PullMenu {
+            MenuItem {
+                text: qsTr("Show as list")
+                onClicked: grid.visible = false
+            }
+        }
         ScrollDecorator {}
     }
 
@@ -113,9 +113,9 @@ Page {
         id: list
         visible: !grid.visible
         anchors.fill: parent
+        clip: true
         quickScroll: false
 
-        clip: true
 
         property int retning: 0
 
@@ -123,21 +123,16 @@ Page {
             if (!showPlayer && contentY == -235) showPlayer = true
         }
         onMovementStarted: {
-                retning = contentY
+            retning = contentY
         }
         onVerticalVelocityChanged: {
-                if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10) showPlayer = true;
+            if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10) showPlayer = true;
         }
         onMovementEnded: {
                 //console.log("verticalVolocity: "+verticalVelocity+" - contentY: "+contentY)
         }
 
         model: countryModel
-
-        PullMenu {            MenuItem {
-                text: qsTr("Show as grid")
-                onClicked: grid.visible = true
-            }}
 
         header: BackgroundItem {
             id: listfavHeader
@@ -148,7 +143,7 @@ Page {
                 favorites = true
                 filter = ""
                 key = "title"
-                showSearch = false
+                //showSearch = false
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
                                              {model: dbModel} )
             }
@@ -202,15 +197,16 @@ Page {
                 country = coid
                 filter = ""
                 key = "title"
-                showSearch = false
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
             }
         }
         ScrollDecorator {}
+        PullMenu {
+            MenuItem {
+                text: qsTr("Show as grid")
+                onClicked: grid.visible = true
+            }
+        }
     }
-
-    PlayerPanel {
-        id:playerPanel
-
-    }
+    PlayerPanel {id:playerPanel}
 }
