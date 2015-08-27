@@ -19,13 +19,13 @@ Page {
         property int retning: 0
 
         onContentYChanged: {
-            if (!showPlayer && contentY == -235) showPlayer = true
+            if (!showPlayer && atYBeginning) showPlayer = true
         }
         onMovementStarted: {
                 retning = contentY
         }
         onVerticalVelocityChanged: {
-            if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10) showPlayer = true;
+            if (showPlayer && contentY > retning+10 || atYEnd) showPlayer = false; else if (!showPlayer && contentY < retning-10 && !atYEnd) showPlayer = true;
 
         }
         onMovementEnded: {
@@ -120,13 +120,13 @@ Page {
         property int retning: 0
 
         onContentYChanged: {
-            if (!showPlayer && contentY == -235) showPlayer = true
+            if (!showPlayer && atYBeginning) showPlayer = true
         }
         onMovementStarted: {
             retning = contentY
         }
         onVerticalVelocityChanged: {
-            if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10) showPlayer = true;
+            if (showPlayer && contentY > retning+10 || atYEnd) showPlayer = false; else if (!showPlayer && contentY < retning-10 && !atYEnd) showPlayer = true;
         }
         onMovementEnded: {
                 //console.log("verticalVolocity: "+verticalVelocity+" - contentY: "+contentY)
@@ -143,7 +143,6 @@ Page {
                 favorites = true
                 filter = ""
                 key = "title"
-                //showSearch = false
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
                                              {model: dbModel} )
             }

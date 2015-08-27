@@ -58,6 +58,8 @@ Page {
 
             TextField {
                 id: searchField
+                enabled: !favorites
+                visible: !favorites
                 anchors.fill: parent
                 anchors.bottom: parent.bottom
                 anchors.leftMargin: Theme.paddingMedium
@@ -102,13 +104,13 @@ Page {
 
         property int retning: 0
         onContentYChanged: {
-            if (!showPlayer && contentY == -110) showPlayer = true
+            if (!showPlayer && atYBeginning) showPlayer = true
             }
             onMovementStarted: {
                 retning = contentY
             }
             onVerticalVelocityChanged: {
-                if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10) showPlayer = true;
+                if (showPlayer && contentY > retning+10 || atYEnd) showPlayer = false; else if (!showPlayer && contentY < retning-10  && !atYEnd) showPlayer = true;
             }
             onMovementEnded: {
                 //if (!showPlayer && contentY == -110) showPlayer = true
