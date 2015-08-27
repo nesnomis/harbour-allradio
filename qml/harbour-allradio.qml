@@ -11,16 +11,12 @@ ApplicationWindow {
 id: window
 property variant dbModel: favChannels
 property alias mp3: playMusic.source
-property string csite: ""
-property string csource: ""
-property string csection: ""
 property string ctitle: "AllRadio"
 property string picon: "../harbour-allradio.png"
 property string ficon: ""
 property string cicon: ""
 property string radioStation: "AllRadio"
 property string website: ""
-property string ms: ""
 property int sleepTime: 0
 property int userPlay: 0 // 0 Stopped, 1 Paused, 2 Playing
 property bool favorites: false
@@ -31,6 +27,7 @@ property string key: "title"
 property bool sloading: false
 property bool streaming: false
 property string current: ""
+// property bool sortSection: false // for later use
 
 function pauseStream() {
     userPlay = 1;
