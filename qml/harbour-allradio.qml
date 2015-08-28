@@ -141,22 +141,6 @@ Audio {
 
             }
 
-
-   /*         if (error == 1) sloading = false; streaming = false; userPlay = 0; mp3 = "";stop(); radioStation = errorString
-
-            if (error == 3 && userPlay == 2 && errorString !== "File Not Found") {
-                sloading = false;
-                streaming = false; play();}
-            else if (error == 3 && userPlay == 2 && errorString == "Server does not support seeking.") {
-                pauseStream()
-                playStream();
-            }
-
-            else {
-                sloading = false; streaming = false; stop()
-                radioStation = errorString
-            } */
-
             console.log("ERROR: "+error+" ("+errorString+")")
         }
 
