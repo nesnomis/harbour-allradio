@@ -113,6 +113,7 @@ Page {
         id: list
         visible: !grid.visible
         anchors.fill: parent
+        anchors.bottomMargin: playerPanel.visibleSize
         clip: true
         quickScroll: false
 
@@ -126,7 +127,7 @@ Page {
             retning = contentY
         }
         onVerticalVelocityChanged: {
-            if (showPlayer && contentY > retning+10 || atYEnd) showPlayer = false; else if (!showPlayer && contentY < retning-10 && !atYEnd) showPlayer = true;
+            if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10) showPlayer = true;
         }
         onMovementEnded: {
                 //console.log("verticalVolocity: "+verticalVelocity+" - contentY: "+contentY)

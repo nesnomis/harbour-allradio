@@ -35,8 +35,7 @@ Page {
 
         quickScroll: false
         anchors.fill: parent
-        //anchors.topMargin: searchPanel.visibleSize
-        //anchors.bottomMargin: playerPanel.visibleSize
+        anchors.bottomMargin: playerPanel.visibleSize
         clip: true
 
         JSONListModel {
@@ -110,7 +109,7 @@ Page {
                 retning = contentY
             }
             onVerticalVelocityChanged: {
-                if (showPlayer && contentY > retning+10 || atYEnd) showPlayer = false; else if (!showPlayer && contentY < retning-10  && !atYEnd) showPlayer = true;
+                if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10) showPlayer = true;
             }
             onMovementEnded: {
                 //if (!showPlayer && contentY == -110) showPlayer = true
