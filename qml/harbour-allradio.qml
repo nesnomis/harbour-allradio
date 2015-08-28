@@ -43,9 +43,9 @@ function playStream() {
 }
 
 function stopStream() {
-    picon = "../harbour-allradio.png"
-    radioStation = "AllRadio"
-    mp3 = "";
+    //picon = "../harbour-allradio.png"
+    //radioStation = "AllRadio"
+    //mp3 = "";
     userPlay=0;
     playMusic.stop();
     sleepTime = 0;
@@ -105,7 +105,7 @@ Timer {
     interval: 60000
     repeat: false
     onTriggered: {
-        (sleepTime == 1) ? stopStream() : sleepTime = (sleepTime - 1);
+        if (sleepTime == 1) { pauseStream();sleepTime = 0;} else sleepTime = (sleepTime = -1);
     }
     running: sleepTime > 0
 }
@@ -146,7 +146,7 @@ Audio {
         }
 
         onPaused: {
-            if (userPlay == 2) streaming = false;userPlay = 1;
+            if (userPlay == 2) streaming = false;userPlay = 1;sleepTime = 0
         }
 
         onPlaybackStateChanged: {
