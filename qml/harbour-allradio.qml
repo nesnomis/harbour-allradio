@@ -26,8 +26,6 @@ property string filter: ""
 property string key: "title"
 property bool sloading: false
 property bool streaming: false
-//property string current: ""
-// property bool sortSection: false // for later use
 
 function pauseStream() {
     userPlay = 1;
@@ -59,7 +57,6 @@ function ps(source) {
         playMusic.stop()
         userPlay = 0
         streaming = false
-        //current = source
         sloading = true;
         Stream.func(source);
         playStream()
@@ -119,32 +116,49 @@ Audio {
         autoPlay: true
 
         onStopped:{
-            //if (playerState == 1 && userPlay != 0 && (playerStatus == 6 || playerStatus == 7)) playStream()
-            //if (userPlay == 2 && userPlay != 0 && (playerStatus == 4 || playerStatus == 6)) playStream()
         }
 
         onError: {
-            if (error == 1) sloading = false; streaming = false; userPlay = 0; mp3 = "";stop(); radioStation = errorString
+            switch (error) {
+                //case 0: break
+                case 1: sloading = false; streaming = false; userPlay = 0; mp3 = "";stop(); radioStation = errorString;break
+                //case 2: break
+                case 3: if (userPlay == 2 && errorString !== "File Not Found") {
+                            sloading = false;
+                            streaming = false;
+                            play();
+                        }
+                        else if (userPlay == 2 && errorString == "Server does not support seeking.") {
+                            pauseStream()
+                            playStream();
+                        } ; break
+                //case 4: break
+                //case 5: break
+            default: {
+                sloading = false; streaming = false; stop()
+                radioStation = errorString
+                } ; break
+
+            }
+
+
+   /*         if (error == 1) sloading = false; streaming = false; userPlay = 0; mp3 = "";stop(); radioStation = errorString
+
             if (error == 3 && userPlay == 2 && errorString !== "File Not Found") {
                 sloading = false;
                 streaming = false; play();}
+            else if (error == 3 && userPlay == 2 && errorString == "Server does not support seeking.") {
+                pauseStream()
+                playStream();
+            }
+
             else {
                 sloading = false; streaming = false; stop()
                 radioStation = errorString
-            }
-            if (error == 3 && userPlay == 2 && errorString == "Server does not support seeking.") {
-                //sloading = false;
-                //streaming = false;
-                play();}
-            else {
-                sloading = false; streaming = false; stop()
-                radioStation = errorString
-            }
+            } */
+
             console.log("ERROR: "+error+" ("+errorString+")")
         }
-
-//        onPlaybackStateChanged: {
-//        }
 
         onStatusChanged: {
             if (status == 2 || status==3  || status == 4) sloading = true;streaming = false
