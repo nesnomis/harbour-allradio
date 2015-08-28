@@ -26,7 +26,7 @@ property string filter: ""
 property string key: "title"
 property bool sloading: false
 property bool streaming: false
-property string current: ""
+//property string current: ""
 // property bool sortSection: false // for later use
 
 function pauseStream() {
@@ -56,15 +56,13 @@ function stopStream() {
 }
 
 function ps(source) {
-    if (current !== source) {
         playMusic.stop()
         userPlay = 0
         streaming = false
-        current = source
+        //current = source
         sloading = true;
         Stream.func(source);
         playStream()
-    }
 }
 
 function unknownError() {
@@ -130,6 +128,14 @@ Audio {
             if (error == 3 && userPlay == 2 && errorString !== "File Not Found") {
                 sloading = false;
                 streaming = false; play();}
+            else {
+                sloading = false; streaming = false; stop()
+                radioStation = errorString
+            }
+            if (error == 3 && userPlay == 2 && errorString == "Server does not support seeking.") {
+                //sloading = false;
+                //streaming = false;
+                play();}
             else {
                 sloading = false; streaming = false; stop()
                 radioStation = errorString
