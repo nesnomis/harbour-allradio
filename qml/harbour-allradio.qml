@@ -116,6 +116,7 @@ Audio {
         autoPlay: true
 
         onStopped:{
+            console.log("Stopped")
         }
 
         onError: {
@@ -142,6 +143,14 @@ Audio {
             }
 
             console.log("ERROR: "+error+" ("+errorString+")")
+        }
+
+        onPaused: {
+            if (userPlay == 2) streaming = false;userPlay = 1;
+        }
+
+        onPlaybackStateChanged: {
+            console.log("state changed: "+status)
         }
 
         onStatusChanged: {
