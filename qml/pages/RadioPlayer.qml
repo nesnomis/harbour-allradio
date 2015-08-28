@@ -107,6 +107,7 @@ Page {
             }
             onMovementStarted: {
                 retning = contentY
+                Qt.application
             }
             onVerticalVelocityChanged: {
                 if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10) showPlayer = true;

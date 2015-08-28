@@ -43,9 +43,6 @@ function playStream() {
 }
 
 function stopStream() {
-    //picon = "../harbour-allradio.png"
-    //radioStation = "AllRadio"
-    //mp3 = "";
     userPlay=0;
     playMusic.stop();
     sleepTime = 0;
@@ -146,19 +143,28 @@ Audio {
         }
 
         onPaused: {
-            if (userPlay == 2) streaming = false;userPlay = 1;sleepTime = 0
+            streaming = false
+            console.log("--- PAUSED ---")
         }
 
+
         onPlaybackStateChanged: {
-            console.log("state changed: "+status)
+            switch (playbackState) {
+                case 0: streaming = false; break
+                case 1: if (userPlay == 2 && !streaming) streaming = true; else if (userPlay == 2 && streaming && status == 6) pauseStream(); break
+                case 2: if (userPlay == 2) streaming = false;sleepTime = 0; break
+            }
+            console.log("STATE: "+playbackState + " STATUS: "+status+" sloading = "+sloading+" Streaming = "+streaming)
         }
 
         onStatusChanged: {
-            if (status == 2 || status==3  || status == 4) sloading = true;streaming = false
-            if (status == 3 && userPlay == 2) streaming = false
-            if (status == 6) sloading = false;streaming = true
-            console.log(radioStation+":")
-            console.log("STATE: "+playbackState + " STATUS: "+status+" sloading = "+sloading+" Streaming = "+streaming)
+            if (status == 2 || status==3  || status == 4) sloading = true//;streaming = false
+            //if (status == 3 && userPlay == 2) //streaming = false
+            if (status == 6) sloading = false //;streaming = true
+            //console.log(radioStation+":")
+            //console.log("STATE: "+playbackState + " STATUS: "+status+" sloading = "+sloading+" Streaming = "+streaming)
+            //console.log("STATE: "+playbackState + " STATUS: "+status+" sloading = "+sloading+" Streaming = "+streaming)
+
         }
 
         }
