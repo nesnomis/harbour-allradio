@@ -10,6 +10,7 @@
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="42"/>
+        <location filename="../qml/pages/About.qml" line="78"/>
         <source>Opening webpage</source>
         <translation>Öppnar websida</translation>
     </message>
@@ -296,13 +297,13 @@ AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translatio
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="42"/>
         <location filename="../qml/pages/CountryChooser.qml" line="65"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="142"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="163"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="143"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="164"/>
         <source>Favorites</source>
         <translation>Favoriter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="205"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="206"/>
         <source>Show as grid</source>
         <translation>Visa som ikoner</translation>
     </message>
@@ -568,12 +569,14 @@ AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translatio
 <context>
     <name>CoverPage</name>
     <message>
+        <location filename="../qml/cover/CoverPage.qml" line="38"/>
         <source>Closing in </source>
-        <translation type="vanished">Stänger om </translation>
+        <translation>Stänger om </translation>
     </message>
     <message>
+        <location filename="../qml/cover/CoverPage.qml" line="38"/>
         <source> minutes.</source>
-        <translation type="vanished"> minuter.</translation>
+        <translation> minuter.</translation>
     </message>
 </context>
 <context>
@@ -640,7 +643,7 @@ AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translatio
     <message>
         <location filename="../qml/pages/Help.qml" line="49"/>
         <source>More</source>
-        <translation type="unfinished"></translation>
+        <translation>Annat</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="50"/>
@@ -712,22 +715,22 @@ Använd insomningstimern till att ställa in ett antal minuter AllRadio skall sp
         <translation type="vanished">Sök</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="168"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="169"/>
         <source>Listen</source>
         <translation>Lyssna</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="179"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="180"/>
         <source>Add to favorites</source>
         <translation>Lägg till i favoriter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="185"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="186"/>
         <source>Delete favourite</source>
         <translation>Ta bort favorit</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="187"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="188"/>
         <source>Deleting channel</source>
         <translation>Tar bort kanal</translation>
     </message>

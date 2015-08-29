@@ -10,6 +10,7 @@
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="42"/>
+        <location filename="../qml/pages/About.qml" line="78"/>
         <source>Opening webpage</source>
         <translation>Åbner webside</translation>
     </message>
@@ -297,13 +298,13 @@ AllRadio copyright - Niels Simonsen &lt;nesnomis@gmail.com&gt;.
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="42"/>
         <location filename="../qml/pages/CountryChooser.qml" line="65"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="142"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="163"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="143"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="164"/>
         <source>Favorites</source>
         <translation>Favoritter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="205"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="206"/>
         <source>Show as grid</source>
         <translation>Vis som ikoner</translation>
     </message>
@@ -569,12 +570,14 @@ AllRadio copyright - Niels Simonsen &lt;nesnomis@gmail.com&gt;.
 <context>
     <name>CoverPage</name>
     <message>
+        <location filename="../qml/cover/CoverPage.qml" line="38"/>
         <source>Closing in </source>
-        <translation type="vanished">Slukker om </translation>
+        <translation>Slukker om </translation>
     </message>
     <message>
+        <location filename="../qml/cover/CoverPage.qml" line="38"/>
         <source> minutes.</source>
-        <translation type="vanished"> minutter.</translation>
+        <translation> minutter.</translation>
     </message>
 </context>
 <context>
@@ -632,7 +635,7 @@ AllRadio copyright - Niels Simonsen &lt;nesnomis@gmail.com&gt;.
     <message>
         <location filename="../qml/pages/Help.qml" line="49"/>
         <source>More</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvrigt</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="50"/>
@@ -702,22 +705,22 @@ Brug indslumringstimer til at indstille tid i minutter inden AllRadio slukker fo
         <translation type="vanished">Søg</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="168"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="169"/>
         <source>Listen</source>
         <translation>Afspil</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="179"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="180"/>
         <source>Add to favorites</source>
         <translation>Lægg til favoritter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="185"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="186"/>
         <source>Delete favourite</source>
         <translation>Fjern fra favoritter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="187"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="188"/>
         <source>Deleting channel</source>
         <translation>Fjerner kanal</translation>
     </message>

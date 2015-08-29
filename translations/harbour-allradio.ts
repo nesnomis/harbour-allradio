@@ -10,6 +10,7 @@
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="42"/>
+        <location filename="../qml/pages/About.qml" line="78"/>
         <source>Opening webpage</source>
         <translation type="unfinished"></translation>
     </message>
@@ -34,13 +35,13 @@
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="42"/>
         <location filename="../qml/pages/CountryChooser.qml" line="65"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="142"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="163"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="143"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="164"/>
         <source>Favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="205"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="206"/>
         <source>Show as grid</source>
         <translation type="unfinished"></translation>
     </message>
@@ -304,6 +305,19 @@
     </message>
 </context>
 <context>
+    <name>CoverPage</name>
+    <message>
+        <location filename="../qml/cover/CoverPage.qml" line="38"/>
+        <source>Closing in </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/cover/CoverPage.qml" line="38"/>
+        <source> minutes.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Help</name>
     <message>
         <location filename="../qml/pages/Help.qml" line="15"/>
@@ -395,22 +409,22 @@
 <context>
     <name>RadioPlayer</name>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="168"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="169"/>
         <source>Listen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="179"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="180"/>
         <source>Add to favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="185"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="186"/>
         <source>Delete favourite</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="187"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="188"/>
         <source>Deleting channel</source>
         <translation type="unfinished"></translation>
     </message>
