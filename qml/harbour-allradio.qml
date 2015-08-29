@@ -11,11 +11,11 @@ ApplicationWindow {
 id: window
 property variant dbModel: favChannels
 property alias mp3: playMusic.source
-property string ctitle: "AllRadio"
+property string ctitle: ""
 property string picon: "../harbour-allradio.png"
 property string ficon: ""
 property string cicon: ""
-property string radioStation: "AllRadio"
+property string radioStation: ""
 property string website: ""
 property int sleepTime: 0
 property int userPlay: 0 // 0 Stopped, 1 Paused, 2 Playing
@@ -45,7 +45,6 @@ function playStream() {
 function stopStream() {
     userPlay=0;
     playMusic.stop();
-    sleepTime = 0;
     streaming = false
     sloading = false
 }
@@ -63,7 +62,6 @@ function unknownError() {
     radioStation = "Uknown Error"
     mp3 = "";
     userPlay=0;
-    sleepTime = 0;
     streaming = false
     sloading = false
 }
@@ -75,6 +73,8 @@ function dropDb() {
 }
 
 function addDb(source,title,site,section,icon) {
+    console.log("ICON: "+icon)
+
     Db.add(source,title,site,section,icon)
     Db.load(favChannels)
 }
@@ -152,7 +152,7 @@ Audio {
             switch (playbackState) {
                 case 0: streaming = false; break
                 case 1: if (userPlay == 2 && !streaming) streaming = true; else if (userPlay == 2 && streaming && status == 6) pauseStream(); break
-                case 2: if (userPlay == 2) streaming = false;sleepTime = 0; break
+                case 2: if (userPlay == 2) streaming = false; break //;sleepTime = 0
             }
             console.log("STATE: "+playbackState + " STATUS: "+status+" sloading = "+sloading+" Streaming = "+streaming)
         }
