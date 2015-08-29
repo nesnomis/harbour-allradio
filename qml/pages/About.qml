@@ -82,7 +82,7 @@ Page {
                     text: "<h2>Changelog:</h2><br>"+
 
 "<p>version 1.3.0<br>
-- Corrected a type error in sleeptimer<br>
+- Corrected a typing error in sleeptimer<br>
 - Tweaked coverpage<br>
 - Added changelog to about page</p>
 
