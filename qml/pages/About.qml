@@ -8,7 +8,7 @@ Page {
 
     SilicaFlickable {
         anchors.fill: parent
-        contentHeight: header.height + text.height + logo.height + Theme.paddingLarge
+        contentHeight: header.height + text.height + logo.height + log.height + Theme.paddingLarge
         contentWidth: parent.width
         VerticalScrollDecorator {}
             PageHeader {
@@ -49,5 +49,85 @@ Page {
                       + qsTr("Sourcecode is available on") + ": <a href='https://github.com/nesnomis/harbour-allradio'>github</a></p><br><p>"
                      + qsTr("The radiostations are from") + ": <a href='http://www.listenlive.eu'>listenlive.eu</a></p><br><p>"
             }
+
+                Separator {
+                    anchors.top: text.bottom
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    id: separator
+                    color: Theme.highlightColor
+                    width: parent.width - (Theme.paddingMedium * 2)
+
+                    //alignment: Qt.AlignHCenter
+                    }
+
+                Text {
+                    id: log
+                    anchors {
+                        top: separator.bottom
+                        left: parent.left
+                        right: parent.right
+                        leftMargin: 20
+                        rightMargin: 20
+                        topMargin: 40
+                    }
+
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                    color: Theme.primaryColor
+                    linkColor: Theme.highlightColor
+                    onLinkActivated: remorse.execute(qsTr("Opening webpage"), function() {Qt.openUrlExternally(link)}, 3000)
+                    textFormat: Text.StyledText
+                    font.pixelSize: Theme.fontSizeMedium
+                    //horizontalAlignment: Text.AlignHCenter
+                    text: "<h2>Changelog:</h2><br>"+
+
+"<p>version 1.3.0<br>
+- Corrected a type error in sleeptimer<br>
+- Tweaked coverpage<br>
+- Added changelog to about page</p>
+
+<p>version 1.2.9<br>
+- Making sure it behaves on incoming call</p>
+
+<p>version 1.2.8<br>
+- just a rebuild.</p>
+
+<p>version 1.2.7<br>
+- Able to resume play after sleeptimer stopped.</p>
+
+<p>version 1.2.6<br>
+- Detect earphones disconnection and set icon to pause<br>
+- If clicking on current playing stream, it now reloads and start stream again (instead of doing nothing).<br>
+- fixing playerPanel behavior when scrolling to the bottom of the list (it should get out of the way!).<br>
+- Introducing new unforeseen bugs (features)!? :) </p>
+
+<p>version 1.2.5<br>
+- Fixed a bug making a lot of wake ups when idle (thank you Jolla for pointing that out!).<br>
+- Added Search/Filter on channels<br>
+- Changed the player internally to handle and show errors in a better way.<br>
+- Maybe a little more?!</p>
+
+<p>version 1.2.4<br>
+- Fixed a bug (country not showing)<br>
+- Sort order by title (all channels)</p>
+
+<p>version 1.2.3<br>
+- Sort order by title (favorites)</p>
+
+<p>version 1.2.2:<br>
+- Major rewrite to prepare for filter search and sorting.<br>
+- Some more tweaking of appearance.</p>
+
+<p>version 1.2.1:<br>
+- Added Kosovo.<br>
+- Changed look on flags (Switzerland and Vatican).<br>
+- Changed Player behavior (hopefully looks and works nicer).<br>
+- Small tweaks here and there... :)<br>
+- Search and sort will have to wait (sorry).</p>
+
+<p>Initial release 1.2</p>"
+                }
+
+
     }
 }
