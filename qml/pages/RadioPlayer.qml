@@ -153,8 +153,8 @@ Page {
                     ps(model.source)
                     radioStation = model.title
                     website = (Qt.resolvedUrl(model.site))
-                    if (favorites == true && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                    else picon = "../stations/"+icon+".png";
+                    if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
+                    else if (favorites) picon = "../stations/"+icon+".png"; else picon = "../stations/"+country+".png"
                 }
             }
         }
@@ -170,8 +170,8 @@ Page {
                     onClicked: {
                         ps(rpsource)
                         radioStation = rptitle
-                        if (favorites == true && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                        else picon = "../stations/"+icon+".png";
+                        if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
+                        else if (favorites) picon = "../stations/"+icon+".png"; else picon = "../stations/"+country+".png"
                         website = (Qt.resolvedUrl(rpsite))
                     }
                 }

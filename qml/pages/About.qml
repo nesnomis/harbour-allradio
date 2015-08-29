@@ -113,7 +113,14 @@ Page {
                     //horizontalAlignment: Text.AlignHCenter
                     text: "<h2>Changelog:</h2><br>"+
 
-"<p>version 1.3.1<br>
+"<p>version 1.3.3<br>
+- found another error (country flags)<br>
+- NEED TO DO SOME BETTER TESTING!!!</p>
+
+<p>version 1.3.2<br>
+- Corrected a fatal error when reading country flag from favorites!</p>
+
+<p>version 1.3.1<br>
 - Updated about page</p>
 
 <p>version 1.3.0<br>
