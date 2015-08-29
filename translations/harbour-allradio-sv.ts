@@ -10,7 +10,8 @@
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="42"/>
-        <location filename="../qml/pages/About.qml" line="78"/>
+        <location filename="../qml/pages/About.qml" line="77"/>
+        <location filename="../qml/pages/About.qml" line="110"/>
         <source>Opening webpage</source>
         <translation>Öppnar websida</translation>
     </message>
@@ -18,6 +19,11 @@
         <location filename="../qml/pages/About.qml" line="50"/>
         <source>The radiostations are from</source>
         <translation>Radio kanalerna kommer från</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="81"/>
+        <source>If you like this app, and would like to make a donation (for a beer or a cup of coffee?! :) ..):</source>
+        <translation>Om du gillar denna appen och vill donera (till en öl eller kop kaffe?! :) ...):</translation>
     </message>
     <message>
         <source>AllRadio is a radio player for online streaming radio.</source>

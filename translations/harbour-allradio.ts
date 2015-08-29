@@ -10,7 +10,8 @@
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="42"/>
-        <location filename="../qml/pages/About.qml" line="78"/>
+        <location filename="../qml/pages/About.qml" line="77"/>
+        <location filename="../qml/pages/About.qml" line="110"/>
         <source>Opening webpage</source>
         <translation type="unfinished"></translation>
     </message>
@@ -22,6 +23,11 @@
     <message>
         <location filename="../qml/pages/About.qml" line="50"/>
         <source>The radiostations are from</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="81"/>
+        <source>If you like this app, and would like to make a donation (for a beer or a cup of coffee?! :) ..):</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

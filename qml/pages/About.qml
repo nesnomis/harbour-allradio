@@ -8,7 +8,7 @@ Page {
 
     SilicaFlickable {
         anchors.fill: parent
-        contentHeight: header.height + text.height + logo.height + log.height + Theme.paddingLarge
+        contentHeight: header.height + text.height + logo.height + log.height + sep1.height + donate.height + sep2.height + Theme.paddingLarge
         contentWidth: parent.width
         VerticalScrollDecorator {}
             PageHeader {
@@ -51,9 +51,41 @@ Page {
             }
 
                 Separator {
+                    id:sep1
                     anchors.top: text.bottom
                     anchors.horizontalCenter: parent.horizontalCenter
-                    id: separator
+                    color: Theme.highlightColor
+                    width: parent.width - (Theme.paddingMedium * 2)
+
+                    //alignment: Qt.AlignHCenter
+                    }
+
+
+                Text {
+                    id: donate
+                    anchors {
+                        top: sep1.bottom
+                        left: parent.left
+                        right: parent.right
+                        leftMargin: 20
+                        rightMargin: 20
+                    }
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                    color: Theme.primaryColor
+                    linkColor: Theme.highlightColor
+                    onLinkActivated: remorse.execute(qsTr("Opening webpage"), function() {Qt.openUrlExternally(link)}, 3000)
+                    textFormat: Text.StyledText
+                    font.pixelSize: Theme.fontSizeExtraSmall
+                    horizontalAlignment: Text.AlignHCenter
+                    text: "<p>"+qsTr("If you like this app, and would like to make a donation (for a beer or a cup of coffee?! :) ..):")+
+                          "</p><br><p><h3><a href='https://flattr.com/thing/4552590/AllRadio'>flattr</a> ------ or ------ <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9KAZFTA26THEG'>PayPal</a></h3></p>"
+                }
+
+                Separator {
+                    id:sep2
+                    anchors.top: donate.bottom
+                    anchors.horizontalCenter: parent.horizontalCenter
                     color: Theme.highlightColor
                     width: parent.width - (Theme.paddingMedium * 2)
 
@@ -63,7 +95,7 @@ Page {
                 Text {
                     id: log
                     anchors {
-                        top: separator.bottom
+                        top: sep2.bottom
                         left: parent.left
                         right: parent.right
                         leftMargin: 20
@@ -82,6 +114,9 @@ Page {
                     text: "<h2>Changelog:</h2><br>"+
 
 "<p>version 1.3.0<br>
+- Updated about page</p>
+
+<p>version 1.3.0<br>
 - Corrected a typing error in sleeptimer<br>
 - Tweaked coverpage<br>
 - Added changelog to about page</p>
