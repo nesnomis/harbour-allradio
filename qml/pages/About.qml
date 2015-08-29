@@ -113,7 +113,7 @@ Page {
                     //horizontalAlignment: Text.AlignHCenter
                     text: "<h2>Changelog:</h2><br>"+
 
-"<p>version 1.3.0<br>
+"<p>version 1.3.1<br>
 - Updated about page</p>
 
 <p>version 1.3.0<br>
