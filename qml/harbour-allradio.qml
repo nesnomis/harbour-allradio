@@ -29,6 +29,7 @@ property bool streaming: false
 
 function pauseStream() {
     userPlay = 1;
+    sleepTime = 0;
     playMusic.pause();
     streaming = false
     sloading = false
@@ -102,7 +103,7 @@ Timer {
     interval: 60000
     repeat: false
     onTriggered: {
-        if (sleepTime == 1) { pauseStream();sleepTime = 0;} else sleepTime = (sleepTime = -1);
+        if (sleepTime == 1) { pauseStream();sleepTime = 0;} else sleepTime = (sleepTime = sleepTime -1);
     }
     running: sleepTime > 0
 }
@@ -144,6 +145,7 @@ Audio {
 
         onPaused: {
             streaming = false
+            sleepTime = 0;
             console.log("--- PAUSED ---")
         }
 
