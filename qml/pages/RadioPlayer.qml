@@ -154,7 +154,7 @@ Page {
                     radioStation = model.title
                     website = (Qt.resolvedUrl(model.site))
                     if (favorites == true && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                    else picon = "../stations/"+country+".png";
+                    else picon = "../stations/"+icon+".png";
                 }
             }
         }
@@ -170,7 +170,8 @@ Page {
                     onClicked: {
                         ps(rpsource)
                         radioStation = rptitle
-                        picon = "../stations/"+country+".png"
+                        if (favorites == true && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
+                        else picon = "../stations/"+icon+".png";
                         website = (Qt.resolvedUrl(rpsite))
                     }
                 }
