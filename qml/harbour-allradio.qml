@@ -3,7 +3,6 @@ import QtMultimedia 5.0
 import Sailfish.Silica 1.0
 import QtQuick.LocalStorage 2.0
 import "pages"
-import "cover"
 import "js/favorites.js" as Db
 import "js/stream.js" as Stream
 
@@ -90,13 +89,8 @@ Component.onCompleted: {
     Db.load(favChannels)
 }
 
-CountryModel {
-    id: countryModel
-}
-
-ListModel{
-    id: favChannels
-}
+CountryModel {id: countryModel}
+ListModel{id: favChannels}
 
 Timer {
     id: sleepTimer
@@ -113,41 +107,23 @@ Audio {
         source: mp3
         autoPlay: true
 
-        onStopped:{
-            console.log("Stopped")
-        }
+        //onStopped:{console.log("Stopped")}
 
         onError: {
             switch (error) {
-                //case 0: break
-                case 1: sloading = false; streaming = false; userPlay = 0; mp3 = "";stop(); radioStation = errorString;break
-                //case 2: break
-                case 3: if (userPlay == 2 && errorString !== "File Not Found") {
-                            sloading = false;
-                            streaming = false;
-                            play();
-                        }
-                        else if (userPlay == 2 && errorString == "Server does not support seeking.") {
-                            pauseStream()
-                            playStream();
-                        } ; break
-                //case 4: break
-                //case 5: break
-            default: {
-                sloading = false; streaming = false; stop()
-                radioStation = errorString
-                } ; break
+                case 0: return;
+                //case 1: break //ResourceError (The audio cannot be played due to a problem allocating resources.The audio cannot be played due to a problem allocating resources.)
+                //case 2: break //FormatError (The audio format is not supported.)
+                case 3: if (userPlay == 2 && errorString !== "File Not Found") {mp3 = "";stopStream(); radioStation = errorString;break}
+                        else if (userPlay == 2 && position == 0) {stop();play();break} // Seek Error
+                //case 4: break; //AccessDenied (The audio cannot be played due to insufficient permissions.)
+                //case 5: break; //ServiceMissing (The audio cannot be played because the media service could not be instantiated.)
+            default: mp3 = "";stopStream(); radioStation = errorString;break}
 
-            }
-
-            console.log("ERROR: "+error+" ("+errorString+")")
+            console.log("ERROR: "+error+" ("+errorString+") POSITIONS: "+position)
         }
 
-        onPaused: {
-            streaming = false
-            sleepTime = 0;
-            console.log("--- PAUSED ---")
-        }
+        onPaused: {streaming = false; sleepTime = 0} //console.log("--- PAUSED ---")}
 
 
         onPlaybackStateChanged: {
@@ -160,18 +136,14 @@ Audio {
         }
 
         onStatusChanged: {
-            if (status == 2 || status==3  || status == 4) sloading = true//;streaming = false
+            if (status == 2 || status==3  || status == 4) sloading = true//;streaming = false // Audio is loading or buffering
             //if (status == 3 && userPlay == 2) //streaming = false
-            if (status == 6) sloading = false //;streaming = true
-            //console.log(radioStation+":")
+            if (status == 6) sloading = false //;streaming = true // Audio loaded and buffered
+            if (status == 7 && state == 0 && userPlay == 2) playStream() // indication end of media?!? Start playing again!
+
             //console.log("STATE: "+playbackState + " STATUS: "+status+" sloading = "+sloading+" Streaming = "+streaming)
-            //console.log("STATE: "+playbackState + " STATUS: "+status+" sloading = "+sloading+" Streaming = "+streaming)
-
         }
-
-        }
-
-initialPage: Component {CountryChooser {}}
-
-cover: Component {CoverPage {}}
+    }
+    initialPage: Component { CountryChooser { } }
+    cover: Qt.resolvedUrl("cover/CoverPage.qml")
 }
