@@ -19,6 +19,7 @@ DockedPanel {
         anchors.centerIn: parent
         size: BusyIndicatorSize.Large
         running: (sloading && Qt.application.active)
+        enabled: (Qt.application.active)
     }
             BackgroundItem {
                 height: parent.height

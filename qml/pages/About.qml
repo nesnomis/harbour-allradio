@@ -113,7 +113,12 @@ Page {
                     //horizontalAlignment: Text.AlignHCenter
                     text: "<h2>Changelog:</h2><br>"+
 
-"<p>version 1.3.3<br>
+"<p>version next<br>
+- Tweaking Error handling<br>
+- Reimplemented busy indicator on cover
+</p>
+
+<p>version 1.3.3<br>
 - found another error (country flags)<br>
 - NEED TO DO SOME BETTER TESTING!!!</p>
 
