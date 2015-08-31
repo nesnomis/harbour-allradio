@@ -28,7 +28,6 @@ property bool streaming: false
 
 function pauseStream() {
     userPlay = 1;
-    sleepTime = 0;
     playMusic.pause();
     streaming = false
     sloading = false
@@ -102,6 +101,7 @@ Timer {
     running: sleepTime > 0
 }
 
+
 Audio {
         id: playMusic
         source: mp3
@@ -114,8 +114,8 @@ Audio {
                 case 0: return;
                 //case 1: break //ResourceError (The audio cannot be played due to a problem allocating resources.The audio cannot be played due to a problem allocating resources.)
                 //case 2: break //FormatError (The audio format is not supported.)
-                case 3: if (userPlay == 2 && errorString !== "File Not Found") {mp3 = "";stopStream(); radioStation = errorString;break}
-                        else if (userPlay == 2 && position == 0) {stop();play();break} // Seek Error
+                case 3: if (userPlay == 2 && errorString !== "File Not Found") {mp3 = "";stopStream(); radioStation = errorString}
+                        else if (userPlay == 2 && position == 0) stopStream();break // Seek Error
                 //case 4: break; //AccessDenied (The audio cannot be played due to insufficient permissions.)
                 //case 5: break; //ServiceMissing (The audio cannot be played because the media service could not be instantiated.)
             default: mp3 = "";stopStream(); radioStation = errorString;break}
@@ -123,8 +123,7 @@ Audio {
             console.log("ERROR: "+error+" ("+errorString+") POSITIONS: "+position)
         }
 
-        onPaused: {streaming = false; sleepTime = 0} //console.log("--- PAUSED ---")}
-
+        //onPaused: {streaming = false //console.log("--- PAUSED ---")}
 
         onPlaybackStateChanged: {
             switch (playbackState) {
@@ -139,8 +138,8 @@ Audio {
             if (status == 2 || status==3  || status == 4) sloading = true//;streaming = false // Audio is loading or buffering
             //if (status == 3 && userPlay == 2) //streaming = false
             if (status == 6) sloading = false //;streaming = true // Audio loaded and buffered
-            if (status == 7 && state == 0 && userPlay == 2) playStream() // indication end of media?!? Start playing again!
-
+            //if ((status == 7) && state == 0 && userPlay == 2) stop();play() // indication end of media?!? Start playing again!
+            //if (status == 7 && state == 0 && userPlay == 2 && position == 0) stop();play()
             //console.log("STATE: "+playbackState + " STATUS: "+status+" sloading = "+sloading+" Streaming = "+streaming)
         }
     }

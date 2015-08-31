@@ -3,12 +3,12 @@ import Sailfish.Silica 1.0
 
 CoverBackground {
     CoverPlaceholder {
-        BusyIndicator { // Maybe.... Just, maybe... Cover.Active solves the problem with a lot of wake up's when idle!!! ... :)
-            anchors.centerIn: parent
-            size: BusyIndicatorSize.Large
-            running: (sloading && Cover.Active)
-            enabled: (Cover.Active)
-        }  // I really want this, but it still makes a lot of wake up's when idle (and only when used on cover)?????
+       // BusyIndicator { // Maybe.... Just, maybe... Cover.Active solves the problem with a lot of wake up's when idle!!! ... :)
+       //     anchors.centerIn: parent
+       //     size: BusyIndicatorSize.Large
+       //     running: (sloading && Cover.Active)
+       //     enabled: (Cover.Active)
+       // }  // I really want this, but it still makes a lot of wake up's when idle (and only when used on cover)?????
         Label {
             id: app
             anchors.horizontalCenter: parent.horizontalCenter

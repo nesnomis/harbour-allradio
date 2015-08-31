@@ -1,6 +1,7 @@
 // Script to get the real stream from crayppy pls and m3u files!
 
 function func(source) {
+    if (source.split('.').pop() == "mp3") {mp3 = source; return;}
     var pls = source.search(".pls");
     var m3u = source.search(".m3u");
 

@@ -7,7 +7,7 @@ Page {
     SilicaFlickable {
         anchors.fill: parent
         VerticalScrollDecorator {}
-            PageHeader { title: ((sleepTime > 0) ? (qsTr("Remaning time: ")  + (sleepTime) + qsTr(" minutes")) : qsTr("choose time: ") + minutes.value )}
+            PageHeader {title:((sleepTime > 0) ? (qsTr("Remaning time: ") + (sleepTime) + qsTr(" minutes")) : qsTr("choose time: ") + minutes.value )}
 
             ValuePicker {
                 id: minutes
