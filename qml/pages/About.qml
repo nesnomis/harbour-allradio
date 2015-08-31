@@ -113,9 +113,9 @@ Page {
                     //horizontalAlignment: Text.AlignHCenter
                     text: "<h2>Changelog:</h2><br>"+
 
-"<p>version next<br>
+"<p>version 1.3.4<br>
 - Tweaking Error handling<br>
-- Reimplemented busy indicator on cover
+- Small fix on sleeptimer
 </p>
 
 <p>version 1.3.3<br>
