@@ -113,7 +113,11 @@ Page {
                     //horizontalAlignment: Text.AlignHCenter
                     text: "<h2>Changelog:</h2><br>"+
 
-"<p>version 1.3.4<br>
+"<p>version 1.3.5<br>
+- Tweaking deletion of favorites
+- More small optimizing of error handling
+
+<p>version 1.3.4<br>
 - Tweaking Error handling<br>
 - Small fix on sleeptimer
 </p>
