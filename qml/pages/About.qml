@@ -114,8 +114,8 @@ Page {
                     text: "<h2>Changelog:</h2><br>"+
 
 "<p>version 1.3.5<br>
-- Tweaking deletion of favorites
-- More small optimizing of error handling
+- Tweaking deletion of favorites<br>
+- More small optimizing of error handling</p>
 
 <p>version 1.3.4<br>
 - Tweaking Error handling<br>
