@@ -2,10 +2,10 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 PullDownMenu {
-    /*MenuItem {
+  /*  MenuItem {
         text: qsTr("Drop Database")
         onClicked: dropDb()
-    }*/
+    } */
     MenuItem {
         text: qsTr("Help")
         onClicked: pageStack.push(Qt.resolvedUrl("Help.qml"))
