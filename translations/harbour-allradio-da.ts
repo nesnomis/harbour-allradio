@@ -26,276 +26,13 @@
         <translation>Hvis du godt kan lide denne app og vil donere (til en øl eller kop kaffe?! :) ...):</translation>
     </message>
     <message>
-        <source>AllRadio is a radio player for online streaming radio.</source>
-        <translation type="vanished">AllRadio er en radio-afspiller til online streaming radio.</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/About.qml" line="49"/>
         <source>Sourcecode is available on</source>
         <translation>Kildekoden findes på</translation>
     </message>
-    <message>
-        <source>Sourcecode is available on github</source>
-        <translation type="vanished">Kildekoden findes på github</translation>
-    </message>
-    <message>
-        <source>AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick for Nokia N9.
-
-The radiostations are coming from:</source>
-        <translation type="vanished">AllRadio er inspireret af gode programmer som uradio, nettiradio og mit eget drQuick til Nokia N9.
-
-Radiostationerne kommer fra:</translation>
-    </message>
-    <message>
-        <source>
-AllRadio is a radio player for online streaming radio.
-
-Sourcecode is available on github &lt;https://github.com/nesnomis/harbour-allradio&gt;.
-
-AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick for Nokia N9.
-
-The radiostations are coming from: &lt;http://www.listenlive.eu&gt;.
-
-AllRadio v.1.0-1 copyleft/right - 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</source>
-        <translation type="vanished">AllRadio er en radio-afspiller til online streaming radio.
-
-Kildekoden findes på github &lt;https://github.com/nesnomis/harbour-allradio&gt;.
-
-AllRadio er inspireret af gode programmer som uradio, nettiradio og mit eget drQuick til Nokia N9.
-
-Radiostationerne kommer fra: &lt;http://www.listenlive.eu&gt;.
-
-AllRadio copyleft/right - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</translation>
-    </message>
-    <message>
-        <source>
-AllRadio is a radio player for online streaming radio.
-
-Sourcecode is available on github &lt;https://github.com/nesnomis/harbour-allradio&gt;.
-
-AllRadio is inspired by great apps such as uradio, nettiradio and my own drquick for Nokia N9.
-
-The radiostations are coming from: &lt;http://www.listenlive.eu&gt;.
-
-AllRadio copyright 2015 - Niels Simonsen &lt;nesnomis@gmail.com&gt;.</source>
-        <translation type="vanished">AllRadio er en radio-afspiller til online streaming radio.
-
-Kildekoden findes på github &lt;https://github.com/nesnomis/harbour-allradio&gt;.
-
-AllRadio er inspireret af gode programmer som uradio, nettiradio og mit eget drQuick til Nokia N9.
-
-Radiostationerne kommer fra: &lt;http://www.listenlive.eu&gt;.
-
-AllRadio copyright - Niels Simonsen &lt;nesnomis@gmail.com&gt;.
-</translation>
-    </message>
 </context>
 <context>
     <name>CountryChooser</name>
-    <message>
-        <source>Albania</source>
-        <translation type="vanished">Albanien</translation>
-    </message>
-    <message>
-        <source>Andorra</source>
-        <translation type="vanished">Andorra</translation>
-    </message>
-    <message>
-        <source>Armenia</source>
-        <translation type="vanished">Armenien</translation>
-    </message>
-    <message>
-        <source>Austria</source>
-        <translation type="vanished">Østrig</translation>
-    </message>
-    <message>
-        <source>Azerbaijan</source>
-        <translation type="vanished">Aserbajdsjan</translation>
-    </message>
-    <message>
-        <source>Belarus</source>
-        <translation type="vanished">Hvidrusland</translation>
-    </message>
-    <message>
-        <source>Belgium</source>
-        <translation type="vanished">Belgien</translation>
-    </message>
-    <message>
-        <source>Bosnia</source>
-        <translation type="vanished">Bosnien</translation>
-    </message>
-    <message>
-        <source>Bulgaria</source>
-        <translation type="vanished">Bulgarien</translation>
-    </message>
-    <message>
-        <source>Croatia</source>
-        <translation type="vanished">Kroatien</translation>
-    </message>
-    <message>
-        <source>Cyprus</source>
-        <translation type="vanished">Cypern</translation>
-    </message>
-    <message>
-        <source>Czechrepublic</source>
-        <translation type="vanished">Tjekkisk-republik</translation>
-    </message>
-    <message>
-        <source>Denmark</source>
-        <translation type="vanished">Danmark</translation>
-    </message>
-    <message>
-        <source>Estonia</source>
-        <translation type="vanished">Estland</translation>
-    </message>
-    <message>
-        <source>Faroe</source>
-        <translation type="vanished">Færøerne</translation>
-    </message>
-    <message>
-        <source>Finland</source>
-        <translation type="vanished">Finland</translation>
-    </message>
-    <message>
-        <source>France</source>
-        <translation type="vanished">Frankrig</translation>
-    </message>
-    <message>
-        <source>Georgia</source>
-        <translation type="vanished">Georgien</translation>
-    </message>
-    <message>
-        <source>Germany</source>
-        <translation type="vanished">Tyskland</translation>
-    </message>
-    <message>
-        <source>Gibraltar</source>
-        <translation type="vanished">Gibraltar</translation>
-    </message>
-    <message>
-        <source>Greece</source>
-        <translation type="vanished">Grækenland</translation>
-    </message>
-    <message>
-        <source>Hungary</source>
-        <translation type="vanished">Ungarn</translation>
-    </message>
-    <message>
-        <source>Iceland</source>
-        <translation type="vanished">Island</translation>
-    </message>
-    <message>
-        <source>Ireland</source>
-        <translation type="vanished">Irland</translation>
-    </message>
-    <message>
-        <source>Italy</source>
-        <translation type="vanished">Italien</translation>
-    </message>
-    <message>
-        <source>Kosovo</source>
-        <translation type="vanished">Kosovo</translation>
-    </message>
-    <message>
-        <source>Latvia</source>
-        <translation type="vanished">Letland</translation>
-    </message>
-    <message>
-        <source>Liechtenstein</source>
-        <translation type="vanished">Liechtenstein</translation>
-    </message>
-    <message>
-        <source>Lithuania</source>
-        <translation type="vanished">Litauen</translation>
-    </message>
-    <message>
-        <source>Luxembourg</source>
-        <translation type="vanished">Luxemburg</translation>
-    </message>
-    <message>
-        <source>Macedonia</source>
-        <translation type="vanished">Makedonien</translation>
-    </message>
-    <message>
-        <source>Malta</source>
-        <translation type="vanished">Malta</translation>
-    </message>
-    <message>
-        <source>Moldova</source>
-        <translation type="vanished">Moldova</translation>
-    </message>
-    <message>
-        <source>Monaco</source>
-        <translation type="vanished">Monaco</translation>
-    </message>
-    <message>
-        <source>Montenegro</source>
-        <translation type="vanished">Montenegro</translation>
-    </message>
-    <message>
-        <source>Netherlands</source>
-        <translation type="vanished">Holland</translation>
-    </message>
-    <message>
-        <source>Norway</source>
-        <translation type="vanished">Norge</translation>
-    </message>
-    <message>
-        <source>Poland</source>
-        <translation type="vanished">Polen</translation>
-    </message>
-    <message>
-        <source>Portugal</source>
-        <translation type="vanished">Portugal</translation>
-    </message>
-    <message>
-        <source>Romania</source>
-        <translation type="vanished">Rumænien</translation>
-    </message>
-    <message>
-        <source>Russia</source>
-        <translation type="vanished">Rusland</translation>
-    </message>
-    <message>
-        <source>Serbia</source>
-        <translation type="vanished">Serbien</translation>
-    </message>
-    <message>
-        <source>Slovakia</source>
-        <translation type="vanished">Slovakiet</translation>
-    </message>
-    <message>
-        <source>Slovenia</source>
-        <translation type="vanished">Slovenien</translation>
-    </message>
-    <message>
-        <source>Spain</source>
-        <translation type="vanished">Spanien</translation>
-    </message>
-    <message>
-        <source>Sweden</source>
-        <translation type="vanished">Sverige</translation>
-    </message>
-    <message>
-        <source>Switzerland</source>
-        <translation type="vanished">Schweiz</translation>
-    </message>
-    <message>
-        <source>Turkey</source>
-        <translation type="vanished">Tyrkiet</translation>
-    </message>
-    <message>
-        <source>UK</source>
-        <translation type="vanished">England</translation>
-    </message>
-    <message>
-        <source>Ukraine</source>
-        <translation type="vanished">Ukraina</translation>
-    </message>
-    <message>
-        <source>Vatican</source>
-        <translation type="vanished">Vatikanen</translation>
-    </message>
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="105"/>
         <source>Show as list</source>
@@ -576,12 +313,12 @@ AllRadio copyright - Niels Simonsen &lt;nesnomis@gmail.com&gt;.
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="38"/>
+        <location filename="../qml/cover/CoverPage.qml" line="44"/>
         <source>Closing in </source>
         <translation>Slukker om </translation>
     </message>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="38"/>
+        <location filename="../qml/cover/CoverPage.qml" line="44"/>
         <source> minutes.</source>
         <translation> minutter.</translation>
     </message>
@@ -648,40 +385,11 @@ AllRadio copyright - Niels Simonsen &lt;nesnomis@gmail.com&gt;.
         <source>This help is a draft! It may be updated?! :-)</source>
         <translation>Denne hjælp er et udkast! Den kan blive ændret?! :-)</translation>
     </message>
-    <message>
-        <source>Sourcecode is available on</source>
-        <translation type="obsolete">Kildekoden findes på</translation>
-    </message>
-    <message>
-        <source>The radiostations are from</source>
-        <translation type="obsolete">Kanalerne kommer fra</translation>
-    </message>
-    <message>
-        <source>
-Choose country by clicking the flag/name, then click the channel you want to listen to.
-
-When playing you will see the name and country-flag of the current playing radio station at the bottom of the screen.
-
-You can also see current station and country playing as wel as pause/play from the cover action.
-
-You can press and hold on a channel to add to favourites. If you are in favourites you can press and hold a channel to remove it from favourites.
-
-Use the sleeptimer to set a number of minutes until the AllRadio shuts down the currently playing stream.</source>
-        <translation type="vanished">Vælg land ved at klikke på flag/navn, vælg derefter den kanal du vil lytte til.
-
-Når radioen spiller kan du længst ned på skærmen se landets flag og radiostaionens navn.
-
-Du kan også se flag og spillende radiostation på coversiden (minimeret app), samt pause og genoptage afspilning.
-
-Du kan klikke og holde på en radiostation for at lægge den ind som favorit. Hvis du er i listen over favoritter kan du klikke og holde for at fjerne den fra favoritter.
-
-Brug indslumringstimer til at indstille tid i minutter inden AllRadio slukker for den afspillende radiostation.</translation>
-    </message>
 </context>
 <context>
     <name>PlayerPanel</name>
     <message>
-        <location filename="../qml/pages/PlayerPanel.qml" line="29"/>
+        <location filename="../qml/pages/PlayerPanel.qml" line="30"/>
         <source>Opening webpage</source>
         <translation>Åbner webside</translation>
     </message>
@@ -707,28 +415,19 @@ Brug indslumringstimer til at indstille tid i minutter inden AllRadio slukker fo
 <context>
     <name>RadioPlayer</name>
     <message>
-        <source>Search</source>
-        <translation type="vanished">Søg</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="169"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="146"/>
         <source>Listen</source>
-        <translation>Afspil</translation>
+        <translation>Afspil kanal</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="180"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="158"/>
         <source>Add to favorites</source>
-        <translation>Lægg til favoritter</translation>
+        <translation>Læg ind i favoritter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="186"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="164"/>
         <source>Delete favourite</source>
-        <translation>Fjern fra favoritter</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="188"/>
-        <source>Deleting channel</source>
-        <translation>Fjerner kanal</translation>
+        <translation>Slet favorit</translation>
     </message>
 </context>
 <context>
@@ -737,25 +436,6 @@ Brug indslumringstimer til at indstille tid i minutter inden AllRadio slukker fo
         <location filename="../qml/pages/RadioWeb.qml" line="14"/>
         <source>Open in external browser</source>
         <translation>Åbn i ekstern weblæser</translation>
-    </message>
-</context>
-<context>
-    <name>SearchPanel</name>
-    <message>
-        <source>Search by</source>
-        <translation type="vanished">Søgning ved</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation type="vanished">Navn</translation>
-    </message>
-    <message>
-        <source>Tag</source>
-        <translation type="vanished">Tag</translation>
-    </message>
-    <message>
-        <source>Location</source>
-        <translation type="vanished">Plads</translation>
     </message>
 </context>
 <context>

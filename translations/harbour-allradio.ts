@@ -313,12 +313,12 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="38"/>
+        <location filename="../qml/cover/CoverPage.qml" line="44"/>
         <source>Closing in </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="38"/>
+        <location filename="../qml/cover/CoverPage.qml" line="44"/>
         <source> minutes.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -389,7 +389,7 @@
 <context>
     <name>PlayerPanel</name>
     <message>
-        <location filename="../qml/pages/PlayerPanel.qml" line="29"/>
+        <location filename="../qml/pages/PlayerPanel.qml" line="30"/>
         <source>Opening webpage</source>
         <translation type="unfinished"></translation>
     </message>
@@ -415,23 +415,18 @@
 <context>
     <name>RadioPlayer</name>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="169"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="146"/>
         <source>Listen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="180"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="158"/>
         <source>Add to favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="186"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="164"/>
         <source>Delete favourite</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="188"/>
-        <source>Deleting channel</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
