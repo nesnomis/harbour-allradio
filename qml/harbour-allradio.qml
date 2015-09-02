@@ -80,7 +80,6 @@ function addDb(source,title,site,section,icon) {
 
 function delDb(source) {
     Db.del(source)
-    Db.load(favChannels)
 }
 
 Component.onCompleted: {

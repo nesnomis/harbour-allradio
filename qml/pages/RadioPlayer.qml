@@ -22,13 +22,7 @@ import "../JSONListModel"
 Page {
     id: radioPage
     allowedOrientations: Orientation.All
-    property Item contextMenu
     property alias model: listView.model
-    property string rptitle: ""
-    property string rpsite: ""
-    property string rpsource: ""
-    property string rpsection: ""
-    property string rpicon: ""
 
     SilicaListView {
         id: listView
@@ -45,9 +39,8 @@ Page {
             sortby: "title"
             filterby: filter
             filterkey: key
-
-
         }
+
         model: jsonModel1.model
 
         header: PageHeader {
@@ -116,80 +109,66 @@ Page {
                     //console.log("verticalVolocity: "+verticalVelocity+" - contentY: "+contentY)
             }
 
-            delegate: Item {
+            delegate: ListItem {
             id: myListItem
-            property bool menuOpen: contextMenu != null && contextMenu.parent === myListItem
+            menu: contextMenu
+            showMenuOnPressAndHold: true
+            ListView.onRemove: animateRemoval(myListItem)
 
             width: ListView.view.width
             height: menuOpen ? contextMenu.height + contentItem.height : contentItem.height
 
-            BackgroundItem {
-                id: contentItem
-                width: parent.width
-
-                Label {
-                    id: firstName
-                    text: model.title
-                    anchors.verticalCenter: parent.verticalCenter
-                    font.pixelSize: Theme.fontSizeLarge
-                    x: Theme.paddingLarge
-                }
-                onPressAndHold: {
-                    if (!contextMenu){
-                        contextMenu = contextMenuComponent.createObject(listView);
-                        showPlayer = false
-                    }
-
-                    rptitle = model.title
-                    rpsite = model.site
-                    rpsource = model.source
-                    rpsection = model.section
-                    rpicon = country
-
-                    contextMenu.show(myListItem)
-
-                }
-                onClicked: {
-                    ps(model.source)
-                    radioStation = model.title
-                    website = (Qt.resolvedUrl(model.site))
-                    if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                    else if (favorites) picon = "../stations/"+icon+".png"; else picon = "../stations/"+country+".png"
-                }
+            function remove() {
+                remorseAction("Deleting", function() { delDb(source);listView.model.remove(index) })
             }
-        }
 
-            Component {
-            id: contextMenuComponent
+            Label {
+                 id: firstName
+                 text: model.title
+                 color: highlighted ? Theme.highlightColor : Theme.primaryColor
+                 anchors.verticalCenter: parent.verticalCenter
+                 font.pixelSize: Theme.fontSizeLarge
+             }
 
-            ContextMenu {
-                MenuItem {
-                    id:mlisten
-                    visible: true
-                    text: qsTr("Listen")
-                    onClicked: {
-                        ps(rpsource)
-                        radioStation = rptitle
-                        if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                        else if (favorites) picon = "../stations/"+icon+".png"; else picon = "../stations/"+country+".png"
-                        website = (Qt.resolvedUrl(rpsite))
-                    }
-                }
-                MenuItem {
-                    id:madd
-                    visible: !favorites
-                    text: qsTr("Add to favorites")
-                    onClicked: addDb(rpsource,rptitle,rpsite,rpsection,rpicon);
-                    }
-                MenuItem {
-                    id:mdelete
-                    visible: favorites
-                    text: qsTr("Delete favourite")
-                    RemorsePopup {id: remorse}
-                    onClicked: remorse.execute(qsTr("Deleting channel"), function() {delDb(rpsource)}, 5000);
+            onClicked: {
+                ps(source)
+                radioStation = title
+                if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
+                else if (favorites) picon = "../stations/"+icon+".png"; else picon = "../stations/"+country+".png"
+                website = (Qt.resolvedUrl(site))
             }
+
+             ContextMenu {
+                 id: contextMenu
+                 MenuItem {
+                     id:mlisten
+                     visible: true
+                     text: qsTr("Listen")
+                     onClicked: {
+                         ps(source)
+                         radioStation = title
+                         if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
+                         else if (favorites) picon = "../stations/"+icon+".png"; else picon = "../stations/"+country+".png"
+                         website = (Qt.resolvedUrl(site))
+                     }
+                 }
+                 MenuItem {
+                     id:madd
+                     visible: !favorites
+                     text: qsTr("Add to favorites")
+                     onClicked: addDb(source,title,site,section,country);
+                     }
+                 MenuItem {
+                     id:mdelete
+                     visible: favorites
+                     text: qsTr("Delete favourite")
+
+                     onClicked: remove()//listView.currentItem.remove(rpindex,rpsource) //listView.remorseAction();
+                     //remorse.execute(qsTr("Deleting channel"), function() {delDb(rpsource)}, 5000);
+                 }
+             }
+
             }
-        }
             PullMenu {}
     }
     PlayerPanel { id:playerPanel }
