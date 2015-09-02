@@ -1,7 +1,11 @@
 # harbour-allradio
 
-AllRadio is a radio player app on Sailfishos/jolla mobiles for online streaming radio. Europe (for now). 
+AllRadio is an easy to use radio player for online streaming radio on a Sailfish / Jolla phone.
 
-It is available in English, Swedish and Danish. If anybody feel like doing some translating (or correcting my language in the app)...  let me know :) 
+Features:
+- European channels (sorted by countries).
+- Simple search/filter on channels list.
+- Add & remove favorites.
+- Sleeptimer.
 
-The radio stations are coming from: http://www.listenlive.eu. (European radio).
+The radio stations are coming from: http://www.listenlive.eu.
