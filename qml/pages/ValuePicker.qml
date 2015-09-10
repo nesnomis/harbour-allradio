@@ -75,7 +75,7 @@ Item {
     Image {
         id: valueCircle
 
-        source: "image://Theme/timepicker"
+        source: "../timepicker.png"
         opacity: 0.1
     }
 
