@@ -25,15 +25,18 @@ property string filter: ""
 property string key: "title"
 property bool sloading: false
 property bool streaming: false
+property string currentUrl: ""
 
-function pauseStream() {
+/*function pauseStream() {
     userPlay = 1;
     playMusic.pause();
     streaming = false
     sloading = false
-}
+}*/
 
 function playStream() {
+    sloading = true
+    mp3 = currentUrl
     userPlay=2;
     playMusic.play();
     streaming = true
@@ -42,8 +45,10 @@ function playStream() {
 }
 
 function stopStream() {
-    userPlay=0;
     playMusic.stop();
+    currentUrl = mp3
+    mp3 = ""
+    userPlay=0;
     streaming = false
     sloading = false
 }
@@ -95,7 +100,7 @@ Timer {
     interval: 60000
     repeat: false
     onTriggered: {
-        if (sleepTime == 1) { pauseStream();sleepTime = 0;} else sleepTime = (sleepTime = sleepTime -1);
+        if (sleepTime == 1) { stopStream();sleepTime = 0;} else sleepTime = (sleepTime = sleepTime -1);
     }
     running: sleepTime > 0
 }
@@ -122,19 +127,19 @@ Audio {
             console.log("ERROR: "+error+" ("+errorString+") POSITIONS: "+position)
         }
 
-        //onPaused: {streaming = false //console.log("--- PAUSED ---")}
+        onPaused: stopStream()
 
         onPlaybackStateChanged: {
             switch (playbackState) {
                 case 0: streaming = false; break
-                case 1: if (userPlay == 2 && !streaming) streaming = true; else if (userPlay == 2 && streaming && status == 6) pauseStream(); break
+                case 1: if (userPlay == 2 && !streaming) streaming = true; else if (userPlay == 2 && streaming && status == 6) stopStream(); break
                 case 2: if (userPlay == 2) streaming = false; break //;sleepTime = 0
             }
             console.log("STATE: "+playbackState + " STATUS: "+status+" sloading = "+sloading+" Streaming = "+streaming)
         }
 
         onStatusChanged: {
-            if (status == 2 || status==3  || status == 4) sloading = true//;streaming = false // Audio is loading or buffering
+            //if (status==3  || status == 4) sloading = true//;streaming = false // Audio is loading or buffering
             //if (status == 3 && userPlay == 2) //streaming = false
             if (status == 6) sloading = false //;streaming = true // Audio loaded and buffered
             //if ((status == 7) && state == 0 && userPlay == 2) stop();play() // indication end of media?!? Start playing again!

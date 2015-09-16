@@ -113,10 +113,12 @@ Page {
                     //horizontalAlignment: Text.AlignHCenter
                     text: "<h2>Changelog:</h2><br>"+
 
-"<p>version 1.3.5<br>
+"<p>version 1.3.6<br>
+- Added flags (They were accidentally left out in version 1.3.5)
+</p>
+<p>version 1.3.5<br>
 - Tiny update to fix sleeptimer in Sailfishos 2.0
 </p>
-
 <p>version 1.3.4<br>
 - Tweaking Error handling<br>
 - Tweaking deletion of favorites<br>

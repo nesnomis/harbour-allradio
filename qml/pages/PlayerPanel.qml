@@ -27,7 +27,7 @@ DockedPanel {
                 anchors.right: pause.left
                 anchors.rightMargin: 20
                 onClicked: {
-                    onClicked: remorse.execute(qsTr("Opening webpage"), function() {Qt.openUrlExternally(website)}, 3000)
+                    remorse.execute(qsTr("Opening webpage"), function() {Qt.openUrlExternally(website)}, 3000)
                 }
 
                 Image {
@@ -59,10 +59,11 @@ DockedPanel {
 
             IconButton {
                 id: pause
+                enabled: radioStation !== "" ? true : false
                 anchors.right: parent.right
                 anchors.rightMargin: 30
                 anchors.verticalCenter: parent.verticalCenter
                 icon.source: streaming ? "image://theme/icon-l-pause" : "image://theme/icon-l-play"
-                onClicked: streaming ? pauseStream() : playStream()
+                onClicked: streaming ? stopStream() : playStream()
             }
 }
