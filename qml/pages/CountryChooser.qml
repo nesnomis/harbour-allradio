@@ -10,6 +10,7 @@ Page {
         id: grid
         visible: true
         anchors.fill: parent
+        //anchors.bottomMargin: playerPanel.visibleSize
         clip: true
         quickScroll: false
 

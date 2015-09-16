@@ -5,7 +5,7 @@ DockedPanel {
     width: parent.width
     height: Theme.itemSizeLarge + Theme.paddingLarge
     dock: Dock.Bottom
-    open: showPlayer
+    open: showPlayer  ? true : false
 
     RemorsePopup {id: remorse}
 
@@ -65,5 +65,16 @@ DockedPanel {
                 anchors.verticalCenter: parent.verticalCenter
                 icon.source: streaming ? "image://theme/icon-l-pause" : "image://theme/icon-l-play"
                 onClicked: streaming ? stopStream() : playStream()
+
             }
+         /*   PushUpMenu {
+                MenuItem {
+                    text: qsTr("Sleep timer")
+                    onClicked: pageStack.push(Qt.resolvedUrl("SleepTimerPage.qml"))
+                }
+                MenuItem {
+                    text: qsTr("Startup timer")
+                    onClicked: pageStack.push(Qt.resolvedUrl("About.qml"))
+                }
+            } */
 }

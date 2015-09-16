@@ -66,13 +66,13 @@ Page {
                 }
 
                 inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
-                onTextChanged: if (text.length > 0) filter = text; else {filter = "";focus=false}
+                onTextChanged: if (text.length > 0) filter = text; else {filter = "";focus=false;}
                 onClicked: {
                     listView.currentIndex = -1;showPlayer = false;//pHeader.title = ""
                 }
                 focus: false
                 EnterKey.iconSource: "image://theme/icon-m-enter-close"
-                EnterKey.onClicked: focus = false
+                EnterKey.onClicked: {focus = false;}
 
                 IconButton {
                     x: searchField.textLeftMargin - width + 20
@@ -86,6 +86,7 @@ Page {
 
                     onClicked: {
                         searchField._editor.forceActiveFocus()
+                        //searching = true
                     }
                 }
             }

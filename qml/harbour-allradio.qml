@@ -19,7 +19,7 @@ property string website: ""
 property int sleepTime: 0
 property int userPlay: 0 // 0 Stopped, 1 Paused, 2 Playing
 property bool favorites: false
-property bool showPlayer: true;
+property bool showPlayer: false;
 property string country
 property string filter: ""
 property string key: "title"
@@ -46,9 +46,9 @@ function playStream() {
 
 function stopStream() {
     playMusic.stop();
-    currentUrl = mp3
+    if (mp3 !== "") currentUrl = mp3
     mp3 = ""
-    userPlay=0;
+    //userPlay=0;
     streaming = false
     sloading = false
 }
@@ -60,6 +60,7 @@ function ps(source) {
         sloading = true;
         Stream.func(source);
         playStream()
+        //currentUrl = mp3
 }
 
 function unknownError() {
@@ -118,8 +119,8 @@ Audio {
                 case 0: return;
                 //case 1: break //ResourceError (The audio cannot be played due to a problem allocating resources.The audio cannot be played due to a problem allocating resources.)
                 //case 2: break //FormatError (The audio format is not supported.)
-                case 3: if (userPlay == 2 && errorString !== "File Not Found") {mp3 = "";stopStream(); radioStation = errorString}
-                        else if (userPlay == 2 && position == 0) stopStream();break // Seek Error
+                case 3: if (userPlay == 2 && errorString !== "File Not Found") {mp3 = "";stopStream(); radioStation = errorString;userPlay = 0}
+                        else if (userPlay == 2 && position == 0) stopStream();userPlay = 0;break // Seek Error
                 //case 4: break; //AccessDenied (The audio cannot be played due to insufficient permissions.)
                 //case 5: break; //ServiceMissing (The audio cannot be played because the media service could not be instantiated.)
             default: mp3 = "";stopStream(); radioStation = errorString;break}
