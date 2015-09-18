@@ -16,6 +16,20 @@ function initialize() {
 
 }
 
+function loadWakeup(model,source)
+{
+    model.clear()
+    db.transaction(function(tx)
+    {
+        var rs = tx.executeSql('SELECT '+source+' FROM channels');
+        //for(var i = 0; i < rs.rows.length; i++)
+        //{
+            model.append({"source" : rs.rows.item(0).source, "title" : rs.rows.item(0).title,"site" : rs.rows.item(0).site,"section" : rs.rows.item(0).section,"icon" : rs.rows.item(0).icon})
+        //}
+    });
+
+}
+
 function load(model)
 {
     model.clear()

@@ -113,7 +113,11 @@ Page {
                     //horizontalAlignment: Text.AlignHCenter
                     text: "<h2>Changelog:</h2><br>"+
 
-"<p>version 1.3.6<br>
+"<p>version 1.3.7<br>
+- Finally got rid of the 'seeking error' (i hope)<br>
+- Added a wakuptimer (don't rely on it as a wakeup alarm!!!)
+</p>
+<p>version 1.3.6<br>
 - Added flags (They were accidentally left out in version 1.3.5)
 </p>
 <p>version 1.3.5<br>

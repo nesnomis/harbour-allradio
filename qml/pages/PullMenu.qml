@@ -15,7 +15,11 @@ PullDownMenu {
         onClicked: pageStack.push(Qt.resolvedUrl("About.qml"))
     }
     MenuItem {
-        text: qsTr("Sleeptimer")
+        text: qsTr("Wakeup timer")
+        onClicked: pageStack.push(Qt.resolvedUrl("WakeupTimerPage.qml"))
+    }
+    MenuItem {
+        text: qsTr("Sleep timer")
         onClicked: pageStack.push(Qt.resolvedUrl("SleepTimerPage.qml"))
     }
 }

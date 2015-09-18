@@ -26,6 +26,10 @@ property string key: "title"
 property bool sloading: false
 property bool streaming: false
 property string currentUrl: ""
+//property int wakeUp: 0
+//property string wakeupChannel: ""
+//property string wakeupChannelName: ""
+//property string wakeupIcon: ""
 
 /*function pauseStream() {
     userPlay = 1;
@@ -120,7 +124,7 @@ Audio {
                 //case 1: break //ResourceError (The audio cannot be played due to a problem allocating resources.The audio cannot be played due to a problem allocating resources.)
                 //case 2: break //FormatError (The audio format is not supported.)
                 case 3: if (userPlay == 2 && errorString !== "File Not Found") {mp3 = "";stopStream(); radioStation = errorString;userPlay = 0}
-                        else if (userPlay == 2 && position == 0) stopStream();userPlay = 0;break // Seek Error
+                        else if (userPlay == 2 && position == 0) stopStream();startStream();break // Seek Error
                 //case 4: break; //AccessDenied (The audio cannot be played due to insufficient permissions.)
                 //case 5: break; //ServiceMissing (The audio cannot be played because the media service could not be instantiated.)
             default: mp3 = "";stopStream(); radioStation = errorString;break}
@@ -129,6 +133,8 @@ Audio {
         }
 
         onPaused: stopStream()
+
+        //onPlaying: console.log("PLAYING")
 
         onPlaybackStateChanged: {
             switch (playbackState) {

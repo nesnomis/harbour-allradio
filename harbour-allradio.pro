@@ -226,7 +226,58 @@ OTHER_FILES += qml/harbour-allradio.qml \
     qml/stations/andorra.json \
     qml/stations/albania.json \
     qml/pages/CountryModel.qml \
-    qml/stations/france.json
+    qml/stations/france.json \
+    qml/stations/albania.png \
+    qml/stations/andorra.png \
+    qml/stations/armenia.png \
+    qml/stations/austria.png \
+    qml/stations/azerbaijan.png \
+    qml/stations/belarus.png \
+    qml/stations/belgium.png \
+    qml/stations/bosnia.png \
+    qml/stations/bulgaria.png \
+    qml/stations/croatia.png \
+    qml/stations/cyprus.png \
+    qml/stations/czech-republic.png \
+    qml/stations/denmark.png \
+    qml/stations/estonia.png \
+    qml/stations/faroe.png \
+    qml/stations/finland.png \
+    qml/stations/france.png \
+    qml/stations/georgia.png \
+    qml/stations/germany.png \
+    qml/stations/gibraltar.png \
+    qml/stations/greece.png \
+    qml/stations/hungary.png \
+    qml/stations/iceland.png \
+    qml/stations/ireland.png \
+    qml/stations/italy.png \
+    qml/stations/kosovo.png \
+    qml/stations/latvia.png \
+    qml/stations/liechtenstein.png \
+    qml/stations/lithuania.png \
+    qml/stations/luxembourg.png \
+    qml/stations/macedonia.png \
+    qml/stations/malta.png \
+    qml/stations/moldova.png \
+    qml/stations/monaco.png \
+    qml/stations/montenegro.png \
+    qml/stations/netherlands.png \
+    qml/stations/norway.png \
+    qml/stations/poland.png \
+    qml/stations/portugal.png \
+    qml/stations/romania.png \
+    qml/stations/russia.png \
+    qml/stations/serbia.png \
+    qml/stations/slovakia.png \
+    qml/stations/slovenia.png \
+    qml/stations/spain.png \
+    qml/stations/sweden.png \
+    qml/stations/switzerland.png \
+    qml/stations/turkey.png \
+    qml/stations/uk.png \
+    qml/stations/ukraine.png \
+    qml/stations/vatican.png
 
 # to disable building translations every time, comment out the
 # following CONFIG line

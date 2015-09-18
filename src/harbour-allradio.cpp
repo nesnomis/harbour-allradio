@@ -47,6 +47,7 @@ int main(int argc, char *argv[])
     // To display the view, call "show()" (will show fullscreen on device).
 
     QScopedPointer<QGuiApplication> app(SailfishApp::application(argc,argv));
+
     app->setApplicationVersion(QString(APP_VERSION));
 
     return SailfishApp::main(argc, argv);
