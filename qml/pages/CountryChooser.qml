@@ -4,18 +4,16 @@ import "../stations"
 
 Page {
     id: countryPage
-    allowedOrientations: Orientation.All
 
     SilicaGridView {
         id: grid
         visible: true
         anchors.fill: parent
-        //anchors.bottomMargin: playerPanel.visibleSize
         clip: true
         quickScroll: false
 
-        cellWidth: width / 2
-        cellHeight: width / 2
+        cellWidth: isPortrait ? width / 2 : width / 4
+        cellHeight: isPortrait ? width / 2 : width / 4
 
         property int retning: 0
 
@@ -38,7 +36,7 @@ Page {
         header: BackgroundItem {
             id: favHeader
             width: parent.width
-            height: parent.width / 2.3
+            height: isPortrait ? width / 2.3 : width / 4.6
             onClicked: {
                 ctitle = qsTr("Favorites")
                 favorites = true
@@ -55,8 +53,8 @@ Page {
                     source: "../harbour-allradio.png"
                     x: 70
                     y: 70
-                    width: favHeader.width / 3.7
-                    height: favHeader.width / 3.7
+                    width: isPortrait ? favHeader.width / 3.7 : favHeader.width / 7.4 //favHeader.width / 3.7
+                    height: isPortrait ? favHeader.width / 3.7 : favHeader.width / 7.4
                     opacity: 0.6
                     fillMode: Image.PreserveAspectFit
                 }
@@ -71,7 +69,8 @@ Page {
             }
 
         delegate: BackgroundItem {
-                    width: (parent.width / 2); height: (parent.width / 2)
+                    width: isPortrait ? parent.width / 2 : parent.width / 4 //(parent.width / 2);
+                    height: isPortrait ? parent.width / 2 : parent.width / 4
 
                     Image {
                         id: myIcon

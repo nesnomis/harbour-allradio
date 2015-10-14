@@ -21,7 +21,7 @@ import "../JSONListModel"
 
 Page {
     id: radioPage
-    allowedOrientations: Orientation.All
+   // allowedOrientations: Orientation.All
     property alias model: listView.model
 
     SilicaListView {

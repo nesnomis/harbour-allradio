@@ -156,4 +156,6 @@ Audio {
     }
     initialPage: Component { CountryChooser { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
+    allowedOrientations: Orientation.All
+    _defaultPageOrientations: Orientation.All
 }

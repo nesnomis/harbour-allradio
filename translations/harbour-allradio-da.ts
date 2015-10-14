@@ -39,8 +39,8 @@
         <translation>Vis som liste</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="42"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="65"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="41"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="64"/>
         <location filename="../qml/pages/CountryChooser.qml" line="143"/>
         <location filename="../qml/pages/CountryChooser.qml" line="164"/>
         <source>Favorites</source>
@@ -408,24 +408,24 @@
     </message>
     <message>
         <location filename="../qml/pages/PullMenu.qml" line="18"/>
-        <source>Sleeptimer</source>
-        <translation>Indslumringstimer</translation>
+        <source>Sleep timer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>RadioPlayer</name>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="146"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="147"/>
         <source>Listen</source>
         <translation>Afspil kanal</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="158"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="159"/>
         <source>Add to favorites</source>
         <translation>Læg ind i favoritter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="164"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="165"/>
         <source>Delete favourite</source>
         <translation>Slet favorit</translation>
     </message>

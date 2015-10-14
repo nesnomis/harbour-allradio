@@ -2,7 +2,7 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Page {
-    allowedOrientations: Orientation.All
+    //allowedOrientations: Orientation.All
     property alias radioUrl: webView.url
 
     SilicaWebView {
