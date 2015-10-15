@@ -12,8 +12,8 @@ Page {
         clip: true
         quickScroll: false
 
-        cellWidth: isPortrait ? width / 2 : width / 4
-        cellHeight: isPortrait ? width / 2 : width / 4
+        cellWidth: isPortrait ? width / 2 : width / 3
+        cellHeight: isPortrait ? width / 2 : width / 3
 
         property int retning: 0
 
@@ -69,8 +69,8 @@ Page {
             }
 
         delegate: BackgroundItem {
-                    width: isPortrait ? parent.width / 2 : parent.width / 4 //(parent.width / 2);
-                    height: isPortrait ? parent.width / 2 : parent.width / 4
+                    width: isPortrait ? parent.width / 2 : parent.width / 3 //(parent.width / 2);
+                    height: isPortrait ? parent.width / 2 : parent.width / 3
 
                     Image {
                         id: myIcon
