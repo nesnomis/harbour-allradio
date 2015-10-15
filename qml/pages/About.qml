@@ -114,8 +114,9 @@ Page {
                     text: "<h2>Changelog:</h2><br>"+
 
 "<p>version 1.3.7<br>
-- Finally got rid of the 'seeking error' (i hope)<br>
-- Added a wakuptimer (don't rely on it as a wakeup alarm!!!)
+- Small change in player<br>
+- Added more columns in landscape mode<br>
+- Compiling for tablet (i was late ordering a tablet, so i wont get it in a while and have no idea if it works ok!?)
 </p>
 <p>version 1.3.6<br>
 - Added flags (They were accidentally left out in version 1.3.5)
