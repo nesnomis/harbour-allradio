@@ -134,7 +134,7 @@ Audio {
 
         onPaused: stopStream()
 
-        //onPlaying: console.log("PLAYING")
+        onPlaying: sloading = false
 
         onPlaybackStateChanged: {
             switch (playbackState) {

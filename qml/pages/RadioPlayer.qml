@@ -45,9 +45,9 @@ Page {
 
         header: PageHeader {
             id: pHeader
-            title: ctitle
-            height: 133
-
+            //title: ctitle
+            //height: 133
+            /*
             TextField {
                 id: searchField
                 enabled: !favorites
@@ -56,7 +56,7 @@ Page {
                 anchors.bottom: parent.bottom
                 anchors.leftMargin: Theme.paddingMedium
 
-                textTopMargin: 30
+                textTopMargin: 10//30
                 textLeftMargin: 40
                 textRightMargin: Theme.itemSizeSmall + Theme.paddingMedium
 
@@ -88,6 +88,39 @@ Page {
                         searchField._editor.forceActiveFocus()
                         //searching = true
                     }
+                }
+            } */
+            Row {
+                enabled: !favorites
+                visible: !favorites
+                anchors.topMargin: Theme.paddingMedium
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.rightMargin: Theme.paddingMedium
+                spacing: Theme.paddingLarge
+
+                SearchField {
+                    id: searchField
+
+                    //anchors.right: logo2.left
+                    width: parent.width - logo2.width - (Theme.paddingMedium * 2 )
+                    placeholderText: "Search"
+                    inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
+                    EnterKey.iconSource: "image://theme/icon-m-enter-close"
+                    EnterKey.onClicked: focus = false
+                    focus: true
+                    onTextChanged: if (text.length > 0) filter = text; else {filter = "";focus=false;}
+                    onClicked: {listView.currentIndex = -1;showPlayer = false;}
+                }
+
+                Image {
+                    id: logo2
+                    height: parent.height / 2
+                    fillMode: Image.PreserveAspectFit
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.rightMargin: Theme.paddingMedium
+                    source: "../stations/"+ country + ".png"
                 }
             }
         }
