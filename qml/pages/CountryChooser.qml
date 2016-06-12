@@ -42,6 +42,7 @@ Page {
                 favorites = true
                 filter = ""
                 key = "title"
+                cicon = "../harbour-allradio.png"
                 //showSearch = false
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
                                              {model: dbModel} )
@@ -106,6 +107,7 @@ Page {
                 onClicked: grid.visible = false
             }
         }
+
         ScrollDecorator {}
     }
 
@@ -144,6 +146,8 @@ Page {
                 favorites = true
                 filter = ""
                 key = "title"
+                cicon = "../harbour-allradio.png"
+
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
                                              {model: dbModel} )
             }
@@ -208,5 +212,6 @@ Page {
             }
         }
     }
+
     PlayerPanel {id:playerPanel}
 }

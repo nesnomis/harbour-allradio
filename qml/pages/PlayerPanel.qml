@@ -11,8 +11,9 @@ DockedPanel {
 
     Rectangle {
         anchors.fill: parent
+        radius: 10
         opacity: 0.9
-        color: "black"
+        color: "#333333"
     }
 
     BusyIndicator {
@@ -35,6 +36,7 @@ DockedPanel {
                     anchors.leftMargin: 30
                     anchors.left: parent.left
                     width: parent.height - 30
+                    //height: parent.height - Theme.paddingSmall
                     opacity: 0.6
                     fillMode: Image.PreserveAspectFit
                    id: logo
@@ -46,7 +48,8 @@ DockedPanel {
                     anchors.leftMargin: 30
                     anchors.verticalCenter: parent.verticalCenter
                     width: parent.width - (pause.width + logo.width)
-                    color: Theme.highlightColor
+                    //height: parent.height - Theme.paddingSmall
+                    color: Theme.primaryColor
                     font.pixelSize: Theme.fontSizeMedium
                     fontSizeMode: Text.VerticalFit
                     wrapMode: Text.Wrap

@@ -34,20 +34,20 @@
 <context>
     <name>CountryChooser</name>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="105"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="106"/>
         <source>Show as list</source>
         <translation>Visa som lista</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="41"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="64"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="143"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="164"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="65"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="145"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="168"/>
         <source>Favorites</source>
         <translation>Favoriter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="206"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="210"/>
         <source>Show as grid</source>
         <translation>Visa som ikoner</translation>
     </message>
@@ -389,9 +389,9 @@
 <context>
     <name>PlayerPanel</name>
     <message>
-        <location filename="../qml/pages/PlayerPanel.qml" line="30"/>
+        <location filename="../qml/pages/PlayerPanel.qml" line="31"/>
         <source>Opening webpage</source>
-        <translation>Öppnar websida</translation>
+        <translation type="unfinished">Öppnar websida</translation>
     </message>
 </context>
 <context>
@@ -415,17 +415,17 @@
 <context>
     <name>RadioPlayer</name>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="180"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="182"/>
         <source>Listen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="192"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="194"/>
         <source>Add to favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="198"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="200"/>
         <source>Delete favourite</source>
         <translation type="unfinished"></translation>
     </message>

@@ -5,6 +5,7 @@ import QtQuick.LocalStorage 2.0
 import "pages"
 import "js/favorites.js" as Db
 import "js/stream.js" as Stream
+//import org.nemomobile.dbus 2.0
 
 ApplicationWindow {
 id: window
@@ -26,17 +27,6 @@ property string key: "title"
 property bool sloading: false
 property bool streaming: false
 property string currentUrl: ""
-//property int wakeUp: 0
-//property string wakeupChannel: ""
-//property string wakeupChannelName: ""
-//property string wakeupIcon: ""
-
-/*function pauseStream() {
-    userPlay = 1;
-    playMusic.pause();
-    streaming = false
-    sloading = false
-}*/
 
 function playStream() {
     sloading = true
@@ -95,6 +85,7 @@ function delDb(source) {
 Component.onCompleted: {
     Db.initialize()
     Db.load(favChannels)
+
 }
 
 CountryModel {id: countryModel}
@@ -110,12 +101,10 @@ Timer {
     running: sleepTime > 0
 }
 
-
 Audio {
         id: playMusic
         source: mp3
         autoPlay: true
-
         //onStopped:{console.log("Stopped")}
 
         onError: {
@@ -124,7 +113,7 @@ Audio {
                 //case 1: break //ResourceError (The audio cannot be played due to a problem allocating resources.The audio cannot be played due to a problem allocating resources.)
                 //case 2: break //FormatError (The audio format is not supported.)
                 case 3: if (userPlay == 2 && errorString !== "File Not Found") {mp3 = "";stopStream(); radioStation = errorString;userPlay = 0}
-                        else if (userPlay == 2 && position == 0) stopStream();startStream();break // Seek Error
+                        //else if (userPlay == 2 && position == 0) stopStream();startStream();break // Seek Error
                 //case 4: break; //AccessDenied (The audio cannot be played due to insufficient permissions.)
                 //case 5: break; //ServiceMissing (The audio cannot be played because the media service could not be instantiated.)
             default: mp3 = "";stopStream(); radioStation = errorString;break}
@@ -133,6 +122,8 @@ Audio {
         }
 
         onPaused: stopStream()
+
+        onStopped: if (userPlay == 2) playStream()
 
         onPlaying: sloading = false
 

@@ -23,6 +23,7 @@ Page {
     id: radioPage
    // allowedOrientations: Orientation.All
     property alias model: listView.model
+    property bool searching: false
 
     SilicaListView {
         id: listView
@@ -45,56 +46,12 @@ Page {
 
         header: PageHeader {
             id: pHeader
-            //title: ctitle
-            //height: 133
-            /*
-            TextField {
-                id: searchField
-                enabled: !favorites
-                visible: !favorites
-                anchors.fill: parent
-                anchors.bottom: parent.bottom
-                anchors.leftMargin: Theme.paddingMedium
+            title: favorites ? ctitle : ""
 
-                textTopMargin: 10//30
-                textLeftMargin: 40
-                textRightMargin: Theme.itemSizeSmall + Theme.paddingMedium
-
-                font {
-                    pixelSize: Theme.fontSizeLarge
-                    family: Theme.fontFamilyHeading
-                }
-
-                inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
-                onTextChanged: if (text.length > 0) filter = text; else {filter = "";focus=false;}
-                onClicked: {
-                    listView.currentIndex = -1;showPlayer = false;//pHeader.title = ""
-                }
-                focus: false
-                EnterKey.iconSource: "image://theme/icon-m-enter-close"
-                EnterKey.onClicked: {focus = false;}
-
-                IconButton {
-                    x: searchField.textLeftMargin - width + 20
-
-                    width: icon.width
-                    height: parent.height
-                    icon.source: "image://theme/icon-m-search"
-                    highlighted: down || searchField._editor.activeFocus
-                    visible: (!searchField._editor.activeFocus && searchField.text == "")
-                    enabled: searchField.enabled
-
-                    onClicked: {
-                        searchField._editor.forceActiveFocus()
-                        //searching = true
-                    }
-                }
-            } */
             Row {
                 enabled: !favorites
                 visible: !favorites
                 anchors.topMargin: Theme.paddingMedium
-                anchors.verticalCenter: parent.verticalCenter
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.rightMargin: Theme.paddingMedium
@@ -102,16 +59,14 @@ Page {
 
                 SearchField {
                     id: searchField
-
-                    //anchors.right: logo2.left
                     width: parent.width - logo2.width - (Theme.paddingMedium * 2 )
                     placeholderText: "Search"
                     inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
                     EnterKey.iconSource: "image://theme/icon-m-enter-close"
-                    EnterKey.onClicked: focus = false
+                    EnterKey.onClicked: {focus = false;searching= false}
                     focus: true
-                    onTextChanged: if (text.length > 0) filter = text; else {filter = "";focus=false;}
-                    onClicked: {listView.currentIndex = -1;showPlayer = false;}
+                    onTextChanged: if (text.length > 0) filter = text; else {filter = "";focus=true;}
+                    onClicked: {listView.currentIndex = -1;showPlayer = false;searching=true}
                 }
 
                 Image {
@@ -120,7 +75,7 @@ Page {
                     fillMode: Image.PreserveAspectFit
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.rightMargin: Theme.paddingMedium
-                    source: "../stations/"+ country + ".png"
+                    source:  country !== "" ? "../stations/"+ country + ".png" : "../harbour-allradio.png"
                 }
             }
         }
@@ -130,13 +85,13 @@ Page {
 
         property int retning: 0
         onContentYChanged: {
-            if (!showPlayer && atYBeginning) showPlayer = true
+            if (!searching && atYBeginning) showPlayer = true
             }
             onMovementStarted: {
                 retning = contentY
             }
             onVerticalVelocityChanged: {
-                if (showPlayer && contentY > retning+10) showPlayer = false; else if (!showPlayer && contentY < retning-10) showPlayer = true;
+                if (!searching && contentY > retning+10) showPlayer = false; else if (!searching && contentY < retning-10) showPlayer = true;
             }
             onMovementEnded: {
                 //if (!showPlayer && contentY == -110) showPlayer = true
@@ -205,7 +160,7 @@ Page {
             }
             PullMenu {}
     }
-    PlayerPanel { id:playerPanel }
+    PlayerPanel { id:playerPanel;visible: !searching }
 }
 
 
