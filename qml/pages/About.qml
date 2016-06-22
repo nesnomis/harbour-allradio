@@ -113,10 +113,11 @@ Page {
                     //horizontalAlignment: Text.AlignHCenter
                     text: "<h2>Changelog:</h2><br>"+
 
-"<p>version 1.3.8<br>
-- Small change in player<br>
+"<p>version 1.4.0<br>
+- Change in player (stability/speed)<br>
+- Added MPRIS support<br>
 - Added more columns in landscape mode<br>
-- Changed the appearence in the searchfunction
+- Changed the the searchfunction (searchfield)
 </p>
 <p>version 1.3.6<br>
 - Added flags (They were accidentally left out in version 1.3.5)

@@ -415,17 +415,17 @@
 <context>
     <name>RadioPlayer</name>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="182"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="135"/>
         <source>Listen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="194"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="147"/>
         <source>Add to favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="200"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="153"/>
         <source>Delete favourite</source>
         <translation type="unfinished"></translation>
     </message>
