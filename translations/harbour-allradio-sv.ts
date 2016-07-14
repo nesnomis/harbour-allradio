@@ -409,7 +409,7 @@
     <message>
         <location filename="../qml/pages/PullMenu.qml" line="18"/>
         <source>Sleep timer</source>
-        <translation type="unfinished"></translation>
+        <translation>Insomningstimer</translation>
     </message>
 </context>
 <context>
@@ -417,17 +417,17 @@
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="135"/>
         <source>Listen</source>
-        <translation type="unfinished"></translation>
+        <translation>Lyssna</translation>
     </message>
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="147"/>
         <source>Add to favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Lägg till i favoriter</translation>
     </message>
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="153"/>
         <source>Delete favourite</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort favorit</translation>
     </message>
 </context>
 <context>
