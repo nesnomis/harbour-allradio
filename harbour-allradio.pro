@@ -291,3 +291,6 @@ CONFIG += sailfishapp_i18n
 TRANSLATIONS += translations/harbour-allradio-da.ts
 TRANSLATIONS += translations/harbour-allradio-sv.ts
 
+DISTFILES += \
+    qml/timepicker.png
+

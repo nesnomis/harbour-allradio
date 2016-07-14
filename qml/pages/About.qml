@@ -113,9 +113,11 @@ Page {
                     //horizontalAlignment: Text.AlignHCenter
                     text: "<h2>Changelog:</h2><br>"+
 
-"<p>version 1.4.0<br>
+
+"<p>version 1.4.2<br>
+- Added lockscreencontrol (MPRIS) for openRepos version<br>
+<p>version 1.4.1<br>
 - Change in player (stability/speed)<br>
-- Added MPRIS support<br>
 - Added more columns in landscape mode<br>
 - Changed the the searchfunction (searchfield)
 </p>
