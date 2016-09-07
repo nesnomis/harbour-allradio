@@ -16,7 +16,8 @@ function func(source) {
         if (m3u > 0){
             var split = response.split(/\r?\n/);
             for(var i = 0; i < split.length; i++){
-                if (split[i].search(/http/i) > -1 && split[i].search(/mp3/i)) {
+                if (split[i].search(/http/i) > -1 && split[i].search(/mp3/i) && split[i].search(/#/i) == -1) {
+                    console.log("MP# = "+mp3)
                     var tmp = split[i].replace(/(\r\n|\n|\r)/gm," ");
                     if (tmp !== "") mp3 = tmp; else unknownError()
                 }
