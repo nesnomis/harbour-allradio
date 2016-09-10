@@ -35,7 +35,7 @@ Page {
 
         JSONListModel {
             id: jsonModel1
-            source: "../stations/"+country+".json"  //country + ".json"
+            source: "https://raw.githubusercontent.com/nesnomis/allradio-data/master/stations/"+country+".json"  //country + ".json"
             query: "$."+country+".channel[*]" //"$."+ country + ".channel[*]"
             sortby: "title"
             filterby: filter
@@ -75,7 +75,7 @@ Page {
                     fillMode: Image.PreserveAspectFit
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.rightMargin: Theme.paddingMedium
-                    source:  country !== "" ? "../stations/"+ country + ".png" : "../harbour-allradio.png"
+                    source:  country !== "" ? "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+ country + ".png" : "../harbour-allradio.png"
                 }
             }
         }
@@ -123,7 +123,7 @@ Page {
                 ps(source)
                 radioStation = title
                 if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                else if (favorites) picon = "../stations/"+icon+".png"; else picon = "../stations/"+country+".png"
+                else if (favorites) picon = "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+icon+".png"; else picon = "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+country+".png"
                 website = (Qt.resolvedUrl(site))
             }
 
@@ -137,7 +137,7 @@ Page {
                          ps(source)
                          radioStation = title
                          if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                         else if (favorites) picon = "../stations/"+icon+".png"; else picon = "../stations/"+country+".png"
+                         else if (favorites) picon = "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+icon+".png"; else picon = "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+country+".png"
                          website = (Qt.resolvedUrl(site))
                      }
                  }

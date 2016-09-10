@@ -1,6 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import "../stations"
+//import "../stations"
 
 Page {
     id: countryPage
@@ -76,7 +76,7 @@ Page {
                     Image {
                         id: myIcon
                         anchors.horizontalCenter: parent.horizontalCenter
-                        source: "../stations/"+coid+".png"
+                        source: "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+coid+".png"
                         width: parent.width / 1.5
                         height: parent.width / 1.5
                         opacity: 0.6
@@ -180,7 +180,7 @@ Page {
                 id: myListIcon
                 y: 20; //anchors.horizontalCenter: parent.horizontalCenter
                 anchors { right: parent.right; rightMargin: 40; verticalCenter: parent.verticalCenter }
-                source: "../stations/"+coid+".png"
+                source: "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+coid+".png"
                 height: listText.height
                 opacity: 0.6
                 fillMode: Image.PreserveAspectFit
