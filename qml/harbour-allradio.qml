@@ -28,7 +28,7 @@ property string key: "title"
 property bool sloading: false
 property bool streaming: false
 property string currentUrl: ""
-property MprisPlayer mpris: mprisPlayer
+//property MprisPlayer mpris: mprisPlayer // MPRIS
 
 function playStream() {
     userPlay=2;
@@ -116,8 +116,8 @@ Audio {
         onPlaying: {sloading = false;streaming = true}
 
         onPlaybackStateChanged: {
-            updatePlaybackStatus();
-            updateMprisMetadata();
+            //updatePlaybackStatus(); //MPRIS
+            //updateMprisMetadata(); //MPRIS
 
             switch (playbackState) {
                 case 0: streaming = false; break
@@ -132,6 +132,8 @@ Audio {
 
     }
 
+//MPRIS
+/*
 function updateMprisMetadata(){
         //mprisPlayer.song = ctitle
         mprisPlayer.artist = radioStation === "" ? "AllRadio" : radioStation
@@ -156,7 +158,7 @@ function updatePlaybackStatus (){
     }
 }
 
-MprisPlayer {
+ MprisPlayer {
     id: mprisPlayer
 
     property string artist
@@ -240,6 +242,9 @@ MprisPlayer {
         mprisPlayer.metadata = metadata
     }
 }
+*/
+// MPRIS END
+
     initialPage: Component { CountryChooser { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
     allowedOrientations: Orientation.All

@@ -114,7 +114,14 @@ Page {
                     text: "<h2>Changelog:</h2><br>"+
 
 
-"<p>version 1.4.2<br>
+"<p>version 1.4.4<br>
+- openrepos (MPRIS version)</p>
+<p>version 1.4.3<br>
+- Fixed an unforseen bug/feature in script not allowing some stations to
+be played (such as Mdr Sachen Anhalt, Germany and probably more!?).
+Thank you <b>Blaubear1833</b> for making me aware of that!<br>
+- Corrected some swedish translations. Thank you <b>eson57</b>!</p>
+<p>version 1.4.2<br>
 - Added lockscreencontrol (MPRIS) for openRepos version<br>
 <p>version 1.4.1<br>
 - Change in player (stability/speed)<br>
