@@ -5,7 +5,7 @@ import QtQuick.LocalStorage 2.0
 import "pages"
 import "js/favorites.js" as Db
 import "js/stream.js" as Stream
-import org.nemomobile.mpris 1.0 //MPRIS
+//import org.nemomobile.mpris 1.0 //MPRIS
 
 ApplicationWindow {
 id: window
