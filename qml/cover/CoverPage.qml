@@ -22,7 +22,7 @@ CoverBackground {
            id: logo
            source: picon
            anchors.horizontalCenter: parent.horizontalCenter
-           opacity: 0.4
+           opacity: 0.2
            width: parent.width
            sourceSize.height:  parent.height
            height: parent.height
@@ -36,12 +36,14 @@ CoverBackground {
             anchors.topMargin: Theme.paddingMedium
             anchors.leftMargin: 30
             anchors.rightMargin: 20
+            //anchors.bottom: parent.verticalCenter
+            anchors.bottomMargin: Theme.paddingMedium
             font.pixelSize: Theme.fontSizeHuge
             fontSizeMode: Text.Fit
             wrapMode: Text.WordWrap
-            maximumLineCount: 4
+            maximumLineCount: 8
             color: Theme.secondaryColor
-            text: (sleepTime > 0) ? (qsTr("Closing in ") + (sleepTime) + qsTr(" minutes.")) : radioStation
+            text: (sleepTime > 0) ? (qsTr("Closing in ") + (sleepTime) + qsTr(" minutes.")) : playMusic.metaData.title ? "<b>"+radioStation + ":</b>\n" + playMusic.metaData.title : radioStation
             width: parent.width - 30
         }
     }

@@ -28,7 +28,7 @@ Page {
     SilicaListView {
         id: listView
 
-        quickScroll: false
+        //quickScroll: false
         anchors.fill: parent
         anchors.bottomMargin: playerPanel.visibleSize
         clip: true
@@ -115,6 +115,10 @@ Page {
                  id: firstName
                  text: model.title
                  color: highlighted ? Theme.highlightColor : Theme.primaryColor
+                 anchors.left: parent.left
+                 anchors.right: parent.right
+                 anchors.leftMargin: Theme.paddingMedium
+                 anchors.rightMargin: Theme.paddingMedium
                  anchors.verticalCenter: parent.verticalCenter
                  font.pixelSize: Theme.fontSizeLarge
              }

@@ -10,7 +10,7 @@ Page {
         visible: true
         anchors.fill: parent
         clip: true
-        quickScroll: false
+        //quickScroll: false
 
         cellWidth: isPortrait ? width / 2 : width / 3
         cellHeight: isPortrait ? width / 2 : width / 3
@@ -33,9 +33,10 @@ Page {
 
         model: countryModel
 
-        header: BackgroundItem {
+        header: PageHeader {
             id: favHeader
-            width: parent.width
+            title: "Countries"
+       /*     width: parent.width
             height: isPortrait ? width / 2.3 : width / 4.6
             onClicked: {
                 ctitle = qsTr("Favorites")
@@ -65,7 +66,7 @@ Page {
                     text: qsTr("Favorites")
                     color: highlighted ? Theme.highlightColor : Theme.primaryColor
                     font.pixelSize: Theme.fontSizeHuge
-                }
+                } */
 
             }
 
@@ -117,7 +118,7 @@ Page {
         anchors.fill: parent
         anchors.bottomMargin: playerPanel.visibleSize
         clip: true
-        quickScroll: false
+        //quickScroll: false
 
 
         property int retning: 0

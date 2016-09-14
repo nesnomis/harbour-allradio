@@ -34,20 +34,18 @@
 <context>
     <name>CountryChooser</name>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="106"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="107"/>
         <source>Show as list</source>
         <translation>Vis som liste</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="41"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="65"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="145"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="168"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="146"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="169"/>
         <source>Favorites</source>
         <translation>Favoritter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="210"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="211"/>
         <source>Show as grid</source>
         <translation>Vis som ikoner</translation>
     </message>
@@ -313,14 +311,32 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="44"/>
+        <location filename="../qml/cover/CoverPage.qml" line="46"/>
         <source>Closing in </source>
         <translation>Slukker om </translation>
     </message>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="44"/>
+        <location filename="../qml/cover/CoverPage.qml" line="46"/>
         <source> minutes.</source>
         <translation> minutter.</translation>
+    </message>
+</context>
+<context>
+    <name>Favorites</name>
+    <message>
+        <location filename="../qml/pages/Favorites.qml" line="179"/>
+        <source>Listen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Favorites.qml" line="192"/>
+        <source>Delete favourite</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Favorites.qml" line="202"/>
+        <source>Browse all countries</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -389,7 +405,7 @@
 <context>
     <name>PlayerPanel</name>
     <message>
-        <location filename="../qml/pages/PlayerPanel.qml" line="31"/>
+        <location filename="../qml/pages/PlayerPanel.qml" line="67"/>
         <source>Opening webpage</source>
         <translation type="unfinished">Åbner webside</translation>
     </message>
@@ -415,17 +431,17 @@
 <context>
     <name>RadioPlayer</name>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="135"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="139"/>
         <source>Listen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="147"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="151"/>
         <source>Add to favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="153"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="157"/>
         <source>Delete favourite</source>
         <translation type="unfinished"></translation>
     </message>

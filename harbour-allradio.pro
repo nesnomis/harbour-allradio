@@ -292,5 +292,6 @@ TRANSLATIONS += translations/harbour-allradio-da.ts
 TRANSLATIONS += translations/harbour-allradio-sv.ts
 
 DISTFILES += \
-    qml/timepicker.png
+    qml/timepicker.png \
+    qml/pages/Favorites.qml
 

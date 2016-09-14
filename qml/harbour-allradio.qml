@@ -5,7 +5,7 @@ import QtQuick.LocalStorage 2.0
 import "pages"
 import "js/favorites.js" as Db
 import "js/stream.js" as Stream
-//import org.nemomobile.mpris 1.0
+import org.nemomobile.mpris 1.0 //MPRIS
 
 ApplicationWindow {
 id: window
@@ -84,6 +84,16 @@ Component.onCompleted: {
 }
 
 CountryModel {id: countryModel}
+
+function findCountry(land) {  // Get translated countryname
+    for(var i = 0; i < countryModel.count; i++) {
+      var current = countryModel.get(i);
+      if(land === current.coid) {
+          return countryModel.countryname(i)
+      }
+    }
+}
+
 ListModel{id: favChannels}
 
 Timer {
@@ -115,9 +125,12 @@ Audio {
 
         onPlaying: {sloading = false;streaming = true}
 
+        //onMetaDataChanged: console.log("metadatachanged")
+        //onStatusChanged:
+
         onPlaybackStateChanged: {
-            //updatePlaybackStatus(); //MPRIS
-            //updateMprisMetadata(); //MPRIS
+           // updatePlaybackStatus(); //MPRIS
+           // updateMprisMetadata(); //MPRIS
 
             switch (playbackState) {
                 case 0: streaming = false; break
@@ -128,6 +141,7 @@ Audio {
 
         onStatusChanged: {
             if (status == 6) sloading = false //;streaming = true // Audio loaded and buffered
+           // updateMprisMetadata(); //MPRIS
         }
 
     }
@@ -135,7 +149,7 @@ Audio {
 //MPRIS
 /*
 function updateMprisMetadata(){
-        //mprisPlayer.song = ctitle
+        mprisPlayer.song = playMusic.metaData.title ? playMusic.metaData.title : ""
         mprisPlayer.artist = radioStation === "" ? "AllRadio" : radioStation
         updatePlaybackStatus()
 }
@@ -161,8 +175,8 @@ function updatePlaybackStatus (){
  MprisPlayer {
     id: mprisPlayer
 
-    property string artist
-    property string song
+    property string artist: radioStation ? radioStation : ""
+    property string song: playMusic.metaData.title ? playMusic.metaData.title : ""
 
     serviceName: "harbour-allradio"
 
@@ -183,7 +197,7 @@ function updatePlaybackStatus (){
     loopStatus: Mpris.None
     shuffle: false
     volume: 1
-    song: "AllRadio"
+    //song: playMusic.metaData.title ? playMusic.metaData.title : ""
     //artist: ctitle + " - " + radioStation
     onPauseRequested:{
         stopStream();
@@ -245,7 +259,7 @@ function updatePlaybackStatus (){
 */
 // MPRIS END
 
-    initialPage: Component { CountryChooser { } }
+    initialPage: Component { Favorites { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
     allowedOrientations: Orientation.All
     _defaultPageOrientations: Orientation.All
