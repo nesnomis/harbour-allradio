@@ -34,18 +34,18 @@
 <context>
     <name>CountryChooser</name>
     <message>
+        <location filename="../qml/pages/CountryChooser.qml" line="38"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="143"/>
+        <source>Countries</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/CountryChooser.qml" line="107"/>
         <source>Show as list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="146"/>
-        <location filename="../qml/pages/CountryChooser.qml" line="169"/>
-        <source>Favorites</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/CountryChooser.qml" line="211"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="213"/>
         <source>Show as grid</source>
         <translation type="unfinished"></translation>
     </message>
@@ -324,6 +324,11 @@
 <context>
     <name>Favorites</name>
     <message>
+        <location filename="../qml/pages/Favorites.qml" line="99"/>
+        <source>My Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/Favorites.qml" line="179"/>
         <source>Listen</source>
         <translation type="unfinished"></translation>
@@ -336,6 +341,16 @@
     <message>
         <location filename="../qml/pages/Favorites.qml" line="202"/>
         <source>Browse all countries</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Favorites.qml" line="210"/>
+        <source>Favorites empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Favorites.qml" line="211"/>
+        <source>click here to add some favorites</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

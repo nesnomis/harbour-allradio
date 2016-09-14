@@ -35,7 +35,7 @@ Page {
 
         header: PageHeader {
             id: favHeader
-            title: "Countries"
+            title: qsTr("Countries")
        /*     width: parent.width
             height: isPortrait ? width / 2.3 : width / 4.6
             onClicked: {
@@ -138,9 +138,11 @@ Page {
 
         model: countryModel
 
-        header: BackgroundItem {
+        header: PageHeader {
             id: listfavHeader
-            width: parent.width
+            title: qsTr("Countries")
+
+    /*        width: parent.width
             height: parent.width / 2.3
             onClicked: {
                 ctitle = qsTr("Favorites")
@@ -170,7 +172,7 @@ Page {
                 color: highlighted ? Theme.highlightColor : Theme.primaryColor
                 font.pixelSize: Theme.fontSizeHuge
 
-            }
+            } */
         }
 
         delegate: BackgroundItem {

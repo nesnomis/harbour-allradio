@@ -96,7 +96,7 @@ Page {
 
                 Label {
                      id: title
-                     text: "My Favorites"
+                     text: qsTr("My Favorites")
                      color: Theme.highlightColor
                      anchors.left: parent.left
                      anchors.right: logo2.left
@@ -207,8 +207,8 @@ Page {
 
     ViewPlaceholder {
         enabled: listView.count === 0 //|| jsonModel1.jsonready
-        text: "Favorites empty"
-        hintText: "click here to add some favorites"
+        text: qsTr("Favorites empty")
+        hintText: qsTr("click here to add some favorites")
 
         Image {
             id: logo
