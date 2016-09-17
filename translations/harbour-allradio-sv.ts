@@ -13,17 +13,17 @@
         <location filename="../qml/pages/About.qml" line="77"/>
         <location filename="../qml/pages/About.qml" line="110"/>
         <source>Opening webpage</source>
-        <translation>Öppnar websida</translation>
+        <translation>Öppnar webbsida</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="50"/>
         <source>The radiostations are from</source>
-        <translation>Radio kanalerna kommer från</translation>
+        <translation>Radiokanalerna kommer från</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="81"/>
         <source>If you like this app, and would like to make a donation (for a beer or a cup of coffee?! :) ..):</source>
-        <translation>Om du gillar denna appen och vill donera (till en öl eller kop kaffe?! :) ...):</translation>
+        <translation>Om du gillar den här appen och vill donera (till en öl, eller en kopp kaffe?! :) ...):</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="49"/>
@@ -110,7 +110,7 @@
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="72"/>
         <source>Czechrepublic</source>
-        <translation>Tjekien</translation>
+        <translation>Tjeckien</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="73"/>
@@ -125,7 +125,7 @@
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="75"/>
         <source>Faroe</source>
-        <translation>Färörarna</translation>
+        <translation>Färöarna</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="76"/>
@@ -215,12 +215,12 @@
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="93"/>
         <source>Moldova</source>
-        <translation>Moldovien</translation>
+        <translation>Moldavien</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="94"/>
         <source>Monaco</source>
-        <translation>Monako</translation>
+        <translation>Monaco</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="95"/>
@@ -313,7 +313,7 @@
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="46"/>
         <source>Closing in </source>
-        <translation>Stänger om </translation>
+        <translation>Stänger av om </translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="46"/>
@@ -341,17 +341,17 @@
     <message>
         <location filename="../qml/pages/Favorites.qml" line="202"/>
         <source>Browse all countries</source>
-        <translation>Bläddra länder</translation>
+        <translation>Bläddra bland länderna</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="210"/>
         <source>Favorites empty</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga favoriter</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="211"/>
         <source>click here to add some favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryck här, för att lägga till favoriter</translation>
     </message>
 </context>
 <context>
@@ -374,17 +374,17 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="38"/>
         <source>Choose country by clicking the flag/name, then click the channel you want to listen to</source>
-        <translation>Välj land genom att klicka på flaggan/namnet, klicka sedan på den kanalen du vill lyssna till</translation>
+        <translation>Välj land genom att trycka på flaggan/namnet, tryck sedan på den kanal du vill lyssna till</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="40"/>
         <source>When playing you will see the name and country-flag of the current playing radio station at the bottom of the screen.</source>
-        <translation>Under uppspelning ser du kanalens namn och flagga i botten av skärmen.</translation>
+        <translation>Under uppspelning ser du radiostationens namn och flagga i botten på skärmen.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="41"/>
         <source>You can change the country selection between list and icons by flicking down and select &apos;show as list&apos; alt. &apos;show as grid&apos;</source>
-        <translation>Du kan välja att se länderna som ikoner eller lista genom att &apos;flicka&apos; ner och välja &apos;visa som lista&apos; eller &apos;visa som ikoner&apos;</translation>
+        <translation>Du kan välja att se länderna som ikoner eller lista genom att dra ner toppmenyn och välja &apos;Visa som lista&apos; eller &apos;Visa som ikoner&apos;</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="43"/>
@@ -394,7 +394,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="45"/>
         <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to search/filter the selection based on channel name</source>
-        <translation>När du har valt land och har klickat in dig på kanalerna, kan du klicka på förstoringsglaset i toppen av skärmen för att söka/filtrera urvalet av stationer som visas, baserat på kanalernas namn</translation>
+        <translation>När du har valt land och tryckt in dig på kanalerna, kan du trycka på förstoringsglaset i toppen av skärmen för att söka/filtrera stationsurvalet, baserat på stationsnamn</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="47"/>
@@ -404,7 +404,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="49"/>
         <source>Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing</source>
-        <translation>&apos;Flick&apos; ner och välj insomningstimer, ställ sedan in tiden i minuter du vill ha innan radion avslutar uppspelningen</translation>
+        <translation>Dra ner toppmenyn och välj insomningstimer, ställ sedan in tiden i det antal minuter du vill ha innan radion avslutar uppspelningen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="49"/>
@@ -414,7 +414,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="50"/>
         <source>This help is a draft! It may be updated?! :-)</source>
-        <translation>Denna hjälpen är ett utkast! Den kan bli uppdaterad!? :-)</translation>
+        <translation>Denna hjälp är ett utkast! Den kan bli uppdaterad!? :-)</translation>
     </message>
 </context>
 <context>
@@ -422,7 +422,7 @@
     <message>
         <location filename="../qml/pages/PlayerPanel.qml" line="67"/>
         <source>Opening webpage</source>
-        <translation>Öppnar websida</translation>
+        <translation>Öppnar webbsida</translation>
     </message>
 </context>
 <context>
@@ -484,7 +484,7 @@
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="10"/>
         <source>choose time: </source>
-        <translation>välj tid: </translation>
+        <translation>Välj tid: </translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="35"/>
