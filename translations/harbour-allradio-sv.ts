@@ -422,7 +422,7 @@
     <message>
         <location filename="../qml/pages/PlayerPanel.qml" line="67"/>
         <source>Opening webpage</source>
-        <translation>Öppnar websida</translation>
+        <translation>Öppnar webbsida</translation>
     </message>
 </context>
 <context>
