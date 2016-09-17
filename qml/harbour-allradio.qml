@@ -5,7 +5,7 @@ import QtQuick.LocalStorage 2.0
 import "pages"
 import "js/favorites.js" as Db
 import "js/stream.js" as Stream
-//import org.nemomobile.mpris 1.0 //MPRIS
+import org.nemomobile.mpris 1.0 //MPRIS
 
 ApplicationWindow {
 id: window
@@ -29,7 +29,7 @@ property string key: "title"
 property bool sloading: false
 property bool streaming: false
 property string currentUrl: ""
-//property MprisPlayer mpris: mprisPlayer // MPRIS
+property MprisPlayer mpris: mprisPlayer // MPRIS
 
 function playStream() {
     userPlay=2;
@@ -130,8 +130,8 @@ Audio {
         //onStatusChanged:
 
         onPlaybackStateChanged: {
-            //updatePlaybackStatus(); //MPRIS
-            //updateMprisMetadata(); //MPRIS
+            updatePlaybackStatus(); //MPRIS
+            updateMprisMetadata(); //MPRIS
 
             switch (playbackState) {
                 case 0: streaming = false; break
@@ -142,13 +142,13 @@ Audio {
 
         onStatusChanged: {
             if (status == 6) sloading = false //;streaming = true // Audio loaded and buffered
-            //updateMprisMetadata(); //MPRIS
+            updateMprisMetadata(); //MPRIS
         }
 
     }
 
 //MPRIS
-/*
+
 function updateMprisMetadata(){
         mprisPlayer.song = metaInfo ? metaInfo : ""
         mprisPlayer.artist = radioStation === "" ? "AllRadio" : radioStation
@@ -261,7 +261,7 @@ onMetaInfoChanged: mprisPlayer.song = metaInfo
         mprisPlayer.metadata = metadata
     }
 }
-*/
+
 // MPRIS END
 
     initialPage: Component { Favorites { } }
