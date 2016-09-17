@@ -114,7 +114,16 @@ Page {
                     text: "<h2>Changelog:</h2><br>"+
 
 
-"<p>version 1.4.4<br>
+"<p>version 1.4.7<br>
+- Swedish translation corrected (by eson57)</p>
+<p>version 1.4.6<br>
+- Same as 1.4.5 + MPRIS for openrepos version</p>
+<p>version 1.4.5<br>
+- First step in a bigger update done.<br>
+- Changed initial page to favorites with direct link to favorite countries.<br>
+- Added radiostation metadata (if available).<br>
+- Tweaking the look and feel a bit.</p>
+<p>version 1.4.4<br>
 - openrepos (MPRIS version)</p>
 <p>version 1.4.3<br>
 - Fixed an unforseen bug/feature in script not allowing some stations to
