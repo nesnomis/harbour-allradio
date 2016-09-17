@@ -125,7 +125,7 @@
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="75"/>
         <source>Faroe</source>
-        <translation>Färörarna</translation>
+        <translation>Färöarna</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="76"/>
@@ -215,12 +215,12 @@
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="93"/>
         <source>Moldova</source>
-        <translation>Moldovien</translation>
+        <translation>Moldavien</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="94"/>
         <source>Monaco</source>
-        <translation>Monako</translation>
+        <translation>Monaco</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="95"/>
@@ -394,7 +394,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="45"/>
         <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to search/filter the selection based on channel name</source>
-        <translation>När du har valt land och tryckt in dig på kanalerna, kan du trycka på förstoringsglaset i toppen av skärmen för att söka/filtrera urvalet av stationer som visas, baserat på stationsnamn</translation>
+        <translation>När du har valt land och tryckt in dig på kanalerna, kan du trycka på förstoringsglaset i toppen av skärmen för att söka/filtrera stationsurvalet, baserat på stationsnamn</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="47"/>
