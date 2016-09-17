@@ -183,7 +183,7 @@ Page {
                 id: myListIcon
                 y: 20; //anchors.horizontalCenter: parent.horizontalCenter
                 anchors { right: parent.right; rightMargin: 40; verticalCenter: parent.verticalCenter }
-                source: "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+coid+".png"
+                source: "../allradio-data/images/"+coid+".png"
                 height: listText.height
                 opacity: 0.6
                 fillMode: Image.PreserveAspectFit
