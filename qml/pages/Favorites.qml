@@ -48,7 +48,7 @@ Page {
                anchors.verticalCenter: showRect.verticalCenter
                anchors.left: showRect.left
                anchors.leftMargin: Theme.paddingLarge
-               source: if (section.search(".png")>0) "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+section+".png"; else "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+section+".png";
+               source: if (section.search(".png")>0) "../allradio-data/images/"+section+".png"; else "../allradio-data/images/"+section+".png";
             }
 
 
@@ -165,7 +165,7 @@ Page {
                 ps(source)
                 radioStation = title
                 if (icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                else picon = "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+icon+".png"; // else picon = "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+country+".png"
+                else picon = "../allradio-data/images/"+icon+".png"; // else picon = "../allradio-data/images/"+country+".png"
                 website = (Qt.resolvedUrl(site))
             }
 
@@ -181,7 +181,7 @@ Page {
                          ps(source)
                          radioStation = title
                          if (icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                         else  picon = "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+icon+".png"; /// else picon = "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+country+".png"
+                         else  picon = "../allradio-data/images/"+icon+".png"; /// else picon = "../allradio-data/images/"+country+".png"
                          website = (Qt.resolvedUrl(site))
                      }
                  }
@@ -209,6 +209,7 @@ Page {
         enabled: listView.count === 0 //|| jsonModel1.jsonready
         text: qsTr("Favorites empty")
         hintText: qsTr("click here to add some favorites")
+        textFormat: Text.StyledText
 
         Image {
             id: logo

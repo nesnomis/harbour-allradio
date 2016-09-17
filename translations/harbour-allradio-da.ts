@@ -346,12 +346,12 @@
     <message>
         <location filename="../qml/pages/Favorites.qml" line="210"/>
         <source>Favorites empty</source>
-        <translation>Ingen favoritter</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="211"/>
         <source>click here to add some favorites</source>
-        <translation>klik her for at tilføje favoritter</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

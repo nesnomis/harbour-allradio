@@ -5,7 +5,7 @@ import QtQuick.LocalStorage 2.0
 import "pages"
 import "js/favorites.js" as Db
 import "js/stream.js" as Stream
-//import org.nemomobile.mpris 1.0 //MPRIS
+import org.nemomobile.mpris 1.0 //MPRIS
 
 ApplicationWindow {
 id: window
@@ -17,6 +17,7 @@ property string picon: "../harbour-allradio.png"
 property string ficon: ""
 property string cicon: ""
 property string radioStation: "AllRadio"
+property string metaInfo: playMusic.metaData.title ? playMusic.metaData.title : ""
 property string website: ""
 property int sleepTime: 0
 property int userPlay: 0 // 0 Stopped, 1 Paused, 2 Playing
@@ -28,7 +29,7 @@ property string key: "title"
 property bool sloading: false
 property bool streaming: false
 property string currentUrl: ""
-//property MprisPlayer mpris: mprisPlayer // MPRIS
+property MprisPlayer mpris: mprisPlayer // MPRIS
 
 function playStream() {
     userPlay=2;
@@ -129,8 +130,8 @@ Audio {
         //onStatusChanged:
 
         onPlaybackStateChanged: {
-           // updatePlaybackStatus(); //MPRIS
-           // updateMprisMetadata(); //MPRIS
+            updatePlaybackStatus(); //MPRIS
+            updateMprisMetadata(); //MPRIS
 
             switch (playbackState) {
                 case 0: streaming = false; break
@@ -141,15 +142,15 @@ Audio {
 
         onStatusChanged: {
             if (status == 6) sloading = false //;streaming = true // Audio loaded and buffered
-           // updateMprisMetadata(); //MPRIS
+            updateMprisMetadata(); //MPRIS
         }
 
     }
 
 //MPRIS
-/*
+
 function updateMprisMetadata(){
-        mprisPlayer.song = playMusic.metaData.title ? playMusic.metaData.title : ""
+        mprisPlayer.song = metaInfo ? metaInfo : ""
         mprisPlayer.artist = radioStation === "" ? "AllRadio" : radioStation
         updatePlaybackStatus()
 }
@@ -172,11 +173,13 @@ function updatePlaybackStatus (){
     }
 }
 
+onRadioStationChanged: mprisPlayer.artist = radioStation
+onMetaInfoChanged: mprisPlayer.song = metaInfo
+
  MprisPlayer {
     id: mprisPlayer
-
-    property string artist: radioStation ? radioStation : ""
-    property string song: playMusic.metaData.title ? playMusic.metaData.title : ""
+    property string song: ""
+    property string artist: "AllRadio"
 
     serviceName: "harbour-allradio"
 
@@ -197,8 +200,8 @@ function updatePlaybackStatus (){
     loopStatus: Mpris.None
     shuffle: false
     volume: 1
-    //song: playMusic.metaData.title ? playMusic.metaData.title : ""
-    //artist: ctitle + " - " + radioStation
+    //song: metaInfo
+    //artist: radioStation
     onPauseRequested:{
         stopStream();
     }
@@ -246,17 +249,19 @@ function updatePlaybackStatus (){
         var metadata = mprisPlayer.metadata
 
         metadata[Mpris.metadataToString(Mpris.Artist)] = artist // List of strings
+        metadata[Mpris.metadataToString(Mpris.Title)] = song // List of strings
         mprisPlayer.metadata = metadata
     }
 
     onSongChanged: {
         var metadata = mprisPlayer.metadata
 
+        metadata[Mpris.metadataToString(Mpris.Artist)] = artist // List of strings
         metadata[Mpris.metadataToString(Mpris.Title)] = song // List of strings
         mprisPlayer.metadata = metadata
     }
 }
-*/
+
 // MPRIS END
 
     initialPage: Component { Favorites { } }

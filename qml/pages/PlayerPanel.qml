@@ -5,15 +5,15 @@ DockedPanel {
     width: parent.width
     height: metaData.text !== "" ? Theme.itemSizeLarge + metaData.height + metaSep.height + Theme.paddingMedium + Theme.paddingLarge : Theme.itemSizeLarge + Theme.paddingLarge
     dock: Dock.Bottom
-    open: showPlayer  ? true : false
+    open: showPlayer ? true : false
 
     RemorsePopup {id: remorse}
 
     Rectangle {
         anchors.fill: parent
         radius: 10
-        opacity: 0.9
-        color: "#333333"
+        //opacity: 0.9
+        color: Theme.highlightDimmerColor
     }
 
     BusyIndicator {
@@ -40,7 +40,7 @@ DockedPanel {
         width: parent.width
         anchors.left: parent.left
         anchors.right: parent.right
-        color: Theme.secondaryColor
+        color: Theme.highlightColor
         anchors.leftMargin: Theme.paddingMedium
         anchors.rightMargin: Theme.paddingMedium
         anchors.top: parent.top
@@ -49,7 +49,7 @@ DockedPanel {
         horizontalAlignment: Text.AlignHCenter
         wrapMode: Text.WordWrap
         maximumLineCount: 2
-        text: playMusic.metaData.title ? playMusic.metaData.title : ""
+        text: metaInfo
         opacity: 0.9
     }
 
@@ -78,13 +78,13 @@ DockedPanel {
                    source: picon
                  }
 
-                Text {
+                Label {
                     id: listeningTo
                     anchors.left: logo.right
                     anchors.leftMargin: Theme.paddingMedium
                     anchors.verticalCenter: logo.verticalCenter
                     width: parent.width - (pause.width + logo.width)
-                    color: Theme.primaryColor
+                    color: bgItem.highlighted ? Theme.highlightColor : Theme.primaryColor
                     font.pixelSize: Theme.fontSizeMedium
                     fontSizeMode: Text.Fit
                     wrapMode: Text.Wrap

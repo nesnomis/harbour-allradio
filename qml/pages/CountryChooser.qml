@@ -77,7 +77,7 @@ Page {
                     Image {
                         id: myIcon
                         anchors.horizontalCenter: parent.horizontalCenter
-                        source: "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+coid+".png"
+                        source: "../allradio-data/images/"+coid+".png"
                         width: parent.width / 1.5
                         height: parent.width / 1.5
                         opacity: 0.6

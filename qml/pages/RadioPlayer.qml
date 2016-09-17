@@ -35,7 +35,7 @@ Page {
 
         JSONListModel {
             id: jsonModel1
-            source: "https://raw.githubusercontent.com/nesnomis/allradio-data/master/stations/"+country+".json"  //country + ".json"
+            source: "../allradio-data/stations/"+country+".json"  //country + ".json"
             query: "$."+country+".channel[*]" //"$."+ country + ".channel[*]"
             sortby: "title"
             filterby: filter
@@ -75,7 +75,7 @@ Page {
                     fillMode: Image.PreserveAspectFit
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.rightMargin: Theme.paddingMedium
-                    source:  country !== "" ? "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+ country + ".png" : "../harbour-allradio.png"
+                    source:  country !== "" ? "../allradio-data/images/"+ country + ".png" : "../harbour-allradio.png"
                 }
             }
         }
@@ -127,7 +127,7 @@ Page {
                 ps(source)
                 radioStation = title
                 if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                else if (favorites) picon = "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+icon+".png"; else picon = "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+country+".png"
+                else if (favorites) picon = "../allradio-data/images/"+icon+".png"; else picon = "../allradio-data/images/"+country+".png"
                 website = (Qt.resolvedUrl(site))
             }
 
@@ -141,7 +141,7 @@ Page {
                          ps(source)
                          radioStation = title
                          if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                         else if (favorites) picon = "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+icon+".png"; else picon = "https://raw.githubusercontent.com/nesnomis/allradio-data/master/images/"+country+".png"
+                         else if (favorites) picon = "../allradio-data/images/"+icon+".png"; else picon = "../allradio-data/images/"+country+".png"
                          website = (Qt.resolvedUrl(site))
                      }
                  }
@@ -164,7 +164,7 @@ Page {
             }
             PullMenu {}
     }
-    PlayerPanel { id:playerPanel;visible: !searching }
+    PlayerPanel { id:playerPanel;open: searching ? false : true}
 }
 
 

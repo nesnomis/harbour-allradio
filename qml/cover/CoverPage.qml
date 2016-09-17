@@ -18,16 +18,16 @@ CoverBackground {
             text: "AllRadio"
         }
 
-        Image {
+  /*      Image {
            id: logo
            source: picon
-           anchors.horizontalCenter: parent.horizontalCenter
-           opacity: 0.2
+           anchors.bottom: parent.bottom
+           opacity: 0.4
            width: parent.width
            sourceSize.height:  parent.height
            height: parent.height
            fillMode: Image.PreserveAspectCrop
-         }
+         } */
 
         Text {
             anchors.horizontalCenter: parent.horizontalCenter
@@ -43,7 +43,7 @@ CoverBackground {
             wrapMode: Text.WordWrap
             maximumLineCount: 8
             color: Theme.secondaryColor
-            text: (sleepTime > 0) ? (qsTr("Closing in ") + (sleepTime) + qsTr(" minutes.")) : playMusic.metaData.title ? "<b>"+radioStation + ":</b>\n" + playMusic.metaData.title : radioStation
+            text: (sleepTime > 0) ? (qsTr("Closing in ") + (sleepTime) + qsTr(" minutes.")) : metaInfo ? "<b>"+radioStation + ":</b>\n\n" + metaInfo : radioStation
             width: parent.width - 30
         }
     }
