@@ -13,7 +13,7 @@ property variant dbModel: favChannels
 property alias mp3: playMusic.source
 //property string mp3: ""
 property string ctitle: ""
-property string picon: "../harbour-allradio.png"
+property string picon: "../allradio-data/images/allradio.png"
 property string ficon: ""
 property string cicon: ""
 property string radioStation: "AllRadio"
@@ -67,6 +67,11 @@ function unknownError() {
 function dropDb() {
     Db.drop()
     Db.initialize()
+    Db.load(favChannels)
+}
+
+function updateDb(source,title,site,section,icon) {
+    Db.update(source,title,site,section,icon)
     Db.load(favChannels)
 }
 

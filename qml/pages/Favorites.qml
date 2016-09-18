@@ -47,77 +47,45 @@ Page {
                fillMode: Image.PreserveAspectFit
                anchors.verticalCenter: showRect.verticalCenter
                anchors.left: showRect.left
-               anchors.leftMargin: Theme.paddingLarge
-               source: if (section.search(".png")>0) "../allradio-data/images/"+section+".png"; else "../allradio-data/images/"+section+".png";
+               anchors.leftMargin: Theme.paddingMedium
+               source: if (section == "0") "../allradio-data/images/allradio.png"; else if (section.search(".png")>0) "../allradio-data/images/"+section+".png"; else "../allradio-data/images/"+section+".png";
             }
-
 
             Text {
                  id: showName
-                 text: findCountry(section)
+                 text: section === "0" ? qsTr("My radio stations") : findCountry(section)
                  color: highlighted ? Theme.highlightColor : Theme.primaryColor
-                 anchors.leftMargin: Theme.paddingLarge
+                 anchors.leftMargin: Theme.paddingMedium
                  anchors.rightMargin: Theme.paddingMedium
                  anchors.left: countryIcon.right
                  anchors.right: nextIcon.left
                  anchors.verticalCenter: showRect.verticalCenter
                  wrapMode: Text.ElideRight
                  font.pixelSize: Theme.fontSizeLarge
-                 font.capitalization: Font.Capitalize
+                 font.capitalization: section == "0" ? Font.MixedCase : Font.Capitalize
                  maximumLineCount: 1
             }
 
             onClicked: {
+                if (section == "0") {
+                    window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml"))
+                } else {
+
                 favorites = false
                 ctitle = showName.text
                 country = section
                 filter = ""
                 key = "title"
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
+                }
             }
         }
 
 
         header: PageHeader {
             id: pHeader
-            //title: favorites ? ctitle : ""
-
-              /*  SearchField {
-                    id: searchField
-                    width: parent.width - logo2.width - (Theme.paddingMedium * 2 )
-                    placeholderText: "Search"
-                    inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
-                    EnterKey.iconSource: "image://theme/icon-m-enter-close"
-                    EnterKey.onClicked: {focus = false;searching= false}
-                    focus: true
-                    onTextChanged: if (text.length > 0) filter = text; else {filter = "";focus=true;}
-                    onClicked: {listView.currentIndex = -1;showPlayer = false;searching=true}
-                }*/
-
-                Label {
-                     id: title
-                     text: qsTr("My Favorites")
-                     color: Theme.highlightColor
-                     anchors.left: parent.left
-                     anchors.right: logo2.left
-                     anchors.leftMargin: Theme.paddingMedium
-                     anchors.rightMargin: Theme.paddingMedium
-                     anchors.verticalCenter: parent.verticalCenter
-                     font.pixelSize: Theme.fontSizeExtraLarge
-                 }
-
-                Image {
-                    id: logo2
-                    height: parent.height / 2
-                    fillMode: Image.PreserveAspectFit
-                    anchors.right: parent.right
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.rightMargin: Theme.paddingMedium
-                    source: "../harbour-allradio.png"
-                }
-            }
-
-
+            title: qsTr("Favorites")
+        }
 
         VerticalScrollDecorator {}
 
@@ -164,12 +132,11 @@ Page {
             onClicked: {
                 ps(source)
                 radioStation = title
-                if (icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
+                if (icon == "0") picon = "../allradio-data/images/allradio.png"
+                else if (icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
                 else picon = "../allradio-data/images/"+icon+".png"; // else picon = "../allradio-data/images/"+country+".png"
                 website = (Qt.resolvedUrl(site))
             }
-
-
 
              ContextMenu {
                  id: contextMenu
@@ -180,26 +147,34 @@ Page {
                      onClicked: {
                          ps(source)
                          radioStation = title
-                         if (icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
+                         if (icon == "0") picon = "../allradio-data/images/allradio.png"
+                         else if (icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
                          else  picon = "../allradio-data/images/"+icon+".png"; /// else picon = "../allradio-data/images/"+country+".png"
                          website = (Qt.resolvedUrl(site))
                      }
                  }
 
                  MenuItem {
+                     id:medit
+                     visible: icon == "0" ? true : false
+                     text: qsTr("Edit")
+
+                     onClicked: window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml"),
+                                                      {infotext: qsTr("Edit radio station"),titlfield: title,streamurlfield: source,homepagefield: site,sectionfield: section})
+                 }
+
+                 MenuItem {
                      id:mdelete
-                     //visible: favorites
-                     text: qsTr("Delete favourite")
+                     text: qsTr("Delete")
 
                      onClicked: remove()//listView.currentItem.remove(rpindex,rpsource) //listView.remorseAction();
-                     //remorse.execute(qsTr("Deleting channel"), function() {delDb(rpsource)}, 5000);
                  }
              }
 
             }
             PullMenu {
                 MenuItem {
-                    text: qsTr("Browse all countries")
+                    text: qsTr("Add radio stations")
                     onClicked: pageStack.push(Qt.resolvedUrl("CountryChooser.qml"))
                 }
             }
@@ -210,15 +185,6 @@ Page {
         text: qsTr("Favorites empty")
         hintText: qsTr("click here to add some favorites")
         textFormat: Text.StyledText
-
-        Image {
-            id: logo
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.bottom: parent.top
-            anchors.bottomMargin: Theme.paddingLarge
-            opacity: 0.4
-            source: "../harbour-allradio.png"
-        }
 
         MouseArea {
             anchors.fill: parent

@@ -12,7 +12,6 @@ DockedPanel {
     Rectangle {
         anchors.fill: parent
         radius: 10
-        //opacity: 0.9
         color: Theme.highlightDimmerColor
     }
 
@@ -31,8 +30,6 @@ DockedPanel {
         anchors.topMargin: Theme.paddingMedium
         visible: metaData.text !== ""
     }
-
-
 
     Text {
         id: metaData
@@ -104,18 +101,5 @@ DockedPanel {
                 icon.source: streaming ? "image://theme/icon-l-pause" : "image://theme/icon-l-play"
                 onClicked: streaming ? stopStream() : playStream()
 
-            }
-
-
-
-         /*   PushUpMenu {
-                MenuItem {
-                    text: qsTr("Sleep timer")
-                    onClicked: pageStack.push(Qt.resolvedUrl("SleepTimerPage.qml"))
-                }
-                MenuItem {
-                    text: qsTr("Startup timer")
-                    onClicked: pageStack.push(Qt.resolvedUrl("About.qml"))
-                }
-            } */
+    }
 }

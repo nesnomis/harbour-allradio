@@ -3,6 +3,7 @@ import QtQuick 2.0
 ListModel {
     id: countryModel
 
+    ListElement {coid: "0"}
     ListElement {coid: "albania"}
     ListElement {coid: "andorra"}
     ListElement {coid: "armenia"}
@@ -58,6 +59,7 @@ ListModel {
     function countryname(index) {
         if (countryname["text"] === undefined) {
             countryname.text = [
+                qsTr("Add favorite"),
                 qsTr("Albania"),
                 qsTr("Andorra"),
                 qsTr("Armenia"),

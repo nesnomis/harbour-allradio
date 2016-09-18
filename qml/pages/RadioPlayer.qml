@@ -21,14 +21,11 @@ import "../JSONListModel"
 
 Page {
     id: radioPage
-   // allowedOrientations: Orientation.All
     property alias model: listView.model
     property bool searching: false
 
     SilicaListView {
         id: listView
-
-        //quickScroll: false
         anchors.fill: parent
         anchors.bottomMargin: playerPanel.visibleSize
         clip: true
@@ -79,7 +76,6 @@ Page {
                 }
             }
         }
-
 
         VerticalScrollDecorator {}
 
@@ -157,7 +153,6 @@ Page {
                      text: qsTr("Delete favourite")
 
                      onClicked: remove()//listView.currentItem.remove(rpindex,rpsource) //listView.remorseAction();
-                     //remorse.execute(qsTr("Deleting channel"), function() {delDb(rpsource)}, 5000);
                  }
              }
 

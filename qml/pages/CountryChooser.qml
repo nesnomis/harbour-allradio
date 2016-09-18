@@ -1,6 +1,5 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-//import "../stations"
 
 Page {
     id: countryPage
@@ -10,7 +9,6 @@ Page {
         visible: true
         anchors.fill: parent
         clip: true
-        //quickScroll: false
 
         cellWidth: isPortrait ? width / 2 : width / 3
         cellHeight: isPortrait ? width / 2 : width / 3
@@ -34,74 +32,42 @@ Page {
         model: countryModel
 
         header: PageHeader {
-            id: favHeader
+            //id: pheader
             title: qsTr("Countries")
-       /*     width: parent.width
-            height: isPortrait ? width / 2.3 : width / 4.6
-            onClicked: {
-                ctitle = qsTr("Favorites")
-                favorites = true
-                filter = ""
-                key = "title"
-                cicon = "../harbour-allradio.png"
-                //showSearch = false
-                window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
-                                             {model: dbModel} )
-            }
-
-                Image {
-                    id: favIcon
-                    anchors { right: parent.right; rightMargin: 40; verticalCenter: parent.verticalCenter }
-                    source: "../harbour-allradio.png"
-                    x: 70
-                    y: 70
-                    width: isPortrait ? favHeader.width / 3.7 : favHeader.width / 7.4 //favHeader.width / 3.7
-                    height: isPortrait ? favHeader.width / 3.7 : favHeader.width / 7.4
-                    opacity: 0.6
-                    fillMode: Image.PreserveAspectFit
-                }
-
-                Label {
-                    anchors { left: parent.left; leftMargin: 40; bottom: favIcon.bottom }
-                    text: qsTr("Favorites")
-                    color: highlighted ? Theme.highlightColor : Theme.primaryColor
-                    font.pixelSize: Theme.fontSizeHuge
-                } */
-
             }
 
         delegate: BackgroundItem {
-                    width: isPortrait ? parent.width / 2 : parent.width / 3 //(parent.width / 2);
-                    height: isPortrait ? parent.width / 2 : parent.width / 3
+            width: isPortrait ? parent.width / 2 : parent.width / 3 //(parent.width / 2);
+            height: isPortrait ? parent.width / 2 : parent.width / 3
 
-                    Image {
-                        id: myIcon
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        source: "../allradio-data/images/"+coid+".png"
-                        width: parent.width / 1.5
-                        height: parent.width / 1.5
-                        opacity: 0.6
-                        fillMode: Image.PreserveAspectFit
-                    }
+            Image {
+                id: myIcon
+                anchors.horizontalCenter: parent.horizontalCenter
+                source: coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+coid+".png"
+                width: parent.width / 1.5
+                height: parent.width / 1.5
+                opacity: 0.6
+                fillMode: Image.PreserveAspectFit
+            }
 
-                    Text {
-                        anchors { top: myIcon.bottom; horizontalCenter: parent.horizontalCenter }
-                        text: grid.model.countryname(index)
-                        color: highlighted ? Theme.highlightColor : Theme.primaryColor
-                        font.pixelSize: Theme.fontSizeLarge
+            Text {
+                anchors { top: myIcon.bottom; horizontalCenter: parent.horizontalCenter }
+                text: grid.model.countryname(index)
+                color: highlighted ? Theme.highlightColor : Theme.primaryColor
+                font.pixelSize: Theme.fontSizeLarge
 
-                    }
+            }
 
-                    onClicked: {
-                        favorites = false
-                        ctitle = list.model.countryname(index)
-                        country = coid
-                        filter = ""
-                        key = "title"
-                        //showSearch = false
-                        window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
-                    }
-                }
+            onClicked: {
+                favorites = false
+                ctitle = list.model.countryname(index)
+                country = coid
+                filter = ""
+                key = "title"
+                coid == "0" ? window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml")) : window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
+            }
+        }
+
         PullMenu {
             MenuItem {
                 text: qsTr("Show as list")
@@ -118,8 +84,6 @@ Page {
         anchors.fill: parent
         anchors.bottomMargin: playerPanel.visibleSize
         clip: true
-        //quickScroll: false
-
 
         property int retning: 0
 
@@ -139,51 +103,20 @@ Page {
         model: countryModel
 
         header: PageHeader {
-            id: listfavHeader
+            //id: pheader
             title: qsTr("Countries")
-
-    /*        width: parent.width
-            height: parent.width / 2.3
-            onClicked: {
-                ctitle = qsTr("Favorites")
-                favorites = true
-                filter = ""
-                key = "title"
-                cicon = "../harbour-allradio.png"
-
-                window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"),
-                                             {model: dbModel} )
-            }
-            Image {
-                id: favIcon
-                anchors { right: parent.right; rightMargin: 40; verticalCenter: parent.verticalCenter }
-                source: "../harbour-allradio.png"
-                x: 70
-                y: 70
-                width: listfavHeader.width / 3.7
-                height: listfavHeader.width / 3.7
-                opacity: 0.6
-                fillMode: Image.PreserveAspectFit
-            }
-
-            Label {
-                anchors { left: parent.left; leftMargin: 40; bottom: favIcon.bottom }
-                text: qsTr("Favorites")
-                color: highlighted ? Theme.highlightColor : Theme.primaryColor
-                font.pixelSize: Theme.fontSizeHuge
-
-            } */
         }
 
         delegate: BackgroundItem {
+            id: favBack
             width: (parent.width)
-            anchors { horizontalCenter: parent.horizontalCenter}
+            anchors { horizontalCenter: parent.horizontalCenter; }
 
             Image {
                 id: myListIcon
                 y: 20; //anchors.horizontalCenter: parent.horizontalCenter
-                anchors { right: parent.right; rightMargin: 40; verticalCenter: parent.verticalCenter }
-                source: "../allradio-data/images/"+coid+".png"
+                anchors { right: parent.right; rightMargin: Theme.paddingLarge; verticalCenter: parent.verticalCenter }
+                source: coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+coid+".png"
                 height: listText.height
                 opacity: 0.6
                 fillMode: Image.PreserveAspectFit
@@ -191,7 +124,7 @@ Page {
 
             Text {
                 id: listText
-                anchors { left: parent.left; leftMargin: 40; verticalCenter: parent.verticalCenter }
+                anchors { left: parent.left; leftMargin: Theme.paddingLarge; verticalCenter: parent.verticalCenter }
                 text: list.model.countryname(index)
                 color: highlighted ? Theme.highlightColor : Theme.primaryColor
                 font.pixelSize: Theme.fontSizeLarge
@@ -204,7 +137,7 @@ Page {
                 country = coid
                 filter = ""
                 key = "title"
-                window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
+                coid == "0" ? window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml")) : window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
             }
         }
         ScrollDecorator {}

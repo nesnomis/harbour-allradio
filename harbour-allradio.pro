@@ -396,5 +396,6 @@ DISTFILES += \
     qml/allradio-data/stations/turkey.json \
     qml/allradio-data/stations/uk.json \
     qml/allradio-data/stations/ukraine.json \
-    qml/allradio-data/stations/vatican.json
+    qml/allradio-data/stations/vatican.json \
+    qml/pages/AddOwnRadio.qml
 
