@@ -535,7 +535,6 @@ DISTFILES += \
     qml/allradio-data/images/united kingdom \
     qml/allradio-data/images/united kingdom.png \
     qml/allradio-data/images/united states of america.png \
-    qml/js/settings.js \
     qml/JSONListModel/GetStationUrl.qml \
     qml/pages/Search.qml \
     qml/allradio-data/images/bosnia and herzegovina.png \
