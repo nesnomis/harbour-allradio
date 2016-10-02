@@ -7,5 +7,7 @@ Features:
 - Simple search/filter on channels list.
 - Add & remove favorites.
 - Sleeptimer.
+- Read metadata from radio stations (if available).
+- Add your own radio streams.
 
 The radio stations are coming from: http://www.listenlive.eu.
