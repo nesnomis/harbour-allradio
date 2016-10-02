@@ -1,6 +1,6 @@
 # harbour-allradio
 
-AllRadio is an easy to use radio player for online streaming radio on a SailfishOS / Jolla phones.
+AllRadio is an easy to use radio player for online streaming radio on SailfishOS / Jolla phones.
 
 Features:
 - Global radio channels from Community Radio Browser.
