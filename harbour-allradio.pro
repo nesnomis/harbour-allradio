@@ -735,5 +735,6 @@ DISTFILES += \
     qml/allradio-data/images/trinidad and tobago.png \
     qml/allradio-data/images/united arab emirates.png \
     qml/allradio-data/images/united kingdom.png \
-    qml/allradio-data/images/united states of america.png
+    qml/allradio-data/images/united states of america.png \
+    README.md
 

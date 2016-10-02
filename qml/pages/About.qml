@@ -166,12 +166,11 @@ Page {
 
 
 "<p>version 1.5.0<br>
+- Experimental version<br>
+- Switched radio source from internal (listenlive.eu) to external (Community Radio Browser)<br>
 - Added global search by tag<br>
 - added global search by name<br>
 - Lots of tweaking</p>
-<p>version 1.4.9<br>
-- Experimental version<br>
-- Switched radio source from internal (listenlive.eu) to external (Community Radio Browser)</p>
 <p>version 1.4.7<br>
 - Swedish translation corrected (by eson57)</p>
 <p>version 1.4.6<br>
