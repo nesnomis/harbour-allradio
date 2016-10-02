@@ -48,12 +48,12 @@ Page {
                anchors.verticalCenter: showRect.verticalCenter
                anchors.left: showRect.left
                anchors.leftMargin: Theme.paddingMedium
-               source: if (section == "0") "../allradio-data/images/allradio.png"; else if (section.search(".png")>0) "../allradio-data/images/"+section+".png"; else "../allradio-data/images/"+section+".png";
+               source: if (section.search(".png")>0) "../allradio-data/images/"+section.toLowerCase()+".png"; else "../allradio-data/images/"+section.toLowerCase()+".png";
             }
 
             Text {
                  id: showName
-                 text: section === "0" ? qsTr("My radio stations") : findCountry(section)
+                 text: findCountry(section.toLowerCase()) //findCountry(section.toLowerCase())
                  color: highlighted ? Theme.highlightColor : Theme.primaryColor
                  anchors.leftMargin: Theme.paddingMedium
                  anchors.rightMargin: Theme.paddingMedium
@@ -70,17 +70,15 @@ Page {
                 if (section == "0") {
                     window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml"))
                 } else {
-
-                favorites = false
-                ctitle = showName.text
-                country = section
-                filter = ""
-                key = "title"
-                window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
+                    favorites = false
+                    ctitle = showName.text
+                    country = section
+                    filter = ""
+                    key = internal ? "title" : "name"
+                    window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
                 }
             }
         }
-
 
         header: PageHeader {
             id: pHeader
@@ -105,93 +103,125 @@ Page {
             }
 
             delegate: ListItem {
-            id: myListItem
-            menu: contextMenu
-            showMenuOnPressAndHold: true
-            ListView.onRemove: animateRemoval(myListItem)
+                id: myListItem
+                menu: contextMenu
+                showMenuOnPressAndHold: true
+                ListView.onRemove: animateRemoval(myListItem)
 
-            width: ListView.view.width
-            height: menuOpen ? contextMenu.height + contentItem.height : contentItem.height
+                width: ListView.view.width
+                height: menuOpen ? contextMenu.height + contentItem.height : contentItem.height
 
-            function remove() {
-                remorseAction("Deleting", function() { delDb(source);listView.model.remove(index) })
-            }
+                function remove() {
+                    remorseAction("Deleting", function() { delDb(source);listView.model.remove(index) })
+                }
 
-            Label {
-                 id: firstName
-                 text: model.title
-                 color: highlighted ? Theme.highlightColor : Theme.primaryColor
-                 anchors.left: parent.left
-                 anchors.right: parent.right
-                 anchors.leftMargin: Theme.paddingMedium
-                 anchors.rightMargin: Theme.paddingMedium
-                 anchors.verticalCenter: parent.verticalCenter
-                 font.pixelSize: Theme.fontSizeMedium
-             }
+                Label {
+                     id: firstName
+                     text: title
+                     color: highlighted ? Theme.highlightColor : Theme.primaryColor
+                     anchors.left: parent.left
+                     anchors.right: codlabel.visible ? codlabel.left : bit.left
+                     anchors.leftMargin: Theme.paddingMedium
+                     anchors.rightMargin: Theme.paddingMedium
+                     anchors.verticalCenter: parent.verticalCenter
+                     font.pixelSize: Theme.fontSizeMedium
+                     truncationMode: TruncationMode.Fade
+                 }
 
-            onClicked: {
-                ps(source)
-                radioStation = title
-                if (icon == "0") picon = "../allradio-data/images/allradio.png"
-                else if (icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                else picon = "../allradio-data/images/"+icon+".png"; // else picon = "../allradio-data/images/"+country+".png"
-                website = (Qt.resolvedUrl(site))
-            }
+                Label {
+                    id: codlabel
+                     text: model.codec ? codec == "UNKNOWN" ? "" : codec : ""     // internal ? "" : codec == "UNKNOWN" ? "" : codec
+                     visible: model.id > 0 ? true : false
+                     color: highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                     anchors.verticalCenter: parent.verticalCenter
+                     anchors.right: bit.left
+                     anchors.rightMargin: Theme.paddingMedium
+                     font.pixelSize: Theme.fontSizeSmall
+                     font.italic: true
+                 }
 
-             ContextMenu {
-                 id: contextMenu
-                 MenuItem {
-                     id:mlisten
-                     visible: true
-                     text: qsTr("Listen")
-                     onClicked: {
-                         ps(source)
-                         radioStation = title
-                         if (icon == "0") picon = "../allradio-data/images/allradio.png"
-                         else if (icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                         else  picon = "../allradio-data/images/"+icon+".png"; /// else picon = "../allradio-data/images/"+country+".png"
-                         website = (Qt.resolvedUrl(site))
+                Label {
+                     id: bit
+                     text: model.id == 0 ? "old" : bitrate == 0 && codec == "UNKNOWN" ? "UNKNOWN" : bitrate == 0 ? "" : bitrate   // bitrate == 0 && codec == "UNKNOWN" ? "UNKNOWN" : bitrate == 0 ? "" : bitrate
+                     color: highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                     anchors.right: parent.right
+                     anchors.rightMargin: Theme.paddingMedium
+                     anchors.verticalCenter: parent.verticalCenter
+                     font.pixelSize: Theme.fontSizeSmall
+                     font.italic: true
+                 }
+
+                onClicked: {
+                    internal ? ps(source) : model.id == 0 ? ps(source) : cps(model.id)
+                    radioStation = title
+                    if (icon == "0") picon = "../allradio-data/images/allradio.png"
+                    else if (icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
+                    else picon = "../allradio-data/images/"+icon+".png"; // else picon = "../allradio-data/images/"+country+".png"
+                    website = (Qt.resolvedUrl(site))
+                }
+
+                 ContextMenu {
+                     id: contextMenu
+                     MenuItem {
+                         id:mlisten
+                         visible: true
+                         text: qsTr("Listen")
+                         onClicked: {
+                             internal ? ps(source) : model.id == 0 ? ps(source) : cps(model.id)
+                             radioStation = title
+                             if (icon == "0") picon = "../allradio-data/images/allradio.png"
+                             else if (icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
+                             else  picon = "../allradio-data/images/"+icon+".png";
+                             website = (Qt.resolvedUrl(site))
+                         }
+                     }
+
+                     MenuItem {
+                         id:medit
+                         visible: icon == "0" ? true : false
+                         text: qsTr("Edit")
+
+                         onClicked: window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml"),
+                                                          {infotext: qsTr("Edit radio station"),titlfield: title,streamurlfield: source,homepagefield: site,sectionfield: section,oldsource: source})
+                     }
+
+                     MenuItem {
+                         id:mdelete
+                         text: qsTr("Delete")
+
+                         onClicked: remove()//listView.currentItem.remove(rpindex,rpsource) //listView.remorseAction();
+                     }
+
+                     MenuItem {
+                         id:msearch
+                         visible: id == 0 ? true : false
+                         text: qsTr("Search and replace")
+
+                         onClicked: window.pageStack.push(Qt.resolvedUrl("Search.qml"),
+                                                          {searchterm: model.title,oldsource: source,searchby: "byname"})
                      }
                  }
-
-                 MenuItem {
-                     id:medit
-                     visible: icon == "0" ? true : false
-                     text: qsTr("Edit")
-
-                     onClicked: window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml"),
-                                                      {infotext: qsTr("Edit radio station"),titlfield: title,streamurlfield: source,homepagefield: site,sectionfield: section})
-                 }
-
-                 MenuItem {
-                     id:mdelete
-                     text: qsTr("Delete")
-
-                     onClicked: remove()//listView.currentItem.remove(rpindex,rpsource) //listView.remorseAction();
-                 }
-             }
-
             }
+
             PullMenu {
+
                 MenuItem {
-                    text: qsTr("Add radio stations")
+                    text: qsTr("Find radio stations")
                     onClicked: pageStack.push(Qt.resolvedUrl("CountryChooser.qml"))
                 }
             }
+            ViewPlaceholder {
+                enabled: listView.count === 0 //|| jsonModel1.jsonready
+                text: qsTr("Favorites empty")
+                hintText: qsTr("click here to add some favorites")
+                textFormat: Text.StyledText
+            }
+            MouseArea {
+                enabled: listView.count == 0
+                anchors.fill: parent
+                onClicked: pageStack.push(Qt.resolvedUrl("CountryChooser.qml"))
+            }
     }
-
-    ViewPlaceholder {
-        enabled: listView.count === 0 //|| jsonModel1.jsonready
-        text: qsTr("Favorites empty")
-        hintText: qsTr("click here to add some favorites")
-        textFormat: Text.StyledText
-
-        MouseArea {
-            anchors.fill: parent
-            onClicked: pageStack.push(Qt.resolvedUrl("CountryChooser.qml"))
-        }
-    }
-
     PlayerPanel { id:playerPanel }
 }
 

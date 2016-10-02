@@ -32,9 +32,9 @@ Page {
 
         JSONListModel {
             id: jsonModel1
-            source: "../allradio-data/stations/"+country+".json"  //country + ".json"
-            query: "$."+country+".channel[*]" //"$."+ country + ".channel[*]"
-            sortby: "title"
+            source: internal ? "../allradio-data/stations/"+country+".json" : "http://www.radio-browser.info/webservice/json/stations/bycountryexact/"+country
+            query: internal ? "$."+country+".channel[*]" : "$[?(@.lastcheckok>0)]"
+            sortby: internal ? "title" : ""
             filterby: filter
             filterkey: key
         }
@@ -48,10 +48,8 @@ Page {
             Row {
                 enabled: !favorites
                 visible: !favorites
-                anchors.topMargin: Theme.paddingMedium
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.rightMargin: Theme.paddingMedium
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.fill: parent
                 spacing: Theme.paddingLarge
 
                 SearchField {
@@ -95,69 +93,100 @@ Page {
             }
 
             delegate: ListItem {
-            id: myListItem
-            menu: contextMenu
-            showMenuOnPressAndHold: true
-            ListView.onRemove: animateRemoval(myListItem)
+                id: myListItem
+                menu: contextMenu
+                showMenuOnPressAndHold: true
+                ListView.onRemove: animateRemoval(myListItem)
 
-            width: ListView.view.width
-            height: menuOpen ? contextMenu.height + contentItem.height : contentItem.height
+                width: ListView.view.width
+                height: menuOpen ? contextMenu.height + contentItem.height : contentItem.height
 
-            function remove() {
-                remorseAction("Deleting", function() { delDb(source);listView.model.remove(index) })
-            }
+                function remove() {
+                    remorseAction("Deleting", function() { delDb(source);listView.model.remove(index) })
+                }
 
-            Label {
-                 id: firstName
-                 text: model.title
-                 color: highlighted ? Theme.highlightColor : Theme.primaryColor
-                 anchors.left: parent.left
-                 anchors.right: parent.right
-                 anchors.leftMargin: Theme.paddingMedium
-                 anchors.rightMargin: Theme.paddingMedium
-                 anchors.verticalCenter: parent.verticalCenter
-                 font.pixelSize: Theme.fontSizeLarge
-             }
-
-            onClicked: {
-                ps(source)
-                radioStation = title
-                if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                else if (favorites) picon = "../allradio-data/images/"+icon+".png"; else picon = "../allradio-data/images/"+country+".png"
-                website = (Qt.resolvedUrl(site))
-            }
-
-             ContextMenu {
-                 id: contextMenu
-                 MenuItem {
-                     id:mlisten
-                     visible: true
-                     text: qsTr("Listen")
-                     onClicked: {
-                         ps(source)
-                         radioStation = title
-                         if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
-                         else if (favorites) picon = "../allradio-data/images/"+icon+".png"; else picon = "../allradio-data/images/"+country+".png"
-                         website = (Qt.resolvedUrl(site))
-                     }
+                Label {
+                     id: firstName
+                     text: internal ? model.title : name
+                     color: highlighted ? Theme.highlightColor : Theme.primaryColor
+                     anchors.left: parent.left
+                     anchors.right: codlabel.left
+                     anchors.leftMargin: Theme.paddingMedium
+                     anchors.rightMargin: Theme.paddingMedium
+                     anchors.verticalCenter: parent.verticalCenter
+                     font.pixelSize: Theme.fontSizeMedium
+                     truncationMode: TruncationMode.Fade
                  }
-                 MenuItem {
-                     id:madd
-                     visible: !favorites
-                     text: qsTr("Add to favorites")
-                     onClicked: addDb(source,title,site,section,country);
-                     }
-                 MenuItem {
-                     id:mdelete
-                     visible: favorites
-                     text: qsTr("Delete favourite")
 
-                     onClicked: remove()//listView.currentItem.remove(rpindex,rpsource) //listView.remorseAction();
+
+                Label {
+                    id: codlabel
+                     text: internal ? "" : codec == "UNKNOWN" ? "" : codec
+                     color: highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                     anchors.verticalCenter: parent.verticalCenter
+                     anchors.right: bit.left
+                     anchors.rightMargin: Theme.paddingMedium
+                     font.pixelSize: Theme.fontSizeSmall
+                     font.italic: true
                  }
-             }
 
+                Label {
+                     id: bit
+                     text: internal ? "" : bitrate == 0 && codec == "UNKNOWN" ? "UNKNOWN" : bitrate == 0 ? "" : bitrate
+                     visible: !internal
+                     color: highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                     anchors.right: parent.right
+                     anchors.rightMargin: Theme.paddingMedium
+                     anchors.verticalCenter: parent.verticalCenter
+                     font.pixelSize: Theme.fontSizeSmall
+                     font.italic: true
+                 }
+
+                onClicked: {
+                    internal ? ps(source) : cps(model.id)
+                    radioStation = internal ? title : name
+                    if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
+                    else if (favorites) picon = "../allradio-data/images/"+icon+".png"; else picon = "../allradio-data/images/"+country.toLowerCase()+".png"
+                    website = internal ? (Qt.resolvedUrl(site)) : Qt.resolvedUrl(homepage)
+                }
+
+                ContextMenu {
+                    id: contextMenu
+                    MenuItem {
+                        id:mlisten
+                        visible: true
+                        text: qsTr("Listen")
+                        onClicked: {
+                            internal ? ps(source) : cps(model.id)
+                            radioStation = internal ? title : name
+                            if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
+                            else if (favorites) picon = "../allradio-data/images/"+icon+".png"; else picon = "../allradio-data/images/"+country.toLowerCase()+".png"
+                            website = internal ? (Qt.resolvedUrl(site)) : Qt.resolvedUrl(homepage)
+                        }
+                    }
+                    MenuItem {
+                        id:madd
+                        visible: !favorites
+                        text: qsTr("Add to favorites")  // id, lastchangetime, source, title, site, tags, icon, codec, bitrate
+                        onClicked: addDb(id,lastchangetime,url,name,homepage,tags,country,codec,bitrate)
+                        }
+                    MenuItem {
+                        id:mdelete
+                        visible: favorites
+                        text: qsTr("Delete favourite")
+
+                        onClicked: remove()//listView.currentItem.remove(rpindex,rpsource) //listView.remorseAction();
+                    }
+                }
             }
+
             PullMenu {}
+
+            ViewPlaceholder {
+                enabled: listView.count === 0 //|| jsonModel1.jsonready
+                text: qsTr("No radio stations!?")
+                hintText: qsTr("Be patient or check connection!")
+            }
     }
     PlayerPanel { id:playerPanel;open: searching ? false : true}
 }

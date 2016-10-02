@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "../JSONListModel"
 
 Page {
     id: countryPage
@@ -29,11 +30,17 @@ Page {
                 //console.log("verticalVolocity: "+verticalVelocity+" - contentY: "+contentY)
         }
 
-        model: countryModel
+        JSONListModel {
+            id: jsonModel1
+            source: internal ? "" : "http://www.radio-browser.info/webservice/json/countries"  //?hidebroken=true&order=stationcount"
+            query: internal ? "$[*]" : "$[?(@.stationcount>0)]"
+            get: false
+        }
+
+        model: internal ? countryModel : jsonModel1.model
 
         header: PageHeader {
-            //id: pheader
-            title: qsTr("Countries")
+            title: !internal ? "Community radio browser" : "Internal (listenlive.eu)"
             }
 
         delegate: BackgroundItem {
@@ -43,7 +50,7 @@ Page {
             Image {
                 id: myIcon
                 anchors.horizontalCenter: parent.horizontalCenter
-                source: coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+coid+".png"
+                source: model.coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+model.value.toLowerCase()+".png" //internal ? coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+coid+".png" : "../allradio-data/images/"+value.toLowerCase()+".png"
                 width: parent.width / 1.5
                 height: parent.width / 1.5
                 opacity: 0.6
@@ -51,20 +58,21 @@ Page {
             }
 
             Text {
-                anchors { top: myIcon.bottom; horizontalCenter: parent.horizontalCenter }
-                text: grid.model.countryname(index)
+                anchors { top: myIcon.bottom; horizontalCenter: parent.horizontalCenter; }
+                text: internal ? grid.model.countryname(index) : findCountry(model.value.toLowerCase()) ? findCountry(model.value.toLowerCase()) : model.value
                 color: highlighted ? Theme.highlightColor : Theme.primaryColor
-                font.pixelSize: Theme.fontSizeLarge
+                font.pixelSize: Theme.fontSizeMedium
+                elide: Text.ElideMiddle
 
             }
 
             onClicked: {
                 favorites = false
-                ctitle = list.model.countryname(index)
-                country = coid
+                ctitle = internal ? list.model.countryname(index) : findCountry(model.value.toLowerCase())
+                country = internal ? coid : model.value.toLowerCase()
                 filter = ""
-                key = "title"
-                coid == "0" ? window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml")) : window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
+                key = internal ? "title" : "name"
+                window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml")) //coid == "0" ? window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml")) : window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml")) //internal ? coid == "0" ? window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml")) : window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml")) : window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
             }
         }
 
@@ -73,6 +81,25 @@ Page {
                 text: qsTr("Show as list")
                 onClicked: grid.visible = false
             }
+
+            MenuItem {
+                text: qsTr("Search by name")
+                onClicked: {
+                    window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "byname"})
+                }
+            }
+            MenuItem {
+                text: qsTr("Search by tag")
+                onClicked: {
+                    window.pageStack.push(Qt.resolvedUrl("Tags.qml"), {searchtitle: qsTr("Search by tag"),searchby: "bytag"})
+                }
+            }
+        }
+
+        ViewPlaceholder {
+            enabled: grid.count === 0 //|| jsonModel1.jsonready
+            text: qsTr("No countries!?")
+            hintText: qsTr("Be patient or check connection!")
         }
 
         ScrollDecorator {}
@@ -100,11 +127,9 @@ Page {
                 //console.log("verticalVolocity: "+verticalVelocity+" - contentY: "+contentY)
         }
 
-        model: countryModel
-
+        model: internal ? countryModel : countryModelCommunity
         header: PageHeader {
-            //id: pheader
-            title: qsTr("Countries")
+            title: !internal ? "Community radio browser" : "Internal (listenlive.eu)"
         }
 
         delegate: BackgroundItem {
@@ -114,38 +139,58 @@ Page {
 
             Image {
                 id: myListIcon
-                y: 20; //anchors.horizontalCenter: parent.horizontalCenter
+                y: 20;
                 anchors { right: parent.right; rightMargin: Theme.paddingLarge; verticalCenter: parent.verticalCenter }
-                source: coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+coid+".png"
+                source: coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+coid+".png" //internal ? coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+coid+".png" : "../allradio-data/images/"+value.toLowerCase()+".png"
                 height: listText.height
                 opacity: 0.6
                 fillMode: Image.PreserveAspectFit
             }
 
-            Text {
+            Label {
                 id: listText
                 anchors { left: parent.left; leftMargin: Theme.paddingLarge; verticalCenter: parent.verticalCenter }
-                text: list.model.countryname(index)
+                text: list.model.countryname(index)//internal ? list.model.countryname(index) : findCountry(value.toLowerCase())
                 color: highlighted ? Theme.highlightColor : Theme.primaryColor
-                font.pixelSize: Theme.fontSizeLarge
+                font.pixelSize: Theme.fontSizeMedium
+                truncationMode: TruncationMode.Fade
 
             }
 
             onClicked: {
                 favorites = false
-                ctitle = list.model.countryname(index)
-                country = coid
+                ctitle = list.model.countryname(index)//internal ? list.model.countryname(index) : name
+                country = coid //internal ? coid : name.toLowerCase()
                 filter = ""
-                key = "title"
-                coid == "0" ? window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml")) : window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
+                key = internal ? "title" : "name"
+                coid == "0" ? window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml")) : window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml")) //internal ? coid == "0" ? window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml")) : window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml")) : window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))
             }
         }
         ScrollDecorator {}
+
         PullMenu {
             MenuItem {
                 text: qsTr("Show as grid")
                 onClicked: grid.visible = true
             }
+            MenuItem {
+                text: qsTr("Search by name")
+                onClicked: {
+                    window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "byname"})
+                }
+            }
+            MenuItem {
+                text: qsTr("Search by tag")
+                onClicked: {
+                    window.pageStack.push(Qt.resolvedUrl("Tags.qml"), {searchtitle: qsTr("Search by tag"),searchby: "bytag"})
+                }
+            }
+        }
+
+        ViewPlaceholder {
+            enabled: list.count === 0 //|| jsonModel1.jsonready
+            text: qsTr("No countries!?")
+            hintText: qsTr("Be patient or check connection!")
         }
     }
 

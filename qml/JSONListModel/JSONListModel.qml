@@ -14,15 +14,18 @@ Item {
     property string sortby: ""
     property string filterby: ""
     property string filterkey: ""
+    property bool get: true
 
     property ListModel model : ListModel { id: jsonModel }
     property alias count: jsonModel.count
 
     onSourceChanged: {
+        //console.log(useragent)
         var xhr = new XMLHttpRequest;
-        xhr.open("GET", source);
+        xhr.open(get ? "GET" : "POST", source);
+        xhr.setRequestHeader('User-Agent',useragent);
         xhr.onreadystatechange = function() {
-            if (xhr.readyState == XMLHttpRequest.DONE)
+            if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
                 json = xhr.responseText;
         }
         xhr.send();

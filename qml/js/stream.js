@@ -4,6 +4,8 @@ function func(source) {
     if (source.split('.').pop() == "mp3") {mp3 = source; return;}
     var pls = source.search(".pls");
     var m3u = source.search(".m3u");
+    //console.log("M3U: " + m3u)
+    //var m3u = source.search(".m3u");
 
  if (pls < 0 && m3u < 0) {
         if (source != "") mp3 = source; else unknownError()

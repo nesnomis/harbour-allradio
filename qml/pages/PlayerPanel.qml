@@ -3,7 +3,7 @@ import Sailfish.Silica 1.0
 
 DockedPanel {
     width: parent.width
-    height: metaData.text !== "" ? Theme.itemSizeLarge + metaData.height + metaSep.height + Theme.paddingMedium + Theme.paddingLarge : Theme.itemSizeLarge + Theme.paddingLarge
+    height: metaData.text !== "" ? Theme.itemSizeLarge + metaData.height + metaSep.height + Theme.paddingMedium   : Theme.itemSizeLarge
     dock: Dock.Bottom
     open: showPlayer ? true : false
 
@@ -13,13 +13,6 @@ DockedPanel {
         anchors.fill: parent
         radius: 10
         color: Theme.highlightDimmerColor
-    }
-
-    BusyIndicator {
-        anchors.centerIn: parent
-        size: BusyIndicatorSize.Large
-        running: (sloading && Qt.application.active)
-        enabled: (Qt.application.active)
     }
 
     Separator  {
@@ -62,13 +55,14 @@ DockedPanel {
                 width: parent.widt - pause.width
                 onClicked: {
                     remorse.execute(qsTr("Opening webpage"), function() {Qt.openUrlExternally(website)}, 3000)
+                   // window.pageStack.push(Qt.resolvedUrl("RadioWeb.qml"),{radioUrl: website})
                 }
 
                 Image {
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.leftMargin: Theme.paddingMedium
                     anchors.left: parent.left
-                    height: parent.height - Theme.paddingLarge
+                    height: parent.height / 1.8
                     opacity: 0.6
                     fillMode: Image.PreserveAspectFit
                    id: logo
@@ -89,6 +83,7 @@ DockedPanel {
                     text: radioStation
                     opacity: 0.9
                 }
+
             }
 
     IconButton {
@@ -99,7 +94,25 @@ DockedPanel {
                 anchors.rightMargin: 30
                 anchors.verticalCenter: bgItem.verticalCenter
                 icon.source: streaming ? "image://theme/icon-l-pause" : "image://theme/icon-l-play"
-                onClicked: streaming ? stopStream() : playStream()
-
+                onClicked: streaming || sloading ? stopStream() : playStream()
     }
+    BusyIndicator {
+        anchors.centerIn: pause
+        size: BusyIndicatorSize.Medium
+        running: (sloading && Qt.application.active)
+        enabled: (Qt.application.active)
+    }
+        ProgressBar {
+            id: progress
+            visible: value < 1.0 && value > 0.0  ? true : false
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.leftMargin: pause.width
+            anchors.rightMargin: pause.width
+            anchors.top: bgItem.verticalCenter
+            opacity: 0.4
+            minimumValue: 0.0
+            maximumValue: 1.0
+            value: playMusic.bufferProgress
+        }
 }
