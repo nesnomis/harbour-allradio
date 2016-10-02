@@ -1165,8 +1165,8 @@
         <translation>Mest populære tags</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tags.qml" line="139"/>
-        <location filename="../qml/pages/Tags.qml" line="141"/>
+        <location filename="../qml/pages/Tags.qml" line="97"/>
+        <location filename="../qml/pages/Tags.qml" line="99"/>
         <source>Search by name</source>
         <translation>Søg på navn</translation>
     </message>
