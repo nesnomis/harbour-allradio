@@ -5,7 +5,7 @@ import "../JSONListModel"
 Page {
     width: parent.width
     height: parent.height
-    property int stcount: 7
+    property int stcount: 6
 
     JSONListModel {
         id: getTags
