@@ -1165,8 +1165,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Tags.qml" line="97"/>
-        <location filename="../qml/pages/Tags.qml" line="99"/>
+        <location filename="../qml/pages/Tags.qml" line="80"/>
+        <location filename="../qml/pages/Tags.qml" line="82"/>
         <source>Search by name</source>
         <translation type="unfinished"></translation>
     </message>

@@ -5,7 +5,7 @@ import "../JSONListModel"
 Page {
     width: parent.width
     height: parent.height
-    property int stcount: 6
+    property int stcount: 7
 
     JSONListModel {
         id: getTags
@@ -17,7 +17,7 @@ Page {
         anchors.fill: parent
         anchors.bottomMargin: playerPanel.visibleSize
         contentWidth: parent.width;
-        contentHeight: flow.childrenRect.height + Theme.paddingLarge
+        contentHeight: flow.childrenRect.height + pHeader.height + (Theme.paddingLarge * 2)
         clip: true
         ScrollDecorator {}
 
@@ -61,8 +61,8 @@ Page {
                     font.pixelSize: (model.stationcount / 330) * (Theme.fontSizeHuge - Theme.fontSizeSmall) + Theme.fontSizeSmall
 
                     color: {
-                        if (font.pointSize < Theme.fontSizeExtraSmall) Theme.secondaryColor;
-                        else if (font.pointSize >= Theme.fontSizeExtraSmall) Theme.primaryColor
+                        if (font.pixelSize < Theme.fontSizeMedium) Theme.secondaryColor;
+                        else if (font.pixelSize >= Theme.fontSizeMedium) Theme.primaryColor
                     }
 
                     MouseArea {
