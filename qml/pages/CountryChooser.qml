@@ -85,7 +85,7 @@ Page {
             MenuItem {
                 text: qsTr("Search by name")
                 onClicked: {
-                    window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "byname"})
+                    window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "byname",searchtitle: qsTr("Search by name")})
                 }
             }
             MenuItem {

@@ -56,7 +56,7 @@
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="77"/>
         <source>Radio station homepage</source>
-        <translation></translation>
+        <translation>Radiostationens hemsida</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="90"/>
@@ -103,6 +103,7 @@
     </message>
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="86"/>
+        <location filename="../qml/pages/CountryChooser.qml" line="88"/>
         <location filename="../qml/pages/CountryChooser.qml" line="177"/>
         <source>Search by name</source>
         <translation>Sök efter namn</translation>
@@ -1042,27 +1043,27 @@
 <context>
     <name>RadioPlayer</name>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="158"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="141"/>
         <source>Listen</source>
         <translation>Lyssna</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="170"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="153"/>
         <source>Add to favorites</source>
         <translation>Lägg till i favoriter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="176"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="159"/>
         <source>Delete favourite</source>
         <translation>Ta bort</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="187"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="170"/>
         <source>No radio stations!?</source>
         <translation>Inga radiostationer!?</translation>
     </message>
     <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="188"/>
+        <location filename="../qml/pages/RadioPlayer.qml" line="171"/>
         <source>Be patient or check connection!</source>
         <translation>Ha tålamod eller kontrollera anslutning!</translation>
     </message>
@@ -1159,7 +1160,13 @@
 <context>
     <name>Tags</name>
     <message>
-        <location filename="../qml/pages/Tags.qml" line="74"/>
+        <location filename="../qml/pages/Tags.qml" line="42"/>
+        <source>Most popular tags</source>
+        <translation>Mest populära taggar</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Tags.qml" line="139"/>
+        <location filename="../qml/pages/Tags.qml" line="141"/>
         <source>Search by name</source>
         <translation>Sök efter namn</translation>
     </message>
