@@ -55,8 +55,8 @@
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="77"/>
-        <source>Radtio station homepage</source>
-        <translation>Radiostationens hjemmeside (url)</translation>
+        <source>Radio station homepage</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="90"/>

@@ -23,7 +23,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="58"/>
         <source>The radiostations are from</source>
-        <translation>Radio stationerna kommer från</translation>
+        <translation>Radiostationerna kommer från</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="134"/>
@@ -41,22 +41,22 @@
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="31"/>
         <source>Radio station name and stream url is needed to save or test stream!</source>
-        <translation>Radio stationens namn och ström (url) krävs för att spara och testa strömmen!</translation>
+        <translation>Radiostationens namn och ström (url) krävs för att spara och testa strömmen!</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="52"/>
         <source>Radio station name</source>
-        <translation>Radio stationens namn</translation>
+        <translation>Radiostationens namn</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="64"/>
         <source>Radio station stream url</source>
-        <translation>Radio stationens ström (url)</translation>
+        <translation>Radiostationens ström (url)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="77"/>
-        <source>Radtio station homepage</source>
-        <translation>Radio stationens hemsida (url)</translation>
+        <source>Radio station homepage</source>
+        <translation></translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="90"/>
@@ -66,7 +66,7 @@
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="106"/>
         <source>Test radio station</source>
-        <translation>Prova radio station</translation>
+        <translation>Prova radiostation</translation>
     </message>
 </context>
 <context>
@@ -922,7 +922,7 @@
     <message>
         <location filename="../qml/pages/Favorites.qml" line="185"/>
         <source>Edit radio station</source>
-        <translation>Redigera radio station</translation>
+        <translation>Redigera radiostation</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="198"/>
@@ -932,12 +932,12 @@
     <message>
         <location filename="../qml/pages/Favorites.qml" line="190"/>
         <source>Delete</source>
-        <translation>Radera</translation>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="209"/>
         <source>Find radio stations</source>
-        <translation>Hitta radio stationer</translation>
+        <translation>Hitta radiostationer</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="215"/>
@@ -1059,7 +1059,7 @@
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="187"/>
         <source>No radio stations!?</source>
-        <translation>Inga radio stationer!?</translation>
+        <translation>Inga radiostationer!?</translation>
     </message>
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="188"/>
@@ -1105,7 +1105,7 @@
     <message>
         <location filename="../qml/pages/Search.qml" line="209"/>
         <source>Search radio stations</source>
-        <translation>Sök radio stationer</translation>
+        <translation>Sök radiostationer</translation>
     </message>
     <message>
         <location filename="../qml/pages/Search.qml" line="210"/>

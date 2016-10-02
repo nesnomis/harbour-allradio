@@ -178,7 +178,7 @@ Page {
 <p>version 1.4.5<br>
 - First step in a bigger update done.<br>
 - Changed initial page to favorites with direct link to favorite countries.<br>
-- Added radiostation metadata (if available).<br>
+- Added radio station metadata (if available).<br>
 - Tweaking the look and feel a bit.</p>
 <p>version 1.4.4<br>
 - openrepos (MPRIS version)</p>

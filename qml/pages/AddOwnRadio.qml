@@ -74,7 +74,7 @@ Dialog {
             TextField {
                 id: homepageField
                 width: parent.width
-                placeholderText: qsTr("Radtio station homepage")
+                placeholderText: qsTr("Radio station homepage")
                 inputMethodHints: Qt.ImhUrlCharactersOnly | Qt.ImhNoPredictiveText
                 EnterKey.iconSource: "image://theme/icon-m-enter-next"
                 EnterKey.onClicked: {focus = false;sectionField.focus = true}
