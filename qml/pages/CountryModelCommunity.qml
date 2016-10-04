@@ -22,6 +22,7 @@ ListModel {
     ListElement {coid: "canada"}
     ListElement {coid: "cape verde"}
     ListElement {coid: "chile"}
+    ListElement {coid: "china"}
     ListElement {coid: "colombia"}
     ListElement {coid: "congo"}
     ListElement {coid: "costa rica"}
@@ -130,6 +131,7 @@ ListModel {
                         qsTr("Canada"),
                         qsTr("Cape Verde"),
                         qsTr("Chile"),
+                        qsTr("China"),
                         qsTr("Colombia"),
                         qsTr("Congo"),
                         qsTr("Costa Rica"),

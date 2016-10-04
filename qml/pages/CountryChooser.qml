@@ -68,7 +68,7 @@ Page {
 
             onClicked: {
                 favorites = false
-                ctitle = internal ? list.model.countryname(index) : findCountry(model.value.toLowerCase())
+                ctitle = internal ? list.model.countryname(index) : findCountry(model.value.toLowerCase()) ? findCountry(model.value.toLowerCase()) : ""
                 country = internal ? coid : model.value.toLowerCase()
                 filter = ""
                 key = internal ? "title" : "name"
