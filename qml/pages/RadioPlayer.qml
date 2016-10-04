@@ -88,11 +88,22 @@ Page {
                     remorseAction("Deleting", function() { delDb(source);listView.model.remove(index) })
                 }
 
+                Image {
+                   id: speakerIcon
+                   height: parent.height / 2
+                   visible: streaming && currentid == model.id ? true : false
+                   fillMode: Image.PreserveAspectFit
+                   anchors.verticalCenter: parent.verticalCenter
+                   anchors.left: parent.left
+                   anchors.leftMargin: Theme.paddingMedium
+                   source: streaming && currentid == model.id ? "image://theme/icon-m-speaker?" + Theme.highlightColor : ""
+                }
+
                 Label {
                      id: firstName
                      text: internal ? model.title : name
                      color: highlighted ? Theme.highlightColor : Theme.primaryColor
-                     anchors.left: parent.left
+                     anchors.left: speakerIcon.right
                      anchors.right: codlabel.left
                      anchors.leftMargin: Theme.paddingMedium
                      anchors.rightMargin: Theme.paddingMedium
