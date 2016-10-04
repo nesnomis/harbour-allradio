@@ -220,7 +220,7 @@ Page {
 
                 MenuItem {
                     text: qsTr("Find radio stations")
-                    onClicked: pageStack.push(Qt.resolvedUrl("CountryChooser.qml"))
+                    onClicked: pageStack.push(Qt.resolvedUrl("CountryChooser.qml")) //CountryChooser.qml
                 }
             }
             ViewPlaceholder {

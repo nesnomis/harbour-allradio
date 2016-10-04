@@ -6,7 +6,9 @@ import "pages"
 import "js/favorites.js" as Db
 import "js/stream.js" as Stream
 import "../qml/JSONListModel"
-import org.nemomobile.mpris 1.0 //MPRIS
+//import org.nemomobile.mpris 1.0 //MPRIS
+
+
 
 ApplicationWindow {
 id: window
@@ -32,7 +34,9 @@ property bool streaming: false
 property string currentUrl: ""
 property int currentid
 property string useragent: "AllRadio/"+Qt.application.version+" (SailfishOS; Linux) nesnomis@gmail.com"
-property MprisPlayer mpris: mprisPlayer // MPRIS
+//property MprisPlayer mpris: mprisPlayer // MPRIS
+
+
 
 GetStationUrl {
     id: getStationUrl
@@ -184,8 +188,8 @@ Audio {
         onPlaying: {sloading = false;streaming = true}
 
         onPlaybackStateChanged: {
-            updatePlaybackStatus(); //MPRIS
-            updateMprisMetadata(); //MPRIS
+        //    updatePlaybackStatus(); //MPRIS
+        //    updateMprisMetadata(); //MPRIS
 
             switch (playbackState) {
                 case 0: streaming = false; break
@@ -199,13 +203,13 @@ Audio {
         onStatusChanged: {
             if (status == 6) sloading = false
             //if (status == Audio.buffered) console.log("AUDIO BUFFERED")     //;streaming = true // Audio loaded and buffered
-            updateMprisMetadata(); //MPRIS
+         //   updateMprisMetadata(); //MPRIS
         }
 
     }
 
 //MPRIS
-
+/*
 function updateMprisMetadata(){
         mprisPlayer.song = metaInfo ? metaInfo : ""
         mprisPlayer.artist = radioStation === "" ? "AllRadio" : radioStation
@@ -316,7 +320,7 @@ onMetaInfoChanged: mprisPlayer.song = metaInfo
         mprisPlayer.metadata = metadata
     }
 }
-
+*/
 // MPRIS END
 
     initialPage: Component { Favorites { } }

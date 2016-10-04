@@ -165,7 +165,12 @@ Page {
                     text: "<h2>Changelog:</h2><br>"+
 
 
-"<p>version 1.5.0<br>
+"<p>version 1.5.1<br>
+- More correct tags<br>
+- Show current playing in list<br>
+- Small twaks<br>
+- Added Chinese flag</p>
+<p>version 1.5.0<br>
 - Experimental version<br>
 - Switched radio source from internal (listenlive.eu) to external (Community Radio Browser)<br>
 - Added global search by tag<br>
