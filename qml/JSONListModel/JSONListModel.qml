@@ -15,11 +15,13 @@ Item {
     property string filterby: ""
     property string filterkey: ""
     property bool get: true
+    property bool ready: false
 
     property ListModel model : ListModel { id: jsonModel }
     property alias count: jsonModel.count
 
     onSourceChanged: {
+        ready = false
         //console.log(useragent)
         var xhr = new XMLHttpRequest;
         xhr.open(get ? "GET" : "POST", source);
@@ -51,6 +53,7 @@ Item {
             var jo = objectArray[key];
             jsonModel.append( jo );
         }
+        ready = true
     }
 
     function parseJSONString(jsonString, jsonPathQuery) {

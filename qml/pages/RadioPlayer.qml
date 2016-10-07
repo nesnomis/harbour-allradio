@@ -63,6 +63,7 @@ Page {
         property int retning: 0
         onContentYChanged: {
             if (!searching && atYBeginning) showPlayer = true
+            if (atYEnd) showPlayer = false
             }
             onMovementStarted: {
                 retning = contentY
@@ -82,7 +83,7 @@ Page {
                 ListView.onRemove: animateRemoval(myListItem)
 
                 width: ListView.view.width
-                height: menuOpen ? contextMenu.height + contentItem.height : contentItem.height
+                height: menuOpen ? contextMenu.height + contentItem.height + Theme.paddingMedium : contentItem.height + Theme.paddingMedium
 
                 function remove() {
                     remorseAction("Deleting", function() { delDb(source);listView.model.remove(index) })
@@ -99,19 +100,32 @@ Page {
                    source: streaming && currentid == model.id ? "image://theme/icon-m-speaker?" + Theme.highlightColor : ""
                 }
 
-                Label {
-                     id: firstName
-                     text: internal ? model.title : name
-                     color: highlighted ? Theme.highlightColor : Theme.primaryColor
-                     anchors.left: speakerIcon.right
-                     anchors.right: codlabel.left
-                     anchors.leftMargin: Theme.paddingMedium
-                     anchors.rightMargin: Theme.paddingMedium
-                     anchors.verticalCenter: parent.verticalCenter
-                     font.pixelSize: Theme.fontSizeMedium
-                     truncationMode: TruncationMode.Fade
-                 }
+                Column {
+                    anchors.left: speakerIcon.right
+                    anchors.right: codlabel.visible ? codlabel.left : bit.left
+                    anchors.leftMargin: Theme.paddingMedium
+                    anchors.rightMargin: Theme.paddingMedium
+                    anchors.verticalCenter: parent.verticalCenter
+                    Label {
+                         id: firstName
+                         text: internal ? model.title : name
+                         color: highlighted ? Theme.highlightColor : Theme.primaryColor
+                         font.pixelSize: Theme.fontSizeMedium
+                         truncationMode: TruncationMode.Fade
+                         width: parent.width
 
+                     }
+                    Label {
+                         id: rtags
+                         visible: tags !== "" ? true : false
+                         text: tags
+                         color: highlighted ? Theme.highlightColor : Theme.secondaryColor
+                         font.pixelSize: Theme.fontSizeExtraSmall
+                         truncationMode: TruncationMode.Fade
+                         width: parent.width
+
+                     }
+                }
 
                 Label {
                     id: codlabel
@@ -174,12 +188,13 @@ Page {
                 }
             }
 
-            PullMenu {}
+            PullMenu {
+            }
 
             ViewPlaceholder {
                 enabled: listView.count === 0 //|| jsonModel1.jsonready
-                text: qsTr("No radio stations!?")
-                hintText: qsTr("Be patient or check connection!")
+                text: jsonModel1.ready ? qsTr("No radio stations!?") : qsTr("Community Browser Radio")
+                hintText: jsonModel1.ready ? qsTr("") : qsTr("Loading radio stations...")
             }
     }
     PlayerPanel { id:playerPanel;open: searching ? false : true}

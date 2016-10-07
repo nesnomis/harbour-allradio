@@ -5,13 +5,13 @@ import "../JSONListModel"
 Page {
     width: parent.width
     height: parent.height
-    property int stcount: 6
+    //property int stcount: 6
 
-    JSONListModel {
+ /*   JSONListModel {
         id: getTags
         source: "http://www.radio-browser.info/webservice/json/tags"
-        query: "$[?(@.stationcount>"+stcount+")]"
-    }
+        query: "$[?(@.stationcount>6)]"
+    } */
 
     SilicaFlickable {
         anchors.fill: parent
@@ -24,6 +24,7 @@ Page {
         property int retning: 0
         onContentYChanged: {
             if (atYBeginning) showPlayer = true
+            if (atYEnd) showPlayer = false
             }
             onMovementStarted: {
                 retning = contentY
@@ -75,13 +76,7 @@ Page {
                 }
             }
         }
-        PullMenu {
-            MenuItem {
-                text: qsTr("Search by name")
-                onClicked: window.pageStack.replace(Qt.resolvedUrl("Search.qml"),
-                                                 {searchby: "byname",searchtitle: qsTr("Search by name")})
-            }
-        }
+        PullMenu {}
     }
     PlayerPanel { id:playerPanel}
 

@@ -4,6 +4,7 @@ ListModel {
     id: countryModel
 
  //   ListElement {coid: "0"}
+    ListElement {coid: ""}
     ListElement {coid: "albania"}
     ListElement {coid: "algeria"}
     ListElement {coid: "andorra"}
@@ -113,6 +114,7 @@ ListModel {
         if (countryname["text"] === undefined) {
             countryname.text = [
                     //    qsTr("Add favorite"),
+                        qsTr("No country?"),
                         qsTr("Albania"),
                         qsTr("Algeria"),
                         qsTr("Andorra"),

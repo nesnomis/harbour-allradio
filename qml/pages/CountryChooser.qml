@@ -30,17 +30,30 @@ Page {
                 //console.log("verticalVolocity: "+verticalVelocity+" - contentY: "+contentY)
         }
 
-        JSONListModel {
+     /*   JSONListModel {
             id: jsonModel1
             source: internal ? "" : "http://www.radio-browser.info/webservice/json/countries"  //?hidebroken=true&order=stationcount"
             query: internal ? "$[*]" : "$[?(@.stationcount>0)]"
             get: false
-        }
+        } */
 
-        model: internal ? countryModel : jsonModel1.model
+        model: internal ? countryModel : getCountries.model
 
         header: PageHeader {
-            title: !internal ? "Community radio browser" : "Internal (listenlive.eu)"
+            title: !internal ? qsTr("Countries") : "Internal (listenlive.eu)"
+           // height: choose._menuOpen ? choose.contentHeight + choose.height : choose.height
+
+        /*    ComboBox {
+                id: choose
+                width: 480
+                label: "Screen brightness"
+
+                menu: ContextMenu {
+                    MenuItem { text: "automatic" }
+                    MenuItem { text: "manual" }
+                    MenuItem { text: "high" }
+                }
+            } */
             }
 
         delegate: BackgroundItem {
@@ -81,19 +94,6 @@ Page {
                 text: qsTr("Show as list")
                 onClicked: grid.visible = false
             }
-
-            MenuItem {
-                text: qsTr("Search by name")
-                onClicked: {
-                    window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "byname",searchtitle: qsTr("Search by name")})
-                }
-            }
-            MenuItem {
-                text: qsTr("Search by tag")
-                onClicked: {
-                    window.pageStack.push(Qt.resolvedUrl("Tags.qml"), {searchtitle: qsTr("Search by tag"),searchby: "bytag"})
-                }
-            }
         }
 
         ViewPlaceholder {
@@ -116,6 +116,7 @@ Page {
 
         onContentYChanged: {
             if (!showPlayer && atYBeginning) showPlayer = true
+            if (atYEnd) showPlayer = false
         }
         onMovementStarted: {
             retning = contentY
@@ -141,7 +142,7 @@ Page {
                 id: myListIcon
                 y: 20;
                 anchors { right: parent.right; rightMargin: Theme.paddingLarge; verticalCenter: parent.verticalCenter }
-                source: coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+coid+".png" //internal ? coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+coid+".png" : "../allradio-data/images/"+value.toLowerCase()+".png"
+                source: coid == "0" ? "../allradio-data/images/allradio.png" : coid ? "../allradio-data/images/"+coid+".png" : ""    //internal ? coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+coid+".png" : "../allradio-data/images/"+value.toLowerCase()+".png"
                 height: listText.height
                 opacity: 0.6
                 fillMode: Image.PreserveAspectFit
@@ -172,18 +173,6 @@ Page {
             MenuItem {
                 text: qsTr("Show as grid")
                 onClicked: grid.visible = true
-            }
-            MenuItem {
-                text: qsTr("Search by name")
-                onClicked: {
-                    window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "byname"})
-                }
-            }
-            MenuItem {
-                text: qsTr("Search by tag")
-                onClicked: {
-                    window.pageStack.push(Qt.resolvedUrl("Tags.qml"), {searchtitle: qsTr("Search by tag"),searchby: "bytag"})
-                }
             }
         }
 

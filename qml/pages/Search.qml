@@ -2,6 +2,7 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "../JSONListModel"
 
+
 Page {
     property string title: ""
     property string searchterm: ""
@@ -10,6 +11,11 @@ Page {
     property string filter: searchterm
     property bool searching: false
     property string oldsource: ""
+    property alias source: jsonModel1.source
+    property bool showlogo: searchby === "lastchange" || searchby === "mostclick" || searchby === "lastplay" || searchby === "mostvote" ? true : false
+    property bool showsearch: searchby === "bytag" || searchby === "lastchange"  || searchby === "lastplay" || searchby === "mostclick" || searchby === "mostvote" ? false : true
+    property string showsection: searchby === "lastchange" || searchby === "mostclick" || searchby === "lastplay" || searchby === "mostvote" ? "" : "country"
+    property string pageheader: if (searchby == "byname") ""; else if (searchby == "bytag") "Tags"; else if (searchby == "lastchange") qsTr("New or changed stations"); else if (searchby == "lastplay") qsTr("Latest played stations");else if (searchby == "mostclick") qsTr("Most played stations");else if (searchby == "mostvote") qsTr("Most liked stations")
 
     width: parent.width
     height: parent.height
@@ -25,12 +31,12 @@ Page {
         JSONListModel {
             id: jsonModel1
             query: "$[*]"
-            sortby: "country"
+            sortby: showsection //searchby == "lastchange" || searchby == "mostclick" || searchby == "lastplay" ? "" : "country"
         }
 
         model: jsonModel1.model
 
-        section.property: "country"
+        section.property: showsection
         section.criteria: ViewSection.FullString
         section.delegate: ListItem {
             id: sectionHeading
@@ -58,12 +64,12 @@ Page {
                anchors.verticalCenter: showRect.verticalCenter
                anchors.left: showRect.left
                anchors.leftMargin: Theme.paddingMedium
-               source: if (section.search(".png")>0) "../allradio-data/images/"+section.toLowerCase()+".png"; else "../allradio-data/images/"+section.toLowerCase()+".png";
+               source: if (searchby === "lastchange")  "" ; else if (section.search(".png")>0) "../allradio-data/images/"+section.toLowerCase()+".png"; else section ? "../allradio-data/images/"+section.toLowerCase()+".png" : "../allradio-data/images/no country.png";
             }
 
             Text {
                  id: showName
-                 text: findCountry(section.toLowerCase()) ? findCountry(section.toLowerCase()) : qsTr("Unknown") //findCountry(section.toLowerCase())
+                 text: searchby === "lastchange" ? section : findCountry(section.toLowerCase()) ? findCountry(section.toLowerCase()) : qsTr("Unknown") //findCountry(section.toLowerCase())
                  color: highlighted ? Theme.highlightColor : Theme.primaryColor
                  anchors.leftMargin: Theme.paddingMedium
                  anchors.rightMargin: Theme.paddingMedium
@@ -79,11 +85,11 @@ Page {
 
         header: PageHeader {
             id: pHeader
-            title: searchby !== "bytag" ? "" : searchterm
+            title: pageheader
 
             SearchField {
                 id: searchField
-                visible: searchby !== "bytag" ? true : false
+                visible: showsearch
                 anchors.fill: parent
                 placeholderText: searchtitle
                 text: searchterm
@@ -99,6 +105,7 @@ Page {
         property int retning: 0
         onContentYChanged: {
             if (!searching && atYBeginning) showPlayer = true
+            if (atYEnd) showPlayer = false
             }
             onMovementStarted: {
                 retning = contentY
@@ -118,7 +125,7 @@ Page {
         ListView.onRemove: animateRemoval(myListItem)
 
         width: ListView.view.width
-        height: menuOpen ? contextMenu.height + contentItem.height : contentItem.height
+        height: menuOpen ? contextMenu.height + contentItem.height + Theme.paddingMedium : contentItem.height + Theme.paddingMedium
 
         function remove() {
             remorseAction("Deleting", function() { delDb(source);listView.model.remove(index) })
@@ -130,24 +137,48 @@ Page {
            visible: streaming && currentid == model.id ? true : false
            fillMode: Image.PreserveAspectFit
            anchors.verticalCenter: parent.verticalCenter
-           anchors.left: parent.left
+           anchors.left: logo2.right
            anchors.leftMargin: Theme.paddingMedium
            source: streaming && currentid == model.id ? "image://theme/icon-m-speaker?" + Theme.highlightColor : ""
         }
 
-        Label {
-             id: firstName
-             text: internal ? model.title : name
-             color: highlighted ? Theme.highlightColor : Theme.primaryColor
-             anchors.left: speakerIcon.right
-             anchors.right: codlabel.left
-             anchors.leftMargin: Theme.paddingMedium
-             anchors.rightMargin: Theme.paddingMedium
-             anchors.verticalCenter: parent.verticalCenter
-             font.pixelSize: Theme.fontSizeMedium
-             truncationMode: TruncationMode.Fade
-         }
 
+        Image {
+            id: logo2
+            visible: showlogo
+            height: parent.height / 2
+            fillMode: Image.PreserveAspectFit
+            anchors.left: parent.left
+            anchors.leftMargin: Theme.paddingMedium
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.rightMargin: Theme.paddingMedium
+            source: !showlogo ? "" : country ? "../allradio-data/images/"+ country.toLowerCase() + ".png" : "../allradio-data/images/no country.png"
+        }
+
+        Column {
+            anchors.left: speakerIcon.right
+            anchors.right: codlabel.visible ? codlabel.left : bit.left
+            anchors.leftMargin: Theme.paddingMedium
+            anchors.rightMargin: Theme.paddingMedium
+            anchors.verticalCenter: parent.verticalCenter
+            Label {
+                 id: firstName
+                 text: internal ? model.title : name
+                 color: highlighted ? Theme.highlightColor : Theme.primaryColor
+                 font.pixelSize: Theme.fontSizeMedium
+                 truncationMode: TruncationMode.Fade
+                 width: parent.width
+             }
+            Label {
+                 id: rtags
+                 visible: tags !== "" ? true : false
+                 text: tags
+                 color: highlighted ? Theme.highlightColor : Theme.secondaryColor
+                 font.pixelSize: Theme.fontSizeExtraSmall
+                 truncationMode: TruncationMode.Fade
+                 width: parent.width
+             }
+        }
         Label {
             id: codlabel
              text: internal ? "" : codec == "UNKNOWN" ? "" : codec
@@ -219,23 +250,12 @@ Page {
             enabled: listView.count === 0 //|| jsonModel1.jsonready
             text: qsTr("Search radio stations")
             hintText: qsTr("Enter (or change) text in searchfield")
-
         }
 
         PullMenu {
             visible: oldsource !== "" ? false : true
-
-            MenuItem {
-                visible: searchby == "bytag" ? true : false
-                text: qsTr("Search by name")
-                onClicked: {window.pageStack.navigateBack(PageStackAction.Immediate);window.pageStack.replace(Qt.resolvedUrl("Search.qml"),{searchby: "byname"})}
-            }
-            MenuItem {
-                visible: searchby == "bytag" ? false : true
-                text: qsTr("Search by tag")
-                onClicked: window.pageStack.replace(Qt.resolvedUrl("Tags.qml"),{searchby: "bytag"})
-            }
-        }    }
+        }
+    }
     PlayerPanel { id:playerPanel}
 }
 

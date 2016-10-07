@@ -82,7 +82,19 @@ Page {
 
         header: PageHeader {
             id: pHeader
-            title: qsTr("Favorites")
+            title: qsTr("Find radio stations")
+            description: qsTr("Favorites")
+
+            Image {
+               id: logo
+               height: parent.height / 2
+               //visible: streaming && currentid == model.id ? true : false
+               fillMode: Image.PreserveAspectFit
+               anchors.verticalCenter: parent.verticalCenter
+               anchors.left: parent.left
+               anchors.leftMargin: Theme.paddingLarge
+               source: "../harbour-allradio.png"
+            }
         }
 
         VerticalScrollDecorator {}
@@ -90,6 +102,7 @@ Page {
         property int retning: 0
         onContentYChanged: {
             if (atYBeginning) showPlayer = true
+            if (atYEnd) showPlayer = false
             }
             onMovementStarted: {
                 retning = contentY
@@ -109,7 +122,7 @@ Page {
                 ListView.onRemove: animateRemoval(myListItem)
 
                 width: ListView.view.width
-                height: menuOpen ? contextMenu.height + contentItem.height : contentItem.height
+                height: menuOpen ? contextMenu.height + contentItem.height + Theme.paddingMedium : contentItem.height + Theme.paddingMedium
 
 
 
@@ -127,19 +140,32 @@ Page {
                    anchors.leftMargin: Theme.paddingMedium
                    source: streaming && currentid == model.id ? "image://theme/icon-m-speaker?" + Theme.highlightColor : ""
                 }
-
+                Column {
+                    anchors.left: speakerIcon.right
+                    anchors.right: codlabel.visible ? codlabel.left : bit.left
+                    anchors.leftMargin: Theme.paddingMedium
+                    anchors.rightMargin: Theme.paddingMedium
+                    anchors.verticalCenter: parent.verticalCenter
                 Label {
                      id: firstName
                      text: title
                      color: highlighted ? Theme.highlightColor : Theme.primaryColor
-                     anchors.left: speakerIcon.right
-                     anchors.right: codlabel.visible ? codlabel.left : bit.left
-                     anchors.leftMargin: Theme.paddingMedium
-                     anchors.rightMargin: Theme.paddingMedium
-                     anchors.verticalCenter: parent.verticalCenter
                      font.pixelSize: Theme.fontSizeMedium
                      truncationMode: TruncationMode.Fade
+                     width: parent.width
+
                  }
+                Label {
+                     id: rtags
+                     visible: tags !== "" ? true : false
+                     text: tags
+                     color: highlighted ? Theme.highlightColor : Theme.secondaryColor
+                     font.pixelSize: Theme.fontSizeExtraSmall
+                     truncationMode: TruncationMode.Fade
+                     width: parent.width
+
+                 }
+                }
 
                 Label {
                     id: codlabel
@@ -216,15 +242,8 @@ Page {
                  }
             }
 
-            PullMenu {
-
-                MenuItem {
-                    text: qsTr("Find radio stations")
-                    onClicked: pageStack.push(Qt.resolvedUrl("CountryChooser.qml")) //CountryChooser.qml
-                }
-            }
             ViewPlaceholder {
-                enabled: listView.count === 0 //|| jsonModel1.jsonready
+                enabled: listView.count <= 0 //|| jsonModel1.jsonready
                 text: qsTr("Favorites empty")
                 hintText: qsTr("click here to add some favorites")
                 textFormat: Text.StyledText
@@ -234,6 +253,10 @@ Page {
                 anchors.fill: parent
                 onClicked: pageStack.push(Qt.resolvedUrl("CountryChooser.qml"))
             }
+            PullMenu {}
+    }
+    onStatusChanged: {
+        if (status === PageStatus.Active && pageStack.depth === 1) {pageStack.pushAttached("FindRadio.qml", {});} //FindRadio.qml
     }
     PlayerPanel { id:playerPanel }
 }

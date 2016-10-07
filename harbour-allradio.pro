@@ -737,6 +737,6 @@ DISTFILES += \
     qml/allradio-data/images/united kingdom.png \
     qml/allradio-data/images/united states of america.png \
     README.md \
-    qml/pages/FindRadio.qml \
-    qml/allradio-data/images/china.png
+    qml/allradio-data/images/china.png \
+    qml/pages/FindRadio.qml
 
