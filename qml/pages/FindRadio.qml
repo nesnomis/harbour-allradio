@@ -86,6 +86,10 @@ Page {
         delegate: ListItem {
             id: byCountry
             contentHeight: Theme.itemSizeExtraLarge
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.leftMargin: Theme.paddingMedium
+            anchors.rightMargin: Theme.paddingMedium
 
             Image {
                id: next

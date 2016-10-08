@@ -4,29 +4,29 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="16"/>
+        <location filename="../qml/pages/About.qml" line="18"/>
         <source>About AllRadio</source>
         <translation>Om AllRadio</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="50"/>
-        <location filename="../qml/pages/About.qml" line="130"/>
-        <location filename="../qml/pages/About.qml" line="161"/>
+        <location filename="../qml/pages/About.qml" line="53"/>
+        <location filename="../qml/pages/About.qml" line="133"/>
+        <location filename="../qml/pages/About.qml" line="164"/>
         <source>Opening webpage</source>
         <translation>Åbner webside</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="57"/>
+        <location filename="../qml/pages/About.qml" line="60"/>
         <source>Sourcecode is available on</source>
         <translation>Kildekoden findes på</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="58"/>
+        <location filename="../qml/pages/About.qml" line="61"/>
         <source>The radiostations are from</source>
         <translation>Radiostationerne kommer fra</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="134"/>
+        <location filename="../qml/pages/About.qml" line="137"/>
         <source>If you like this app, and would like to make a donation (for a beer or a cup of coffee?! :) ..):</source>
         <translation>Hvis du godt kan lide denne app og vil donere (til en øl eller kop kaffe?! :) ...):</translation>
     </message>
@@ -911,27 +911,27 @@
         <translation>Favoritter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Favorites.qml" line="224"/>
+        <location filename="../qml/pages/Favorites.qml" line="211"/>
         <source>Listen</source>
         <translation>Afspil</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Favorites.qml" line="238"/>
+        <location filename="../qml/pages/Favorites.qml" line="225"/>
         <source>Edit</source>
         <translation>Rediger</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Favorites.qml" line="241"/>
+        <location filename="../qml/pages/Favorites.qml" line="228"/>
         <source>Edit radio station</source>
         <translation>Rediger radiostation</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Favorites.qml" line="254"/>
+        <location filename="../qml/pages/Favorites.qml" line="241"/>
         <source>Search and replace</source>
         <translation>Søg og erstat</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Favorites.qml" line="246"/>
+        <location filename="../qml/pages/Favorites.qml" line="233"/>
         <source>Delete</source>
         <translation>Slet</translation>
     </message>
@@ -941,12 +941,12 @@
         <translation>Find radiostationer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Favorites.qml" line="265"/>
+        <location filename="../qml/pages/Favorites.qml" line="251"/>
         <source>Favorites empty</source>
         <translation>Ingen favoritter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Favorites.qml" line="266"/>
+        <location filename="../qml/pages/Favorites.qml" line="252"/>
         <source>click here to add some favorites</source>
         <translation>Klik her for att tilføje favoritter</translation>
     </message>
@@ -954,52 +954,52 @@
 <context>
     <name>FindRadio</name>
     <message>
-        <location filename="../qml/pages/FindRadio.qml" line="112"/>
+        <location filename="../qml/pages/FindRadio.qml" line="116"/>
         <source>Country</source>
         <translation>Land</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FindRadio.qml" line="113"/>
+        <location filename="../qml/pages/FindRadio.qml" line="117"/>
         <source>Tag</source>
         <translation>Tag</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FindRadio.qml" line="116"/>
+        <location filename="../qml/pages/FindRadio.qml" line="120"/>
         <source>Latest played</source>
         <translation>Senest spillet</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FindRadio.qml" line="117"/>
+        <location filename="../qml/pages/FindRadio.qml" line="121"/>
         <source>Most played</source>
         <translation>Mest spillet</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FindRadio.qml" line="118"/>
+        <location filename="../qml/pages/FindRadio.qml" line="122"/>
         <source>Most liked</source>
         <translation>Flest likes</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FindRadio.qml" line="136"/>
+        <location filename="../qml/pages/FindRadio.qml" line="140"/>
         <source>Search by tag</source>
         <translation>Søg via tag</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FindRadio.qml" line="139"/>
+        <location filename="../qml/pages/FindRadio.qml" line="143"/>
         <source>Search by Latest played</source>
         <translation>Søg senest spillet</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FindRadio.qml" line="140"/>
+        <location filename="../qml/pages/FindRadio.qml" line="144"/>
         <source>Search by Most played</source>
         <translation>Søg mest spillet</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FindRadio.qml" line="141"/>
+        <location filename="../qml/pages/FindRadio.qml" line="145"/>
         <source>Search by Most likes</source>
         <translation>Søg mest likes</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FindRadio.qml" line="114"/>
+        <location filename="../qml/pages/FindRadio.qml" line="118"/>
         <source>Name</source>
         <translation>Navn</translation>
     </message>
@@ -1009,17 +1009,17 @@
         <translation>Søg radiostation via</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FindRadio.qml" line="137"/>
+        <location filename="../qml/pages/FindRadio.qml" line="141"/>
         <source>Search by name</source>
         <translation>Søg på navn</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FindRadio.qml" line="115"/>
+        <location filename="../qml/pages/FindRadio.qml" line="119"/>
         <source>New/changed</source>
         <translation>Nye/ændrede</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FindRadio.qml" line="138"/>
+        <location filename="../qml/pages/FindRadio.qml" line="142"/>
         <source>Search by new/changed</source>
         <translation>Søg nye/ændrede</translation>
     </message>
@@ -1187,32 +1187,32 @@
         <translation>Ukendt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="218"/>
+        <location filename="../qml/pages/Search.qml" line="222"/>
         <source>Listen</source>
         <translation>Afspil</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="230"/>
+        <location filename="../qml/pages/Search.qml" line="234"/>
         <source>Replace in favorites</source>
         <translation>Erstat i favoritter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="236"/>
+        <location filename="../qml/pages/Search.qml" line="240"/>
         <source>Add to favorites</source>
         <translation>Tillføj til favoritter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="242"/>
+        <location filename="../qml/pages/Search.qml" line="246"/>
         <source>Delete favourite</source>
         <translation>Slet</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="251"/>
+        <location filename="../qml/pages/Search.qml" line="255"/>
         <source>Search radio stations</source>
         <translation>Søg radiostationer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="252"/>
+        <location filename="../qml/pages/Search.qml" line="256"/>
         <source>Enter (or change) text in searchfield</source>
         <translation>Skriv (ændre) text i søgefeltet</translation>
     </message>

@@ -126,6 +126,10 @@ Page {
 
         width: ListView.view.width
         height: menuOpen ? contextMenu.height + contentItem.height + Theme.paddingMedium : contentItem.height + Theme.paddingMedium
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.leftMargin: Theme.paddingMedium
+        anchors.rightMargin: Theme.paddingMedium
 
         function remove() {
             remorseAction("Deleting", function() { delDb(source);listView.model.remove(index) })

@@ -10,18 +10,20 @@ Page {
         anchors.fill: parent
         contentHeight: header.height + text.height + logo.height + log.height + donate.height + sep2.height + Theme.paddingLarge
         contentWidth: parent.width
-        VerticalScrollDecorator {}
-            PageHeader {
-                id: header
-                title: qsTr("About AllRadio")
-            }
 
-            Row {
-                id: logorow
-                anchors.top: header.bottom
-                anchors.topMargin: 40
-                anchors.horizontalCenter: parent.horizontalCenter
-                spacing: Theme.paddingLarge
+        VerticalScrollDecorator {}
+
+        PageHeader {
+            id: header
+            title: qsTr("About AllRadio")
+        }
+
+        Row {
+            id: logorow
+            anchors.top: header.bottom
+            anchors.topMargin: 40
+            anchors.horizontalCenter: parent.horizontalCenter
+            spacing: Theme.paddingLarge
             Image {
                id: logo
                source: "../harbour-allradio.png"
@@ -33,30 +35,31 @@ Page {
                 font.pixelSize: Theme.fontSizeHuge
                 font.bold: true
             }
+        }
+
+        Text {
+            id: text
+            anchors {
+                top: logorow.bottom
+                left: parent.left
+                right: parent.right
+                leftMargin: 20
+                rightMargin: 20
             }
-            Text {
-                id: text
-                anchors {
-                    top: logorow.bottom
-                    left: parent.left
-                    right: parent.right
-                    leftMargin: 20
-                    rightMargin: 20
-                }
-                //width: parent.width
-                wrapMode: Text.WordWrap
-                color: Theme.primaryColor
-                linkColor: Theme.highlightColor
-                onLinkActivated: remorse.execute(qsTr("Opening webpage"), function() {Qt.openUrlExternally(link)}, 3000)
-                textFormat: Text.StyledText
-                font.pixelSize: Theme.fontSizeMedium
-                horizontalAlignment: Text.AlignHCenter
-                text: "
-                       <p>Copyright 2015-2016 - Niels Simonsen</p>
-                        <p>License: <a href='http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt'>GPL v2.0</a><br>"
-                      + qsTr("Sourcecode is available on") + ": <a href='https://github.com/nesnomis/harbour-allradio'>github</a><br><p>"
-                     + qsTr("The radiostations are from") + ": <br><a href='http://www.radio-browser.info/'>Community Radio Browser</a></p>"
-            }
+            //width: parent.width
+            wrapMode: Text.WordWrap
+            color: Theme.primaryColor
+            linkColor: Theme.highlightColor
+            onLinkActivated: remorse.execute(qsTr("Opening webpage"), function() {Qt.openUrlExternally(link)}, 3000)
+            textFormat: Text.StyledText
+            font.pixelSize: Theme.fontSizeMedium
+            horizontalAlignment: Text.AlignHCenter
+            text: "
+                   <p>Copyright 2015-2016 - Niels Simonsen</p>
+                    <p>License: <a href='http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt'>GPL v2.0</a><br>"
+                  + qsTr("Sourcecode is available on") + ": <a href='https://github.com/nesnomis/harbour-allradio'>github</a><br><p>"
+                 + qsTr("The radiostations are from") + ": <br><a href='http://www.radio-browser.info/'>Community Radio Browser</a></p>"
+        }
 
         /*        Separator {
                     id:sep1
@@ -105,64 +108,64 @@ Page {
                     }
                 } */
 
-                Separator {
-                    id:sep2
-                    anchors.top: text.bottom
-                    anchors.topMargin: Theme.paddingLarge
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    color: Theme.highlightColor
-                    width: parent.width - (Theme.paddingMedium * 2)
+            Separator {
+                id:sep2
+                anchors.top: text.bottom
+                anchors.topMargin: Theme.paddingLarge
+                anchors.horizontalCenter: parent.horizontalCenter
+                color: Theme.highlightColor
+                width: parent.width - (Theme.paddingMedium * 2)
+            }
+
+            Text {
+                id: donate
+                anchors {
+                    top: sep2.bottom
+                    left: parent.left
+                    right: parent.right
+                    leftMargin: 20
+                    rightMargin: 20
+                }
+                width: parent.width
+                wrapMode: Text.WordWrap
+                color: Theme.primaryColor
+                linkColor: Theme.highlightColor
+                onLinkActivated: remorse.execute(qsTr("Opening webpage"), function() {Qt.openUrlExternally(link)}, 3000)
+                textFormat: Text.StyledText
+                font.pixelSize: Theme.fontSizeSmall
+                horizontalAlignment: Text.AlignHCenter
+                text: "<p>"+qsTr("If you like this app, and would like to make a donation (for a beer or a cup of coffee?! :) ..):")+
+                      "</p><br><p><h3><a href='https://flattr.com/thing/4552590/AllRadio'>flattr</a> ------ or ------ <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9KAZFTA26THEG'>PayPal</a></h3></p>"
+            }
+
+            Separator {
+                id:sep3
+                anchors.top: donate.bottom
+                anchors.horizontalCenter: parent.horizontalCenter
+                color: Theme.highlightColor
+                width: parent.width - (Theme.paddingMedium * 2)
+            }
+
+            Text {
+                id: log
+                anchors {
+                    top: sep3.bottom
+                    left: parent.left
+                    right: parent.right
+                    leftMargin: 20
+                    rightMargin: 20
+                    topMargin: 40
                 }
 
-                Text {
-                    id: donate
-                    anchors {
-                        top: sep2.bottom
-                        left: parent.left
-                        right: parent.right
-                        leftMargin: 20
-                        rightMargin: 20
-                    }
-                    width: parent.width
-                    wrapMode: Text.WordWrap
-                    color: Theme.primaryColor
-                    linkColor: Theme.highlightColor
-                    onLinkActivated: remorse.execute(qsTr("Opening webpage"), function() {Qt.openUrlExternally(link)}, 3000)
-                    textFormat: Text.StyledText
-                    font.pixelSize: Theme.fontSizeSmall
-                    horizontalAlignment: Text.AlignHCenter
-                    text: "<p>"+qsTr("If you like this app, and would like to make a donation (for a beer or a cup of coffee?! :) ..):")+
-                          "</p><br><p><h3><a href='https://flattr.com/thing/4552590/AllRadio'>flattr</a> ------ or ------ <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9KAZFTA26THEG'>PayPal</a></h3></p>"
-                }
-
-                Separator {
-                    id:sep3
-                    anchors.top: donate.bottom
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    color: Theme.highlightColor
-                    width: parent.width - (Theme.paddingMedium * 2)
-                }
-
-                Text {
-                    id: log
-                    anchors {
-                        top: sep3.bottom
-                        left: parent.left
-                        right: parent.right
-                        leftMargin: 20
-                        rightMargin: 20
-                        topMargin: 40
-                    }
-
-                    width: parent.width
-                    wrapMode: Text.WordWrap
-                    color: Theme.primaryColor
-                    linkColor: Theme.highlightColor
-                    onLinkActivated: remorse.execute(qsTr("Opening webpage"), function() {Qt.openUrlExternally(link)}, 3000)
-                    textFormat: Text.StyledText
-                    font.pixelSize: Theme.fontSizeMedium
-                    //horizontalAlignment: Text.AlignHCenter
-                    text: "<h2>Changelog:</h2><br>"+
+                width: parent.width
+                wrapMode: Text.WordWrap
+                color: Theme.primaryColor
+                linkColor: Theme.highlightColor
+                onLinkActivated: remorse.execute(qsTr("Opening webpage"), function() {Qt.openUrlExternally(link)}, 3000)
+                textFormat: Text.StyledText
+                font.pixelSize: Theme.fontSizeMedium
+                //horizontalAlignment: Text.AlignHCenter
+                text: "<h2>Changelog:</h2><br>"+
 
 
 "<p>version 1.5.1<br>
@@ -266,6 +269,6 @@ Thank you <b>Blaubear1833</b> for making me aware of that!<br>
 - Search and sort will have to wait (sorry).</p>
 
 <p>Initial release 1.2</p>"
-                }
+            }
+        }
     }
-}

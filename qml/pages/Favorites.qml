@@ -123,7 +123,10 @@ Page {
 
                 width: ListView.view.width
                 height: menuOpen ? contextMenu.height + contentItem.height + Theme.paddingMedium : contentItem.height + Theme.paddingMedium
-
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.leftMargin: Theme.paddingMedium
+                anchors.rightMargin: Theme.paddingMedium
 
 
                 function remove() {
@@ -140,31 +143,32 @@ Page {
                    anchors.leftMargin: Theme.paddingMedium
                    source: streaming && currentid == model.id ? "image://theme/icon-m-speaker?" + Theme.highlightColor : ""
                 }
+
                 Column {
                     anchors.left: speakerIcon.right
                     anchors.right: codlabel.visible ? codlabel.left : bit.left
                     anchors.leftMargin: Theme.paddingMedium
                     anchors.rightMargin: Theme.paddingMedium
                     anchors.verticalCenter: parent.verticalCenter
-                Label {
-                     id: firstName
-                     text: title
-                     color: highlighted ? Theme.highlightColor : Theme.primaryColor
-                     font.pixelSize: Theme.fontSizeMedium
-                     truncationMode: TruncationMode.Fade
-                     width: parent.width
 
-                 }
-                Label {
-                     id: rtags
-                     visible: tags !== "" ? true : false
-                     text: tags
-                     color: highlighted ? Theme.highlightColor : Theme.secondaryColor
-                     font.pixelSize: Theme.fontSizeExtraSmall
-                     truncationMode: TruncationMode.Fade
-                     width: parent.width
+                    Label {
+                         id: firstName
+                         text: title
+                         color: highlighted ? Theme.highlightColor : Theme.primaryColor
+                         font.pixelSize: Theme.fontSizeMedium
+                         truncationMode: TruncationMode.Fade
+                         width: parent.width
+                     }
 
-                 }
+                    Label {
+                         id: rtags
+                         visible: tags !== "" ? true : false
+                         text: tags
+                         color: highlighted ? Theme.highlightColor : Theme.secondaryColor
+                         font.pixelSize: Theme.fontSizeExtraSmall
+                         truncationMode: TruncationMode.Fade
+                         width: parent.width
+                     }
                 }
 
                 Label {
