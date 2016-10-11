@@ -738,5 +738,32 @@ DISTFILES += \
     qml/allradio-data/images/united states of america.png \
     README.md \
     qml/allradio-data/images/china.png \
-    qml/pages/FindRadio.qml
+    qml/pages/FindRadio.qml \
+    qml/allradio-data/images/bosnia and herzegovina.png \
+    qml/allradio-data/images/bycountry.png \
+    qml/allradio-data/images/bylatest.png \
+    qml/allradio-data/images/bysearch.png \
+    qml/allradio-data/images/bytag.png \
+    qml/allradio-data/images/byvote.png \
+    qml/allradio-data/images/cape verde.png \
+    qml/allradio-data/images/community.png \
+    qml/allradio-data/images/costa rica.png \
+    qml/allradio-data/images/czech republic.png \
+    qml/allradio-data/images/dominican republic.png \
+    qml/allradio-data/images/flattr.png \
+    qml/allradio-data/images/gpl3.png \
+    qml/allradio-data/images/hong kong.png \
+    qml/allradio-data/images/lastplayed.png \
+    qml/allradio-data/images/mit.png \
+    qml/allradio-data/images/mostclicked.png \
+    qml/allradio-data/images/new zealand.png \
+    qml/allradio-data/images/no country.png \
+    qml/allradio-data/images/paypal.png \
+    qml/allradio-data/images/puerto rico.png \
+    qml/allradio-data/images/saudi arabia.png \
+    qml/allradio-data/images/south africa.png \
+    qml/allradio-data/images/trinidad and tobago.png \
+    qml/allradio-data/images/united arab emirates.png \
+    qml/allradio-data/images/united kingdom.png \
+    qml/allradio-data/images/united states of america.png
 
