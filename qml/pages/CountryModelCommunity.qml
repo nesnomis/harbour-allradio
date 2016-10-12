@@ -16,6 +16,7 @@ ListModel {
     ListElement {coid: "bahamas"}
     ListElement {coid: "belarus"}
     ListElement {coid: "belgium"}
+    ListElement {coid: "bolivia"}
     ListElement {coid: "bosnia and herzegovina"}
     ListElement {coid: "brazil"}
     ListElement {coid: "bulgaria"}
@@ -126,6 +127,7 @@ ListModel {
                         qsTr("Bahamas"),
                         qsTr("Belarus"),
                         qsTr("Belgium"),
+                        qsTr("Bolivia"),
                         qsTr("Bosnia"),
                         qsTr("Brazil"),
                         qsTr("Bulgaria"),
