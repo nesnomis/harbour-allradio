@@ -100,6 +100,7 @@ ListModel {
     ListElement {coid: "sweden"}
     ListElement {coid: "switzerland"}
     ListElement {coid: "syria"}
+    ListElement {coid: "thailand"}
     ListElement {coid: "trinidad and tobago"}
     ListElement {coid: "tunisia"}
     ListElement {coid: "turkey"}
@@ -211,6 +212,7 @@ ListModel {
                         qsTr("Sweden"),
                         qsTr("Switzerland"),
                         qsTr("Syria"),
+                        qsTr("Thailand"),
                         qsTr("Trinidad and Tobago"),
                         qsTr("Tunisia"),
                         qsTr("Turkey"),
