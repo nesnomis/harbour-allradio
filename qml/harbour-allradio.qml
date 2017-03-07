@@ -33,6 +33,9 @@ property bool sloading: false
 property bool streaming: false
 property string currentUrl: ""
 property int currentid
+property bool allready: ready1 && ready2 ? true : false
+property bool ready1: false
+property bool ready2: false
 property string useragent: "AllRadio/"+Qt.application.version+" (SailfishOS; Linux) nesnomis@gmail.com"
 property MprisPlayer mpris: mprisPlayer // MPRIS
 
@@ -45,6 +48,7 @@ GetStationUrl {
                 simple.id ? cpsplay(simple.url) : simple.url ? cpsplay(simple.url) : console.log("ERROR!!!")
                 currentid = simple.id
                 console.log(simple.url)
+            ready1 = true
         }
     }
 }
@@ -57,6 +61,7 @@ GetStationUrl {
         if (ready) {
                 simple.id ? cpsplay(simple.url) : simple.url ? cpsplay(simple.url) : console.log("ERROR!!!")
                 currentid = simple.id
+            ready2 = true
                 //console.log(simple.url)
         }
     }
@@ -93,7 +98,7 @@ function cpsplay(source) {
     mp3 = source
     userPlay = 2
     currentUrl = mp3
-    playStream()
+    //playStream()
 }
 
 function ps(source) {
@@ -104,7 +109,7 @@ function ps(source) {
         Stream.func(source)
         userPlay = 2
         currentUrl = mp3
-        playStream()
+        //playStream()
 }
 
 function unknownError() {
@@ -167,9 +172,8 @@ Timer {
 
 Audio {
         id: playMusic
-        autoPlay: false
-
-
+        autoPlay: true
+        autoLoad: false
 
         onError: {
             console.log("ERROR: " + errorString)
@@ -197,7 +201,7 @@ Audio {
             }
         }
 
-        onBufferProgressChanged: if (bufferProgress == 1) play() //console.log(bufferProgress.toString())
+        onBufferProgressChanged: if (bufferProgress == 1) {play();sloading = false} //console.log(bufferProgress.toString())
 
         onStatusChanged: {
             if (status == 6) sloading = false

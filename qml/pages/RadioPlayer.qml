@@ -6,6 +6,7 @@ Page {
     id: radioPage
     property alias model: listView.model
     property bool searching: false
+    property bool sortnew: false
 
     SilicaListView {
         id: listView
@@ -17,7 +18,7 @@ Page {
             id: jsonModel1
             source: internal ? "../allradio-data/stations/"+country+".json" : "http://www.radio-browser.info/webservice/json/stations/bycountryexact/"+country
             query: internal ? "$."+country+".channel[*]" : "$[?(@.lastcheckok>0)]"
-            sortby: internal ? "title" : ""
+            sortby: internal ? "title" : sortnew ? "lastchangetime" : ""
             filterby: filter
             filterkey: key
         }
@@ -189,6 +190,18 @@ Page {
             }
 
             PullMenu {
+                MenuItem {
+                    id: name
+                    visible: sortnew
+                    text: qsTr("Sort by name")
+                    onClicked: sortnew = false//pageStack.push(Qt.resolvedUrl("SleepTimerPage.qml"))
+                }
+
+                MenuItem {
+                    visible: !sortnew
+                    text: qsTr("Sort by newest/changed")
+                    onClicked: sortnew = true//pageStack.push(Qt.resolvedUrl("SleepTimerPage.qml"))
+                }
             }
 
             ViewPlaceholder {

@@ -55,31 +55,31 @@ Page {
             id: startModel
             ListElement {
                 rsource: 1
-                ricon: "../allradio-data/images/bycountry.png"
+                ricon: "../allradio-data/images/bycountry_t.png"
             }
             ListElement {
                 rsource: 2
-                ricon: "../allradio-data/images/bytag.png"
+                ricon: "../allradio-data/images/bytag_t.png"
             }
             ListElement {
                 rsource: 3
-                ricon: "../allradio-data/images/bysearch.png"
+                ricon: "../allradio-data/images/bysearch_t.png"
             }
             ListElement {
                 rsource: 4
-                ricon: "../allradio-data/images/bylatest.png"
+                ricon: "../allradio-data/images/bylatest_t.png"
             }
             ListElement {
                 rsource: 5
-                ricon: "../allradio-data/images/lastplayed.png"
+                ricon: "../allradio-data/images/lastplayed_t.png"
             }
             ListElement {
                 rsource: 6
-                ricon: "../allradio-data/images/mostclicked.png"
+                ricon: "../allradio-data/images/mostclicked_t.png"
             }
             ListElement {
                 rsource: 7
-                ricon: "../allradio-data/images/byvote.png"
+                ricon: "../allradio-data/images/byvote_t.png"
             }
         }
 

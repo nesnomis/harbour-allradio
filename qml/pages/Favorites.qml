@@ -82,8 +82,8 @@ Page {
 
         header: PageHeader {
             id: pHeader
-            title: qsTr("Find radio stations")
-            description: qsTr("Favorites")
+            title: qsTr("Favorites")
+            description: qsTr("Find radio stations")
 
             Image {
                id: logo
@@ -205,6 +205,7 @@ Page {
 
                  ContextMenu {
                      id: contextMenu
+
                      MenuItem {
                          id:mlisten
                          visible: true
@@ -216,6 +217,20 @@ Page {
                              else if (icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
                              else  picon = "../allradio-data/images/"+icon+".png";
                              website = (Qt.resolvedUrl(site))
+                         }
+                     }
+
+                     MenuItem {
+                         id:mauto
+                         visible: true
+                         text: qsTr("Auto play on start")
+                         onClicked: {
+                             //internal ? ps(source) : model.id == 0 ? ps(source) : cps(model.id)
+                             //radioStation = title
+                             //if (icon == "0") picon = "../allradio-data/images/allradio.png"
+                             //else if (icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
+                             //else  picon = "../allradio-data/images/"+icon+".png";
+                             //website = (Qt.resolvedUrl(site))
                          }
                      }
 
@@ -247,7 +262,7 @@ Page {
             }
 
             ViewPlaceholder {
-                enabled: listView.count <= 0 //|| jsonModel1.jsonready
+                enabled: listView.count <= 0 && allready == true //|| jsonModel1.jsonready
                 text: qsTr("Favorites empty")
                 hintText: qsTr("click here to add some favorites")
                 textFormat: Text.StyledText
@@ -257,7 +272,17 @@ Page {
                 anchors.fill: parent
                 onClicked: pageStack.push(Qt.resolvedUrl("CountryChooser.qml"))
             }
-            PullMenu {}
+
+            PullMenu {
+                MenuItem {
+                    text: qsTr("Add radio station")
+                    onClicked: pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml"))
+                }
+                MenuItem {
+                    text: qsTr("Find radio stations")
+                    onClicked: pageStack.push(pageStack.nextPage())
+                }
+            }
     }
     onStatusChanged: {
         if (status === PageStatus.Active && pageStack.depth === 1) {pageStack.pushAttached("FindRadio.qml", {});} //FindRadio.qml

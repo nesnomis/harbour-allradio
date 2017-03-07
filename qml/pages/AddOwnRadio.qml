@@ -1,19 +1,26 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "../JSONListModel"
 
 Dialog {
+    property string infotext: qsTr("Add or share your own favorite:")
     property string name
-    property string infotext: qsTr("Add your own favorite:")
     property alias titlfield: titleField.text
     property alias streamurlfield: streamUrlField.text
     property alias homepagefield: homepageField.text
     property alias sectionfield: sectionField.text
+
+    property alias countryfield: countryField.text
+    //property alias statefield: stateField.text
+    property alias languagefield: languageField.text
+    property alias faviconimage: faviconImage.source
+    property string first: ""
     width: parent.width
     height: parent.height
 
     DialogHeader {
         id: header
-        title: infotext
+        //title: infotext
     }
 
     SilicaFlickable {
@@ -23,8 +30,14 @@ Dialog {
         anchors.topMargin: Theme.paddingLarge
         anchors.bottom: parent.bottom
         contentX: 0
-        contentHeight: column.height + testButton.height + infoText.height + (Theme.paddingLarge * 4)
+        contentHeight: countryMenu.visible ? countryMenu.height + column.height + testButton.height + infoText.height +  (Theme.paddingLarge * 4) : column.height + testButton.height + infoText.height +  (Theme.paddingLarge * 4)
         clip: true
+
+        JSONListModel {
+            id: getIt
+            query: "$[*]" //"$[?(@.value.charAt(0)==='"+first+"')]"
+        }
+
 
         Text {
             id: infoText
@@ -41,7 +54,8 @@ Dialog {
 
         Column {
             id:column
-            width: parent.width
+            width: parent.width - Theme.paddingMedium * 2
+            anchors.horizontalCenter: parent.horizontalCenter
             spacing: Theme.paddingSmall
             anchors.top: infoText.bottom
             anchors.topMargin: Theme.paddingLarge * 2
@@ -49,51 +63,127 @@ Dialog {
             TextField {
                 id: titleField
                 width: parent.width
-                placeholderText: qsTr("Radio station name")
+                placeholderText: qsTr("Name")
                 inputMethodHints: Qt.ImhNoPredictiveText
                 EnterKey.iconSource: "image://theme/icon-m-enter-next"
                 EnterKey.onClicked: {focus = false;streamUrlField.focus = true;}
                 focus: true;
                 onClicked:  playerPanel.open = false
-                label: "Name"
+                label: focus ? qsTr("Name") : ""
             }
 
             TextField {
                 id: streamUrlField
                 width: parent.width
-                placeholderText: qsTr("Radio station stream url")
+                placeholderText: qsTr("Stream url")
                 inputMethodHints: Qt.ImhUrlCharactersOnly | Qt.ImhNoPredictiveText
                 EnterKey.iconSource: "image://theme/icon-m-enter-next"
                 EnterKey.onClicked: {focus = false;homepageField.focus = true}
                 focus: false;
                 onClicked:  playerPanel.open = false
-                label: "Url"
+                label: focus ? qsTr("Stream url") : ""
                 validator: RegExpValidator {regExp: /((?:https?\:\/\/|www\.)(?:[-a-z0-9]+\.)*[-a-z0-9]+.*)/i}
             }
 
             TextField {
                 id: homepageField
                 width: parent.width
-                placeholderText: qsTr("Radio station homepage")
+                placeholderText: qsTr("Homepage")
                 inputMethodHints: Qt.ImhUrlCharactersOnly | Qt.ImhNoPredictiveText
                 EnterKey.iconSource: "image://theme/icon-m-enter-next"
-                EnterKey.onClicked: {focus = false;sectionField.focus = true}
+                EnterKey.onClicked: {focus = false;countryField.focus = true}
                 focus: false;
                 onClicked:  playerPanel.open = false
-                label: "Homepage"
+                label: focus ? qsTr("Homepage") : ""
                 validator: RegExpValidator {regExp: /((?:https?\:\/\/|www\.)(?:[-a-z0-9]+\.)*[-a-z0-9]+.*)/i}
+            }
+            Image {
+                id: faviconImage
             }
 
             TextField {
-                id: sectionField
+                id: countryField
                 width: parent.width
-                placeholderText: qsTr("Tags (separete by '/')")
-                inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
+                placeholderText: qsTr("Country")
+                //inputMethodHints: Qt.ImhNoPredictiveText | Qt.Im
                 EnterKey.iconSource: "image://theme/icon-m-enter-next"
-                EnterKey.onClicked: {focus = false;testButton.focus = true}
+                EnterKey.onClicked: {focus = false;countryMenu.hide();;languageField.focus = true}
+                focus: false;
+
+                onClicked:  playerPanel.open = false
+                onTextChanged: if (text.length > 1)  {first = text.charAt(0);getIt.source = "http://www.radio-browser.info/webservice/json/countries/"+text;countryMenu.show(countryCombo)} else {first="";getIt.source = ""; countryMenu.hide();getIt.model.clear()}
+                label: focus ? qsTr("Country") : ""
+            }
+
+           /*  ListItem {
+                id: countryCombo
+                width: parent.width
+                height: getIt.count > 0 ? countryMenu.height : 0
+                //clip: true
+                //visible: getIt.count > 0 ? true : false
+
+                //visible: getIt.count > 0 ? true : false
+
+               menu:  ContextMenu {
+                    id: countryMenu
+                    //focus: countryCombo.height > 0 ? true : false
+                    Repeater {
+                        model: getIt.model
+                        MenuItem { text: model.value;onClicked: {countryField.text = text; countryMenu.hide();languageField.focus = true}}
+                    }
+                }
+            }*/
+
+            TextField {
+                id: languageField
+                width: parent.width
+                placeholderText: qsTr("Language")
+                inputMethodHints: Qt.ImhNoPredictiveText | Qt.Imh
+                EnterKey.iconSource: "image://theme/icon-m-enter-next"
+                EnterKey.onClicked: {focus = false;languageMenu.hide();sectionField.focus = true}
                 focus: false;
                 onClicked:  playerPanel.open = false
-                label: "Tags"
+                onTextChanged: if (text.length > 1)  {first=text.charAt(0);getIt.source = "http://www.radio-browser.info/webservice/json/languages/"+text;languageMenu.show(languageCombo)} else {getIt.source = "";first="";getIt.model.clear(); languageMenu.hide()}
+                label: focus ? qsTr("Language") : ""
+            }
+
+            ListItem {
+                id: languageCombo
+                width: parent.width
+                height: getIt.count > 0 ? languageMenu.height : 0
+                //visible: getIt.count > 0 ? true : false
+
+                menu:  ContextMenu {
+                    id: languageMenu
+
+                    Repeater {
+                        model: getIt.model
+                        MenuItem { text: model.name;onClicked: {languageField.text = text; languageMenu.hide();sectionField.focus = true}}
+                    }
+                }
+            }
+
+            Row {
+                width: parent.width
+                TextField {
+                    id: sectionField
+                    width: parent.width - tagButton.width
+                    placeholderText: qsTr("Tags (separete by ',' (eg: 'rock,jazz')")
+                    inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
+                    //inputMethodHints: Qt.Im
+                    EnterKey.iconSource: "image://theme/icon-m-enter-next"
+                    EnterKey.onClicked: {focus = false;testButton.focus = true}
+                    focus: false;
+                    onClicked:  playerPanel.open = false
+                    label: focus ? qsTr("Tags (separete by ',' (eg: 'rock,jazz')") : ""
+                }
+                IconButton {
+                    id: tagButton
+                    icon.height: parent.height / 2
+                    icon.fillMode: Image.PreserveAspectFit
+                    icon.source: "../allradio-data/images/bytag.png"
+                    onClicked: window.pageStack.push(Qt.resolvedUrl("Tags.qml"), {searchtitle: qsTr("Search by tag"),searchby: "bytag"})
+                }
             }
         }
 

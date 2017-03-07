@@ -64,7 +64,7 @@ Page {
                anchors.verticalCenter: showRect.verticalCenter
                anchors.left: showRect.left
                anchors.leftMargin: Theme.paddingMedium
-               source: if (searchby === "lastchange")  "" ; else if (section.search(".png")>0) "../allradio-data/images/"+section.toLowerCase()+".png"; else section ? "../allradio-data/images/"+section.toLowerCase()+".png" : "../allradio-data/images/no country.png";
+               source: if (searchby === "lastchange")  "" ; else if (section.search(".png")>0) "../allradio-data/images/"+section.toLowerCase()+".png"; else section ? "../allradio-data/images/"+section.toLowerCase()+".png" : "../allradio-data/images/community.png";
             }
 
             Text {

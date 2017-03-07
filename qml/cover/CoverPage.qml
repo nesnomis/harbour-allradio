@@ -31,7 +31,7 @@ CoverBackground {
 
         Text {
             anchors.horizontalCenter: parent.horizontalCenter
-             anchors.verticalCenter: parent.verticalCenter
+            anchors.verticalCenter: parent.verticalCenter
             anchors.top: app.bottom
             anchors.topMargin: Theme.paddingMedium
             anchors.leftMargin: 30
