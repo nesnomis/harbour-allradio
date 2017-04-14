@@ -220,7 +220,7 @@ Page {
                          }
                      }
 
-                     MenuItem {
+                 /*    MenuItem {
                          id:mauto
                          visible: true
                          text: qsTr("Auto play on start")
@@ -232,7 +232,7 @@ Page {
                              //else  picon = "../allradio-data/images/"+icon+".png";
                              //website = (Qt.resolvedUrl(site))
                          }
-                     }
+                     } */
 
                      MenuItem {
                          id:medit
@@ -274,10 +274,10 @@ Page {
             }
 
             PullMenu {
-                MenuItem {
+        /*        MenuItem {
                     text: qsTr("Add radio station")
                     onClicked: pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml"))
-                }
+                } */
                 MenuItem {
                     text: qsTr("Find radio stations")
                     onClicked: pageStack.push(pageStack.nextPage())

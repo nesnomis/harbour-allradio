@@ -6,7 +6,7 @@ Page {
     id: radioPage
     property alias model: listView.model
     property bool searching: false
-    property bool sortnew: false
+    property bool sortnew: true
 
     SilicaListView {
         id: listView

@@ -767,5 +767,130 @@ DISTFILES += \
     qml/allradio-data/images/united kingdom.png \
     qml/allradio-data/images/united states of america.png \
     qml/allradio-data/images/bolivia.png \
-    qml/allradio-data/images/thailand.png
+    qml/allradio-data/images/thailand.png \
+    qml/allradio-data/images/antigua & barbuda.png \
+    qml/allradio-data/images/basque country.png \
+    qml/allradio-data/images/benin.png \
+    qml/allradio-data/images/bermuda.png \
+    qml/allradio-data/images/bosnia and herzegovina.png \
+    qml/allradio-data/images/brasil.png \
+    qml/allradio-data/images/british virgin islands.png \
+    qml/allradio-data/images/bycountry_t.png \
+    qml/allradio-data/images/bylatest_t.png \
+    qml/allradio-data/images/bysearch_t.png \
+    qml/allradio-data/images/bytag_t.png \
+    qml/allradio-data/images/byvote_t.png \
+    qml/allradio-data/images/cape verde.png \
+    qml/allradio-data/images/cayman islands.png \
+    qml/allradio-data/images/costa rica.png \
+    qml/allradio-data/images/cuba.png \
+    qml/allradio-data/images/czech republic.png \
+    qml/allradio-data/images/dominican republic.png \
+    qml/allradio-data/images/europe.png \
+    qml/allradio-data/images/faroe islands.png \
+    qml/allradio-data/images/fiji.png \
+    qml/allradio-data/images/galiza.png \
+    qml/allradio-data/images/gambia.png \
+    qml/allradio-data/images/greenland.png \
+    qml/allradio-data/images/guyana.png \
+    qml/allradio-data/images/hong kong.png \
+    qml/allradio-data/images/internet.png \
+    qml/allradio-data/images/isle of man.png \
+    qml/allradio-data/images/ivory coast.png \
+    qml/allradio-data/images/jamaica.png \
+    qml/allradio-data/images/jersey.png \
+    qml/allradio-data/images/lastplayed_t.png \
+    qml/allradio-data/images/malaysia.png \
+    qml/allradio-data/images/mostclicked_t.png \
+    qml/allradio-data/images/nederland.png \
+    qml/allradio-data/images/nepal.png \
+    qml/allradio-data/images/new zealand.png \
+    qml/allradio-data/images/nigeria.png \
+    qml/allradio-data/images/no country.png \
+    qml/allradio-data/images/northern ireland.png \
+    qml/allradio-data/images/pakistan.png \
+    qml/allradio-data/images/palestine.png \
+    qml/allradio-data/images/panama.png \
+    qml/allradio-data/images/polen.png \
+    qml/allradio-data/images/puerto rico.png \
+    qml/allradio-data/images/saint vincent and the grenadines.png \
+    qml/allradio-data/images/saudi arabia.png \
+    qml/allradio-data/images/singapore.png \
+    qml/allradio-data/images/south africa.png \
+    qml/allradio-data/images/south korea.png \
+    qml/allradio-data/images/st. helena.png \
+    qml/allradio-data/images/taiwan.png \
+    qml/allradio-data/images/trinidad and tobago.png \
+    qml/allradio-data/images/united arab emirates.png \
+    qml/allradio-data/images/united kingdom.png \
+    qml/allradio-data/images/united states of america.png \
+    qml/allradio-data/images/antigua & barbuda.png \
+    qml/allradio-data/images/basque country.png \
+    qml/allradio-data/images/belize.png \
+    qml/allradio-data/images/bosnia and herzegovina.png \
+    qml/allradio-data/images/british virgin islands.png \
+    qml/allradio-data/images/cambodia.png \
+    qml/allradio-data/images/cape verde.png \
+    qml/allradio-data/images/cayman islands.png \
+    qml/allradio-data/images/costa rica.png \
+    qml/allradio-data/images/czech republic.png \
+    qml/allradio-data/images/dominican republic.png \
+    qml/allradio-data/images/faroe islands.png \
+    qml/allradio-data/images/haiti.png \
+    qml/allradio-data/images/honduras.png \
+    qml/allradio-data/images/hong kong.png \
+    qml/allradio-data/images/isle of man.png \
+    qml/allradio-data/images/ivory coast.png \
+    qml/allradio-data/images/new zealand.png \
+    qml/allradio-data/images/no country.png \
+    qml/allradio-data/images/northern ireland.png \
+    qml/allradio-data/images/puerto rico.png \
+    qml/allradio-data/images/saint vincent and the grenadines.png \
+    qml/allradio-data/images/saudi arabia.png \
+    qml/allradio-data/images/south africa.png \
+    qml/allradio-data/images/south korea.png \
+    qml/allradio-data/images/st. helena.png \
+    qml/allradio-data/images/tibet.png \
+    qml/allradio-data/images/trinidad and tobago.png \
+    qml/allradio-data/images/united arab emirates.png \
+    qml/allradio-data/images/united kingdom.png \
+    qml/allradio-data/images/united states of america.png \
+    qml/allradio-data/images/afghanistan.png \
+    qml/allradio-data/images/antigua & barbuda.png \
+    qml/allradio-data/images/basque country.png \
+    qml/allradio-data/images/bosnia and herzegovina.png \
+    qml/allradio-data/images/botswana.png \
+    qml/allradio-data/images/british virgin islands.png \
+    qml/allradio-data/images/burkina faso.png \
+    qml/allradio-data/images/cape verde.png \
+    qml/allradio-data/images/cayman islands.png \
+    qml/allradio-data/images/costa rica.png \
+    qml/allradio-data/images/czech republic.png \
+    qml/allradio-data/images/dominican republic.png \
+    qml/allradio-data/images/ethiopia.png \
+    qml/allradio-data/images/faroe islands.png \
+    qml/allradio-data/images/hong kong.png \
+    qml/allradio-data/images/isle of man.png \
+    qml/allradio-data/images/ivory coast.png \
+    qml/allradio-data/images/laos.png \
+    qml/allradio-data/images/lebanon.png \
+    qml/allradio-data/images/maurithania.png \
+    qml/allradio-data/images/new zealand.png \
+    qml/allradio-data/images/no country.png \
+    qml/allradio-data/images/northern ireland.png \
+    qml/allradio-data/images/puerto rico.png \
+    qml/allradio-data/images/republic of san marino.png \
+    qml/allradio-data/images/saint vincent and the grenadines.png \
+    qml/allradio-data/images/saudi arabia.png \
+    qml/allradio-data/images/south africa.png \
+    qml/allradio-data/images/south korea.png \
+    qml/allradio-data/images/sri lanka.png \
+    qml/allradio-data/images/st. helena.png \
+    qml/allradio-data/images/trinidad and tobago.png \
+    qml/allradio-data/images/uganda.png \
+    qml/allradio-data/images/united arab emirates.png \
+    qml/allradio-data/images/united kingdom.png \
+    qml/allradio-data/images/united states of america.png \
+    qml/allradio-data/images/mauritania.png \
+    translations/harbour-allradio--nl.ts
 

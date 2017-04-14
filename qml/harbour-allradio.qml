@@ -201,12 +201,12 @@ Audio {
             }
         }
 
-        onBufferProgressChanged: if (bufferProgress == 1) {play();sloading = false} //console.log(bufferProgress.toString())
+        onBufferProgressChanged: if (bufferProgress == 1) sloading = false //{play();sloading = false} //console.log(bufferProgress.toString())
 
         onStatusChanged: {
             if (status == 6) sloading = false
             //if (status == Audio.buffered) console.log("AUDIO BUFFERED")     //;streaming = true // Audio loaded and buffered
-            updateMprisMetadata(); //MPRIS
+             updateMprisMetadata(); //MPRIS
         }
 
     }

@@ -5,21 +5,27 @@ ListModel {
 
  //   ListElement {coid: "0"}
     ListElement {coid: ""}
+    ListElement {coid: "afghanistan"}
     ListElement {coid: "albania"}
     ListElement {coid: "algeria"}
     ListElement {coid: "andorra"}
+    ListElement {coid: "antigua & barbuda"}
     ListElement {coid: "argentina"}
     ListElement {coid: "armenia"}
     ListElement {coid: "australia"}
     ListElement {coid: "austria"}
     ListElement {coid: "azerbaijan"}
     ListElement {coid: "bahamas"}
+    ListElement {coid: "basque country"}
     ListElement {coid: "belarus"}
     ListElement {coid: "belgium"}
+    ListElement {coid: "belize"}
     ListElement {coid: "bolivia"}
     ListElement {coid: "bosnia and herzegovina"}
+    ListElement {coid: "botswana"}
     ListElement {coid: "brazil"}
     ListElement {coid: "bulgaria"}
+    ListElement {coid: "burkina faso"}
     ListElement {coid: "cameroun"}
     ListElement {coid: "canada"}
     ListElement {coid: "cape verde"}
@@ -36,6 +42,7 @@ ListModel {
     ListElement {coid: "ecuador"}
     ListElement {coid: "egypt"}
     ListElement {coid: "estonia"}
+    ListElement {coid: "ethiopia"}
     ListElement {coid: "faroe"}
     ListElement {coid: "finland"}
     ListElement {coid: "france"}
@@ -62,13 +69,16 @@ ListModel {
     ListElement {coid: "kenya"}
     ListElement {coid: "kosovo"}
     ListElement {coid: "kuwait"}
+    ListElement {coid: "laos"}
     ListElement {coid: "latvia"}
+    ListElement {coid: "lebanon"}
     ListElement {coid: "liechtenstein"}
     ListElement {coid: "lithuania"}
     ListElement {coid: "luxembourg"}
     ListElement {coid: "macedonia"}
     ListElement {coid: "madagascar"}
     ListElement {coid: "malta"}
+    ListElement {coid: "mauritania"}
     ListElement {coid: "mauritius"}
     ListElement {coid: "mexico"}
     ListElement {coid: "moldova"}
@@ -89,6 +99,7 @@ ListModel {
     ListElement {coid: "puerto rico"}
     ListElement {coid: "romania"}
     ListElement {coid: "russia"}
+    ListElement {coid: "republic of san marino"}
     ListElement {coid: "saudi arabia"}
     ListElement {coid: "scotland"}
     ListElement {coid: "serbia"}
@@ -96,6 +107,7 @@ ListModel {
     ListElement {coid: "slovenia"}
     ListElement {coid: "south africa"}
     ListElement {coid: "spain"}
+    ListElement {coid: "sri lanka"}
     ListElement {coid: "suriname"}
     ListElement {coid: "sweden"}
     ListElement {coid: "switzerland"}
@@ -104,6 +116,7 @@ ListModel {
     ListElement {coid: "trinidad and tobago"}
     ListElement {coid: "tunisia"}
     ListElement {coid: "turkey"}
+    ListElement {coid: "uganda"}
     ListElement {coid: "ukraine"}
     ListElement {coid: "united arab emirates"}
     ListElement {coid: "united kingdom"}
@@ -117,21 +130,27 @@ ListModel {
             countryname.text = [
                     //    qsTr("Add favorite"),
                         qsTr("No country?"),
+                        qsTr("Afghanistan"),
                         qsTr("Albania"),
                         qsTr("Algeria"),
                         qsTr("Andorra"),
+                        qsTr("Antigua and Barbuda"),
                         qsTr("Argentina"),
                         qsTr("Armenia"),
                         qsTr("Australia"),
                         qsTr("Austria"),
                         qsTr("Azerbaijan"),
                         qsTr("Bahamas"),
+                        qsTr("Basque country"),
                         qsTr("Belarus"),
                         qsTr("Belgium"),
+                        qsTr("Belize"),
                         qsTr("Bolivia"),
                         qsTr("Bosnia"),
+                        qsTr("Botswana"),
                         qsTr("Brazil"),
                         qsTr("Bulgaria"),
+                        qsTr("Burkina Faso"),
                         qsTr("Cameroun"),
                         qsTr("Canada"),
                         qsTr("Cape Verde"),
@@ -148,6 +167,7 @@ ListModel {
                         qsTr("Ecuador"),
                         qsTr("Egypt"),
                         qsTr("Estonia"),
+                        qsTr("Ethiopia"),
                         qsTr("Faroe"),
                         qsTr("Finland"),
                         qsTr("France"),
@@ -174,13 +194,16 @@ ListModel {
                         qsTr("Kenya"),
                         qsTr("Kosovo"),
                         qsTr("Kuwait"),
+                        qsTr("Laos"),
                         qsTr("Latvia"),
+                        qsTr("Lebanon"),
                         qsTr("Liechtenstein"),
                         qsTr("Lithuania"),
                         qsTr("Luxembourg"),
                         qsTr("Macedonia"),
                         qsTr("Madagascar"),
                         qsTr("Malta"),
+                        qsTr("Mauritania"),
                         qsTr("Mauritius"),
                         qsTr("Mexico"),
                         qsTr("Moldova"),
@@ -201,6 +224,7 @@ ListModel {
                         qsTr("Puerto Rico"),
                         qsTr("Romania"),
                         qsTr("Russia"),
+                        qsTr("San Marino"),
                         qsTr("Saudi Arabia"),
                         qsTr("Scotland"),
                         qsTr("Serbia"),
@@ -208,6 +232,7 @@ ListModel {
                         qsTr("Slovenia"),
                         qsTr("South Africa"),
                         qsTr("Spain"),
+                        qsTr("Sri Lanka"),
                         qsTr("Suriname"),
                         qsTr("Sweden"),
                         qsTr("Switzerland"),
@@ -216,6 +241,7 @@ ListModel {
                         qsTr("Trinidad and Tobago"),
                         qsTr("Tunisia"),
                         qsTr("Turkey"),
+                        qsTr("Uganda"),
                         qsTr("Ukraine"),
                         qsTr("United Arab Emirates"),
                         qsTr("United Kingdom"),

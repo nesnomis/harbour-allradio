@@ -64,7 +64,7 @@ Page {
             textFormat: Text.StyledText
             font.pixelSize: Theme.fontSizeSmall
             horizontalAlignment: Text.AlignHCenter
-            text: "Copyright 2015-2016 - Niels Simonsen"
+            text: "Copyright 2015-2017 - Niels Simonsen"
                  /*   <p>License: <a href='http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt'>GPL v2.0</a><br>"
                   + qsTr("Sourcecode is available on") + ": <a href='https://github.com/nesnomis/harbour-allradio'>github</a><br><p>"
                  + qsTr("The radiostations are from") + ": <br><a href='http://www.radio-browser.info/'>Community Radio Browser</a></p>" */
@@ -283,6 +283,12 @@ Page {
             text:
 
 "
+<p><b>version 1.5.6</b><br>
+- openrepos version with MPRIS<br>
+- Same as 1.5.5</p>
+<p><b>version 1.5.5</b><br>
+- Fixes compatability with Sailfish 2.1.<br>
+- Countries updates</p>
 <p><b>version 1.5.4</b><br>
 - openrepos version with MPRIS<br>
 - Same as 1.5.3</p>
