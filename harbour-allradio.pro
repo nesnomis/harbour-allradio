@@ -289,6 +289,9 @@ CONFIG += sailfishapp_i18n
 #TRANSLATIONS += translations/harbour-allradio-en.ts
 TRANSLATIONS += translations/harbour-allradio-da.ts
 TRANSLATIONS += translations/harbour-allradio-sv.ts
+TRANSLATIONS += translations/harbour-allradio-it.ts
+TRANSLATIONS += translations/harbour-allradio-nl.ts
+TRANSLATIONS += translations/harbour-allradio-es.ts
 
 DISTFILES += \
     qml/timepicker.png \
@@ -892,5 +895,6 @@ DISTFILES += \
     qml/allradio-data/images/united kingdom.png \
     qml/allradio-data/images/united states of america.png \
     qml/allradio-data/images/mauritania.png \
-    translations/harbour-allradio--nl.ts
+    translations/harbour-allradio-nl.ts \
+    translations/harbour-allradio-it.ts
 
