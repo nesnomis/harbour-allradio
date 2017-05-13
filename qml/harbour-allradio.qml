@@ -33,6 +33,7 @@ property bool sloading: false
 property bool streaming: false
 property string currentUrl: ""
 property int currentid
+property string currentStation: ""
 property bool allready: ready1 && ready2 ? true : false
 property bool ready1: false
 property bool ready2: false
@@ -70,6 +71,7 @@ GetStationUrl {
 
 function playStream() {
     //playMusic.stop()
+    if (currentStation !== "") {radioStation = currentStation; currentStation = ""}
     sloading = true
     userPlay=2;
     mp3 = currentUrl
@@ -176,11 +178,15 @@ Audio {
         autoLoad: false
 
         onError: {
-            console.log("ERROR: " + errorString)
+            console.log("ERROR: " + error + " STRING: " + errorString)
             switch (error) {
                 case 0: break;
-                case 3: if (userPlay == 2 && errorString !== "File Not Found") {mp3 = "";stopStream(); radioStation = errorString;userPlay = 0};break
-                default: mp3 = "";stopStream(); radioStation = errorString;break
+                case 1: stopStream();mp3 = ""; radioStation = error + " " + errorString;break
+                case 4: stopStream();mp3 = ""; radioStation = error + " " + errorString;break
+                case 5: stopStream();mp3 = ""; radioStation = error + " " + errorString;break
+                //case 3: if (userPlay == 2 && errorString !== "File Not Found") {mp3 = "";stopStream(); radioStation = errorString;userPlay = 0};break
+                case 3: currentStation = radioStation; stopStream(); radioStation = errorString;break
+                default: mp3 = "";stopStream(); radioStation = error + " " + errorString;break
             }
         }
 
@@ -204,6 +210,7 @@ Audio {
         onBufferProgressChanged: if (bufferProgress == 1) sloading = false //{play();sloading = false} //console.log(bufferProgress.toString())
 
         onStatusChanged: {
+            console.log("STATUS" + status)
             if (status == 6) sloading = false
             //if (status == Audio.buffered) console.log("AUDIO BUFFERED")     //;streaming = true // Audio loaded and buffered
              updateMprisMetadata(); //MPRIS
