@@ -1076,7 +1076,7 @@
         <location filename="../qml/pages/Favorites.qml" line="86"/>
         <location filename="../qml/pages/Favorites.qml" line="282"/>
         <source>Find radio stations</source>
-        <translation>Encontrar estaciones de radio</translation>
+        <translation>Buscar estaciones de radio</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="266"/>
