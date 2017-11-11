@@ -122,7 +122,7 @@ Page {
 
             IconButton {
                icon.source: "../allradio-data/images/gpl3.png"
-               onClicked: remorse.execute(qsTr("Opening GPL3"), function() {Qt.openUrlExternally("https://www.gnu.org/licenses/gpl-3.0-standalone.html")}, 3000)
+               onClicked: remorse.execute(qsTr("Opening GPLv3"), function() {Qt.openUrlExternally("https://www.gnu.org/licenses/gpl-3.0-standalone.html")}, 3000)
             }
 
             IconButton {
