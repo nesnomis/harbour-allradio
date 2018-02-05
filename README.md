@@ -10,6 +10,6 @@ Features:
 - Sleeptimer.
 - Read metadata from radio stations (if available).
 
-The radio stations are coming from: http://http://www.radio-browser.info.
+The radio stations are coming from: https://www.radio-browser.info/.
 
 Screenshots: https://nesnomis.wordpress.com/sailfishosjolla/allradio/#jp-carousel-827
