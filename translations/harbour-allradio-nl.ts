@@ -9,11 +9,6 @@
         <translation>Over</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="45"/>
-        <source>Opening github</source>
-        <translation>Bezig met openen van github</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/About.qml" line="63"/>
         <location filename="../qml/pages/About.qml" line="109"/>
         <location filename="../qml/pages/About.qml" line="219"/>
@@ -27,14 +22,19 @@
         <translation>AllRadio-licentie</translation>
     </message>
     <message>
+        <location filename="../qml/pages/About.qml" line="45"/>
+        <source>Opening GitHub</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/About.qml" line="113"/>
-        <source>AllRadio is GPL v.3 with the exception for JSONListModel and ValuePicker wich is licensed under MIT.</source>
-        <translation>AllRadio is GPL v.3-software met uitzondering van JSONListModel en ValuePicker welke beide vallen onder de MIT.</translation>
+        <source>AllRadio is GPLv3 with the exception for JSONListModel and ValuePicker, which is MIT licensed.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="125"/>
-        <source>Opening GPL3</source>
-        <translation>Bezig met openen van GPL3</translation>
+        <source>Opening GPLv3</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="130"/>
@@ -68,8 +68,8 @@
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="240"/>
-        <source>Opening Paypal</source>
-        <translation>Bezig met openen van Paypal</translation>
+        <source>Opening PayPal</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1230,7 +1230,7 @@
     <message>
         <location filename="../qml/pages/PlayerPanel.qml" line="57"/>
         <source>Opening webpage</source>
-        <translation>Bezig met openen van webpagina</translation>
+        <translation type="unfinished">Bezig met openen van webpagina</translation>
     </message>
 </context>
 <context>
@@ -1297,14 +1297,6 @@
         <location filename="../qml/pages/RadioPlayer.qml" line="210"/>
         <source>Loading radio stations...</source>
         <translation>Bezig met laden van radiostations...</translation>
-    </message>
-</context>
-<context>
-    <name>RadioWeb</name>
-    <message>
-        <location filename="../qml/pages/RadioWeb.qml" line="14"/>
-        <source>Open in external browser</source>
-        <translation>Openen in externe browser</translation>
     </message>
 </context>
 <context>

@@ -1,12 +1,12 @@
 import QtQuick 2.0
-import QtMultimedia 5.0
+import QtMultimedia 5.6
 import Sailfish.Silica 1.0
 import QtQuick.LocalStorage 2.0
 import "pages"
 import "js/favorites.js" as Db
 import "js/stream.js" as Stream
 import "../qml/JSONListModel"
-import org.nemomobile.mpris 1.0 //MPRIS
+//import org.nemomobile.mpris 1.0 //MPRIS
 
 
 
@@ -38,7 +38,7 @@ property bool allready: ready1 && ready2 ? true : false
 property bool ready1: false
 property bool ready2: false
 property string useragent: "AllRadio/"+Qt.application.version+" (SailfishOS; Linux) nesnomis@gmail.com"
-property MprisPlayer mpris: mprisPlayer // MPRIS
+//property MprisPlayer mpris: mprisPlayer // MPRIS
 
 GetStationUrl {
     id: getStationUrl
@@ -197,8 +197,8 @@ Audio {
         onPlaying: {sloading = false;streaming = true}
 
         onPlaybackStateChanged: {
-            updatePlaybackStatus(); //MPRIS
-            updateMprisMetadata(); //MPRIS
+      //      updatePlaybackStatus(); //MPRIS
+       //     updateMprisMetadata(); //MPRIS
 
             switch (playbackState) {
                 case 0: streaming = false; break
@@ -207,19 +207,19 @@ Audio {
             }
         }
 
-        onBufferProgressChanged: if (bufferProgress == 1) sloading = false //{play();sloading = false} //console.log(bufferProgress.toString())
+     //   onBufferProgressChanged: if (bufferProgress == 1) sloading = false //{play();sloading = false} //console.log(bufferProgress.toString())
 
         onStatusChanged: {
             console.log("STATUS" + status)
-            if (status == 6) sloading = false
+            if (status == 4) sloading = false
             //if (status == Audio.buffered) console.log("AUDIO BUFFERED")     //;streaming = true // Audio loaded and buffered
-             updateMprisMetadata(); //MPRIS
+          //   updateMprisMetadata(); //MPRIS
         }
 
     }
 
 //MPRIS
-
+/*
 function updateMprisMetadata(){
         mprisPlayer.song = metaInfo ? metaInfo : ""
         mprisPlayer.artist = radioStation === "" ? "AllRadio" : radioStation
@@ -330,7 +330,7 @@ onMetaInfoChanged: mprisPlayer.song = metaInfo
         mprisPlayer.metadata = metadata
     }
 }
-
+*/
 // MPRIS END
 
  /* PRELOAD TAGS AND COUNTRIES */

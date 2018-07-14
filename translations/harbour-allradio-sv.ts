@@ -9,11 +9,6 @@
         <translation>Om programmet</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="45"/>
-        <source>Opening github</source>
-        <translation>Öppnar github</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/About.qml" line="63"/>
         <location filename="../qml/pages/About.qml" line="109"/>
         <location filename="../qml/pages/About.qml" line="219"/>
@@ -27,14 +22,19 @@
         <translation>AllRadio licens</translation>
     </message>
     <message>
+        <location filename="../qml/pages/About.qml" line="45"/>
+        <source>Opening GitHub</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/About.qml" line="113"/>
-        <source>AllRadio is GPL v.3 with the exception for JSONListModel and ValuePicker wich is licensed under MIT.</source>
-        <translation>AllRadio är GPL v.3 med undantag för JSONListModel och ValuePicker som är licencieret under MIT.</translation>
+        <source>AllRadio is GPLv3 with the exception for JSONListModel and ValuePicker, which is MIT licensed.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="125"/>
-        <source>Opening GPL3</source>
-        <translation>Öppnar GPL3</translation>
+        <source>Opening GPLv3</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="130"/>
@@ -68,8 +68,8 @@
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="240"/>
-        <source>Opening Paypal</source>
-        <translation>Öppnar Paypal</translation>
+        <source>Opening PayPal</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1230,7 +1230,7 @@
     <message>
         <location filename="../qml/pages/PlayerPanel.qml" line="57"/>
         <source>Opening webpage</source>
-        <translation>Öppnar webbsida</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1297,14 +1297,6 @@
         <location filename="../qml/pages/RadioPlayer.qml" line="210"/>
         <source>Loading radio stations...</source>
         <translation>Hämtar radiostationer...</translation>
-    </message>
-</context>
-<context>
-    <name>RadioWeb</name>
-    <message>
-        <location filename="../qml/pages/RadioWeb.qml" line="14"/>
-        <source>Open in external browser</source>
-        <translation>Öppna i extern webbläsare</translation>
     </message>
 </context>
 <context>
