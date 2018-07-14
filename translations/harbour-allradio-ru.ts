@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru_RU">
+<TS version="2.1" language="ru_RU">
 <context>
     <name>About</name>
     <message>
         <location filename="../qml/pages/About.qml" line="19"/>
         <source>About</source>
         <translation>О программе</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/About.qml" line="45"/>
-        <source>Opening github</source>
-        <translation>Открытие страницы GitHub</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="63"/>
@@ -27,14 +22,19 @@
         <translation>Лицензия AllRadio</translation>
     </message>
     <message>
+        <location filename="../qml/pages/About.qml" line="45"/>
+        <source>Opening GitHub</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/About.qml" line="113"/>
-        <source>AllRadio is GPL v.3 with the exception for JSONListModel and ValuePicker wich is licensed under MIT.</source>
-        <translation>AllRadio предлагается на условиях GPL v.3 за исключением JSONListModel и ValuePicker, которые имеют лицензию MIT.</translation>
+        <source>AllRadio is GPLv3 with the exception for JSONListModel and ValuePicker, which is MIT licensed.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="125"/>
-        <source>Opening GPL3</source>
-        <translation>Открытие страницы GPL3</translation>
+        <source>Opening GPLv3</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="130"/>
@@ -68,8 +68,8 @@
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="240"/>
-        <source>Opening Paypal</source>
-        <translation>Открытие страницы PayPal</translation>
+        <source>Opening PayPal</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1297,14 +1297,6 @@
         <location filename="../qml/pages/RadioPlayer.qml" line="210"/>
         <source>Loading radio stations...</source>
         <translation>Загрузка списка станций...</translation>
-    </message>
-</context>
-<context>
-    <name>RadioWeb</name>
-    <message>
-        <location filename="../qml/pages/RadioWeb.qml" line="14"/>
-        <source>Open in external browser</source>
-        <translation>Открыть во внешнем обозревателе</translation>
     </message>
 </context>
 <context>
