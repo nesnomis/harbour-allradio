@@ -64,7 +64,7 @@ Page {
             textFormat: Text.StyledText
             font.pixelSize: Theme.fontSizeSmall
             horizontalAlignment: Text.AlignHCenter
-            text: "Copyright 2015-2017 - Niels Simonsen"
+            text: qsTr("Copyright") + "2015-2018 - Niels Simonsen"
                  /*   <p>License: <a href='http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt'>GPL v2.0</a><br>"
                   + qsTr("Source code available on") + ": <a href='https://github.com/nesnomis/harbour-allradio'>github</a><br><p>"
                  + qsTr("The radiostations are from") + ": <br><a href='https://www.radio-browser.info/'>Community Radio Browser</a></p>" */
@@ -258,7 +258,7 @@ Page {
             anchors.right: parent.right
             anchors.rightMargin: Theme.paddingLarge
             color: Theme.highlightColor
-            text: "Changelog"
+            text: qsTr("Changelog")
             font.pixelSize: Theme.fontSizeLarge
         }
 
