@@ -55,7 +55,7 @@ DockedPanel {
                 width: parent.widt - pause.width
                 onClicked: {
                     remorse.execute(qsTr("Opening webpage"), function() {Qt.openUrlExternally(website)}, 3000)
-                   // window.pageStack.push(Qt.resolvedUrl("RadioWeb.qml"),{radioUrl: website})
+                 //   window.pageStack.push(Qt.resolvedUrl("RadioWeb.qml"),{surl: website})
                 }
 
                 Image {
@@ -102,7 +102,7 @@ DockedPanel {
         running: (sloading && Qt.application.active)
         enabled: (Qt.application.active)
     }
-        ProgressBar {
+  /*      ProgressBar {
             id: progress
             visible: value < 1.0 && value > 0.0  ? true : false
             anchors.left: parent.left
@@ -114,5 +114,5 @@ DockedPanel {
             minimumValue: 0.0
             maximumValue: 1.0
             value: playMusic.bufferProgress
-        }
+        } */
 }

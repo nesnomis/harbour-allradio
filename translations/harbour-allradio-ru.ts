@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="es_ES">
+<TS version="2.1" language="ru_RU">
 <context>
     <name>About</name>
     <message>
         <location filename="../qml/pages/About.qml" line="19"/>
         <source>About</source>
-        <translation>Acerca de</translation>
+        <translation>О программе</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="63"/>
@@ -14,12 +14,12 @@
         <location filename="../qml/pages/About.qml" line="219"/>
         <location filename="../qml/pages/About.qml" line="280"/>
         <source>Opening webpage</source>
-        <translation>Abriendo página Web</translation>
+        <translation>Открытие веб-страницы</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="89"/>
         <source>AllRadio license</source>
-        <translation>Licencia de AllRadio</translation>
+        <translation>Лицензия AllRadio</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="45"/>
@@ -44,32 +44,32 @@
     <message>
         <location filename="../qml/pages/About.qml" line="130"/>
         <source>Opening MIT</source>
-        <translation>Abriendo MIT</translation>
+        <translation>Открытие страницы MIT</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="170"/>
         <source>AllRadio uses the webservice from Community Radio Browser.</source>
-        <translation>AllRadio usa los servicios Web de Community Radio Browser.</translation>
+        <translation>AllRadio использует данные сервера Community Radio Browser.</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="182"/>
         <source>Opening Radio Community</source>
-        <translation>Abriendo Community Radio</translation>
+        <translation>Открытие страницы Community Radio</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="201"/>
         <source>Donate</source>
-        <translation>Donar</translation>
+        <translation>Пожертвовать</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="223"/>
         <source>If you like this app, and would like to make a donation (for a beer or a cup of coffee?! :) ..)</source>
-        <translation>Si te gusta esta aplicación y quieres hacer una donación (para una cerveza o taza de cafe?! :) ..)</translation>
+        <translation>Если вам понравилась эта программа, и вы хотите поддержать ее автора... (Как насчет кружечки пива или чашки кофе?! :) )</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="235"/>
         <source>Opening Flattr</source>
-        <translation>Abriendo Flattr</translation>
+        <translation>Открытие страницы Flattr</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="240"/>
@@ -87,58 +87,58 @@
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="6"/>
         <source>Add or share your own favorite:</source>
-        <translation>Añadir o compartir tu favorito:</translation>
+        <translation>Добавить или опубликовать любимую станцию:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="44"/>
         <source>Radio station name and stream url is needed to save or test stream!</source>
-        <translation>¡Es necesario el nombre de la estación de radio y la url de transmisión para guardar o probar una transmisión!</translation>
+        <translation>Чтобы сохранить или проверить станцию, надо указать её название и URL потока!</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="66"/>
         <location filename="../qml/pages/AddOwnRadio.qml" line="72"/>
         <source>Name</source>
-        <translation>Nombre</translation>
+        <translation>Название</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="78"/>
         <location filename="../qml/pages/AddOwnRadio.qml" line="84"/>
         <source>Stream url</source>
-        <translation>Url de transmisión</translation>
+        <translation>URL потока</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="91"/>
         <location filename="../qml/pages/AddOwnRadio.qml" line="97"/>
         <source>Homepage</source>
-        <translation>Página principal</translation>
+        <translation>Домашняя страница</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="107"/>
         <location filename="../qml/pages/AddOwnRadio.qml" line="115"/>
         <source>Country</source>
-        <translation>País</translation>
+        <translation>Страна</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="140"/>
         <location filename="../qml/pages/AddOwnRadio.qml" line="147"/>
         <source>Language</source>
-        <translation>Idioma</translation>
+        <translation>Язык</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="171"/>
         <location filename="../qml/pages/AddOwnRadio.qml" line="178"/>
         <source>Tags (separete by &apos;,&apos; (eg: &apos;rock,jazz&apos;)</source>
-        <translation>Etiquetas separadas por &apos;,&apos; (p. ej.: &apos;rock,jazz&apos;)</translation>
+        <translation>Метки (разделитель &apos;,&apos; (например: &apos;rock,jazz&apos;))</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="185"/>
         <source>Search by tag</source>
-        <translation>Buscar por etiqueta</translation>
+        <translation>Поиск по меткам</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="196"/>
         <source>Test radio station</source>
-        <translation>Probar estación de radio</translation>
+        <translation>Проверить радиостанцию</translation>
     </message>
 </context>
 <context>
@@ -146,29 +146,29 @@
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="43"/>
         <source>Countries</source>
-        <translation>Países</translation>
+        <translation>Страны</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="94"/>
         <source>Show as list</source>
-        <translation>Mostrar como lista</translation>
+        <translation>Показать списком</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="101"/>
         <location filename="../qml/pages/CountryChooser.qml" line="181"/>
         <source>No countries!?</source>
-        <translation>¿¡Ningún país!?</translation>
+        <translation>Страна неизвестна</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="102"/>
         <location filename="../qml/pages/CountryChooser.qml" line="182"/>
         <source>Be patient or check connection!</source>
-        <translation>¡Ten paciencia o comprueba la conexión!</translation>
+        <translation>Потерпите или проверьте доступ в сеть!</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="174"/>
         <source>Show as grid</source>
-        <translation>Mostrar como cuadrícula</translation>
+        <translation>Показать флаги</translation>
     </message>
 </context>
 <context>
@@ -176,257 +176,257 @@
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="63"/>
         <source>Albania</source>
-        <translation>Albania</translation>
+        <translation>Албания</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="64"/>
         <source>Andorra</source>
-        <translation>Andorra</translation>
+        <translation>Андорра</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="65"/>
         <source>Armenia</source>
-        <translation>Armenia</translation>
+        <translation>Армения</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="66"/>
         <source>Austria</source>
-        <translation>Austria</translation>
+        <translation>Австрия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="67"/>
         <source>Azerbaijan</source>
-        <translation>Azerbaiyán</translation>
+        <translation>Азербайджан</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="68"/>
         <source>Belarus</source>
-        <translation>Bielorrusia</translation>
+        <translation>Белоруссия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="69"/>
         <source>Belgium</source>
-        <translation>Bélgica</translation>
+        <translation>Бельгия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="70"/>
         <source>Bosnia</source>
-        <translation>Bosnia</translation>
+        <translation>Босния</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="71"/>
         <source>Bulgaria</source>
-        <translation>Bulgaria</translation>
+        <translation>Болгария</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="72"/>
         <source>Croatia</source>
-        <translation>Croacia</translation>
+        <translation>Хорватия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="73"/>
         <source>Cyprus</source>
-        <translation>Chipre</translation>
+        <translation>Кипр</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="74"/>
         <source>Czechrepublic</source>
-        <translation>República Checa</translation>
+        <translation>Чехия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="75"/>
         <source>Denmark</source>
-        <translation>Dinamarca</translation>
+        <translation>Дания</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="76"/>
         <source>Estonia</source>
-        <translation>Estonia</translation>
+        <translation>Эстония</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="77"/>
         <source>Faroe</source>
-        <translation>Islas Feroe</translation>
+        <translation>Фарёрские острова</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="78"/>
         <source>Finland</source>
-        <translation>Finlandia</translation>
+        <translation>Финляндия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="79"/>
         <source>France</source>
-        <translation>Francia</translation>
+        <translation>Франция</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="80"/>
         <source>Georgia</source>
-        <translation>Georgia</translation>
+        <translation>Грузия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="81"/>
         <source>Germany</source>
-        <translation>Alemania</translation>
+        <translation>Германия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="82"/>
         <source>Gibraltar</source>
-        <translation>Gibraltar</translation>
+        <translation>Гибралтар</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="83"/>
         <source>Greece</source>
-        <translation>Grecia</translation>
+        <translation>Греция</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="84"/>
         <source>Hungary</source>
-        <translation>Hungría</translation>
+        <translation>Венгрия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="85"/>
         <source>Iceland</source>
-        <translation>Islandia</translation>
+        <translation>Исландия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="86"/>
         <source>Ireland</source>
-        <translation>Irlanda</translation>
+        <translation>Ирландия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="87"/>
         <source>Italy</source>
-        <translation>Italia</translation>
+        <translation>Италия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="88"/>
         <source>Kosovo</source>
-        <translation>Kosovo</translation>
+        <translation>Косово</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="89"/>
         <source>Latvia</source>
-        <translation>Letonia</translation>
+        <translation>Латвия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="90"/>
         <source>Liechtenstein</source>
-        <translation>Liechtenstein</translation>
+        <translation>Лихтенштейн</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="91"/>
         <source>Lithuania</source>
-        <translation>Lituania</translation>
+        <translation>Литва</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="92"/>
         <source>Luxembourg</source>
-        <translation>Luxemburgo</translation>
+        <translation>Люксембург</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="93"/>
         <source>Macedonia</source>
-        <translation>Macedonia</translation>
+        <translation>Македония</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="94"/>
         <source>Malta</source>
-        <translation>Malta</translation>
+        <translation>Мальта</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="95"/>
         <source>Moldova</source>
-        <translation>Moldavia</translation>
+        <translation>Молдавия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="96"/>
         <source>Monaco</source>
-        <translation>Mónaco</translation>
+        <translation>Монако</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="97"/>
         <source>Montenegro</source>
-        <translation>Montenegro</translation>
+        <translation>Черногория</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="98"/>
         <source>Netherlands</source>
-        <translation>Países Bajos</translation>
+        <translation>Голландия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="99"/>
         <source>Norway</source>
-        <translation>Noruega</translation>
+        <translation>Норвегия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="100"/>
         <source>Poland</source>
-        <translation>Polonia</translation>
+        <translation>Польша</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="101"/>
         <source>Portugal</source>
-        <translation>Portugal</translation>
+        <translation>Португалия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="102"/>
         <source>Romania</source>
-        <translation>Rumanía</translation>
+        <translation>Румыния</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="103"/>
         <source>Russia</source>
-        <translation>Rusia</translation>
+        <translation>Россия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="104"/>
         <source>Serbia</source>
-        <translation>Serbia</translation>
+        <translation>Сербия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="105"/>
         <source>Slovakia</source>
-        <translation>Eslovaquia</translation>
+        <translation>Словакия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="106"/>
         <source>Slovenia</source>
-        <translation>Eslovenia</translation>
+        <translation>Словения</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="107"/>
         <source>Spain</source>
-        <translation>España</translation>
+        <translation>Испания</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="108"/>
         <source>Sweden</source>
-        <translation>Suecia</translation>
+        <translation>Швеция</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="109"/>
         <source>Switzerland</source>
-        <translation>Suiza</translation>
+        <translation>Швейцария</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="110"/>
         <source>Turkey</source>
-        <translation>Turquía</translation>
+        <translation>Турция</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="111"/>
         <source>UK</source>
-        <translation>Reino Unido</translation>
+        <translation>Британия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="112"/>
         <source>Ukraine</source>
-        <translation>Ucrania</translation>
+        <translation>Украина</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="113"/>
         <source>Vatican</source>
-        <translation>Vaticano</translation>
+        <translation>Ватикан</translation>
     </message>
 </context>
 <context>
@@ -434,607 +434,607 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="132"/>
         <source>No country?</source>
-        <translation>¿Ningún país?</translation>
+        <translation>Страна неизвестна</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="133"/>
         <source>Afghanistan</source>
-        <translation>Afganistán</translation>
+        <translation>Афганистан</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="134"/>
         <source>Albania</source>
-        <translation>Albania</translation>
+        <translation>Албания</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="135"/>
         <source>Algeria</source>
-        <translation>Argelia</translation>
+        <translation>Алжир</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="136"/>
         <source>Andorra</source>
-        <translation>Andorra</translation>
+        <translation>Андорра</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="137"/>
         <source>Antigua and Barbuda</source>
-        <translation>Antigua y Barbuda</translation>
+        <translation>Антигуа и Барбуда</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="138"/>
         <source>Argentina</source>
-        <translation>Argentina</translation>
+        <translation>Аргентина</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="139"/>
         <source>Armenia</source>
-        <translation>Armenia</translation>
+        <translation>Армения</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="140"/>
         <source>Australia</source>
-        <translation>Australia</translation>
+        <translation>Австралия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="141"/>
         <source>Austria</source>
-        <translation>Austria</translation>
+        <translation>Австрия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="142"/>
         <source>Azerbaijan</source>
-        <translation>Azerbaiyán</translation>
+        <translation>Азербайджан</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="143"/>
         <source>Bahamas</source>
-        <translation>Bahamas</translation>
+        <translation>Багамы</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="144"/>
         <source>Basque country</source>
-        <translation>País Vasco</translation>
+        <translation>Страна басков</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="145"/>
         <source>Belarus</source>
-        <translation>Bielorrusia</translation>
+        <translation>Белоруссия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="146"/>
         <source>Belgium</source>
-        <translation>Bélgica</translation>
+        <translation>Бельгия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="147"/>
         <source>Belize</source>
-        <translation>Belice</translation>
+        <translation>Белиз</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="148"/>
         <source>Bolivia</source>
-        <translation>Bolivia</translation>
+        <translation>Боливия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="149"/>
         <source>Bosnia</source>
-        <translation>Bosnia</translation>
+        <translation>Босния</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="150"/>
         <source>Botswana</source>
-        <translation>Botsuana</translation>
+        <translation>Ботсвана</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="151"/>
         <source>Brazil</source>
-        <translation>Brasil</translation>
+        <translation>Бразилия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="152"/>
         <source>Bulgaria</source>
-        <translation>Bulgaria</translation>
+        <translation>Болгария</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="153"/>
         <source>Burkina Faso</source>
-        <translation>Burkina Faso</translation>
+        <translation>Буркина-Фасо</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="154"/>
         <source>Cameroun</source>
-        <translation>Camerún</translation>
+        <translation>Камерун</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="155"/>
         <source>Canada</source>
-        <translation>Canadá</translation>
+        <translation>Канада</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="156"/>
         <source>Cape Verde</source>
-        <translation>Cabo Verde</translation>
+        <translation>Кабо-Верде</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="157"/>
         <source>Chile</source>
-        <translation>Chile</translation>
+        <translation>Чили</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="158"/>
         <source>China</source>
-        <translation>China</translation>
+        <translation>Китай</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="159"/>
         <source>Colombia</source>
-        <translation>Colombia</translation>
+        <translation>Колумбия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="160"/>
         <source>Congo</source>
-        <translation>Congo</translation>
+        <translation>Конго</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="161"/>
         <source>Costa Rica</source>
-        <translation>Costa Rica</translation>
+        <translation>Коста-Рика</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="162"/>
         <source>Croatia</source>
-        <translation>Croacia</translation>
+        <translation>Хорватия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="163"/>
         <source>Cyprus</source>
-        <translation>Chipre</translation>
+        <translation>Кипр</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="164"/>
         <source>Czechrepublic</source>
-        <translation>República Checa</translation>
+        <translation>Чехия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="165"/>
         <source>Denmark</source>
-        <translation>Dinamarca</translation>
+        <translation>Дания</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="166"/>
         <source>Dominican Republic</source>
-        <translation>República Dominicana</translation>
+        <translation>Доминиканская республика</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="167"/>
         <source>Ecuador</source>
-        <translation>Ecuador</translation>
+        <translation>Эквадор</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="168"/>
         <source>Egypt</source>
-        <translation>Egipto</translation>
+        <translation>Египет</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="169"/>
         <source>Estonia</source>
-        <translation>Estonia</translation>
+        <translation>Эстония</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="170"/>
         <source>Ethiopia</source>
-        <translation>Etiopía</translation>
+        <translation>Эфиопия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="171"/>
         <source>Faroe</source>
-        <translation>Islas Feroe</translation>
+        <translation>Фарерские острова</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="172"/>
         <source>Finland</source>
-        <translation>Finlandia</translation>
+        <translation>Финляндия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="173"/>
         <source>France</source>
-        <translation>Francia</translation>
+        <translation>Франция</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="174"/>
         <source>Georgia</source>
-        <translation>Georgia</translation>
+        <translation>Грузия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="175"/>
         <source>Germany</source>
-        <translation>Alemania</translation>
+        <translation>Германия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="176"/>
         <source>Ghana</source>
-        <translation>Ghana</translation>
+        <translation>Гана</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="177"/>
         <source>Gibraltar</source>
-        <translation>Gibraltar</translation>
+        <translation>Гибралтар</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="178"/>
         <source>Greece</source>
-        <translation>Grecia</translation>
+        <translation>Греция</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="179"/>
         <source>Guatemala</source>
-        <translation>Guatemala</translation>
+        <translation>Гватемала</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="180"/>
         <source>Guinea</source>
-        <translation>Guinea</translation>
+        <translation>Гвинея</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="181"/>
         <source>Hong Kong</source>
-        <translation>Hong Kong</translation>
+        <translation>Гонконг</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="182"/>
         <source>Hungary</source>
-        <translation>Hungría</translation>
+        <translation>Венгрия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="183"/>
         <source>Iceland</source>
-        <translation>Islandia</translation>
+        <translation>Исландия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="184"/>
         <source>India</source>
-        <translation>India</translation>
+        <translation>Индия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="185"/>
         <source>Indonesia</source>
-        <translation>Indonesia</translation>
+        <translation>Индонезия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="186"/>
         <source>International</source>
-        <translation>Internacional</translation>
+        <translation>Международные станции</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="187"/>
         <source>Iran</source>
-        <translation>Irán</translation>
+        <translation>Иран</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="188"/>
         <source>Iraq</source>
-        <translation>Irak</translation>
+        <translation>Ирак</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="189"/>
         <source>Ireland</source>
-        <translation>Irlanda</translation>
+        <translation>Ирландия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="190"/>
         <source>Israel</source>
-        <translation>Israel</translation>
+        <translation>Израиль</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="191"/>
         <source>Italy</source>
-        <translation>Italia</translation>
+        <translation>Италия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="192"/>
         <source>Japan</source>
-        <translation>Japón</translation>
+        <translation>Япония</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="193"/>
         <source>Jordan</source>
-        <translation>Jordania</translation>
+        <translation>Иордания</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="194"/>
         <source>Kenya</source>
-        <translation>Kenia</translation>
+        <translation>Кения</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="195"/>
         <source>Kosovo</source>
-        <translation>Kosovo</translation>
+        <translation>Косово</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="196"/>
         <source>Kuwait</source>
-        <translation>Kuwait</translation>
+        <translation>Кувейт</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="197"/>
         <source>Laos</source>
-        <translation>Laos</translation>
+        <translation>Лаос</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="198"/>
         <source>Latvia</source>
-        <translation>Letonia</translation>
+        <translation>Латвия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="199"/>
         <source>Lebanon</source>
-        <translation>Líbano</translation>
+        <translation>Ливан</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="200"/>
         <source>Liechtenstein</source>
-        <translation>Liechtenstein</translation>
+        <translation>Лихтенштейн</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="201"/>
         <source>Lithuania</source>
-        <translation>Lituania</translation>
+        <translation>Литва</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="202"/>
         <source>Luxembourg</source>
-        <translation>Luxemburgo</translation>
+        <translation>Люксембург</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="203"/>
         <source>Macedonia</source>
-        <translation>Macedonia</translation>
+        <translation>Македония</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="204"/>
         <source>Madagascar</source>
-        <translation>Madagascar</translation>
+        <translation>Мадагаскар</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="205"/>
         <source>Malta</source>
-        <translation>Malta</translation>
+        <translation>Мальта</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="206"/>
         <source>Mauritania</source>
-        <translation>Mauritania</translation>
+        <translation>Мавритания</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="207"/>
         <source>Mauritius</source>
-        <translation>Mauricio</translation>
+        <translation>Маврикий</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="208"/>
         <source>Mexico</source>
-        <translation>México</translation>
+        <translation>Мексика</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="209"/>
         <source>Moldova</source>
-        <translation>Moldavia</translation>
+        <translation>Молдавия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="210"/>
         <source>Monaco</source>
-        <translation>Mónaco</translation>
+        <translation>Монако</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="211"/>
         <source>Montenegro</source>
-        <translation>Montenegro</translation>
+        <translation>Черногория</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="212"/>
         <source>Morocco</source>
-        <translation>Marruecos</translation>
+        <translation>Морокко</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="213"/>
         <source>Namibia</source>
-        <translation>Namibia</translation>
+        <translation>Намибия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="214"/>
         <source>Netherlands</source>
-        <translation>Países Bajos</translation>
+        <translation>Голландия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="215"/>
         <source>New Zealand</source>
-        <translation>Nueva Zelanda</translation>
+        <translation>Новая Зеландия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="216"/>
         <source>Nicaragua</source>
-        <translation>Nicaragua</translation>
+        <translation>Никарагуа</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="217"/>
         <source>Norway</source>
-        <translation>Noruega</translation>
+        <translation>Норвегия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="218"/>
         <source>Palau</source>
-        <translation>Palaos</translation>
+        <translation>Палау</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="219"/>
         <source>Paraguay</source>
-        <translation>Paraguay</translation>
+        <translation>Парагвай</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="220"/>
         <source>Peru</source>
-        <translation>Perú</translation>
+        <translation>Перу</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="221"/>
         <source>Philippines</source>
-        <translation>Filipinas</translation>
+        <translation>Филиппины</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="222"/>
         <source>Poland</source>
-        <translation>Polonia</translation>
+        <translation>Польша</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="223"/>
         <source>Portugal</source>
-        <translation>Portugal</translation>
+        <translation>Португалия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="224"/>
         <source>Puerto Rico</source>
-        <translation>Puerto Rico</translation>
+        <translation>Пуэрто Рико</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="225"/>
         <source>Romania</source>
-        <translation>Rumanía</translation>
+        <translation>Румыния</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="226"/>
         <source>Russia</source>
-        <translation>Rusia</translation>
+        <translation>Россия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="227"/>
         <source>San Marino</source>
-        <translation>San Marino</translation>
+        <translation>Сан-Марино</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="228"/>
         <source>Saudi Arabia</source>
-        <translation>Arabia Saudí</translation>
+        <translation>Саудовская Аравия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="229"/>
         <source>Scotland</source>
-        <translation>Escocia</translation>
+        <translation>Шотландия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="230"/>
         <source>Serbia</source>
-        <translation>Serbia</translation>
+        <translation>Сербия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="231"/>
         <source>Slovakia</source>
-        <translation>Eslovaquia</translation>
+        <translation>Словакия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="232"/>
         <source>Slovenia</source>
-        <translation>Eslovenia</translation>
+        <translation>Словения</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="233"/>
         <source>South Africa</source>
-        <translation>Sudáfrica</translation>
+        <translation>ЮАР</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="234"/>
         <source>Spain</source>
-        <translation>España</translation>
+        <translation>Испания</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="235"/>
         <source>Sri Lanka</source>
-        <translation>Sri Lanka</translation>
+        <translation>Шри Ланка</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="236"/>
         <source>Suriname</source>
-        <translation>Surinam</translation>
+        <translation>Суринам</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="237"/>
         <source>Sweden</source>
-        <translation>Suecia</translation>
+        <translation>Швеция</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="238"/>
         <source>Switzerland</source>
-        <translation>Suiza</translation>
+        <translation>Швейцария</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="239"/>
         <source>Syria</source>
-        <translation>Siria</translation>
+        <translation>Сирия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="240"/>
         <source>Thailand</source>
-        <translation>Tailandia</translation>
+        <translation>Таиланд</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="241"/>
         <source>Trinidad and Tobago</source>
-        <translation>Trinidad y Tobago</translation>
+        <translation>Тринидад и Тобаго</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="242"/>
         <source>Tunisia</source>
-        <translation>Túnez</translation>
+        <translation>Тунис</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="243"/>
         <source>Turkey</source>
-        <translation>Turquía</translation>
+        <translation>Турция</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="244"/>
         <source>Uganda</source>
-        <translation>Uganda</translation>
+        <translation>Уганда</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="245"/>
         <source>Ukraine</source>
-        <translation>Ucrania</translation>
+        <translation>Украина</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="246"/>
         <source>United Arab Emirates</source>
-        <translation>Emiratos Árabes Unidos</translation>
+        <translation>ОАЭ</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="247"/>
         <source>United Kingdom</source>
-        <translation>Reino Unido</translation>
+        <translation>Британия</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="248"/>
         <source>United states</source>
-        <translation>Estados Unidos</translation>
+        <translation>США</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="249"/>
         <source>Uruguay</source>
-        <translation>Uruguay</translation>
+        <translation>Уругвай</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="250"/>
         <source>Vatican</source>
-        <translation>Vaticano</translation>
+        <translation>Ватикан</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="251"/>
         <source>Venezuela</source>
-        <translation>Venezuela</translation>
+        <translation>Венесуэла</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="252"/>
         <source>Yemen</source>
-        <translation>Yemen</translation>
+        <translation>Йемен</translation>
     </message>
 </context>
 <context>
@@ -1042,12 +1042,12 @@
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="46"/>
         <source>Closing in </source>
-        <translation>Cerrando en </translation>
+        <translation>Выход через </translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="46"/>
         <source> minutes.</source>
-        <translation> minutos.</translation>
+        <translation> минут(ы).</translation>
     </message>
 </context>
 <context>
@@ -1055,48 +1055,48 @@
     <message>
         <location filename="../qml/pages/Favorites.qml" line="85"/>
         <source>Favorites</source>
-        <translation>Favoritos</translation>
+        <translation>Любимые станции</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="212"/>
         <source>Listen</source>
-        <translation>Escuchar</translation>
+        <translation>Слушать</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="240"/>
         <source>Edit</source>
-        <translation>Editar</translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="243"/>
         <source>Edit radio station</source>
-        <translation>Editar estación de radio</translation>
+        <translation>Редактировать станцию</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="256"/>
         <source>Search and replace</source>
-        <translation>Buscar y reemplazar</translation>
+        <translation>Найти и заменить</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="248"/>
         <source>Delete</source>
-        <translation>Borrar</translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="86"/>
         <location filename="../qml/pages/Favorites.qml" line="282"/>
         <source>Find radio stations</source>
-        <translation>Buscar estaciones de radio</translation>
+        <translation>Поиск радиостанций</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="266"/>
         <source>Favorites empty</source>
-        <translation>Limpiar favoritos</translation>
+        <translation>Нет любимых станций</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="267"/>
         <source>click here to add some favorites</source>
-        <translation>haz clic aquí para añadir favoritos</translation>
+        <translation>нажмите для добавления станций</translation>
     </message>
 </context>
 <context>
@@ -1104,72 +1104,72 @@
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="116"/>
         <source>Country</source>
-        <translation>País</translation>
+        <translation>Страна</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="117"/>
         <source>Tag</source>
-        <translation>Etiqueta</translation>
+        <translation>Метка</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="120"/>
         <source>Latest played</source>
-        <translation>Últimos reprod.</translation>
+        <translation>Что слушают сейчас</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="121"/>
         <source>Most played</source>
-        <translation>Más reprod.</translation>
+        <translation>Популярные</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="122"/>
         <source>Most liked</source>
-        <translation>Más populares</translation>
+        <translation>Самые любимые</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="140"/>
         <source>Search by tag</source>
-        <translation>Buscar por etiqueta</translation>
+        <translation>Искать по меткам</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="143"/>
         <source>Search by Latest played</source>
-        <translation>Buscar por los últimos reproducidos</translation>
+        <translation>Искать среди слушаемых сейчас</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="144"/>
         <source>Search by Most played</source>
-        <translation>Buscar por los más reproducidos</translation>
+        <translation>Искать с учетом частоты прослушивания</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="145"/>
         <source>Search by Most likes</source>
-        <translation>Buscar por los más populares</translation>
+        <translation>Искать с учетом оценки</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="118"/>
         <source>Name</source>
-        <translation>Nombre</translation>
+        <translation>Название</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="33"/>
         <source>Find radio station by</source>
-        <translation>Buscar estación por</translation>
+        <translation>Найти станцию по</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="141"/>
         <source>Search by name</source>
-        <translation>Buscar por nombre</translation>
+        <translation>Искать по имени</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="119"/>
         <source>New/changed</source>
-        <translation>Nuevo/modif.</translation>
+        <translation>Новые/исправленные</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="142"/>
         <source>Search by new/changed</source>
-        <translation>Buscar por nuevo/modif.</translation>
+        <translation>Искать с учетом времени правки</translation>
     </message>
 </context>
 <context>
@@ -1177,62 +1177,62 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="15"/>
         <source>Help</source>
-        <translation>Ayuda</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="33"/>
         <source>Opening webpage</source>
-        <translation>Abriendo página Web</translation>
+        <translation>Открытие веб-страницы</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="37"/>
         <source>Basics</source>
-        <translation>Básica</translation>
+        <translation>Основы</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="38"/>
         <source>Choose country by clicking the flag/name, then click the channel you want to listen to</source>
-        <translation>Elige el país haciendo clic en la bandera/nombre, después haz clic en el canal que quieres escuchar</translation>
+        <translation>Выберите страну, нажав ее название/флаг, затем выберите станцию, которую хотите слушать.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="40"/>
         <source>When playing you will see the name and country-flag of the current playing radio station at the bottom of the screen.</source>
-        <translation>En la parte inferior de la pantalla se mostrará el nombre y bandera del país de la estación de radio que se está reproduciendo.</translation>
+        <translation>Во время прослушивания радио в нижней части экрана отображается название и флаг страны текущей радиостанции.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="41"/>
         <source>You can change the country selection between list and icons by flicking down and select &apos;show as list&apos; alt. &apos;show as grid&apos;</source>
-        <translation>Puedes elegir entre lista o iconos a la hora de seleccionar el país, deslizando hacia abajo y seleccionando &apos;mostrar como lista&apos; o &apos;mostrar como cuadrícula&apos;</translation>
+        <translation>При поиске стран можно выбрать один из двух способов их отображения &apos;Показать списком&apos; или &apos;Показать флаги&apos;</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="43"/>
         <source>Searching</source>
-        <translation>Búsqueda</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="45"/>
         <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to search/filter the selection based on channel name</source>
-        <translation>Cuando haces clic en el país y accedes a la página de canales, puedes buscar/filtrar por nombre del canal si haces clic en la lupa, en la parte superior de la lista</translation>
+        <translation>После выбора страны вы попадете в список радиостанций. Значок лупы сверху позволяет искать/фильтровать станции по названиям.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="47"/>
         <source>Sleeptimer</source>
-        <translation>Temporizador</translation>
+        <translation>Таймер выключения</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="49"/>
         <source>Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing</source>
-        <translation>Desliza hacia abajo y selecciona el temporizador, después configura el tiempo en minutos que deseas que la radio esté funcionando</translation>
+        <translation>Откройте меню, выберите команду &apos;Таймер выключения&apos; и задайте время в минутах, когда радио должно отключиться.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="49"/>
         <source>More</source>
-        <translation>Más</translation>
+        <translation>Еще</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="50"/>
         <source>This help is a draft! It may be updated?! :-)</source>
-        <translation>¡Esta ayuda es un borrador! ¡¿Se puede actualizar?! :-)</translation>
+        <translation>Эта краткая справка неполна и может измениться :-)</translation>
     </message>
 </context>
 <context>
@@ -1240,7 +1240,7 @@
     <message>
         <location filename="../qml/pages/PlayerPanel.qml" line="57"/>
         <source>Opening webpage</source>
-        <translation type="unfinished">Abriendo página Web</translation>
+        <translation>Открытие веб-страницы</translation>
     </message>
 </context>
 <context>
@@ -1248,17 +1248,17 @@
     <message>
         <location filename="../qml/pages/PullMenu.qml" line="10"/>
         <source>Help</source>
-        <translation>Ayuda</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../qml/pages/PullMenu.qml" line="14"/>
         <source>About AllRadio</source>
-        <translation>Acerca de AllRadio</translation>
+        <translation>О программе AllRadio</translation>
     </message>
     <message>
         <location filename="../qml/pages/PullMenu.qml" line="18"/>
         <source>Sleep timer</source>
-        <translation>Temporizador</translation>
+        <translation>Таймер выключения</translation>
     </message>
 </context>
 <context>
@@ -1266,32 +1266,32 @@
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="167"/>
         <source>Listen</source>
-        <translation>Escuchar</translation>
+        <translation>Слушать</translation>
     </message>
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="179"/>
         <source>Add to favorites</source>
-        <translation>Añadir a favoritos</translation>
+        <translation>Добавить в любимые</translation>
     </message>
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="185"/>
         <source>Delete favourite</source>
-        <translation>Borrar favorito</translation>
+        <translation>Удалить любимую станцию</translation>
     </message>
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="196"/>
         <source>Sort by name</source>
-        <translation>Ordenar por nombre</translation>
+        <translation>Сортировать по названию</translation>
     </message>
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="202"/>
         <source>Sort by newest/changed</source>
-        <translation>Ordenar por los más nuevos/actualizados</translation>
+        <translation>Сортировать по времени правки</translation>
     </message>
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="209"/>
         <source>No radio stations!?</source>
-        <translation>¿¡Ninguna estación de radio!?</translation>
+        <translation>Нет станций?</translation>
     </message>
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="209"/>
@@ -1306,7 +1306,7 @@
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="210"/>
         <source>Loading radio stations...</source>
-        <translation>Cargando estaciones de radio...</translation>
+        <translation>Загрузка списка станций...</translation>
     </message>
 </context>
 <context>
@@ -1314,57 +1314,57 @@
     <message>
         <location filename="../qml/pages/Search.qml" line="18"/>
         <source>New or changed stations</source>
-        <translation>Estaciones nuevas o modif.</translation>
+        <translation>Новые или исправленные станции</translation>
     </message>
     <message>
         <location filename="../qml/pages/Search.qml" line="18"/>
         <source>Latest played stations</source>
-        <translation>Últimas estaciones reprod.</translation>
+        <translation>Слушаемые другими станции</translation>
     </message>
     <message>
         <location filename="../qml/pages/Search.qml" line="18"/>
         <source>Most played stations</source>
-        <translation>Estaciones más reprod.</translation>
+        <translation>Самые популярные станции</translation>
     </message>
     <message>
         <location filename="../qml/pages/Search.qml" line="18"/>
         <source>Most liked stations</source>
-        <translation>Estaciones más populares</translation>
+        <translation>Самые любимые станции</translation>
     </message>
     <message>
         <location filename="../qml/pages/Search.qml" line="72"/>
         <source>Unknown</source>
-        <translation>Desconocido</translation>
+        <translation>Неизвестно</translation>
     </message>
     <message>
         <location filename="../qml/pages/Search.qml" line="222"/>
         <source>Listen</source>
-        <translation>Escuchar</translation>
+        <translation>Слушать</translation>
     </message>
     <message>
         <location filename="../qml/pages/Search.qml" line="234"/>
         <source>Replace in favorites</source>
-        <translation>Reemplazar en favoritos</translation>
+        <translation>Заменить в списке любимых</translation>
     </message>
     <message>
         <location filename="../qml/pages/Search.qml" line="240"/>
         <source>Add to favorites</source>
-        <translation>Añadir a favoritos</translation>
+        <translation>Добавить в список любимых</translation>
     </message>
     <message>
         <location filename="../qml/pages/Search.qml" line="246"/>
         <source>Delete favourite</source>
-        <translation>Borrar favorito</translation>
+        <translation>Удалить любимую станцию</translation>
     </message>
     <message>
         <location filename="../qml/pages/Search.qml" line="255"/>
         <source>Search radio stations</source>
-        <translation>Buscar estaciones de radio</translation>
+        <translation>Поиск радиостанций</translation>
     </message>
     <message>
         <location filename="../qml/pages/Search.qml" line="256"/>
         <source>Enter (or change) text in searchfield</source>
-        <translation>Introduce (o cambia) el texto en el campo de búsqueda</translation>
+        <translation>Введите (исправьте) текст в поле поиска</translation>
     </message>
 </context>
 <context>
@@ -1372,32 +1372,32 @@
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="10"/>
         <source>Remaning time: </source>
-        <translation>Tiempo restante: </translation>
+        <translation>Осталось: </translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="10"/>
         <source> minutes</source>
-        <translation> minutos</translation>
+        <translation> минут(ы)</translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="10"/>
         <source>choose time: </source>
-        <translation>Tiempo seleccionado: </translation>
+        <translation>Задержка: </translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="35"/>
         <source>Change</source>
-        <translation>Cambiar</translation>
+        <translation>Изменить</translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="35"/>
         <source>Start</source>
-        <translation>Iniciar</translation>
+        <translation>Старт</translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="39"/>
         <source>Stop</source>
-        <translation>Detener</translation>
+        <translation>Стоп</translation>
     </message>
 </context>
 <context>
@@ -1405,7 +1405,7 @@
     <message>
         <location filename="../qml/pages/Tags.qml" line="43"/>
         <source>Most popular tags</source>
-        <translation>Etiquetas más populares</translation>
+        <translation>самые популярные метки</translation>
     </message>
 </context>
 </TS>

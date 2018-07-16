@@ -1,5 +1,5 @@
 import QtQuick 2.0
-import QtMultimedia 5.0
+import QtMultimedia 5.6
 import Sailfish.Silica 1.0
 import QtQuick.LocalStorage 2.0
 import "pages"
@@ -207,13 +207,13 @@ Audio {
             }
         }
 
-        onBufferProgressChanged: if (bufferProgress == 1) sloading = false //{play();sloading = false} //console.log(bufferProgress.toString())
+     //   onBufferProgressChanged: if (bufferProgress == 1) sloading = false //{play();sloading = false} //console.log(bufferProgress.toString())
 
         onStatusChanged: {
             console.log("STATUS" + status)
-            if (status == 6) sloading = false
+            if (status == 4) sloading = false
             //if (status == Audio.buffered) console.log("AUDIO BUFFERED")     //;streaming = true // Audio loaded and buffered
-             updateMprisMetadata(); //MPRIS
+            updateMprisMetadata(); //MPRIS
         }
 
     }

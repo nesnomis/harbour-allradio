@@ -42,7 +42,7 @@ Page {
 
         MouseArea {
             anchors.fill: logorow
-            onClicked: remorse.execute(qsTr("Opening github"), function() {Qt.openUrlExternally("https://github.com/nesnomis/harbour-allradio")}, 3000)
+            onClicked: remorse.execute(qsTr("Opening GitHub"), function() {Qt.openUrlExternally("https://github.com/nesnomis/harbour-allradio")}, 3000)
         }
 
         Text {
@@ -64,10 +64,10 @@ Page {
             textFormat: Text.StyledText
             font.pixelSize: Theme.fontSizeSmall
             horizontalAlignment: Text.AlignHCenter
-            text: "Copyright 2015-2017 - Niels Simonsen"
+            text: qsTr("Copyright") + "2015-2018 - Niels Simonsen"
                  /*   <p>License: <a href='http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt'>GPL v2.0</a><br>"
-                  + qsTr("Sourcecode is available on") + ": <a href='https://github.com/nesnomis/harbour-allradio'>github</a><br><p>"
-                 + qsTr("The radiostations are from") + ": <br><a href='http://www.radio-browser.info/'>Community Radio Browser</a></p>" */
+                  + qsTr("Source code available on") + ": <a href='https://github.com/nesnomis/harbour-allradio'>github</a><br><p>"
+                 + qsTr("The radiostations are from") + ": <br><a href='https://www.radio-browser.info/'>Community Radio Browser</a></p>" */
         }
 
         Separator {
@@ -110,7 +110,7 @@ Page {
             textFormat: Text.StyledText
             font.pixelSize: Theme.fontSizeSmall
             horizontalAlignment: Text.AlignHCenter
-            text: qsTr("AllRadio is GPL v.3 with the exception for JSONListModel and ValuePicker wich is licensed under MIT.")
+            text: qsTr("AllRadio is GPLv3 with the exception for JSONListModel and ValuePicker, which is MIT licensed.")
         }
 
         Row {
@@ -122,7 +122,7 @@ Page {
 
             IconButton {
                icon.source: "../allradio-data/images/gpl3.png"
-               onClicked: remorse.execute(qsTr("Opening GPL3"), function() {Qt.openUrlExternally("https://www.gnu.org/licenses/gpl-3.0-standalone.html")}, 3000)
+               onClicked: remorse.execute(qsTr("Opening GPLv3"), function() {Qt.openUrlExternally("https://www.gnu.org/licenses/gpl-3.0-standalone.html")}, 3000)
             }
 
             IconButton {
@@ -179,7 +179,7 @@ Page {
 
         MouseArea {
             anchors.fill: communityrow
-            onClicked: remorse.execute(qsTr("Opening Radio Community"), function() {Qt.openUrlExternally("http://www.radio-browser.info/")}, 3000)
+            onClicked: remorse.execute(qsTr("Opening Radio Community"), function() {Qt.openUrlExternally("https://www.radio-browser.info/")}, 3000)
         }
 
         Separator {
@@ -237,7 +237,7 @@ Page {
 
             IconButton {
                icon.source: "../allradio-data/images/paypal.png"
-               onClicked: remorse.execute(qsTr("Opening Paypal"), function() {Qt.openUrlExternally("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9KAZFTA26THEG")}, 3000)
+               onClicked: remorse.execute(qsTr("Opening PayPal"), function() {Qt.openUrlExternally("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9KAZFTA26THEG")}, 3000)
             }
 
         }
@@ -258,7 +258,7 @@ Page {
             anchors.right: parent.right
             anchors.rightMargin: Theme.paddingLarge
             color: Theme.highlightColor
-            text: "Changelog"
+            text: qsTr("Changelog")
             font.pixelSize: Theme.fontSizeLarge
         }
 
@@ -322,7 +322,7 @@ Page {
 - Fixed an unforseen bug/feature in script not allowing some stations to
 be played (such as Mdr Sachen Anhalt, Germany and probably more!?).
 Thank you <b>Blaubear1833</b> for making me aware of that!<br>
-- Corrected some swedish translations. Thank you <b>eson57</b>!</p>
+- Corrected some Swedish translations. Thank you <b>eson57</b>!</p>
 <p><b>version 1.4.2</b><br>
 - Added lockscreencontrol (MPRIS) for openRepos version<br>
 <p><b>version 1.4.1</b><br>
@@ -387,13 +387,13 @@ Thank you <b>Blaubear1833</b> for making me aware of that!<br>
 
 <p><b>version 1.2.2</b><br>
 - Major rewrite to prepare for filter search and sorting.<br>
-- Some more tweaking of appearance.</p>
+- Some more appearance tweaking.</p>
 
 <p><b>version 1.2.1</b><br>
 - Added Kosovo.<br>
-- Changed look on flags (Switzerland and Vatican).<br>
+- Changed look of flags (Switzerland and The Vatican).<br>
 - Changed Player behavior (hopefully looks and works nicer).<br>
-- Small tweaks here and there... :)<br>
+- Small tweaks here and there… :)<br>
 - Search and sort will have to wait (sorry).</p>
 
 <p><b>Initial release 1.2</b></p>"
