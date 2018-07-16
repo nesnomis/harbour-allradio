@@ -27,6 +27,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/About.qml" line="67"/>
+        <source>Copyright</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/About.qml" line="113"/>
         <source>AllRadio is GPLv3 with the exception for JSONListModel and ValuePicker, which is MIT licensed.</source>
         <translation type="unfinished"></translation>
@@ -69,6 +74,11 @@
     <message>
         <location filename="../qml/pages/About.qml" line="240"/>
         <source>Opening PayPal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="261"/>
+        <source>Changelog</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
