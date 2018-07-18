@@ -24,22 +24,22 @@
     <message>
         <location filename="../qml/pages/About.qml" line="45"/>
         <source>Opening GitHub</source>
-        <translation type="unfinished"></translation>
+        <translation>Открытие страницы GitHub</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="67"/>
         <source>Copyright</source>
-        <translation type="unfinished"></translation>
+        <translation>Разработка </translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="113"/>
         <source>AllRadio is GPLv3 with the exception for JSONListModel and ValuePicker, which is MIT licensed.</source>
-        <translation type="unfinished"></translation>
+        <translation>AllRadio распространяется на условиях GPLv3 за исключением компонентов JSONListModel и ValuePicker, подпадающих под лицензию MIT.</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="125"/>
         <source>Opening GPLv3</source>
-        <translation type="unfinished"></translation>
+        <translation>Открытие страницы GPLv3</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="130"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="223"/>
         <source>If you like this app, and would like to make a donation (for a beer or a cup of coffee?! :) ..)</source>
-        <translation>Если вам понравилась эта программа, и вы хотите поддержать ее автора... (Как насчет кружечки пива или чашки кофе?! :) )</translation>
+        <translation>Если вам понравилась эта программа, и вы хотите поддержать ее автора... ;)</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="235"/>
@@ -74,12 +74,12 @@
     <message>
         <location filename="../qml/pages/About.qml" line="240"/>
         <source>Opening PayPal</source>
-        <translation type="unfinished"></translation>
+        <translation>Открытие страницы PayPal</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="261"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>История</translation>
     </message>
 </context>
 <context>
@@ -1154,7 +1154,7 @@
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="33"/>
         <source>Find radio station by</source>
-        <translation>Найти станцию по</translation>
+        <translation>Поиск станций</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="141"/>
@@ -1164,7 +1164,7 @@
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="119"/>
         <source>New/changed</source>
-        <translation>Новые/исправленные</translation>
+        <translation>Новые</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="142"/>
@@ -1192,7 +1192,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="38"/>
         <source>Choose country by clicking the flag/name, then click the channel you want to listen to</source>
-        <translation>Выберите страну, нажав ее название/флаг, затем выберите станцию, которую хотите слушать.</translation>
+        <translation>Выберите страну коснувшись ее названия или флага, затем выберите радиостанцию, которую хотите слушать.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="40"/>
@@ -1212,7 +1212,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="45"/>
         <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to search/filter the selection based on channel name</source>
-        <translation>После выбора страны вы попадете в список радиостанций. Значок лупы сверху позволяет искать/фильтровать станции по названиям.</translation>
+        <translation>После выбора страны вы попадете в список радиостанций. Значок лупы сверху позволяет искать и фильтровать станции по названиям.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="47"/>
