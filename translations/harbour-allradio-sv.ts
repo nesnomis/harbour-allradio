@@ -24,22 +24,22 @@
     <message>
         <location filename="../qml/pages/About.qml" line="45"/>
         <source>Opening GitHub</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppnar GitHub</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="67"/>
         <source>Copyright</source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="113"/>
         <source>AllRadio is GPLv3 with the exception for JSONListModel and ValuePicker, which is MIT licensed.</source>
-        <translation type="unfinished"></translation>
+        <translation>AllRadio är GPLv3 med undantag för JSONListModel och ValuePicker, som är MIT licensierade.</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="125"/>
         <source>Opening GPLv3</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppnar GPLv3</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="130"/>
@@ -54,7 +54,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="182"/>
         <source>Opening Radio Community</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppnar radiogemenskapen</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="201"/>
@@ -74,12 +74,12 @@
     <message>
         <location filename="../qml/pages/About.qml" line="240"/>
         <source>Opening PayPal</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppnar PayPal</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="261"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändringslogg</translation>
     </message>
 </context>
 <context>
@@ -87,58 +87,58 @@
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="6"/>
         <source>Add or share your own favorite:</source>
-        <translation type="unfinished"></translation>
+        <translation>Lägg till eller dela din egen favorit:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="44"/>
         <source>Radio station name and stream url is needed to save or test stream!</source>
-        <translation type="unfinished"></translation>
+        <translation>Radiostationens namn eller strömningsadress krävs för att spara eller testa strömmen!</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="66"/>
         <location filename="../qml/pages/AddOwnRadio.qml" line="72"/>
         <source>Name</source>
-        <translation type="unfinished">Namn</translation>
+        <translation>Namn</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="78"/>
         <location filename="../qml/pages/AddOwnRadio.qml" line="84"/>
         <source>Stream url</source>
-        <translation type="unfinished"></translation>
+        <translation>Strömnings-URL</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="91"/>
         <location filename="../qml/pages/AddOwnRadio.qml" line="97"/>
         <source>Homepage</source>
-        <translation type="unfinished"></translation>
+        <translation>Hemsida</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="107"/>
         <location filename="../qml/pages/AddOwnRadio.qml" line="115"/>
         <source>Country</source>
-        <translation type="unfinished">Land</translation>
+        <translation>Land</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="140"/>
         <location filename="../qml/pages/AddOwnRadio.qml" line="147"/>
         <source>Language</source>
-        <translation type="unfinished"></translation>
+        <translation>Språk</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="171"/>
         <location filename="../qml/pages/AddOwnRadio.qml" line="178"/>
         <source>Tags (separete by &apos;,&apos; (eg: &apos;rock,jazz&apos;)</source>
-        <translation type="unfinished"></translation>
+        <translation>Taggar (separerade med kommatecken, exempel: rock,jazz)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="185"/>
         <source>Search by tag</source>
-        <translation type="unfinished">Sök via tagg</translation>
+        <translation>Sök via tagg</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="196"/>
         <source>Test radio station</source>
-        <translation type="unfinished"></translation>
+        <translation>Testa radiostation</translation>
     </message>
 </context>
 <context>
@@ -439,7 +439,7 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="133"/>
         <source>Afghanistan</source>
-        <translation type="unfinished"></translation>
+        <translation>Afghanistan</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="134"/>
@@ -459,7 +459,7 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="137"/>
         <source>Antigua and Barbuda</source>
-        <translation type="unfinished"></translation>
+        <translation>Antigua och Barbuda</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="138"/>
@@ -494,7 +494,7 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="144"/>
         <source>Basque country</source>
-        <translation type="unfinished"></translation>
+        <translation>Baskien</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="145"/>
@@ -509,12 +509,12 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="147"/>
         <source>Belize</source>
-        <translation type="unfinished"></translation>
+        <translation>Belize</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="148"/>
         <source>Bolivia</source>
-        <translation type="unfinished"></translation>
+        <translation>Bolivia</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="149"/>
@@ -524,7 +524,7 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="150"/>
         <source>Botswana</source>
-        <translation type="unfinished"></translation>
+        <translation>Botswana</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="151"/>
@@ -539,7 +539,7 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="153"/>
         <source>Burkina Faso</source>
-        <translation type="unfinished"></translation>
+        <translation>Burkina Faso</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="154"/>
@@ -624,7 +624,7 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="170"/>
         <source>Ethiopia</source>
-        <translation type="unfinished"></translation>
+        <translation>Etiopien</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="171"/>
@@ -759,7 +759,7 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="197"/>
         <source>Laos</source>
-        <translation type="unfinished"></translation>
+        <translation>Laos</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="198"/>
@@ -769,7 +769,7 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="199"/>
         <source>Lebanon</source>
-        <translation type="unfinished"></translation>
+        <translation>Libanon</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="200"/>
@@ -804,7 +804,7 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="206"/>
         <source>Mauritania</source>
-        <translation type="unfinished"></translation>
+        <translation>Mauritanien</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="207"/>
@@ -909,7 +909,7 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="227"/>
         <source>San Marino</source>
-        <translation type="unfinished"></translation>
+        <translation>San Marino</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="228"/>
@@ -949,7 +949,7 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="235"/>
         <source>Sri Lanka</source>
-        <translation type="unfinished"></translation>
+        <translation>Sri Lanka</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="236"/>
@@ -974,7 +974,7 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="240"/>
         <source>Thailand</source>
-        <translation type="unfinished"></translation>
+        <translation>Thailand</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="241"/>
@@ -994,7 +994,7 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="244"/>
         <source>Uganda</source>
-        <translation type="unfinished"></translation>
+        <translation>Uganda</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="245"/>
@@ -1240,7 +1240,7 @@
     <message>
         <location filename="../qml/pages/PlayerPanel.qml" line="57"/>
         <source>Opening webpage</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppnar webbsida</translation>
     </message>
 </context>
 <context>
@@ -1281,12 +1281,12 @@
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="196"/>
         <source>Sort by name</source>
-        <translation type="unfinished"></translation>
+        <translation>Sortera efter namn</translation>
     </message>
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="202"/>
         <source>Sort by newest/changed</source>
-        <translation type="unfinished"></translation>
+        <translation>Sortera efter nyast/ändrad</translation>
     </message>
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="209"/>
