@@ -207,7 +207,7 @@ Page {
             ViewPlaceholder {
                 enabled: listView.count === 0 //|| jsonModel1.jsonready
                 text: jsonModel1.ready ? qsTr("No radio stations!?") : qsTr("Community Browser Radio")
-                hintText: jsonModel1.ready ? qsTr("") : qsTr("Loading radio stations...")
+                hintText: jsonModel1.ready ? qsTr("") : qsTr("Loading radio stations…")
             }
     }
     PlayerPanel { id:playerPanel;open: searching ? false : true}
