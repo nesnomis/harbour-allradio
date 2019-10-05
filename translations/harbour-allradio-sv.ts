@@ -1175,62 +1175,62 @@
 <context>
     <name>Help</name>
     <message>
-        <location filename="../qml/pages/Help.qml" line="15"/>
+        <location filename="../qml/pages/Help.qml" line="19"/>
         <source>Help</source>
         <translation>Hjälp</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="33"/>
+        <location filename="../qml/pages/Help.qml" line="29"/>
         <source>Opening webpage</source>
         <translation>Öppnar websida</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="37"/>
+        <location filename="../qml/pages/Help.qml" line="33"/>
         <source>Basics</source>
         <translation>Grunderna</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="38"/>
+        <location filename="../qml/pages/Help.qml" line="34"/>
         <source>Choose country by clicking the flag/name, then click the channel you want to listen to</source>
         <translation>Välj land genom att trycka på flaggan/namnet, tryck sedan på den kanal du vill lyssna till</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="40"/>
+        <location filename="../qml/pages/Help.qml" line="36"/>
         <source>When playing you will see the name and country-flag of the current playing radio station at the bottom of the screen.</source>
         <translation>Under uppspelning ser du radiostationens namn och flagga i botten på skärmen.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="41"/>
+        <location filename="../qml/pages/Help.qml" line="37"/>
         <source>You can change the country selection between list and icons by flicking down and select &apos;show as list&apos; alt. &apos;show as grid&apos;</source>
         <translation>Du kan välja att se länderna som ikoner eller lista genom att dra ner toppmenyn och välja &apos;Visa som lista&apos; eller &apos;Visa som ikoner&apos;</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="43"/>
+        <location filename="../qml/pages/Help.qml" line="39"/>
         <source>Searching</source>
         <translation>Sökning</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="45"/>
+        <location filename="../qml/pages/Help.qml" line="41"/>
         <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to search/filter the selection based on channel name</source>
         <translation>När du har valt land och tryckt in dig på kanalerna, kan du trycka på förstoringsglaset i toppen av skärmen för att söka/filtrera stationsurvalet, baserat på stationsnamn</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="47"/>
+        <location filename="../qml/pages/Help.qml" line="43"/>
         <source>Sleeptimer</source>
         <translation>Insomningstimer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="49"/>
+        <location filename="../qml/pages/Help.qml" line="45"/>
         <source>Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing</source>
         <translation>Dra ner toppmenyn och välj insomningstimer, ställ sedan in tiden i det antal minuter du vill ha innan radion avslutar uppspelningen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="49"/>
+        <location filename="../qml/pages/Help.qml" line="45"/>
         <source>More</source>
         <translation>Annat</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="50"/>
+        <location filename="../qml/pages/Help.qml" line="46"/>
         <source>This help is a draft! It may be updated?! :-)</source>
         <translation>Denna hjälp är ett utkast! Den kan bli uppdaterad!? :-)</translation>
     </message>

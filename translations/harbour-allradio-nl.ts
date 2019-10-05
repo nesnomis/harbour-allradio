@@ -1175,62 +1175,62 @@
 <context>
     <name>Help</name>
     <message>
-        <location filename="../qml/pages/Help.qml" line="15"/>
+        <location filename="../qml/pages/Help.qml" line="19"/>
         <source>Help</source>
         <translation>Hulp</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="33"/>
+        <location filename="../qml/pages/Help.qml" line="29"/>
         <source>Opening webpage</source>
         <translation>Bezig met openen van webpagina</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="37"/>
+        <location filename="../qml/pages/Help.qml" line="33"/>
         <source>Basics</source>
         <translation>Basis</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="38"/>
+        <location filename="../qml/pages/Help.qml" line="34"/>
         <source>Choose country by clicking the flag/name, then click the channel you want to listen to</source>
         <translation>Kies een land door te tikken op de vlag/naam en tik daarna op het kanaal dat je wil beluisteren</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="40"/>
+        <location filename="../qml/pages/Help.qml" line="36"/>
         <source>When playing you will see the name and country-flag of the current playing radio station at the bottom of the screen.</source>
         <translation>Tijdens het afspelen worden de naam landsvlag van het huidige radiostation weergegeven onderaan het scherm.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="41"/>
+        <location filename="../qml/pages/Help.qml" line="37"/>
         <source>You can change the country selection between list and icons by flicking down and select &apos;show as list&apos; alt. &apos;show as grid&apos;</source>
         <translation>Je kan in de landselectie kiezen tussen lijst en pictogrammen door omlaag te vegen en te kiezen voor &apos;weergeven als lijst&apos; of &apos;weergeven als raster&apos;</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="43"/>
+        <location filename="../qml/pages/Help.qml" line="39"/>
         <source>Searching</source>
         <translation>Bezig met zoeken</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="45"/>
+        <location filename="../qml/pages/Help.qml" line="41"/>
         <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to search/filter the selection based on channel name</source>
         <translation>Als je op het land hebt getikt en je je op de kanalenpagina bevindt kan je klikken op het vergrootglas bovenaan de lijst om te zoeken/filteren</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="47"/>
+        <location filename="../qml/pages/Help.qml" line="43"/>
         <source>Sleeptimer</source>
         <translation>Slaaptimer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="49"/>
+        <location filename="../qml/pages/Help.qml" line="45"/>
         <source>Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing</source>
         <translation>Veeg omlaag en selecteer slaaptimer. Stel dan de tijd in in minuten wanneer de radio moet stoppen met afspelen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="49"/>
+        <location filename="../qml/pages/Help.qml" line="45"/>
         <source>More</source>
         <translation>Meer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="50"/>
+        <location filename="../qml/pages/Help.qml" line="46"/>
         <source>This help is a draft! It may be updated?! :-)</source>
         <translation>Deze hulpsectie is een werk in uitvoering! Het kan worden bijgewerkt?! :-)</translation>
     </message>
