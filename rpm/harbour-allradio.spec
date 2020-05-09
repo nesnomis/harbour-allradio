@@ -16,7 +16,7 @@ Summary:    AllRadio
 Version:    1.6.0
 Release:    1
 Group:      Qt/Qt
-License:    GPL2.0
+License:    GPLv3
 URL:        http://example.org/
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-allradio.yaml
