@@ -1175,62 +1175,62 @@
 <context>
     <name>Help</name>
     <message>
-        <location filename="../qml/pages/Help.qml" line="15"/>
+        <location filename="../qml/pages/Help.qml" line="19"/>
         <source>Help</source>
         <translation>Aiuto</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="33"/>
+        <location filename="../qml/pages/Help.qml" line="29"/>
         <source>Opening webpage</source>
         <translation>Apro pagina web</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="37"/>
+        <location filename="../qml/pages/Help.qml" line="33"/>
         <source>Basics</source>
         <translation>Le basi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="38"/>
+        <location filename="../qml/pages/Help.qml" line="34"/>
         <source>Choose country by clicking the flag/name, then click the channel you want to listen to</source>
         <translation>Scegli il paese premendo sulla bandiera o il nome, quindi premi sul canale che vuoi ascoltare</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="40"/>
+        <location filename="../qml/pages/Help.qml" line="36"/>
         <source>When playing you will see the name and country-flag of the current playing radio station at the bottom of the screen.</source>
         <translation>Durante la riproduzione vederai in fondo allo schermo il nome e la bandiera del paese dell&apos;attuale stazione radio.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="41"/>
+        <location filename="../qml/pages/Help.qml" line="37"/>
         <source>You can change the country selection between list and icons by flicking down and select &apos;show as list&apos; alt. &apos;show as grid&apos;</source>
         <translation>Puoi cambiare la selezione del paese tra lista ed icone, scorrendo in basso il menu e scegliendo &apos;Mostra come lista&apos; o &apos;Mostra come griglia&apos;</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="43"/>
+        <location filename="../qml/pages/Help.qml" line="39"/>
         <source>Searching</source>
         <translation>Ricerca</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="45"/>
+        <location filename="../qml/pages/Help.qml" line="41"/>
         <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to search/filter the selection based on channel name</source>
         <translation>Una volta premuto sul paese ed andato nella pagina dei canali, puoi premere sulla lente d&apos;ingrandimento in cima alla lista per cercare/filtrare la selezione in base al nome del canale</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="47"/>
+        <location filename="../qml/pages/Help.qml" line="43"/>
         <source>Sleeptimer</source>
         <translation>Tempo di spegnimento</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="49"/>
+        <location filename="../qml/pages/Help.qml" line="45"/>
         <source>Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing</source>
         <translation>Scorri in basso il menu e scegli Tempo di spegnimenti, quindi imposta il numero di minuti dopo i quali la radio si spegnerà</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="49"/>
+        <location filename="../qml/pages/Help.qml" line="45"/>
         <source>More</source>
         <translation>Altro</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="50"/>
+        <location filename="../qml/pages/Help.qml" line="46"/>
         <source>This help is a draft! It may be updated?! :-)</source>
         <translation>Questa guida è una bozza! Può essere aggiornata!? :)</translation>
     </message>

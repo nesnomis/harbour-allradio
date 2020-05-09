@@ -7,9 +7,13 @@ Page {
 
     SilicaFlickable {
         anchors.fill: parent
-        contentHeight: header.height + text.height + Theme.paddingLarge
+        contentHeight: column.height + Theme.paddingLarge
         contentWidth: parent.width
         VerticalScrollDecorator {}
+        Column {
+            id: column
+            width: parent.width
+
             PageHeader {
                 id: header
                 title: qsTr("Help")
@@ -17,16 +21,8 @@ Page {
 
             Text {
                 id: text
-                anchors {
-                    top: parent.top
-                    left: parent.left
-                    right: parent.right
-                    leftMargin: 20
-                    rightMargin: 20
-                    topMargin: 40
-                }
-
-                width: parent.width
+                x: Theme.horizontalPageMargin
+                width: parent.width - 2*x
                 wrapMode: Text.WordWrap
                 color: Theme.primaryColor
                 linkColor: Theme.highlightColor
@@ -52,5 +48,6 @@ Page {
 
 
             }
+        }
     }
 }
