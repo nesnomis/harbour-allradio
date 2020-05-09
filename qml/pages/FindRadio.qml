@@ -99,7 +99,7 @@ Page {
                source: "image://theme/icon-m-right"
             }
 
-            Image {
+            Icon {
                id: icon
                height: parent.height / 2
                fillMode: Image.PreserveAspectFit
