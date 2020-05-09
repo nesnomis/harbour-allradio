@@ -24,22 +24,22 @@
     <message>
         <location filename="../qml/pages/About.qml" line="45"/>
         <source>Opening GitHub</source>
-        <translation type="unfinished"></translation>
+        <translation>Abriendo Github</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="67"/>
         <source>Copyright</source>
-        <translation type="unfinished"></translation>
+        <translation>Derechos de autor</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="113"/>
         <source>AllRadio is GPLv3 with the exception for JSONListModel and ValuePicker, which is MIT licensed.</source>
-        <translation type="unfinished"></translation>
+        <translation>AllRadio tiene licencia GPLv3 a excepción de JSONListModel y ValuePicker, que tienen licencia MIT.</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="125"/>
         <source>Opening GPLv3</source>
-        <translation type="unfinished"></translation>
+        <translation>Abriendo GPLv3</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="130"/>
@@ -74,12 +74,12 @@
     <message>
         <location filename="../qml/pages/About.qml" line="240"/>
         <source>Opening PayPal</source>
-        <translation type="unfinished"></translation>
+        <translation>Abriendo PayPal</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="261"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>Registro de cambios</translation>
     </message>
 </context>
 <context>
@@ -1240,7 +1240,7 @@
     <message>
         <location filename="../qml/pages/PlayerPanel.qml" line="57"/>
         <source>Opening webpage</source>
-        <translation type="unfinished">Abriendo página Web</translation>
+        <translation>Abriendo página Web</translation>
     </message>
 </context>
 <context>
