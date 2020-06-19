@@ -111,7 +111,7 @@ Dialog {
                 focus: false;
 
                 onClicked:  playerPanel.open = false
-                onTextChanged: if (text.length > 1)  {first = text.charAt(0);getIt.source = "http://www.radio-browser.info/webservice/json/countries/"+text;countryMenu.show(countryCombo)} else {first="";getIt.source = ""; countryMenu.hide();getIt.model.clear()}
+                onTextChanged: if (text.length > 1)  {first = text.charAt(0);getIt.source = "https://www.radio-browser.info/webservice/json/countries/"+text;countryMenu.show(countryCombo)} else {first="";getIt.source = ""; countryMenu.hide();getIt.model.clear()}
                 label: focus ? qsTr("Country") : ""
             }
 
@@ -143,7 +143,7 @@ Dialog {
                 EnterKey.onClicked: {focus = false;languageMenu.hide();sectionField.focus = true}
                 focus: false;
                 onClicked:  playerPanel.open = false
-                onTextChanged: if (text.length > 1)  {first=text.charAt(0);getIt.source = "http://www.radio-browser.info/webservice/json/languages/"+text;languageMenu.show(languageCombo)} else {getIt.source = "";first="";getIt.model.clear(); languageMenu.hide()}
+                onTextChanged: if (text.length > 1)  {first=text.charAt(0);getIt.source = "https://www.radio-browser.info/webservice/json/languages/"+text;languageMenu.show(languageCombo)} else {getIt.source = "";first="";getIt.model.clear(); languageMenu.hide()}
                 label: focus ? qsTr("Language") : ""
             }
 
@@ -168,14 +168,14 @@ Dialog {
                 TextField {
                     id: sectionField
                     width: parent.width - tagButton.width
-                    placeholderText: qsTr("Tags (separete by ',' (eg: 'rock,jazz')")
+                    placeholderText: qsTr("Tags (separate by ',' (e.g: 'rock,jazz')")
                     inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
                     //inputMethodHints: Qt.Im
                     EnterKey.iconSource: "image://theme/icon-m-enter-next"
                     EnterKey.onClicked: {focus = false;testButton.focus = true}
                     focus: false;
                     onClicked:  playerPanel.open = false
-                    label: focus ? qsTr("Tags (separete by ',' (eg: 'rock,jazz')") : ""
+                    label: focus ? qsTr("Tags (separate by ',' (e.g: 'rock,jazz')") : ""
                 }
                 IconButton {
                     id: tagButton
