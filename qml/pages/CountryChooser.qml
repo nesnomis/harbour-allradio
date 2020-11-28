@@ -32,13 +32,13 @@ Page {
 
      /*   JSONListModel {
             id: jsonModel1
-            source: internal ? "" : "http://www.radio-browser.info/webservice/json/countries"  //?hidebroken=true&order=stationcount"
+            source: internal ? "" : "http://all.api.radio-browser.info/json/countries"  //?hidebroken=true&order=stationcount"
             query: internal ? "$[*]" : "$[?(@.stationcount>0)]"
             get: false
         } */
 
-        model: internal ? countryModel : getCountries.model
-
+      //  model: internal ? countryModel : getCountries.model
+model: internal ? countryModel : getCountries.model
         header: PageHeader {
             title: !internal ? qsTr("Countries") : "Internal (listenlive.eu)"
            // height: choose._menuOpen ? choose.contentHeight + choose.height : choose.height
@@ -63,7 +63,7 @@ Page {
             Image {
                 id: myIcon
                 anchors.horizontalCenter: parent.horizontalCenter
-                source: model.coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+model.value.toLowerCase()+".png" //internal ? coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+coid+".png" : "../allradio-data/images/"+value.toLowerCase()+".png"
+                source: model.coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+model.name.toLowerCase()+".png" //internal ? coid == "0" ? "../allradio-data/images/allradio.png" : "../allradio-data/images/"+coid+".png" : "../allradio-data/images/"+value.toLowerCase()+".png"
                 width: parent.width / 1.5
                 height: parent.width / 1.5
                 opacity: 0.6
@@ -72,7 +72,7 @@ Page {
 
             Text {
                 anchors { top: myIcon.bottom; horizontalCenter: parent.horizontalCenter; }
-                text: internal ? grid.model.countryname(index) : findCountry(model.value.toLowerCase()) ? findCountry(model.value.toLowerCase()) : model.value
+                text: internal ? grid.model.countryname(index) : findCountry(model.name.toLowerCase()) ? findCountry(model.name.toLowerCase()) : model.name
                 color: highlighted ? Theme.highlightColor : Theme.primaryColor
                 font.pixelSize: Theme.fontSizeMedium
                 elide: Text.ElideMiddle
@@ -81,8 +81,8 @@ Page {
 
             onClicked: {
                 favorites = false
-                ctitle = internal ? list.model.countryname(index) : findCountry(model.value.toLowerCase()) ? findCountry(model.value.toLowerCase()) : ""
-                country = internal ? coid : model.value.toLowerCase()
+                ctitle = internal ? list.model.countryname(index) : findCountry(model.name.toLowerCase()) ? findCountry(model.name.toLowerCase()) : ""
+                country = internal ? coid : model.name.toLowerCase()
                 filter = ""
                 key = internal ? "title" : "name"
                 window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml")) //coid == "0" ? window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml")) : window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml")) //internal ? coid == "0" ? window.pageStack.push(Qt.resolvedUrl("AddOwnRadio.qml")) : window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml")) : window.pageStack.push(Qt.resolvedUrl("RadioPlayer.qml"))

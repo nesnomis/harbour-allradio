@@ -9,7 +9,7 @@ Page {
 
  /*   JSONListModel {
         id: getTags
-        source: "http://www.radio-browser.info/webservice/json/tags"
+        source: "http://all.api.radio-browser.info/json/tags"
         query: "$[?(@.stationcount>6)]"
     } */
 
@@ -57,7 +57,7 @@ Page {
                 model: getTags.model
                 Text {
                     id: tagtext
-                    text: model.value;
+                    text: model.name;
 
                     font.pixelSize: (model.stationcount / 330) * (Theme.fontSizeHuge - Theme.fontSizeSmall) + Theme.fontSizeSmall
 
@@ -71,7 +71,7 @@ Page {
                         anchors.fill: parent
                         onPressedChanged: pressed ? tagtext.color = Theme.highlightColor : tagtext.color = Theme.primaryColor
                         onClicked: window.pageStack.push(Qt.resolvedUrl("Search.qml"),
-                                                                    {searchterm: model.value,searchby: "bytag"})
+                                                                    {searchterm: model.name,searchby: "bytag"})
                     }
                 }
             }

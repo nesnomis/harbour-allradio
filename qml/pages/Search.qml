@@ -12,6 +12,7 @@ Page {
     property bool searching: false
     property string oldsource: ""
     property alias source: jsonModel1.source
+    //property alias source: jsonModel1.url
     property bool showlogo: searchby === "lastchange" || searchby === "mostclick" || searchby === "lastplay" || searchby === "mostvote" ? true : false
     property bool showsearch: searchby === "bytag" || searchby === "lastchange"  || searchby === "lastplay" || searchby === "mostclick" || searchby === "mostvote" ? false : true
     property string showsection: searchby === "lastchange" || searchby === "mostclick" || searchby === "lastplay" || searchby === "mostvote" ? "" : "country"
@@ -97,11 +98,11 @@ Page {
                 EnterKey.iconSource: "image://theme/icon-m-enter-close"
                 EnterKey.onClicked: {focus = false;searching= false}
                 focus: true
-                onTextChanged: if (text.length > 1) jsonModel1.source = "http://www.radio-browser.info/webservice/json/stations/"+searchby+"/"+text; else {jsonModel1.source = "";focus=true;jsonModel1.model.clear()}
+                onTextChanged: if (text.length > 1) jsonModel1.source = "http://all.api.radio-browser.info/json/stations/"+searchby+"/"+text; else {jsonModel1.source = "";focus=true;jsonModel1.model.clear()}
                 onClicked: {listView.currentIndex = -1;showPlayer = false;searching=true}
             }
         }
-
+//http://all.api.radio-browser.info/json/tags/rock
         property int retning: 0
         onContentYChanged: {
             if (!searching && atYBeginning) showPlayer = true
@@ -138,12 +139,12 @@ Page {
         Image {
            id: speakerIcon
            height: parent.height / 2
-           visible: streaming && currentid == model.id ? true : false
+           visible: streaming && currentid == model.stationuuid ? true : false
            fillMode: Image.PreserveAspectFit
            anchors.verticalCenter: parent.verticalCenter
            anchors.left: logo2.right
            anchors.leftMargin: Theme.paddingMedium
-           source: streaming && currentid == model.id ? "image://theme/icon-m-speaker?" + Theme.highlightColor : ""
+           source: streaming && currentid == model.stationuuid ? "image://theme/icon-m-speaker?" + Theme.highlightColor : ""
         }
 
 
@@ -207,7 +208,8 @@ Page {
          }
 
         onClicked: {
-            internal ? ps(source) : cps(model.id)
+            //internal ? ps(source) : cps(model.stationuuid)
+            internal ? ps(source) : cps(model.stationuuid)
             radioStation = internal ? title : name
             if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
             else if (favorites) picon = "../allradio-data/images/"+icon+".png"; else picon = "../allradio-data/images/"+country.toLowerCase()+".png"
@@ -221,7 +223,7 @@ Page {
                  visible: true
                  text: qsTr("Listen")
                  onClicked: {
-                     internal ? ps(source) : cps(model.id)
+                     internal ? ps(source) : cps(model.stationuuid)
                      radioStation = internal ? title : name
                      if (favorites && icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database
                      else if (favorites) picon = "../allradio-data/images/"+icon+".png"; else picon = "../allradio-data/images/"+country.toLowerCase()+".png"
@@ -232,13 +234,13 @@ Page {
                  id:mrep
                  visible: oldsource !== "" ? true : false
                  text: qsTr("Replace in favorites")  // source, title, site, section, icon, old, codec, bitrate
-                 onClicked: {updateDb(oldsource,id,lastchangetime,url,name,homepage,tags,country,codec,bitrate);window.pageStack.pop()}
+                 onClicked: {updateDb(oldsource,stationuuid,lastchangetime,url,name,homepage,tags,country,codec,bitrate);window.pageStack.pop()}
                  }
              MenuItem {
                  id:madd
                  visible: !mrep.visible
                  text: qsTr("Add to favorites")  // id, lastchangetime, source, title, site, tags, icon, codec, bitrate
-                 onClicked: addDb(id,lastchangetime,url,name,homepage,tags,country,codec,bitrate)
+                 onClicked: addDb(stationuuid,lastchangetime,url,name,homepage,tags,country,codec,bitrate)
                  }
              MenuItem {
                  id:mdelete

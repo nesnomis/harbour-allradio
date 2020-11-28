@@ -88,7 +88,7 @@ Page {
             Image {
                id: logo
                height: parent.height / 2
-               //visible: streaming && currentid == model.id ? true : false
+               //visible: streaming && currentid == model.stationuuid ? true : false
                fillMode: Image.PreserveAspectFit
                anchors.verticalCenter: parent.verticalCenter
                anchors.left: parent.left
@@ -174,7 +174,7 @@ Page {
                 Label {
                     id: codlabel
                      text: model.codec ? codec == "UNKNOWN" ? "" : codec : ""     // internal ? "" : codec == "UNKNOWN" ? "" : codec
-                     visible: model.id > 0 ? true : false
+                     visible: model.stationuuid > 0 ? true : false
                      color: highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                      anchors.verticalCenter: parent.verticalCenter
                      anchors.right: bit.left
@@ -185,7 +185,7 @@ Page {
 
                 Label {
                      id: bit
-                     text: model.id == 0 ? "old" : bitrate == 0 && codec == "UNKNOWN" ? "UNKNOWN" : bitrate == 0 ? "" : bitrate   // bitrate == 0 && codec == "UNKNOWN" ? "UNKNOWN" : bitrate == 0 ? "" : bitrate
+                     text: model.stationuuid == 0 ? "old" : bitrate == 0 && codec == "UNKNOWN" ? "UNKNOWN" : bitrate == 0 ? "" : bitrate   // bitrate == 0 && codec == "UNKNOWN" ? "UNKNOWN" : bitrate == 0 ? "" : bitrate
                      color: highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                      anchors.right: parent.right
                      anchors.rightMargin: Theme.paddingMedium
@@ -219,13 +219,12 @@ Page {
                              website = (Qt.resolvedUrl(site))
                          }
                      }
-
                  /*    MenuItem {
                          id:mauto
                          visible: true
                          text: qsTr("Auto play on start")
                          onClicked: {
-                             //internal ? ps(source) : model.id == 0 ? ps(source) : cps(model.id)
+                             //internal ? ps(source) : model.stationuuid == 0 ? ps(source) : cps(model.stationuuid)
                              //radioStation = title
                              //if (icon == "0") picon = "../allradio-data/images/allradio.png"
                              //else if (icon.search(".png")>0) picon = icon.toLowerCase(); // The old save in database

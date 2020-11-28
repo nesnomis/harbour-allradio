@@ -3,6 +3,7 @@ import QtQuick 2.0
 Item {
     property string source: ""
     property variant simple
+    property variant simpletmp
     property string json: ""
     property bool ready: false
     property bool get: true
@@ -25,7 +26,13 @@ Item {
         if ( json === "" )
             return;
 
-        simple = eval('new Object(' + json + ')');ready = true;
+        simpletmp = eval('new Object(' + json + ')');
+        if (Array.isArray(simpletmp)) {
+            simple = simpletmp[0];
+        } else {
+            simple = simpletmp;
+        }
+        ready = true;
     }
 }
 

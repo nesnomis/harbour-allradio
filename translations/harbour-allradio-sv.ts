@@ -10,14 +10,14 @@
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="63"/>
-        <location filename="../qml/pages/About.qml" line="109"/>
-        <location filename="../qml/pages/About.qml" line="219"/>
-        <location filename="../qml/pages/About.qml" line="280"/>
+        <location filename="../qml/pages/About.qml" line="106"/>
+        <location filename="../qml/pages/About.qml" line="216"/>
+        <location filename="../qml/pages/About.qml" line="277"/>
         <source>Opening webpage</source>
         <translation>Öppnar webbsida</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="89"/>
+        <location filename="../qml/pages/About.qml" line="86"/>
         <source>AllRadio license</source>
         <translation>AllRadio licens</translation>
     </message>
@@ -32,52 +32,52 @@
         <translation>Copyright</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="113"/>
+        <location filename="../qml/pages/About.qml" line="110"/>
         <source>AllRadio is GPLv3 with the exception for JSONListModel and ValuePicker, which is MIT licensed.</source>
         <translation>AllRadio är GPLv3 med undantag för JSONListModel och ValuePicker, som är MIT licensierade.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="125"/>
+        <location filename="../qml/pages/About.qml" line="122"/>
         <source>Opening GPLv3</source>
         <translation>Öppnar GPLv3</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="130"/>
+        <location filename="../qml/pages/About.qml" line="127"/>
         <source>Opening MIT</source>
         <translation>Öppnar MIT</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="170"/>
+        <location filename="../qml/pages/About.qml" line="167"/>
         <source>AllRadio uses the webservice from Community Radio Browser.</source>
         <translation>AllRadio använder sig av webbtjänsten från Community Radio Browser.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="182"/>
+        <location filename="../qml/pages/About.qml" line="179"/>
         <source>Opening Radio Community</source>
         <translation>Öppnar radiogemenskapen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="201"/>
+        <location filename="../qml/pages/About.qml" line="198"/>
         <source>Donate</source>
         <translation>Donera</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="223"/>
+        <location filename="../qml/pages/About.qml" line="220"/>
         <source>If you like this app, and would like to make a donation (for a beer or a cup of coffee?! :) ..)</source>
         <translation>Om du gillar den här appen och vill donera (till en öl, eller en kopp kaffe?! :) ...)</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="235"/>
+        <location filename="../qml/pages/About.qml" line="232"/>
         <source>Opening Flattr</source>
         <translation>Öppnar Flattr</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="240"/>
+        <location filename="../qml/pages/About.qml" line="237"/>
         <source>Opening PayPal</source>
         <translation>Öppnar PayPal</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="261"/>
+        <location filename="../qml/pages/About.qml" line="258"/>
         <source>Changelog</source>
         <translation>Ändringslogg</translation>
     </message>
@@ -127,8 +127,8 @@
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="171"/>
         <location filename="../qml/pages/AddOwnRadio.qml" line="178"/>
-        <source>Tags (separete by &apos;,&apos; (eg: &apos;rock,jazz&apos;)</source>
-        <translation>Taggar (separerade med kommatecken, exempel: rock,jazz)</translation>
+        <source>Tags (separate by &apos;,&apos; (e.g: &apos;rock,jazz&apos;)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="185"/>
@@ -1063,38 +1063,38 @@
         <translation>Lyssna</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Favorites.qml" line="240"/>
+        <location filename="../qml/pages/Favorites.qml" line="239"/>
         <source>Edit</source>
         <translation>Redigera</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Favorites.qml" line="243"/>
+        <location filename="../qml/pages/Favorites.qml" line="242"/>
         <source>Edit radio station</source>
         <translation>Redigera radiostation</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Favorites.qml" line="256"/>
+        <location filename="../qml/pages/Favorites.qml" line="255"/>
         <source>Search and replace</source>
         <translation>Sök och ersätt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Favorites.qml" line="248"/>
+        <location filename="../qml/pages/Favorites.qml" line="247"/>
         <source>Delete</source>
         <translation>Ta bort</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="86"/>
-        <location filename="../qml/pages/Favorites.qml" line="282"/>
+        <location filename="../qml/pages/Favorites.qml" line="281"/>
         <source>Find radio stations</source>
         <translation>Hitta radiostationer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Favorites.qml" line="266"/>
+        <location filename="../qml/pages/Favorites.qml" line="265"/>
         <source>Favorites empty</source>
         <translation>Inga favoriter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Favorites.qml" line="267"/>
+        <location filename="../qml/pages/Favorites.qml" line="266"/>
         <source>click here to add some favorites</source>
         <translation>Tryck här, för att lägga till favoriter</translation>
     </message>
@@ -1299,70 +1299,70 @@
         <translation>Community Browser Radio</translation>
     </message>
     <message>
+        <location filename="../qml/pages/RadioPlayer.qml" line="210"/>
+        <source>Loading radio stations…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="182"/>
         <source></source>
         <translation></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/RadioPlayer.qml" line="210"/>
-        <source>Loading radio stations...</source>
-        <translation>Hämtar radiostationer...</translation>
     </message>
 </context>
 <context>
     <name>Search</name>
     <message>
-        <location filename="../qml/pages/Search.qml" line="18"/>
+        <location filename="../qml/pages/Search.qml" line="19"/>
         <source>New or changed stations</source>
         <translation>Nya/ändrade radiostationer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="18"/>
+        <location filename="../qml/pages/Search.qml" line="19"/>
         <source>Latest played stations</source>
         <translation>Senast spelade radiostationer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="18"/>
+        <location filename="../qml/pages/Search.qml" line="19"/>
         <source>Most played stations</source>
         <translation>Mest spelade radiostationer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="18"/>
+        <location filename="../qml/pages/Search.qml" line="19"/>
         <source>Most liked stations</source>
         <translation>Mest gillade radiostationer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="72"/>
+        <location filename="../qml/pages/Search.qml" line="73"/>
         <source>Unknown</source>
         <translation>Okänd</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="222"/>
+        <location filename="../qml/pages/Search.qml" line="224"/>
         <source>Listen</source>
         <translation>Lyssna</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="234"/>
+        <location filename="../qml/pages/Search.qml" line="236"/>
         <source>Replace in favorites</source>
         <translation>Ersätt i favoriter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="240"/>
+        <location filename="../qml/pages/Search.qml" line="242"/>
         <source>Add to favorites</source>
         <translation>Lägg till i favoriter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="246"/>
+        <location filename="../qml/pages/Search.qml" line="248"/>
         <source>Delete favourite</source>
         <translation>Ta bort</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="255"/>
+        <location filename="../qml/pages/Search.qml" line="257"/>
         <source>Search radio stations</source>
         <translation>Sök radiostationer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Search.qml" line="256"/>
+        <location filename="../qml/pages/Search.qml" line="258"/>
         <source>Enter (or change) text in searchfield</source>
         <translation>Skriv (ändra) text i sökfältet</translation>
     </message>
