@@ -16,7 +16,7 @@ Page {
 
         GetStationUrl {
             id: stats
-            source: "http://www.radio-browser.info/webservice/json/stats"
+            source: "http://all.api.radio-browser.info/json/stats"
             //get: false
 
             onReadyChanged: {
@@ -139,10 +139,10 @@ Page {
                     case 1: pageStack.push(Qt.resolvedUrl("CountryChooser.qml"));break;
                     case 2: window.pageStack.push(Qt.resolvedUrl("Tags.qml"), {searchtitle: qsTr("Search by tag"),searchby: "bytag"});break
                     case 3: window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "byname",searchtitle: qsTr("Search by name"),source: ""});break
-                    case 4: window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "lastchange",searchtitle: qsTr("Search by new/changed"),source: "http://www.radio-browser.info/webservice/json/stations/lastchange/50"});break
-                    case 5: window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "lastplay",searchtitle: qsTr("Search by Latest played"),source: "http://www.radio-browser.info/webservice/json/stations/lastclick/50"});break
-                    case 6: window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "mostclick",searchtitle: qsTr("Search by Most played"),source: "http://www.radio-browser.info/webservice/json/stations/topclick/50"});break
-                    case 7: window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "mostvote",searchtitle: qsTr("Search by Most likes"),source: "http://www.radio-browser.info/webservice/json/stations/topvote/50"});break
+                    case 4: window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "lastchange",searchtitle: qsTr("Search by new/changed"),source: "http://all.api.radio-browser.info/json/stations/lastchange/50"});break
+                    case 5: window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "lastplay",searchtitle: qsTr("Search by Latest played"),source: "http://all.api.radio-browser.info/json/stations/lastclick/50"});break
+                    case 6: window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "mostclick",searchtitle: qsTr("Search by Most played"),source: "http://all.api.radio-browser.info/json/stations/topclick/50"});break
+                    case 7: window.pageStack.push(Qt.resolvedUrl("Search.qml"),{searchby: "mostvote",searchtitle: qsTr("Search by Most likes"),source: "http://all.api.radio-browser.info/json/stations/topvote/50"});break
                 }
             }
         }
