@@ -47,9 +47,10 @@ ApplicationWindow {
 
         onReadyChanged: {
             if (ready) {
-                simple.stationuuid ? cpsplay(simple.url) : simple.url ? cpsplay(simple.url) : console.log("ERROR!!!")
+
+                simple.stationuuid ? cpsplay(simple.url_resolved) : simple.url_resolved ? cpsplay(simple.url_resolved) : console.log("ERROR!!!")
+
                 currentid = simple.stationuuid
-                //currentStation = simple[0].stationuuid
                 console.log(simple.url)
                 ready1 = true
             }
@@ -62,7 +63,7 @@ ApplicationWindow {
 
         onReadyChanged: {
             if (ready) {
-                simple.stationuuid ? cpsplay(simple.url) : simple.url ? cpsplay(simple.url) : console.log("ERROR!!!")
+                simple.stationuuid ? cpsplay(simple.url_resolved) : simple.url_resolved ? cpsplay(simple.url_resolved) : console.log("ERROR!!!")
                 currentid = simple.stationuuid
                 ready2 = true
                 //console.log(simple.url)
@@ -70,6 +71,17 @@ ApplicationWindow {
         }
     }
 
+    function getAll(hls,codec) {
+        var h =false
+        var retVal = ""
+        if (codec === "UNKNOWN") codec=""
+        if (hls === "1") h = true
+        if (h) retVal = "[HLS] "
+        if (codec && codec !== "UNKNOWN") retVal = retVal + "[" + codec+"] "
+        //if (bitrate && bitrate > 0) retVal = retVal + "[" + bitrate + "]"
+
+        return retVal
+    }
 
     function playStream() {
         //playMusic.stop()
@@ -89,9 +101,15 @@ ApplicationWindow {
         sloading = false
     }
 
-    function cps(uuid) {
+    function cps(uuid,url_resolved) {
         //getStationUrl.source = "http://all.api.radio-browser.info/v2/json/url/"+id
+
+
         getStationUrl.source = "http://all.api.radio-browser.info/json/stations/byuuid/"+uuid
+      //  cpsplay(url_resolved)
+      //  currentid = uuid
+
+
         //http://all.api.radio-browser.info/{format}/stations/byuuid/{searchterm}
         //ps(source)
         //http://all.api.radio-browser.info/json/stations  all station

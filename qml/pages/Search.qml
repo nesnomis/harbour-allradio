@@ -186,7 +186,7 @@ Page {
         }
         Label {
             id: codlabel
-             text: internal ? "" : codec == "UNKNOWN" ? "" : codec
+             text: internal ? "" : codec == "UNKNOWN" ? "HLS" : codec
              color: highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
              anchors.verticalCenter: parent.verticalCenter
              anchors.right: bit.left
@@ -197,7 +197,7 @@ Page {
 
         Label {
              id: bit
-             text: internal ? "" : bitrate == 0 && codec == "UNKNOWN" ? "UNKNOWN" : bitrate == 0 ? "" : bitrate
+             text: internal ? "" : bitrate == 0 ? "" : bitrate
              visible: !internal
              color: highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
              anchors.right: parent.right

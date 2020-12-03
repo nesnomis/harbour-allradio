@@ -7,7 +7,7 @@ Page {
 
     SilicaGridView {
         id: grid
-        visible: true
+        visible: false
         anchors.fill: parent
         clip: true
 

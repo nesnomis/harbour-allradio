@@ -146,29 +146,29 @@
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="43"/>
         <source>Countries</source>
-        <translation>Страны</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="94"/>
         <source>Show as list</source>
-        <translation>Показать списком</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="101"/>
         <location filename="../qml/pages/CountryChooser.qml" line="181"/>
         <source>No countries!?</source>
-        <translation>Страна неизвестна</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="102"/>
         <location filename="../qml/pages/CountryChooser.qml" line="182"/>
         <source>Be patient or check connection!</source>
-        <translation>Потерпите или проверьте доступ в сеть!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="174"/>
         <source>Show as grid</source>
-        <translation>Показать флаги</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1035,6 +1035,1264 @@
         <location filename="../qml/pages/CountryModelCommunity.qml" line="252"/>
         <source>Yemen</source>
         <translation>Йемен</translation>
+    </message>
+</context>
+<context>
+    <name>CountryNameModel</name>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="262"/>
+        <source>Afghanistan</source>
+        <translation type="unfinished">Афганистан</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="263"/>
+        <source>Åland Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="264"/>
+        <source>Albania</source>
+        <translation type="unfinished">Албания</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="265"/>
+        <source>Algeria</source>
+        <translation type="unfinished">Алжир</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="266"/>
+        <source>American Samoa</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="267"/>
+        <source>Andorra</source>
+        <translation type="unfinished">Андорра</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="268"/>
+        <source>Angola</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="269"/>
+        <source>Anguilla</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="270"/>
+        <source>Antarctica</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="271"/>
+        <source>Antigua &amp; Barbuda</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="272"/>
+        <source>Argentina</source>
+        <translation type="unfinished">Аргентина</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="273"/>
+        <source>Armenia</source>
+        <translation type="unfinished">Армения</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="274"/>
+        <source>Aruba</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="275"/>
+        <source>Australia</source>
+        <translation type="unfinished">Австралия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="276"/>
+        <source>Austria</source>
+        <translation type="unfinished">Австрия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="277"/>
+        <source>Azerbaijan</source>
+        <translation type="unfinished">Азербайджан</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="278"/>
+        <source>Bahamas</source>
+        <translation type="unfinished">Багамы</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="279"/>
+        <source>Bahrain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="280"/>
+        <source>Bangladesh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="281"/>
+        <source>Barbados</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="282"/>
+        <source>Belarus</source>
+        <translation type="unfinished">Белоруссия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="283"/>
+        <source>Belgium</source>
+        <translation type="unfinished">Бельгия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="284"/>
+        <source>Belize</source>
+        <translation type="unfinished">Белиз</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="285"/>
+        <source>Benin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="286"/>
+        <source>Bermuda</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="287"/>
+        <source>Bhutan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="288"/>
+        <source>Bolivia</source>
+        <translation type="unfinished">Боливия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="289"/>
+        <source>Bosnia &amp; Herzegovina</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="290"/>
+        <source>Botswana</source>
+        <translation type="unfinished">Ботсвана</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="291"/>
+        <source>Bouvet Island</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="292"/>
+        <source>Brazil</source>
+        <translation type="unfinished">Бразилия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="293"/>
+        <source>British Indian Ocean Territory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="294"/>
+        <source>British Virgin Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="295"/>
+        <source>Brunei</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="296"/>
+        <source>Bulgaria</source>
+        <translation type="unfinished">Болгария</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="297"/>
+        <source>Burkina Faso</source>
+        <translation type="unfinished">Буркина-Фасо</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="298"/>
+        <source>Burundi</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="299"/>
+        <source>Cambodia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="300"/>
+        <source>Cameroon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="301"/>
+        <source>Canada</source>
+        <translation type="unfinished">Канада</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="302"/>
+        <source>Cape Verde</source>
+        <translation type="unfinished">Кабо-Верде</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="303"/>
+        <source>Caribbean Netherlands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="304"/>
+        <source>Cayman Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="305"/>
+        <source>Central African Republic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="306"/>
+        <source>Chad</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="307"/>
+        <source>Chile</source>
+        <translation type="unfinished">Чили</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="308"/>
+        <source>China</source>
+        <translation type="unfinished">Китай</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="309"/>
+        <source>Christmas Island</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="310"/>
+        <source>Cocos (Keeling) Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="311"/>
+        <source>Colombia</source>
+        <translation type="unfinished">Колумбия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="312"/>
+        <source>Comoros</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="313"/>
+        <source>Congo - Brazzaville</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="314"/>
+        <source>Congo - Kinshasa</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="315"/>
+        <source>Cook Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="316"/>
+        <source>Costa Rica</source>
+        <translation type="unfinished">Коста-Рика</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="317"/>
+        <source>Côte d’Ivoire</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="318"/>
+        <source>Croatia</source>
+        <translation type="unfinished">Хорватия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="319"/>
+        <source>Cuba</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="320"/>
+        <source>Curaçao</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="321"/>
+        <source>Cyprus</source>
+        <translation type="unfinished">Кипр</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="322"/>
+        <source>Czechia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="323"/>
+        <source>Denmark</source>
+        <translation type="unfinished">Дания</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="324"/>
+        <source>Djibouti</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="325"/>
+        <source>Dominica</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="326"/>
+        <source>Dominican Republic</source>
+        <translation type="unfinished">Доминиканская республика</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="327"/>
+        <source>Ecuador</source>
+        <translation type="unfinished">Эквадор</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="328"/>
+        <source>Egypt</source>
+        <translation type="unfinished">Египет</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="329"/>
+        <source>El Salvador</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="330"/>
+        <source>Equatorial Guinea</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="331"/>
+        <source>Eritrea</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="332"/>
+        <source>Estonia</source>
+        <translation type="unfinished">Эстония</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="333"/>
+        <source>Eswatini</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="334"/>
+        <source>Ethiopia</source>
+        <translation type="unfinished">Эфиопия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="335"/>
+        <source>Falkland Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="336"/>
+        <source>Faroe Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="337"/>
+        <source>Fiji</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="338"/>
+        <source>Finland</source>
+        <translation type="unfinished">Финляндия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="339"/>
+        <source>France</source>
+        <translation type="unfinished">Франция</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="340"/>
+        <source>French Guiana</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="341"/>
+        <source>French Polynesia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="342"/>
+        <source>French Southern Territories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="343"/>
+        <source>Gabon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="344"/>
+        <source>Gambia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="345"/>
+        <source>Georgia</source>
+        <translation type="unfinished">Грузия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="346"/>
+        <source>Germany</source>
+        <translation type="unfinished">Германия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="347"/>
+        <source>Ghana</source>
+        <translation type="unfinished">Гана</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="348"/>
+        <source>Gibraltar</source>
+        <translation type="unfinished">Гибралтар</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="349"/>
+        <source>Greece</source>
+        <translation type="unfinished">Греция</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="350"/>
+        <source>Greenland</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="351"/>
+        <source>Grenada</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="352"/>
+        <source>Guadeloupe</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="353"/>
+        <source>Guam</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="354"/>
+        <source>Guatemala</source>
+        <translation type="unfinished">Гватемала</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="355"/>
+        <source>Guernsey</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="356"/>
+        <source>Guinea</source>
+        <translation type="unfinished">Гвинея</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="357"/>
+        <source>Guinea-Bissau</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="358"/>
+        <source>Guyana</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="359"/>
+        <source>Haiti</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="360"/>
+        <source>Heard &amp; McDonald Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="361"/>
+        <source>Honduras</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="362"/>
+        <source>Hong Kong SAR China</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="363"/>
+        <source>Hungary</source>
+        <translation type="unfinished">Венгрия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="364"/>
+        <source>Iceland</source>
+        <translation type="unfinished">Исландия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="365"/>
+        <source>India</source>
+        <translation type="unfinished">Индия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="366"/>
+        <source>Indonesia</source>
+        <translation type="unfinished">Индонезия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="367"/>
+        <source>Iran</source>
+        <translation type="unfinished">Иран</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="368"/>
+        <source>Iraq</source>
+        <translation type="unfinished">Ирак</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="369"/>
+        <source>Ireland</source>
+        <translation type="unfinished">Ирландия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="370"/>
+        <source>Isle of Man</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="371"/>
+        <source>Israel</source>
+        <translation type="unfinished">Израиль</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="372"/>
+        <source>Italy</source>
+        <translation type="unfinished">Италия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="373"/>
+        <source>Jamaica</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="374"/>
+        <source>Japan</source>
+        <translation type="unfinished">Япония</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="375"/>
+        <source>Jersey</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="376"/>
+        <source>Jordan</source>
+        <translation type="unfinished">Иордания</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="377"/>
+        <source>Kazakhstan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="378"/>
+        <source>Kenya</source>
+        <translation type="unfinished">Кения</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="379"/>
+        <source>Kiribati</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="380"/>
+        <source>Kuwait</source>
+        <translation type="unfinished">Кувейт</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="381"/>
+        <source>Kyrgyzstan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="382"/>
+        <source>Laos</source>
+        <translation type="unfinished">Лаос</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="383"/>
+        <source>Latvia</source>
+        <translation type="unfinished">Латвия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="384"/>
+        <source>Lebanon</source>
+        <translation type="unfinished">Ливан</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="385"/>
+        <source>Lesotho</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="386"/>
+        <source>Liberia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="387"/>
+        <source>Libya</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="388"/>
+        <source>Liechtenstein</source>
+        <translation type="unfinished">Лихтенштейн</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="389"/>
+        <source>Lithuania</source>
+        <translation type="unfinished">Литва</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="390"/>
+        <source>Luxembourg</source>
+        <translation type="unfinished">Люксембург</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="391"/>
+        <source>Macao SAR China</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="392"/>
+        <source>Madagascar</source>
+        <translation type="unfinished">Мадагаскар</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="393"/>
+        <source>Malawi</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="394"/>
+        <source>Malaysia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="395"/>
+        <source>Maldives</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="396"/>
+        <source>Mali</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="397"/>
+        <source>Malta</source>
+        <translation type="unfinished">Мальта</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="398"/>
+        <source>Marshall Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="399"/>
+        <source>Martinique</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="400"/>
+        <source>Mauritania</source>
+        <translation type="unfinished">Мавритания</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="401"/>
+        <source>Mauritius</source>
+        <translation type="unfinished">Маврикий</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="402"/>
+        <source>Mayotte</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="403"/>
+        <source>Mexico</source>
+        <translation type="unfinished">Мексика</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="404"/>
+        <source>Micronesia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="405"/>
+        <source>Moldova</source>
+        <translation type="unfinished">Молдавия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="406"/>
+        <source>Monaco</source>
+        <translation type="unfinished">Монако</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="407"/>
+        <source>Mongolia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="408"/>
+        <source>Montenegro</source>
+        <translation type="unfinished">Черногория</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="409"/>
+        <source>Montserrat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="410"/>
+        <source>Morocco</source>
+        <translation type="unfinished">Морокко</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="411"/>
+        <source>Mozambique</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="412"/>
+        <source>Myanmar (Burma)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="413"/>
+        <source>Namibia</source>
+        <translation type="unfinished">Намибия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="414"/>
+        <source>Nauru</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="415"/>
+        <source>Nepal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="416"/>
+        <source>Netherlands</source>
+        <translation type="unfinished">Голландия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="417"/>
+        <source>New Caledonia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="418"/>
+        <source>New Zealand</source>
+        <translation type="unfinished">Новая Зеландия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="419"/>
+        <source>Nicaragua</source>
+        <translation type="unfinished">Никарагуа</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="420"/>
+        <source>Niger</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="421"/>
+        <source>Nigeria</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="422"/>
+        <source>Niue</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="423"/>
+        <source>Norfolk Island</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="424"/>
+        <source>North Korea</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="425"/>
+        <source>North Macedonia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="426"/>
+        <source>Northern Mariana Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="427"/>
+        <source>Norway</source>
+        <translation type="unfinished">Норвегия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="428"/>
+        <source>Oman</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="429"/>
+        <source>Pakistan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="430"/>
+        <source>Palau</source>
+        <translation type="unfinished">Палау</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="431"/>
+        <source>Palestinian Territories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="432"/>
+        <source>Panama</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="433"/>
+        <source>Papua New Guinea</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="434"/>
+        <source>Paraguay</source>
+        <translation type="unfinished">Парагвай</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="435"/>
+        <source>Peru</source>
+        <translation type="unfinished">Перу</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="436"/>
+        <source>Philippines</source>
+        <translation type="unfinished">Филиппины</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="437"/>
+        <source>Pitcairn Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="438"/>
+        <source>Poland</source>
+        <translation type="unfinished">Польша</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="439"/>
+        <source>Portugal</source>
+        <translation type="unfinished">Португалия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="440"/>
+        <source>Puerto Rico</source>
+        <translation type="unfinished">Пуэрто Рико</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="441"/>
+        <source>Qatar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="442"/>
+        <source>Réunion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="443"/>
+        <source>Romania</source>
+        <translation type="unfinished">Румыния</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="444"/>
+        <source>Russia</source>
+        <translation type="unfinished">Россия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="445"/>
+        <source>Rwanda</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="446"/>
+        <source>Samoa</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="447"/>
+        <source>San Marino</source>
+        <translation type="unfinished">Сан-Марино</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="448"/>
+        <source>São Tomé &amp; Príncipe</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="449"/>
+        <source>Saudi Arabia</source>
+        <translation type="unfinished">Саудовская Аравия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="450"/>
+        <source>Senegal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="451"/>
+        <source>Serbia</source>
+        <translation type="unfinished">Сербия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="452"/>
+        <source>Seychelles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="453"/>
+        <source>Sierra Leone</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="454"/>
+        <source>Singapore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="455"/>
+        <source>Sint Maarten</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="456"/>
+        <source>Slovakia</source>
+        <translation type="unfinished">Словакия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="457"/>
+        <source>Slovenia</source>
+        <translation type="unfinished">Словения</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="458"/>
+        <source>Solomon Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="459"/>
+        <source>Somalia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="460"/>
+        <source>South Africa</source>
+        <translation type="unfinished">ЮАР</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="461"/>
+        <source>South Georgia &amp; South Sandwich Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="462"/>
+        <source>South Korea</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="463"/>
+        <source>South Sudan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="464"/>
+        <source>Spain</source>
+        <translation type="unfinished">Испания</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="465"/>
+        <source>Sri Lanka</source>
+        <translation type="unfinished">Шри Ланка</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="466"/>
+        <source>St. Barthélemy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="467"/>
+        <source>St. Helena</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="468"/>
+        <source>St. Kitts &amp; Nevis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="469"/>
+        <source>St. Lucia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="470"/>
+        <source>St. Martin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="471"/>
+        <source>St. Pierre &amp; Miquelon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="472"/>
+        <source>St. Vincent &amp; Grenadines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="473"/>
+        <source>Sudan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="474"/>
+        <source>Suriname</source>
+        <translation type="unfinished">Суринам</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="475"/>
+        <source>Svalbard &amp; Jan Mayen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="476"/>
+        <source>Sweden</source>
+        <translation type="unfinished">Швеция</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="477"/>
+        <source>Switzerland</source>
+        <translation type="unfinished">Швейцария</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="478"/>
+        <source>Syria</source>
+        <translation type="unfinished">Сирия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="479"/>
+        <source>Taiwan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="480"/>
+        <source>Tajikistan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="481"/>
+        <source>Tanzania</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="482"/>
+        <source>Thailand</source>
+        <translation type="unfinished">Таиланд</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="483"/>
+        <source>Timor-Leste</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="484"/>
+        <source>Togo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="485"/>
+        <source>Tokelau</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="486"/>
+        <source>Tonga</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="487"/>
+        <source>Trinidad &amp; Tobago</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="488"/>
+        <source>Tunisia</source>
+        <translation type="unfinished">Тунис</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="489"/>
+        <source>Turkey</source>
+        <translation type="unfinished">Турция</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="490"/>
+        <source>Turkmenistan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="491"/>
+        <source>Turks &amp; Caicos Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="492"/>
+        <source>Tuvalu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="493"/>
+        <source>U.S. Outlying Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="494"/>
+        <source>U.S. Virgin Islands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="495"/>
+        <source>Uganda</source>
+        <translation type="unfinished">Уганда</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="496"/>
+        <source>Ukraine</source>
+        <translation type="unfinished">Украина</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="497"/>
+        <source>United Arab Emirates</source>
+        <translation type="unfinished">ОАЭ</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="498"/>
+        <source>United Kingdom</source>
+        <translation type="unfinished">Британия</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="499"/>
+        <source>United States</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="500"/>
+        <source>Uruguay</source>
+        <translation type="unfinished">Уругвай</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="501"/>
+        <source>Uzbekistan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="502"/>
+        <source>Vanuatu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="503"/>
+        <source>Vatican City</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="504"/>
+        <source>Venezuela</source>
+        <translation type="unfinished">Венесуэла</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="505"/>
+        <source>Vietnam</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="506"/>
+        <source>Wallis &amp; Futuna</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="507"/>
+        <source>Western Sahara</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="508"/>
+        <source>Yemen</source>
+        <translation type="unfinished">Йемен</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="509"/>
+        <source>Zambia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="510"/>
+        <source>Zimbabwe </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="511"/>
+        <source>Kosovo</source>
+        <translation type="unfinished">Косово</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CountryNameModel.qml" line="512"/>
+        <source>No country</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
