@@ -48,7 +48,7 @@ ApplicationWindow {
         onReadyChanged: {
             if (ready) {
 
-                simple.stationuuid ? cpsplay(simple.url_resolved) : simple.url_resolved ? cpsplay(simple.url_resolved) : console.log("ERROR!!!")
+                simple.stationuuid ? cpsplay(simple.url) : simple.url ? cpsplay(simple.url) : console.log("ERROR!!!")
 
                 currentid = simple.stationuuid
                 console.log(simple.url)
@@ -63,7 +63,7 @@ ApplicationWindow {
 
         onReadyChanged: {
             if (ready) {
-                simple.stationuuid ? cpsplay(simple.url_resolved) : simple.url_resolved ? cpsplay(simple.url_resolved) : console.log("ERROR!!!")
+                simple.stationuuid ? cpsplay(simple.url) : simple.url ? cpsplay(simple.url) : console.log("ERROR!!!")
                 currentid = simple.stationuuid
                 ready2 = true
                 //console.log(simple.url)
@@ -101,7 +101,7 @@ ApplicationWindow {
         sloading = false
     }
 
-    function cps(uuid,url_resolved) {
+    function cps(uuid) {
         //getStationUrl.source = "http://all.api.radio-browser.info/v2/json/url/"+id
 
 
