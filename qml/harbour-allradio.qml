@@ -48,10 +48,10 @@ ApplicationWindow {
         onReadyChanged: {
             if (ready) {
 
-                simple.stationuuid ? cpsplay(simple.url) : simple.url ? cpsplay(simple.url) : console.log("ERROR!!!")
+                simple.stationuuid ? cpsplay(simple.url_resolved) : simple.url_resolved ? cpsplay(simple.url_resolved) : console.log("ERROR!!!")
 
                 currentid = simple.stationuuid
-                console.log(simple.url)
+                console.log(simple.url_resolved)
                 ready1 = true
             }
         }
@@ -63,10 +63,10 @@ ApplicationWindow {
 
         onReadyChanged: {
             if (ready) {
-                simple.stationuuid ? cpsplay(simple.url) : simple.url ? cpsplay(simple.url) : console.log("ERROR!!!")
+                simple.stationuuid ? cpsplay(simple.url_resolved) : simple.url_resolved ? cpsplay(simple.url_resolved) : console.log("ERROR!!!")
                 currentid = simple.stationuuid
                 ready2 = true
-                //console.log(simple.url)
+                //console.log(simple.url_resolved)
             }
         }
     }
