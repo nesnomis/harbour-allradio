@@ -74,12 +74,12 @@
     <message>
         <location filename="../qml/pages/About.qml" line="240"/>
         <source>Opening PayPal</source>
-        <translation type=PayPal açıyorum.></translation>
+        <translation>PayPal açıyorum</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="261"/>
         <source>Changelog</source>
-        <translation type=Değişiklikler></translation>
+        <translation>Değişiklikler</translation>
     </message>
 </context>
 <context>
