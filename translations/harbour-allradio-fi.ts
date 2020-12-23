@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="fi" sourcelanguage="en">
 <context>
+    <name>About</name>
     <message>
         <location filename="../qml/pages/About.qml" line="19"/>
         <source>About</source>
@@ -82,6 +83,7 @@
     </message>
 </context>
 <context>
+    <name>AddOwnRadio</name>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="6"/>
         <source>Add or share your own favorite:</source>
@@ -140,6 +142,7 @@
     </message>
 </context>
 <context>
+    <name>CountryChooser</name>
     <message>
         <location filename="../qml/pages/CountryChooser.qml" line="43"/>
         <source>Countries</source>
@@ -169,6 +172,7 @@
     </message>
 </context>
 <context>
+    <name>CountryModel</name>
     <message>
         <location filename="../qml/pages/CountryModel.qml" line="63"/>
         <source>Albania</source>
@@ -426,6 +430,7 @@
     </message>
 </context>
 <context>
+    <name>CountryModelCommunity</name>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="132"/>
         <source>No country?</source>
@@ -1033,6 +1038,7 @@
     </message>
 </context>
 <context>
+    <name>CountryNameModel</name>
     <message>
         <location filename="../qml/pages/CountryNameModel.qml" line="262"/>
         <source>Afghanistan</source>
@@ -2290,6 +2296,7 @@
     </message>
 </context>
 <context>
+    <name>CoverPage</name>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="46"/>
         <source>Closing in </source>
@@ -2302,6 +2309,7 @@
     </message>
 </context>
 <context>
+    <name>Favorites</name>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="85"/>
         <source>Favorites</source>
@@ -2350,6 +2358,7 @@
     </message>
 </context>
 <context>
+    <name>FindRadio</name>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="116"/>
         <source>Country</source>
@@ -2422,6 +2431,7 @@
     </message>
 </context>
 <context>
+    <name>Help</name>
     <message>
         <location filename="../qml/pages/Help.qml" line="19"/>
         <source>Help</source>
@@ -2484,6 +2494,7 @@
     </message>
 </context>
 <context>
+    <name>PlayerPanel</name>
     <message>
         <location filename="../qml/pages/PlayerPanel.qml" line="57"/>
         <source>Opening webpage</source>
@@ -2491,6 +2502,7 @@
     </message>
 </context>
 <context>
+    <name>PullMenu</name>
     <message>
         <location filename="../qml/pages/PullMenu.qml" line="10"/>
         <source>Help</source>
@@ -2508,6 +2520,7 @@
     </message>
 </context>
 <context>
+    <name>RadioPlayer</name>
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="167"/>
         <source>Listen</source>
@@ -2555,6 +2568,7 @@
     </message>
 </context>
 <context>
+    <name>Search</name>
     <message>
         <location filename="../qml/pages/Search.qml" line="19"/>
         <source>New or changed stations</source>
@@ -2612,6 +2626,7 @@
     </message>
 </context>
 <context>
+    <name>SleepTimerPage</name>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="10"/>
         <source>Remaning time: </source>
@@ -2644,6 +2659,7 @@
     </message>
 </context>
 <context>
+    <name>Tags</name>
     <message>
         <location filename="../qml/pages/Tags.qml" line="43"/>
         <source>Most popular tags</source>
