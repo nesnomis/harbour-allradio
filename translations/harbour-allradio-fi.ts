@@ -29,7 +29,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="67"/>
         <source>Copyright</source>
-        <translation>Tekijänoikeudet</translation>
+        <translation>Copyright</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="110"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="220"/>
         <source>If you like this app, and would like to make a donation (for a beer or a cup of coffee?! :) ..)</source>
-        <translation>Jos pidät tästä sovelluksesta ja haluat tehdä lahjoituksen (oluen tai kupillisen kahvia?! :) ..)</translation>
+        <translation>Jos pidät tästä sovelluksesta ja haluat tehdä lahjoituksen (oluen tai kupillisen kahvia?! :)</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="232"/>
@@ -2300,7 +2300,7 @@
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="46"/>
         <source>Closing in </source>
-        <translation>Sulkeutumiseen </translation>
+        <translation>Uniajastimessa jäljellä </translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="46"/>
@@ -2367,12 +2367,12 @@
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="117"/>
         <source>Tag</source>
-        <translation>Tag</translation>
+        <translation>Tagit</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="120"/>
         <source>Latest played</source>
-        <translation>Viimeisimmäksi kuunneltu</translation>
+        <translation>Viimeisimmät</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="121"/>
@@ -2460,12 +2460,12 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="37"/>
         <source>You can change the country selection between list and icons by flicking down and select &apos;show as list&apos; alt. &apos;show as grid&apos;</source>
-        <translation>Voit vaihtaa näkymää luettelon ja kuvakkeiden välillä pyyhkäisemällä alas ja valitsemalla &apos;Näytä luettelona&apos; tai &apos;näytä ruudukkona&apos;</translation>
+        <translation>Voit vaihtaa näkymää luettelon ja kuvakkeiden välillä pyyhkäisemällä alas ja valitsemalla &apos;Näytä luettelona&apos; tai &apos;Näytä ruudukkona&apos;</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="39"/>
         <source>Searching</source>
-        <translation>Etsitään</translation>
+        <translation>Hakeminen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="41"/>
@@ -2480,12 +2480,12 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="45"/>
         <source>Flick down and select sleeptimer, then set the time in minutes until you want the radio to stop playing</source>
-        <translation>Pyyhkäise alas ja valitse uniajastin. Aseta sitten aika minuutteina. Ajan loputtua radio sammuu.</translation>
+        <translation>Pyyhkäise alas ja valitse uniajastin. Aseta sitten aika minuutteina. Toisto loppuu ajan loputtua</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="45"/>
         <source>More</source>
-        <translation>Lisää</translation>
+        <translation>Muuta</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="46"/>
@@ -2630,17 +2630,17 @@
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="10"/>
         <source>Remaning time: </source>
-        <translation>Jäljellä oleva aika:</translation>
+        <translation>Aikaa jäljellä:</translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="10"/>
         <source> minutes</source>
-        <translation> minuuttia</translation>
+        <translation> min</translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="10"/>
         <source>choose time: </source>
-        <translation>valitse aika:</translation>
+        <translation>Valitse aika: </translation>
     </message>
     <message>
         <location filename="../qml/pages/SleepTimerPage.qml" line="35"/>
