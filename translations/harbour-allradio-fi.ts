@@ -128,7 +128,7 @@
         <location filename="../qml/pages/AddOwnRadio.qml" line="171"/>
         <location filename="../qml/pages/AddOwnRadio.qml" line="178"/>
         <source>Tags (separate by &apos;,&apos; (e.g: &apos;rock,jazz&apos;)</source>
-        <translation>Tagit (erota pilkulla, esim. &apos;Rock, jazz&apos;)</translation>
+        <translation>Tagit (erota pilkulla, esim. &apos;rock,jazz&apos;)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddOwnRadio.qml" line="185"/>
@@ -1542,7 +1542,7 @@
     <message>
         <location filename="../qml/pages/CountryNameModel.qml" line="362"/>
         <source>Hong Kong SAR China</source>
-        <translation>Hongkongin erityishallintoalue Kiina</translation>
+        <translation>Hongkong</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryNameModel.qml" line="363"/>
@@ -2262,7 +2262,7 @@
     <message>
         <location filename="../qml/pages/CountryNameModel.qml" line="506"/>
         <source>Wallis &amp; Futuna</source>
-        <translation>Wallis & Futuna</translation>
+        <translation>Wallis ja Futuna</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryNameModel.qml" line="507"/>
