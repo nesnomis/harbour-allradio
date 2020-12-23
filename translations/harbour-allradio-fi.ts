@@ -2344,7 +2344,7 @@
         <location filename="../qml/pages/Favorites.qml" line="86"/>
         <location filename="../qml/pages/Favorites.qml" line="281"/>
         <source>Find radio stations</source>
-        <translation>Etsi radioasemia</translation>
+        <translation>Löydä radioasemia</translation>
     </message>
     <message>
         <location filename="../qml/pages/Favorites.qml" line="265"/>
@@ -2354,7 +2354,7 @@
     <message>
         <location filename="../qml/pages/Favorites.qml" line="266"/>
         <source>click here to add some favorites</source>
-        <translation>Napsauta tätä lisätäksesi suosikkeja</translation>
+        <translation>Paina tätä lisätäksesi suosikkeja</translation>
     </message>
 </context>
 <context>
@@ -2392,12 +2392,12 @@
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="143"/>
         <source>Search by Latest played</source>
-        <translation>Hae viimeksi soitetun mukaan</translation>
+        <translation>Hae viimeksi toistetun mukaan</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="144"/>
         <source>Search by Most played</source>
-        <translation>Hae eniten soitettujen mukaan</translation>
+        <translation>Hae eniten toistettujen mukaan</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="145"/>
@@ -2412,7 +2412,7 @@
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="33"/>
         <source>Find radio station by</source>
-        <translation>Etsi radioasema...</translation>
+        <translation>Löydä radioasemia</translation>
     </message>
     <message>
         <location filename="../qml/pages/FindRadio.qml" line="141"/>
@@ -2450,7 +2450,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="34"/>
         <source>Choose country by clicking the flag/name, then click the channel you want to listen to</source>
-        <translation>Valitse maa napsauttamalla lippua/nimeä ja napsauta sitten kanavaa, jota haluat kuunnella</translation>
+        <translation>Valitse maa painamalla lippua/nimeä ja edelleen kanavaa, jota haluat kuunnella</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="36"/>
@@ -2470,7 +2470,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="41"/>
         <source>When you have clicked on the country and are in the channels page, you can click the looking-glass at the top of the list to search/filter the selection based on channel name</source>
-        <translation>Kun olet valinnut maan ja avannut kanavasivun, voit napsauttaa luettelon yläosassa olevaa suurennuslasia etsiäksesi/suodattaaksesi kanavan nimen perusteella</translation>
+        <translation>Kun olet valinnut maan ja avannut kanavasivun, voit painaa luettelon yläosassa olevaa suurennuslasia etsiäksesi/suodattaaksesi kanavan nimen perusteella</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="43"/>
@@ -2490,7 +2490,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="46"/>
         <source>This help is a draft! It may be updated?! :-)</source>
-        <translation>Tämä on ohjeiden luonnos. Se voidaan päivittää?! :-)</translation>
+        <translation>Löysitkö käännösvirheitä? Kommentoi Kaupassa tai GitHubissa.</translation>
     </message>
 </context>
 <context>
@@ -2582,7 +2582,7 @@
     <message>
         <location filename="../qml/pages/Search.qml" line="19"/>
         <source>Most played stations</source>
-        <translation>Eniten soitetut asemat</translation>
+        <translation>Eniten kuunnellut asemat</translation>
     </message>
     <message>
         <location filename="../qml/pages/Search.qml" line="19"/>
