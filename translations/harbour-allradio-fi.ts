@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fi" sourcelanguage="en">
+<TS version="2.1" language="fi_FI" sourcelanguage="en">
 <context>
     <name>About</name>
     <message>
@@ -1009,7 +1009,7 @@
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="247"/>
         <source>United Kingdom</source>
-        <translation>Englanti</translation>
+        <translation>Yhdistynyt kuningaskunta</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryModelCommunity.qml" line="248"/>
@@ -2222,7 +2222,7 @@
     <message>
         <location filename="../qml/pages/CountryNameModel.qml" line="498"/>
         <source>United Kingdom</source>
-        <translation>Englanti</translation>
+        <translation>Yhdistynyt kuningaskunta</translation>
     </message>
     <message>
         <location filename="../qml/pages/CountryNameModel.qml" line="499"/>
@@ -2563,7 +2563,7 @@
     </message>
     <message>
         <location filename="../qml/pages/RadioPlayer.qml" line="182"/>
-	<source></source>
+        <source></source>
         <translation></translation>
     </message>
 </context>
