@@ -112,6 +112,7 @@ OTHER_FILES += qml/harbour-allradio.qml \
     translations/harbour-allradio-da.ts \
     translations/harbour-allradio-en.ts \
     translations/harbour-allradio-sv.ts \
+    translations/harbour-allradio-fi.ts \
     qml/harbour-allradio.png \
     qml/stations/Vatican.png \
     qml/stations/Ukraine.png \
@@ -294,6 +295,7 @@ TRANSLATIONS += translations/harbour-allradio-nl.ts
 TRANSLATIONS += translations/harbour-allradio-es.ts
 TRANSLATIONS += translations/harbour-allradio-ru.ts
 TRANSLATIONS += translations/harbour-allradio-tr.ts
+TRANSLATIONS += translations/harbour-allradio-fi.ts
 
 DISTFILES += \
     qml/pages/CountryNameModel.qml \
