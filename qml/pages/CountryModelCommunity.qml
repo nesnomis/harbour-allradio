@@ -9,7 +9,7 @@ ListModel {
     ListElement {coid: "albania"}
     ListElement {coid: "algeria"}
     ListElement {coid: "andorra"}
-    ListElement {coid: "antigua & barbuda"}
+    ListElement {coid: "antigua and barbuda"}
     ListElement {coid: "argentina"}
     ListElement {coid: "armenia"}
     ListElement {coid: "australia"}
@@ -118,7 +118,7 @@ ListModel {
     ListElement {coid: "turkey"}
     ListElement {coid: "uganda"}
     ListElement {coid: "ukraine"}
-    ListElement {coid: "united arab emirates"}
+    ListElement {coid: "the united arab emirates"}
     ListElement {coid: "united kingdom"}
     ListElement {coid: "united states of america"}
     ListElement {coid: "uruguay"}
