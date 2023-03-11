@@ -6,7 +6,7 @@ import "pages"
 import "js/favorites.js" as Db
 import "js/stream.js" as Stream
 import "../qml/JSONListModel"
-import org.nemomobile.mpris 1.0 //MPRIS
+import Amber.Mpris 1.0 //MPRIS
 
 
 
@@ -291,7 +291,7 @@ ApplicationWindow {
         canSeek: false// playback.seekable
         hasTrackList: false
         playbackStatus: Mpris.Stopped
-        loopStatus: Mpris.None
+        loopStatus: Mpris.LoopNone
         shuffle: false
         volume: 1
         onPauseRequested:{
@@ -302,7 +302,7 @@ ApplicationWindow {
             playStream();
         }
         onPlayPauseRequested: {
-            stopStream();
+            streaming ? stopStream() : playStream();
         }
         onStopRequested: {
             stopStream();
@@ -337,21 +337,9 @@ ApplicationWindow {
         onShuffleRequested: {
         }
 
-        onArtistChanged: {
-            var metadata = mprisPlayer.metadata
+        onArtistChanged: mprisPlayer.metaData.contributingArtist = artist
 
-            metadata[Mpris.metadataToString(Mpris.Artist)] = artist // List of strings
-            metadata[Mpris.metadataToString(Mpris.Title)] = song // List of strings
-            mprisPlayer.metadata = metadata
-        }
-
-        onSongChanged: {
-            var metadata = mprisPlayer.metadata
-
-            metadata[Mpris.metadataToString(Mpris.Artist)] = artist // List of strings
-            metadata[Mpris.metadataToString(Mpris.Title)] = song // List of strings
-            mprisPlayer.metadata = metadata
-        }
+        onSongChanged: mprisPlayer.metaData.title = song
     }
 
     // MPRIS END

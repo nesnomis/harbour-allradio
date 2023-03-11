@@ -12,3 +12,7 @@ Name=AllRadio
 #Name[en]=harbour-allradio
 #Name[da]=harbour-allradio
 #Name[sv]=harbour-allradio
+[X-Sailjail]
+OrganizationName=nesnomis
+ApplicationName=AllRadio
+Permissions=Audio;Internet
